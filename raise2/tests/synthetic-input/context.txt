@@ -1,0 +1,2 @@
+The service processes requests from authorised users during normal operation.
+

@@ -1,0 +1,10 @@
+CheckResultEvidence_or_Rationale
+CoveragePASSAll three final CRDs are covered by at least one ORR; D_O = D_C for the identified distinction set.
+Duplicate obligationsPASSH1-ORR1--H1-ORR3 impose distinct preservation obligations for presence, source-required category, and braking-relevant distance.
+CompatibilityPASSThe three distinctions can be preserved simultaneously.
+TraceabilityPASSEach ORR traces to a final CRD and visible source artefacts.
+Orphan ORRsPASSNo ORR lacks an originating CRD.
+Uncovered CRDsPASSNo identified final CRD lacks a corresponding ORR.
+Assessability H1-ORR1PASSA candidate representation can be assessed for preservation of collision-relevant obstacle presence versus absence.
+Assessability H1-ORR2PASSA candidate representation can be assessed for preservation of vulnerable-road-user versus other-object category.
+Assessability H1-ORR3PASS WITH SOURCE LIMITATIONThe preservation criterion is assessable at the concern-relative class level, but the source leaves the numerical dangerous-zone boundary tbd; no threshold is invented by RAISE2.

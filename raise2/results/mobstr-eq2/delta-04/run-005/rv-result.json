@@ -1,0 +1,13 @@
+{
+  "run_id": "run-005",
+  "change_id": "delta-04",
+  "decision": "REVALIDATE",
+  "affected_orrs": [
+    "H1-ORR3"
+  ],
+  "return_point": null,
+  "triggered_conditions": [
+    "H1-RC3"
+  ],
+  "rationale": "The change introduces an explicit configurable braking-zone definition where the dangerous-zone boundary was previously unspecified. This directly alters the distance/spatial-information basis used by H1-ORR3, which preserves whether the ego-object spatial relation requires braking. The Evaluation Target and Phenomenon of Interest remain unchanged, but the revalidation condition H1-RC3 is triggered because the distance or spatial-information requirement and dangerous-zone definition changed."
+}

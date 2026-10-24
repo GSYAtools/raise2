@@ -1,0 +1,13 @@
+{
+  "run_id": "run-010",
+  "change_id": "delta-02",
+  "decision": "REVALIDATE",
+  "affected_orrs": [
+    "H1-ORR1"
+  ],
+  "return_point": null,
+  "triggered_conditions": [
+    "H1-RC1"
+  ],
+  "rationale": "The change updates the interface that supplies obstacle information to the observable representation, while the evaluation target, phenomenon of interest, object-category scheme, and ego-object spatial relation remain unchanged. In the baseline, H1-ORR1 depends on H1-A1, whose revalidation condition H1-RC1 is triggered when the obstacle-detection requirements, architectural responsibility for obstacle information, or the information supplied for representing obstacle presence changes. This change directly affects the obstacle-presence information interface, so only H1-ORR1 must be revalidated."
+}

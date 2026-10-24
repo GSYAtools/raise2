@@ -1,0 +1,16 @@
+{
+  "run_id": "H1-run-016",
+  "concern_id": "H1",
+  "classification": "ALIGNED",
+  "rationale": "Evaluating whether required braking maneuvers are omitted requires characterising the vehicle’s braking response in situations requiring collision avoidance. SG-1 and FR-7 establish that response itself as part of the evaluation, while H-1 supports the road-user/static-obstacle scope and the pedestrian scenario. P does not expand the phenomenon to sensing, computation, communication, failure mitigation, or mechanism-level timing merely because these can influence braking.",
+  "determining_elements": [
+    "“The vehicle’s braking-relevant response” identifies behaviour directly required by SG-1 and FR-7, rather than adding unrelated system-response behaviour.",
+    "“Where braking may be required to avoid collision” ties the response to the condition relevant to evaluating omitted required braking.",
+    "The scope covers road users and static obstacles, including the pedestrian crossing 20 m ahead on a straight single-lane road; these are supported by H-1.",
+    "The scope describes situations requiring evaluation of braking necessity without incorporating the internal mechanisms performing that evaluation."
+  ],
+  "sources": [
+    "hazard",
+    "requirements"
+  ]
+}

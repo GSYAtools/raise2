@@ -1,0 +1,16 @@
+{
+  "run_id": "H1-run-027",
+  "concern_id": "H1",
+  "classification": "ALIGNED",
+  "rationale": "P characterises the braking behaviour that T directly requires evaluating: whether a required braking maneuver occurs or is omitted. SG-1 and FR-7 establish braking itself as the subject of evaluation, rather than merely a control mechanism affecting another phenomenon. FR-7.1 supports including braking initiation. The obstacle-avoidance scope is supported by the hazard and the general braking requirement. P does not incorporate sensing, computation, communication, failure mitigation, or their timing constraints into the phenomenon.",
+  "determining_elements": [
+    "“Whether braking is required” identifies the condition under which omission matters, consistent with SG-1.",
+    "“Started, performed, or omitted” characterises braking initiation and occurrence, supported by FR-7.1, FR-7, SG-1, and hazard H-1.",
+    "The scope covers driving situations involving obstacles or road users requiring collision-avoidance braking; FR-7 supports this broader scope beyond the hazard’s specific pedestrian scenario.",
+    "The stated phenomenon remains braking-maneuver behaviour and does not expand to the mechanisms used to detect obstacles or generate and communicate braking commands."
+  ],
+  "sources": [
+    "hazard",
+    "requirements"
+  ]
+}

@@ -1,0 +1,5 @@
+Original_CRDRefined_StatusFinal_CRDClassificationRationale
+H2-CRD1KEEPH2-CRD1Concern-Relevant DistinctionAvoidance necessity contrasts states of the declared PoI and its collapse prevents evaluation of C_H2.
+H2-CRD2KEEPH2-CRD2Concern-Relevant DistinctionSafe lane-change feasibility contrasts states of the declared PoI and is explicitly required by FR-8.
+H2-CRD3RECLASSIFYResponse/control dependencyLane-change initiation timing concerns system response rather than a state of the declared traffic/road PoI; FR-8.3 remains relevant as an engineering dependency.
+H2-CRD4RECLASSIFYControl/timing dependencySteering-command timing concerns the control mechanism rather than a state of the declared PoI; FR-8.4 remains relevant as an engineering dependency.

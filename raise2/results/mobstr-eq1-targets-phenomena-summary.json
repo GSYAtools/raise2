@@ -1,0 +1,1045 @@
+{
+  "runs": 60,
+  "target_statement_frequencies": [
+    {
+      "concern": "H1",
+      "statement": "prevent omission of required braking maneuvers in the hazard-relevant driving situation.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "statement": "prevent omission of required braking maneuvers in the hazardous braking scenario.",
+      "count": 2
+    },
+    {
+      "concern": "H1",
+      "statement": "prevent omission of required braking maneuvers in the hazardous driving situation.",
+      "count": 3
+    },
+    {
+      "concern": "H1",
+      "statement": "prevent omitting required braking maneuvers in the hazardous driving situation.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "statement": "prevent omitting required braking maneuvers.",
+      "count": 20
+    },
+    {
+      "concern": "H1",
+      "statement": "the system shall prevent omitting required braking maneuvers.",
+      "count": 3
+    },
+    {
+      "concern": "H3",
+      "statement": "evaluate whether the system prevents unintended braking.",
+      "count": 6
+    },
+    {
+      "concern": "H3",
+      "statement": "operationally evaluate whether the system prevents unintended braking.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "statement": "prevent unintended braking",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "statement": "prevent unintended braking.",
+      "count": 21
+    },
+    {
+      "concern": "H3",
+      "statement": "the system shall prevent unintended braking.",
+      "count": 1
+    }
+  ],
+  "target_source_frequencies": [
+    {
+      "concern": "H1",
+      "sources": "hazard;requirements",
+      "count": 30
+    },
+    {
+      "concern": "H3",
+      "sources": "hazard;requirements",
+      "count": 30
+    }
+  ],
+  "phenomenon_statement_frequencies": [
+    {
+      "concern": "H1",
+      "statement": "the system’s braking-relevant perception and control state in the hazardous driving situation, including whether an obstacle is detected in time and whether braking is commanded to avoid collision.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "statement": "the vehicle braking behavior in situations where a braking maneuver is required to avoid a collision with an obstacle or road user.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "statement": "the vehicle braking decision and execution state in scenarios where an obstacle or road user is present and collision avoidance requires braking.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "statement": "the vehicle control situation in which braking must be commanded or initiated to avoid a collision with a road user or static obstacle.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "statement": "the vehicle control situation in which obstacle presence and proximity can require a braking maneuver to avoid collision.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "statement": "the vehicle's braking-maneuver execution state in obstacle-related driving situations.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "statement": "the vehicle's braking-relevant driving state in which an obstacle or road user is present on the trajectory such that a braking maneuver may be required to avoid collision.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "statement": "the vehicle's braking-relevant operational state in obstacle-encounter situations, including whether a braking maneuver is required and whether braking is performed in time to avoid collision.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "statement": "the vehicle's braking-relevant operational state in obstacle/collision-avoidance situations, including whether a required braking maneuver is initiated and whether the vehicle can stop in time to avoid collision.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "statement": "the vehicle's braking-response state in obstacle-relevant driving situations, including whether braking is required, initiated, or omitted in time to avoid collision.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "statement": "the vehicle-control situation in which the system must decide and execute braking in response to obstacles or other road users/obstacles relevant to collision avoidance.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "statement": "the vehicle/system behavior in operational situations where braking is required to avoid collision with a road user or static obstacle.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "statement": "the vehicle/system behavior in situations where braking is required to avoid collision with an obstacle or road user in the declared hazardous driving scenario.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "statement": "the vehicle/system braking behavior in obstacle-encounter situations, including whether a braking maneuver is initiated when required to avoid collision.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "statement": "the vehicle/system braking response in obstacle-related driving situations, including whether braking is initiated and performed when an obstacle requires avoidance.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "statement": "the vehicle/system’s braking-maneuver state in obstacle-avoidance situations, including whether braking is required, started, performed, or omitted.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "statement": "the vehicle’s braking behavior in situations where braking is required to avoid collision with an obstacle or road user.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "statement": "the vehicle’s braking-behaviour state in situations where a braking maneuver is required to avoid a collision.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "statement": "the vehicle’s braking-maneuver decision and execution state in response to obstacles that may require braking.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "statement": "the vehicle’s braking-relevant driving situation and braking response in the presence of obstacle-induced collision risk.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "statement": "the vehicle’s braking-relevant driving situation and response state, specifically whether braking is required to avoid collision and whether braking maneuver initiation occurs in time.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "statement": "the vehicle’s braking-relevant operational state in situations where a braking maneuver is required to avoid a collision with a road user or static obstacle.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "statement": "the vehicle’s braking-relevant operational state in the hazardous driving situation, including whether a braking maneuver is required and whether braking is actually initiated in time to avoid collision.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "statement": "the vehicle’s braking-relevant response to an obstacle or road user in the driving situation where braking may be required to avoid collision.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "statement": "the vehicle’s braking-relevant response to obstacle/collision-avoidance situations.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "statement": "the vehicle’s need to brake, and the braking response relevant to avoiding collision with obstacles or road users in the specified operational situation.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "statement": "vehicle braking behavior in the hazard-relevant operational situation, specifically whether braking maneuver execution is required and performed in time to avoid collision with a road user or obstacle.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "statement": "vehicle braking behavior in the obstacle-avoidance scenario, specifically whether braking is initiated and performed when an obstacle is detected in time.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "statement": "whether the vehicle executes a braking maneuver when braking is required to avoid a collision with an obstacle or road user in the declared operational situation.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "statement": "whether the vehicle performs the braking maneuver required to avoid collision in the stated hazardous driving situation.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "statement": "braking behavior of the ego vehicle in straight-ahead driving on a less frequented urban road at 50 km/h in good weather, specifically whether braking occurs as intended or unintentionally in the absence of a visible obstacle or vehicle ahead.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "statement": "braking behavior of the ego vehicle in the stated driving situation, specifically whether braking occurs as intended or unintentionally.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "statement": "braking behavior of the ego vehicle in the stated operational situation, including whether braking occurs and whether it is intended in response to a valid obstacle-related cause.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "statement": "braking behavior of the ego vehicle in the stated operational situation, including whether braking occurs and whether it is intended or unintended.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "statement": "braking behavior of the ego vehicle in the stated operational situation, including whether braking occurs when no obstacle is present in front of the vehicle",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "statement": "braking behavior of the ego vehicle in the stated urban-road driving situation, especially whether braking occurs when no obstacle is present in front of the vehicle.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "statement": "braking behaviour of the ego vehicle in the operational situation, including whether braking occurs when no obstacle is present in front of the vehicle.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "statement": "braking behaviour of the ego vehicle in the stated operational situation, specifically whether braking occurs without a corresponding obstacle in front of the vehicle.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "statement": "braking behaviour of the ego vehicle in the stated urban driving situation, especially whether braking occurs unintentionally in the absence of a visible obstacle or vehicle ahead.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "statement": "the vehicle braking behavior in the stated operational situation, including whether braking occurs and whether it is justified by an obstacle or collision-avoidance need.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "statement": "the vehicle braking behavior in the stated operational situation, including whether braking occurs in the presence or absence of an actual obstacle requiring braking.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "statement": "the vehicle braking behavior in the stated operational situation, including whether braking occurs without a valid external obstacle-related cause and whether braking is intended or unintended.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "statement": "the vehicle's braking behavior during straight-ahead driving on a less frequented urban road at 50 km/h in good weather and without visible obstacles or vehicles directly ahead.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "statement": "the vehicle's braking behavior during straight-ahead driving on a less frequented urban road at 50 km/h in good weather and without visible obstacles or vehicles directly in front.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "statement": "the vehicle's braking behavior in the operating situation where it drives straight ahead on a less frequented urban road at 50 km/h in good weather with no visible obstacles or vehicles in front of the ego vehicle.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "statement": "the vehicle's braking behavior in the operating situation where unintended braking may occur.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "statement": "the vehicle's braking behavior in the operational situation where it is driving straight ahead on a less frequented urban road at 50 km/h, in good weather, with no visible obstacles or vehicles in front of the ego vehicle.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "statement": "the vehicle's braking behavior in the specified straight-ahead urban driving situation, including whether braking occurs without a front obstacle.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "statement": "the vehicle's braking behavior in the stated urban driving situation, specifically whether braking occurs unintentionally in the absence of a visible obstacle or vehicle in front of the ego vehicle.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "statement": "the vehicle's braking behavior while driving in the stated operational situation, specifically whether braking occurs as intended or unintentionally.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "statement": "the vehicle's braking behaviour during straight-ahead urban driving in the stated operational situation, including whether braking occurs without an obstacle in front of the ego vehicle.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "statement": "the vehicle's braking behaviour in straight-ahead driving on a less frequented urban road at 50 km/h in good weather, specifically whether braking occurs only as intended to avoid collisions with obstacles and not unexpectedly.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "statement": "vehicle braking behavior in straight-ahead driving on a less frequented urban road at 50 km/h in good weather with no visible obstacles or vehicles in front of the ego vehicle.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "statement": "vehicle braking behavior in straight-ahead urban driving without visible obstacles or vehicles in front of the ego vehicle under good weather conditions.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "statement": "vehicle braking behavior in the described straight-ahead urban driving situation, including whether braking occurs and whether it is intended or unintended.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "statement": "vehicle braking behavior in the driving situation where the ego vehicle travels straight ahead on a less frequented urban road at 50 km/h in good weather with no visible obstacles or vehicles in front.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "statement": "vehicle braking behavior in the operational situation where the ego vehicle drives straight ahead on a less frequented urban road at 50 km/h, with no visible obstacles or vehicles in front and in good weather conditions.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "statement": "vehicle braking behavior in the operational situation where the ego vehicle is driving straight ahead on a less frequented urban road at 50 km/h in good weather with no visible obstacles or vehicles in front.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "statement": "vehicle braking behavior in the operational situation where the ego vehicle is driving straight ahead on a less frequented urban road at 50 km/h, with no visible obstacles or vehicles in front and in good weather conditions.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "statement": "vehicle braking behavior in the stated urban driving situation, including whether braking occurs without a forward obstacle present.",
+      "count": 1
+    }
+  ],
+  "phenomenon_scope_frequencies": [
+    {
+      "concern": "H1",
+      "scope": "driving situations covered by the supplied hazard and braking-related requirements, including obstacle/collision-avoidance scenarios in which the system must decide whether braking is required and execute it in time.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "scope": "operational situations covered by the hazard and braking-related functional requirements: driving on a road where obstacles or road users can be detected on or near the trajectory, with the need to determine whether braking must be initiated to avoid collision.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "scope": "operational situations covered by the hazard and braking-related requirements, including obstacle detection, driver- and controller-related conditions, and whether a braking maneuver is initiated when required to avoid collision.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "scope": "operational situations covered by the hazard scenario and braking-avoidance functionality: driving on the road with obstacles/road users present, including cases where braking is required to avoid collision.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "scope": "operational situations covered by the provided hazard and braking-related requirements, especially obstacle encounters where the vehicle must decide and execute braking to avoid collision.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "scope": "operational situations in which an obstacle or road user is present on or near the vehicle trajectory such that a braking maneuver may be required to avoid collision, including the stated pedestrian-crossing scenario and analogous obstacle-avoidance cases within the system’s driving context.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "scope": "operational situations in which an obstacle or road user is present on or near the vehicle trajectory such that braking may be required to avoid collision, including the hazardous situation described in h-1 and the obstacle-detection situations referenced by fr-7 and fr-7.1.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "scope": "operational situations in which the ego vehicle is approaching or encountering an obstacle or road user such that braking is needed to avoid collision, including the stated straight-ahead driving scenario with a pedestrian crossing 20 m ahead.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "scope": "operational situations in which the ego vehicle is driving and a road user or static obstacle may require braking to avoid collision, including the specified straight-ahead single-lane road scenario with a pedestrian crossing 20 m ahead.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "scope": "operational situations in which the ego vehicle is driving and an obstacle or road user may be on or close to the trajectory such that braking may be required to avoid collision, including the hazard scenario described and the related obstacle-detection/path-planning/controller context.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "scope": "operational situations in which the ego vehicle is driving and an obstacle or road user may require a braking maneuver to avoid collision, including obstacle detection, distance-to-obstacle information, and resulting braking command/state relevant to whether braking is omitted.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "scope": "operational situations in which the ego vehicle is driving and an obstacle or road user may require a braking maneuver to avoid collision, including the declared hazardous scenario of a pedestrian running across the street 20 m in front of the ego vehicle on a straight single-lane road under good weather at 50 km/h.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "scope": "operational situations in which the ego vehicle is driving and an obstacle or road user may require braking to avoid collision, including the hazardous event context described in the hazard and the braking-related functional context in the requirements.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "scope": "operational situations in which the ego vehicle is driving and may encounter an obstacle or road user such that braking may be required to avoid collision; includes situations where the system detects obstacles and generates vehicle commands for braking, as well as situations where no braking is initiated despite a required braking maneuver.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "scope": "operational situations in which the ego vehicle is driving and may need to brake to avoid collision with a road user or static obstacle, including obstacle detection and the resulting braking maneuver decision/activation.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "scope": "operational situations in which the ego vehicle is driving and must evaluate whether braking is required to avoid colliding with a road user or static obstacle, including the stated straight-ahead single-lane-road scenario with a pedestrian crossing 20 m ahead.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "scope": "operational situations in which the vehicle is driving and an obstacle or road user may require braking to avoid collision, including the hazardous event scenario and the functional situations described for obstacle detection and braking.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "scope": "situations covered by the hazard and functional requirements: driving on a road with obstacles or road users in the vehicle's path or close to its trajectory, where obstacle detection and subsequent braking decision/execution determine collision avoidance.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "scope": "situations in which the ego vehicle is driving and encounters obstacles or road users such that a braking maneuver may be required to avoid collision, including the hazardous operational situation described and the related obstacle-detection/braking scenarios in the requirements.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "scope": "situations in which the system is driving and must decide whether to initiate a braking maneuver to avoid collision with an obstacle or road user, including obstacle-detection and control situations referenced by the provided requirements and hazard.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "scope": "straight ahead driving on a less frequented single-lane road at 50 km/h in good weather with a pedestrian running across the street 20 m ahead, where the vehicle must react to an obstacle/road user or static obstacle on or near the trajectory.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "scope": "straight ahead driving on a less frequented single-lane road at 50 km/h in good weather, with a pedestrian running across the street 20 m in front of the ego vehicle, and the resulting braking/avoidance response of the vehicle in that situation.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "scope": "straight ahead driving on a less frequented single-lane road at 50 km/h in good weather, with a pedestrian running across the street 20 m in front of the ego vehicle, including the states in which an obstacle is detected and the vehicle must decide whether and when to initiate braking.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "scope": "straight-ahead driving on a less frequented single-lane road at 50 km/h in good weather when a pedestrian is running across the street 20 m in front of the ego vehicle, including cases where the vehicle does or does not initiate and execute braking in time to avoid collision.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "scope": "straight-ahead driving on a less frequented single-lane road at 50 km/h in good weather with a pedestrian running across the street 20 m ahead, including the obstacle detection, object interpretation, path planning, controller command generation, and brake actuation state relevant to deciding and executing braking.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "scope": "straight-ahead driving on a less frequented single-lane road at 50 km/h in good weather with a pedestrian running across the street 20 m in front of the ego vehicle, and the associated perception/planning/control state relevant to deciding and executing braking to avoid collision.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "scope": "straight-ahead driving on a less frequented single-lane road at 50 km/h in good weather, including the hazardous situation where a pedestrian runs across the street 20 m in front of the ego vehicle and the system must decide and perform braking to avoid collision with a road user or static obstacle.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "scope": "straight-ahead driving on a less frequented single-lane road at 50 km/h in good weather, with a pedestrian running across the street 20 m ahead of the ego vehicle, where obstacle detection and subsequent braking are relevant to avoiding collision.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "scope": "straight-ahead driving on a less frequented single-lane road at 50 km/h in good weather, with a pedestrian running across the street 20 m in front of the ego vehicle, and the associated obstacle-avoidance braking behavior and failure to brake in time.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "scope": "straight-ahead driving situations on the referenced road context in which obstacles or road users may require braking to avoid collision, as described by the hazard and braking-related functional requirements.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "scope": "operational situations matching the hazard context: straight ahead drive on a less frequented urban road, 50 km/h, good weather, and no visible obstacles or vehicles in front of the ego vehicle.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "scope": "operational situations matching the hazard description in h-3, including whether braking occurs and whether it is intended or unintended.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "scope": "operational situations matching the hazard description: straight ahead drive on a less frequented urban road at 50 km/h, good weather, and no visible obstacles or vehicles in front of the ego vehicle.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "scope": "operational situations matching the hazard description: straight ahead drive on a less frequented urban road at 50 km/h, with no visible obstacles or vehicles in front of the ego vehicle, in good weather conditions, including whether braking occurs and its manifestation.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "scope": "operational situations matching the hazard description: straight ahead drive on a less frequented urban road with 50 km/h, good weather conditions, and no visible obstacles or vehicles in front of the ego vehicle.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "scope": "operational situations matching the hazard description: straight ahead drive on a less frequented urban road with 50 km/h, good weather, and no visible obstacle or vehicle in front of the ego vehicle; includes cases where the vehicle brakes, does not brake, or brakes due to a relevant obstacle-related situation within that scope.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "scope": "operational situations matching the hazard description: straight-ahead driving on a less frequented urban road at 50 km/h, in good weather, with no visible obstacles or vehicles in front of the ego vehicle, and the hazardous event of sudden stopping while driving.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "scope": "situations matching the stated operational situation in which braking behavior can be observed, including cases where braking occurs or does not occur while no obstacle is visible in front of the ego vehicle.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "scope": "situations within the stated operational situation in which the vehicle may brake, including normal braking to avoid obstacles and unintended braking without an obstacle in front.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "scope": "states and events of the driving situation described in the hazard, including whether braking occurs unexpectedly in the absence of a relevant forward obstacle.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "scope": "states and events of the ego vehicle's braking behavior during the declared straight-ahead urban driving situation, including whether braking occurs and whether it is intended or unintended.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "scope": "states and events of the ego vehicle's braking behavior while operating in the hazard-described situation, including whether braking occurs and whether it is triggered by obstacles/vehicles in front or happens without such a trigger.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "scope": "straight ahead drive on a less frequented urban road at 50 km/h in good weather with no visible obstacles or vehicles in front of the ego vehicle, including the hazardous event where the vehicle suddenly stops although no obstacle is in front of it.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "scope": "straight ahead drive on a less frequented urban road at 50 km/h in good weather, with no visible obstacles or vehicles in front of the ego vehicle; includes both normal non-braking operation and any braking that occurs in that situation.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "scope": "straight ahead drive on a less frequented urban road at 50 km/h, in good weather conditions, with no visible obstacles or vehicles in front of the ego vehicle.",
+      "count": 2
+    },
+    {
+      "concern": "H3",
+      "scope": "straight ahead drive on a less frequented urban road at 50 km/h, in good weather, with no visible obstacles or vehicles in front of the ego vehicle.",
+      "count": 2
+    },
+    {
+      "concern": "H3",
+      "scope": "straight ahead drive on a less frequented urban road at 50 km/h, with no visible obstacles or vehicles in front of the ego vehicle, in good weather conditions.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "scope": "straight ahead drive on a less frequented urban road at 50 km/h, with no visible obstacles or vehicles in front of the ego vehicle, under good weather conditions.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "scope": "straight ahead drive on a less frequented urban road with 50 km/h, no visible obstacles or vehicles in front of the ego vehicle, and good weather conditions",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "scope": "straight ahead drive on a less frequented urban road with 50 km/h, without visible obstacles or vehicles in front of the ego vehicle, in good weather conditions.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "scope": "straight ahead driving on a less frequented urban road at 50 km/h in good weather conditions, with no visible obstacles or vehicles in front of the ego vehicle, while considering whether the vehicle brakes or stops unexpectedly versus braking in response to a relevant obstacle.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "scope": "straight ahead driving on a less frequented urban road at 50 km/h in good weather, with no visible obstacles or vehicles in front of the ego vehicle.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "scope": "straight ahead driving on a less frequented urban road at 50 km/h, in good weather, with no visible obstacles or vehicles in front of the ego vehicle, including any braking maneuver occurring in that situation.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "scope": "straight ahead driving on a less frequented urban road at 50 km/h, in good weather, with no visible obstacles or vehicles in front of the ego vehicle, including whether the vehicle continues normally or suddenly stops without an obstacle present.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "scope": "straight ahead driving on a less frequented urban road at 50 km/h, in good weather, with no visible obstacles or vehicles in front of the ego vehicle.",
+      "count": 2
+    },
+    {
+      "concern": "H3",
+      "scope": "straight ahead driving on a less frequented urban road at 50 km/h, with good weather and no visible obstacles or vehicles in front of the ego vehicle.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "scope": "straight ahead driving on a less frequented urban road at 50 km/h, with good weather, and no visible obstacles or vehicles in front of the ego vehicle.",
+      "count": 1
+    }
+  ],
+  "phenomenon_source_frequencies": [
+    {
+      "concern": "H1",
+      "sources": "architecture;hazard;requirements",
+      "count": 6
+    },
+    {
+      "concern": "H1",
+      "sources": "hazard;requirements",
+      "count": 24
+    },
+    {
+      "concern": "H3",
+      "sources": "hazard",
+      "count": 3
+    },
+    {
+      "concern": "H3",
+      "sources": "hazard;requirements",
+      "count": 27
+    }
+  ],
+  "target_phenomenon_frequencies": [
+    {
+      "concern": "H1",
+      "target_statement": "prevent omission of required braking maneuvers in the hazard-relevant driving situation.",
+      "phenomenon_statement": "vehicle braking behavior in the hazard-relevant operational situation, specifically whether braking maneuver execution is required and performed in time to avoid collision with a road user or obstacle.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "target_statement": "prevent omission of required braking maneuvers in the hazardous braking scenario.",
+      "phenomenon_statement": "the system’s braking-relevant perception and control state in the hazardous driving situation, including whether an obstacle is detected in time and whether braking is commanded to avoid collision.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "target_statement": "prevent omission of required braking maneuvers in the hazardous braking scenario.",
+      "phenomenon_statement": "vehicle braking behavior in the obstacle-avoidance scenario, specifically whether braking is initiated and performed when an obstacle is detected in time.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "target_statement": "prevent omission of required braking maneuvers in the hazardous driving situation.",
+      "phenomenon_statement": "the vehicle's braking-relevant driving state in which an obstacle or road user is present on the trajectory such that a braking maneuver may be required to avoid collision.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "target_statement": "prevent omission of required braking maneuvers in the hazardous driving situation.",
+      "phenomenon_statement": "the vehicle’s braking-maneuver decision and execution state in response to obstacles that may require braking.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "target_statement": "prevent omission of required braking maneuvers in the hazardous driving situation.",
+      "phenomenon_statement": "the vehicle’s need to brake, and the braking response relevant to avoiding collision with obstacles or road users in the specified operational situation.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "target_statement": "prevent omitting required braking maneuvers in the hazardous driving situation.",
+      "phenomenon_statement": "the vehicle control situation in which braking must be commanded or initiated to avoid a collision with a road user or static obstacle.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "target_statement": "prevent omitting required braking maneuvers.",
+      "phenomenon_statement": "the vehicle braking behavior in situations where a braking maneuver is required to avoid a collision with an obstacle or road user.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "target_statement": "prevent omitting required braking maneuvers.",
+      "phenomenon_statement": "the vehicle control situation in which obstacle presence and proximity can require a braking maneuver to avoid collision.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "target_statement": "prevent omitting required braking maneuvers.",
+      "phenomenon_statement": "the vehicle's braking-maneuver execution state in obstacle-related driving situations.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "target_statement": "prevent omitting required braking maneuvers.",
+      "phenomenon_statement": "the vehicle's braking-relevant operational state in obstacle-encounter situations, including whether a braking maneuver is required and whether braking is performed in time to avoid collision.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "target_statement": "prevent omitting required braking maneuvers.",
+      "phenomenon_statement": "the vehicle's braking-relevant operational state in obstacle/collision-avoidance situations, including whether a required braking maneuver is initiated and whether the vehicle can stop in time to avoid collision.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "target_statement": "prevent omitting required braking maneuvers.",
+      "phenomenon_statement": "the vehicle's braking-response state in obstacle-relevant driving situations, including whether braking is required, initiated, or omitted in time to avoid collision.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "target_statement": "prevent omitting required braking maneuvers.",
+      "phenomenon_statement": "the vehicle-control situation in which the system must decide and execute braking in response to obstacles or other road users/obstacles relevant to collision avoidance.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "target_statement": "prevent omitting required braking maneuvers.",
+      "phenomenon_statement": "the vehicle/system behavior in operational situations where braking is required to avoid collision with a road user or static obstacle.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "target_statement": "prevent omitting required braking maneuvers.",
+      "phenomenon_statement": "the vehicle/system behavior in situations where braking is required to avoid collision with an obstacle or road user in the declared hazardous driving scenario.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "target_statement": "prevent omitting required braking maneuvers.",
+      "phenomenon_statement": "the vehicle/system braking behavior in obstacle-encounter situations, including whether a braking maneuver is initiated when required to avoid collision.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "target_statement": "prevent omitting required braking maneuvers.",
+      "phenomenon_statement": "the vehicle/system braking response in obstacle-related driving situations, including whether braking is initiated and performed when an obstacle requires avoidance.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "target_statement": "prevent omitting required braking maneuvers.",
+      "phenomenon_statement": "the vehicle/system’s braking-maneuver state in obstacle-avoidance situations, including whether braking is required, started, performed, or omitted.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "target_statement": "prevent omitting required braking maneuvers.",
+      "phenomenon_statement": "the vehicle’s braking behavior in situations where braking is required to avoid collision with an obstacle or road user.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "target_statement": "prevent omitting required braking maneuvers.",
+      "phenomenon_statement": "the vehicle’s braking-behaviour state in situations where a braking maneuver is required to avoid a collision.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "target_statement": "prevent omitting required braking maneuvers.",
+      "phenomenon_statement": "the vehicle’s braking-relevant driving situation and braking response in the presence of obstacle-induced collision risk.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "target_statement": "prevent omitting required braking maneuvers.",
+      "phenomenon_statement": "the vehicle’s braking-relevant operational state in situations where a braking maneuver is required to avoid a collision with a road user or static obstacle.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "target_statement": "prevent omitting required braking maneuvers.",
+      "phenomenon_statement": "the vehicle’s braking-relevant response to an obstacle or road user in the driving situation where braking may be required to avoid collision.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "target_statement": "prevent omitting required braking maneuvers.",
+      "phenomenon_statement": "the vehicle’s braking-relevant response to obstacle/collision-avoidance situations.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "target_statement": "prevent omitting required braking maneuvers.",
+      "phenomenon_statement": "whether the vehicle executes a braking maneuver when braking is required to avoid a collision with an obstacle or road user in the declared operational situation.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "target_statement": "prevent omitting required braking maneuvers.",
+      "phenomenon_statement": "whether the vehicle performs the braking maneuver required to avoid collision in the stated hazardous driving situation.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "target_statement": "the system shall prevent omitting required braking maneuvers.",
+      "phenomenon_statement": "the vehicle braking decision and execution state in scenarios where an obstacle or road user is present and collision avoidance requires braking.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "target_statement": "the system shall prevent omitting required braking maneuvers.",
+      "phenomenon_statement": "the vehicle’s braking-relevant driving situation and response state, specifically whether braking is required to avoid collision and whether braking maneuver initiation occurs in time.",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "target_statement": "the system shall prevent omitting required braking maneuvers.",
+      "phenomenon_statement": "the vehicle’s braking-relevant operational state in the hazardous driving situation, including whether a braking maneuver is required and whether braking is actually initiated in time to avoid collision.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "target_statement": "evaluate whether the system prevents unintended braking.",
+      "phenomenon_statement": "the vehicle braking behavior in the stated operational situation, including whether braking occurs in the presence or absence of an actual obstacle requiring braking.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "target_statement": "evaluate whether the system prevents unintended braking.",
+      "phenomenon_statement": "the vehicle's braking behavior during straight-ahead driving on a less frequented urban road at 50 km/h in good weather and without visible obstacles or vehicles directly ahead.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "target_statement": "evaluate whether the system prevents unintended braking.",
+      "phenomenon_statement": "the vehicle's braking behavior during straight-ahead driving on a less frequented urban road at 50 km/h in good weather and without visible obstacles or vehicles directly in front.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "target_statement": "evaluate whether the system prevents unintended braking.",
+      "phenomenon_statement": "the vehicle's braking behavior in the operational situation where it is driving straight ahead on a less frequented urban road at 50 km/h, in good weather, with no visible obstacles or vehicles in front of the ego vehicle.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "target_statement": "evaluate whether the system prevents unintended braking.",
+      "phenomenon_statement": "the vehicle's braking behavior while driving in the stated operational situation, specifically whether braking occurs as intended or unintentionally.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "target_statement": "evaluate whether the system prevents unintended braking.",
+      "phenomenon_statement": "vehicle braking behavior in the operational situation where the ego vehicle drives straight ahead on a less frequented urban road at 50 km/h, with no visible obstacles or vehicles in front and in good weather conditions.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "target_statement": "operationally evaluate whether the system prevents unintended braking.",
+      "phenomenon_statement": "braking behaviour of the ego vehicle in the stated urban driving situation, especially whether braking occurs unintentionally in the absence of a visible obstacle or vehicle ahead.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "target_statement": "prevent unintended braking",
+      "phenomenon_statement": "braking behavior of the ego vehicle in the stated operational situation, including whether braking occurs when no obstacle is present in front of the vehicle",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "target_statement": "prevent unintended braking.",
+      "phenomenon_statement": "braking behavior of the ego vehicle in straight-ahead driving on a less frequented urban road at 50 km/h in good weather, specifically whether braking occurs as intended or unintentionally in the absence of a visible obstacle or vehicle ahead.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "target_statement": "prevent unintended braking.",
+      "phenomenon_statement": "braking behavior of the ego vehicle in the stated driving situation, specifically whether braking occurs as intended or unintentionally.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "target_statement": "prevent unintended braking.",
+      "phenomenon_statement": "braking behavior of the ego vehicle in the stated operational situation, including whether braking occurs and whether it is intended in response to a valid obstacle-related cause.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "target_statement": "prevent unintended braking.",
+      "phenomenon_statement": "braking behavior of the ego vehicle in the stated operational situation, including whether braking occurs and whether it is intended or unintended.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "target_statement": "prevent unintended braking.",
+      "phenomenon_statement": "braking behavior of the ego vehicle in the stated urban-road driving situation, especially whether braking occurs when no obstacle is present in front of the vehicle.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "target_statement": "prevent unintended braking.",
+      "phenomenon_statement": "braking behaviour of the ego vehicle in the operational situation, including whether braking occurs when no obstacle is present in front of the vehicle.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "target_statement": "prevent unintended braking.",
+      "phenomenon_statement": "the vehicle braking behavior in the stated operational situation, including whether braking occurs and whether it is justified by an obstacle or collision-avoidance need.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "target_statement": "prevent unintended braking.",
+      "phenomenon_statement": "the vehicle braking behavior in the stated operational situation, including whether braking occurs without a valid external obstacle-related cause and whether braking is intended or unintended.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "target_statement": "prevent unintended braking.",
+      "phenomenon_statement": "the vehicle's braking behavior in the operating situation where it drives straight ahead on a less frequented urban road at 50 km/h in good weather with no visible obstacles or vehicles in front of the ego vehicle.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "target_statement": "prevent unintended braking.",
+      "phenomenon_statement": "the vehicle's braking behavior in the operating situation where unintended braking may occur.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "target_statement": "prevent unintended braking.",
+      "phenomenon_statement": "the vehicle's braking behavior in the specified straight-ahead urban driving situation, including whether braking occurs without a front obstacle.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "target_statement": "prevent unintended braking.",
+      "phenomenon_statement": "the vehicle's braking behavior in the stated urban driving situation, specifically whether braking occurs unintentionally in the absence of a visible obstacle or vehicle in front of the ego vehicle.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "target_statement": "prevent unintended braking.",
+      "phenomenon_statement": "the vehicle's braking behaviour during straight-ahead urban driving in the stated operational situation, including whether braking occurs without an obstacle in front of the ego vehicle.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "target_statement": "prevent unintended braking.",
+      "phenomenon_statement": "the vehicle's braking behaviour in straight-ahead driving on a less frequented urban road at 50 km/h in good weather, specifically whether braking occurs only as intended to avoid collisions with obstacles and not unexpectedly.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "target_statement": "prevent unintended braking.",
+      "phenomenon_statement": "vehicle braking behavior in straight-ahead driving on a less frequented urban road at 50 km/h in good weather with no visible obstacles or vehicles in front of the ego vehicle.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "target_statement": "prevent unintended braking.",
+      "phenomenon_statement": "vehicle braking behavior in straight-ahead urban driving without visible obstacles or vehicles in front of the ego vehicle under good weather conditions.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "target_statement": "prevent unintended braking.",
+      "phenomenon_statement": "vehicle braking behavior in the described straight-ahead urban driving situation, including whether braking occurs and whether it is intended or unintended.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "target_statement": "prevent unintended braking.",
+      "phenomenon_statement": "vehicle braking behavior in the driving situation where the ego vehicle travels straight ahead on a less frequented urban road at 50 km/h in good weather with no visible obstacles or vehicles in front.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "target_statement": "prevent unintended braking.",
+      "phenomenon_statement": "vehicle braking behavior in the operational situation where the ego vehicle is driving straight ahead on a less frequented urban road at 50 km/h in good weather with no visible obstacles or vehicles in front.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "target_statement": "prevent unintended braking.",
+      "phenomenon_statement": "vehicle braking behavior in the operational situation where the ego vehicle is driving straight ahead on a less frequented urban road at 50 km/h, with no visible obstacles or vehicles in front and in good weather conditions.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "target_statement": "prevent unintended braking.",
+      "phenomenon_statement": "vehicle braking behavior in the stated urban driving situation, including whether braking occurs without a forward obstacle present.",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "target_statement": "the system shall prevent unintended braking.",
+      "phenomenon_statement": "braking behaviour of the ego vehicle in the stated operational situation, specifically whether braking occurs without a corresponding obstacle in front of the vehicle.",
+      "count": 1
+    }
+  ]
+}

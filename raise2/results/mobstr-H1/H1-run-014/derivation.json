@@ -1,0 +1,173 @@
+{
+  "run_id": "H1-run-014",
+  "concern_id": "H1",
+  "evaluation_target": {
+    "id": "T1",
+    "statement": "Prevent omitting required braking maneuvers in the hazardous driving situation.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The safety goal explicitly states that the system shall prevent omitting required braking maneuvers, and the hazard describes the relevant omitted-braking collision scenario."
+  },
+  "phenomenon_of_interest": {
+    "id": "P1",
+    "statement": "The vehicle control situation in which braking must be commanded or initiated to avoid a collision with a road user or static obstacle.",
+    "scope": "Straight-ahead driving on a less frequented single-lane road at 50 km/h in good weather with a pedestrian running across the street 20 m ahead, including the obstacle detection, object interpretation, path planning, controller command generation, and brake actuation state relevant to deciding and executing braking.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The hazard defines the operational situation and the hazardous event, while the requirements and architecture indicate that obstacle detection, planning, controller, and brake actuation are the relevant system functions involved in avoiding the collision by braking."
+  },
+  "distinctions": [
+    {
+      "id": "D1",
+      "dimension": "Need for braking versus no need for braking",
+      "contrast_a": "A situation in which an obstacle or road user is detected close enough to require a braking maneuver to avoid collision.",
+      "contrast_b": "A situation in which no such braking is required because there is no relevant obstacle or the situation is not collision-threatening.",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "Collapsing these situations would hide whether the system must initiate braking, which is essential to evaluate omission of required braking maneuvers."
+    },
+    {
+      "id": "D2",
+      "dimension": "Obstacle presence and detectability",
+      "contrast_a": "A road user or static obstacle present in the driving scene and available for detection/interpretation.",
+      "contrast_b": "No relevant obstacle present, or the obstacle is not available to the system for detection/interpretation.",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "If the representation cannot distinguish whether an obstacle is present and detectable, it cannot support evaluation of whether braking should have been triggered."
+    },
+    {
+      "id": "D3",
+      "dimension": "Brake command versus no brake command",
+      "contrast_a": "The controller issues a braking command to the vehicle actuators.",
+      "contrast_b": "The controller does not issue a braking command.",
+      "source": [
+        "hazard",
+        "requirements",
+        "architecture"
+      ],
+      "rationale": "The hazardous event concerns omission of braking; distinguishing command issuance from non-issuance is necessary to determine whether the required braking maneuver was represented as initiated."
+    },
+    {
+      "id": "D4",
+      "dimension": "Brake actuation successful versus ineffective",
+      "contrast_a": "A braking command is successfully executed by the brake actuators.",
+      "contrast_b": "A braking command is issued but the brake actuators do not execute it successfully.",
+      "source": [
+        "requirements",
+        "architecture"
+      ],
+      "rationale": "The artefacts include identification and mitigation of brake actuator failures, so distinguishing successful execution from failed actuation is necessary to evaluate whether braking was actually performed versus only commanded."
+    }
+  ],
+  "orrs": [
+    {
+      "id": "ORR1",
+      "covers": [
+        "D1"
+      ],
+      "obligation": "The observable representation shall preserve whether the driving situation requires a braking maneuver to avoid collision or does not require braking.",
+      "distinguishability_criterion": "The representation must allow the two classes to remain separable: braking-required situations are not conflated with no-braking-required situations.",
+      "assumptions": [
+        {
+          "id": "A1",
+          "statement": "The hazardous scenario and safety goal are the intended context for evaluating braking omission.",
+          "source": [
+            "hazard",
+            "requirements"
+          ],
+          "revalidation_conditions": [
+            {
+              "id": "R1",
+              "condition": "If the operational design domain or hazard scenario used for evaluation changes."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ORR2",
+      "covers": [
+        "D2"
+      ],
+      "obligation": "The observable representation shall preserve whether a relevant obstacle or road user is present and detectable in the scene.",
+      "distinguishability_criterion": "The representation must distinguish obstacle-present/detectable situations from obstacle-absent or non-detectable situations.",
+      "assumptions": [
+        {
+          "id": "A2",
+          "statement": "Obstacle presence/detectability is relevant to deciding whether braking should occur.",
+          "source": [
+            "hazard",
+            "requirements"
+          ],
+          "revalidation_conditions": [
+            {
+              "id": "R2",
+              "condition": "If the obstacle detection or braking decision logic is changed in a way that alters the relevance of obstacle presence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ORR3",
+      "covers": [
+        "D3"
+      ],
+      "obligation": "The observable representation shall preserve whether a braking command is issued or not issued by the controller.",
+      "distinguishability_criterion": "Controller outputs that request braking must remain distinguishable from controller states in which no braking command is issued.",
+      "assumptions": [
+        {
+          "id": "A3",
+          "statement": "Controller command issuance is an evaluable proxy for whether the system attempted the braking maneuver.",
+          "source": [
+            "requirements",
+            "architecture"
+          ],
+          "revalidation_conditions": [
+            {
+              "id": "R3",
+              "condition": "If the controller interface or command semantics change."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ORR4",
+      "covers": [
+        "D4"
+      ],
+      "obligation": "The observable representation shall preserve whether issued braking commands are successfully executed by the brake actuators or fail to be executed.",
+      "distinguishability_criterion": "The representation must distinguish successful brake execution from brake command failure or non-execution.",
+      "assumptions": [
+        {
+          "id": "A4",
+          "statement": "Brake actuator failure is within the concern scope for assessing omitted braking maneuvers.",
+          "source": [
+            "requirements",
+            "architecture"
+          ],
+          "revalidation_conditions": [
+            {
+              "id": "R4",
+              "condition": "If brake actuation is removed from the concern scope or actuator failure handling changes."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rr5": {
+    "coverage": true,
+    "consistency": true,
+    "issues": []
+  }
+}

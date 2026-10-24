@@ -1,0 +1,13 @@
+{
+  "run_id": "run-003",
+  "change_id": "delta-04",
+  "decision": "REVALIDATE",
+  "affected_orrs": [
+    "H1-ORR3"
+  ],
+  "return_point": null,
+  "triggered_conditions": [
+    "H1-RC3"
+  ],
+  "rationale": "The change introduces an explicit configurable braking-zone definition for the previously unspecified dangerous-zone boundary. This leaves the Evaluation Target and Phenomenon of Interest applicable, but it directly alters the distance/spatial-information requirement and the dangerous-zone definition that support H1-ORR3. Under the baseline, H1-ORR3 depends on H1-A3 and its revalidation condition H1-RC3, which is triggered when the distance or spatial-information requirement or the dangerous-zone definition changes. No baseline dependency indicates impact on H1-ORR1 or H1-ORR2."
+}

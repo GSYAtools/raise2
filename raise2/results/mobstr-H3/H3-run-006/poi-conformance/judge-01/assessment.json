@@ -1,0 +1,16 @@
+{
+  "run_id": "H3-run-006",
+  "concern_id": "H3",
+  "classification": "ALIGNED",
+  "rationale": "P identifies braking behavior itself, which must be characterised to evaluate SG-3's prevention of unintended braking. H-3 supports the operational restrictions and hazardous braking case, while FR-7 supports distinguishing intended obstacle-avoidance braking from unintended braking. P does not incorporate sensing, computation, communication, failure-mitigation mechanisms, or their timing constraints.",
+  "determining_elements": [
+    "“Whether braking occurs as intended or unintentionally” directly addresses the Evaluation Target rather than a mechanism used to evaluate it.",
+    "Straight-ahead driving on a less frequented urban road at 50 km/h, in good weather and without visible obstacles or vehicles ahead, matches H-3's operational situation.",
+    "Including braking and non-braking cases characterises the occurrence or absence of the behavior relevant to SG-3.",
+    "Obstacle-related braking is expressly limited to the declared scope and provides an intended-braking contrast supported by FR-7, without adding obstacle-detection or control mechanisms to P."
+  ],
+  "sources": [
+    "hazard",
+    "requirements"
+  ]
+}

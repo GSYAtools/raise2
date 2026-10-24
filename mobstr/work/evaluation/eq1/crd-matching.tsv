@@ -1,0 +1,7 @@
+Derived_CRD	Reference_CRD	Match	Derived_Only_Assessment	Rationale
+H1-CRD1	H1-REF1	Equivalent	NA	Same concern-relevant obstacle-presence contrast.
+H1-CRD2	NA	No Match	Source-Supported	FR-7.2.2 explicitly requires distinguishing vulnerable road users from other objects.
+H1-CRD3	H1-REF2	Equivalent	NA	Same braking-relevant spatial separation without imposing a numerical threshold.
+H3-CRD1	H3-REF1	Equivalent	NA	Same braking-relevant obstacle-presence contrast.
+H3-CRD2	H3-REF2	Equivalent	NA	Same braking-relevant spatial separation without imposing a numerical threshold.
+

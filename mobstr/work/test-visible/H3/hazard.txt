@@ -1,0 +1,4 @@
+ID=H-3
+Hazard=Unintended braking
+Operational Situation=Straight ahead drive on a less frequented urban road with 50 km/h without visible obstacles or vehicles in front of the ego vehicle at good weather conditions
+Hazardous Event=While driving, the vehicle suddenly stops although no obstacle is in front of the vehicle; vehicles following directly behing might crash into the vehicle.

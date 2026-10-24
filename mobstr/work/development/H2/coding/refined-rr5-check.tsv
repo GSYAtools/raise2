@@ -1,0 +1,9 @@
+CheckResultEvidence_or_Rationale
+CoveragePASSBoth refined final CRDs are covered by at least one ORR; D_O = D_C for the identified distinction set.
+Duplicate obligationsPASSH2-ORR1 and H2-ORR2 impose distinct preservation obligations.
+CompatibilityPASSAvoidance necessity and safe lane-change feasibility can be preserved simultaneously.
+TraceabilityPASSEach refined ORR traces to a final CRD and visible source artefacts.
+Orphan ORRsPASSNo refined ORR lacks an originating CRD.
+Uncovered CRDsPASSNo refined final CRD lacks a corresponding ORR.
+Assessability H2-ORR1PASSA candidate representation can be assessed for preservation of Required versus NotRequired.
+Assessability H2-ORR2PASSA candidate representation can be assessed for preservation of SafeFeasible versus NotSafeFeasible without prescribing how feasibility must be computed.

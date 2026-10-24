@@ -1,0 +1,72 @@
+{
+  "run_id": "H3-run-005",
+  "concern_id": "H3",
+  "evaluation_target": {
+    "id": "T1",
+    "statement": "Prevent unintended braking.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The hazard defines unintended braking as the hazardous event, and SG-3 explicitly states that the system shall prevent unintended braking."
+  },
+  "phenomenon_of_interest": {
+    "id": "P1",
+    "statement": "Vehicle braking behavior in the driving situation where the ego vehicle travels straight ahead on a less frequented urban road at 50 km/h in good weather with no visible obstacles or vehicles in front.",
+    "scope": "Situations within the stated operational situation in which the vehicle may brake, including normal braking to avoid obstacles and unintended braking without an obstacle in front.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The concern is about braking in the specific operational situation described by the hazard, and FR-7 indicates the relevant braking behavior is collision-avoidance braking in the presence of obstacles."
+  },
+  "distinctions": [
+    {
+      "id": "D1",
+      "dimension": "presence of an obstacle in front of the ego vehicle",
+      "contrast_a": "An obstacle is present in front of the vehicle in the driving scene.",
+      "contrast_b": "No obstacle is present in front of the vehicle in the driving scene.",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "The hazardous event is the vehicle suddenly stopping although no obstacle is in front, while FR-7 frames braking as intended to avoid collisions with obstacles. Collapsing these cases would lose the information needed to determine whether braking is warranted or unintended."
+    },
+    {
+      "id": "D2",
+      "dimension": "whether braking occurs as a maneuver to avoid collisions versus as a sudden stop without a front obstacle",
+      "contrast_a": "Braking occurs as a collision-avoidance maneuver.",
+      "contrast_b": "The vehicle suddenly stops without a front obstacle.",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "The safety goal is specifically to prevent unintended braking, and FR-7 defines the intended braking maneuver. Collapsing intended collision-avoidance braking with unintended sudden stopping would remove the evaluative basis for judging compliance with the safety goal."
+    }
+  ],
+  "orrs": [
+    {
+      "id": "O1",
+      "covers": [
+        "D1"
+      ],
+      "obligation": "An admissible Observable Representation shall preserve whether an obstacle is present in front of the ego vehicle within the stated operational situation.",
+      "distinguishability_criterion": "The representation must distinguish obstacle-present from no-obstacle-present cases in front of the vehicle.",
+      "assumptions": []
+    },
+    {
+      "id": "O2",
+      "covers": [
+        "D2"
+      ],
+      "obligation": "An admissible Observable Representation shall preserve whether braking is occurring as an obstacle-avoidance maneuver or as an unintended sudden stop in the absence of a front obstacle.",
+      "distinguishability_criterion": "The representation must distinguish collision-avoidance braking from sudden stopping without a front obstacle.",
+      "assumptions": []
+    }
+  ],
+  "rr5": {
+    "coverage": true,
+    "consistency": true,
+    "issues": []
+  }
+}

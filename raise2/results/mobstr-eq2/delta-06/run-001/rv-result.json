@@ -1,0 +1,9 @@
+{
+  "run_id": "run-001",
+  "change_id": "delta-06",
+  "decision": "REDERIVE",
+  "affected_orrs": [],
+  "return_point": "RR1",
+  "triggered_conditions": [],
+  "rationale": "The lifecycle change explicitly alters the Evaluation Target T_H1 by extending the decision from braking-only to braking-or-evasive-lane-change. Under the protocol, any Evaluation Target change invalidates the existing derivational basis and requires restarting derivation at RR1. Because the target changes, the current Phenomenon of Interest and existing ORRs cannot be reused as-is, so no ORRs are revalidated in place."
+}

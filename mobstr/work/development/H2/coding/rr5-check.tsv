@@ -1,0 +1,11 @@
+CheckResultEvidence_or_Rationale
+CoveragePASSAll four final CRDs are covered by at least one ORR; D_O = D_C for the identified distinction set.
+Duplicate obligationsPASSH2-ORR1--H2-ORR4 impose distinct preservation obligations.
+CompatibilityPASSNo pair of ORRs imposes mutually incompatible preservation obligations.
+TraceabilityPASSEach ORR traces to at least one final CRD and visible source artefact.
+Orphan ORRsPASSNo ORR lacks an originating CRD.
+Uncovered CRDsPASSNo identified final CRD lacks a corresponding ORR.
+Assessability H2-ORR1PASSThe candidate representation can be assessed for preservation of Required versus NotRequired.
+Assessability H2-ORR2PASSThe candidate representation can be assessed for preservation of SafeFeasible versus NotSafeFeasible; the method does not prescribe the computation used to establish the class.
+Assessability H2-ORR3PASSThe documented criterion distinguishes lane-change initiation at or below versus above 100 ms; source marks the bound tbc and dangerous-zone condition tbd.
+Assessability H2-ORR4PASSThe documented criterion distinguishes steering-command provision at or below versus above 50 ms; source marks the bound tbc.

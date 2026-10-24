@@ -1,0 +1,35 @@
+CONCERN: H3 -- Unintended braking
+
+RR1 -- Evaluative Intent:
+Determine whether the current operational situation justifies a braking
+maneuver.
+
+Source rationale:
+- SG-3 requires prevention of unintended braking.
+- H3 describes the vehicle stopping although no obstacle is in front of it.
+- FR-7 associates braking with avoidance of collisions with obstacles.
+
+RR2 -- Phenomenon of Interest:
+The braking-relevant spatial situation between the ego vehicle and potential
+obstacles on or near its trajectory.
+
+Phenomenon scope:
+The phenomenon includes obstacle presence or absence, source-required
+properties of potential obstacles, and their spatial relationship to the ego
+vehicle where these properties can change whether braking is justified. It
+also includes operational situations in which no collision-relevant obstacle
+condition exists.
+
+Representation/control boundary:
+Sensor states, lidar or camera states, object-detection outputs, sensor-fusion
+states, path-planner states, controller states, brake-actuator states, warning
+mechanisms, and braking-system redundancy are not themselves treated as the
+Phenomenon of Interest. They may affect observation, representation,
+decision, mitigation, or execution but establish a CRD only if the visible
+source supports a corresponding distinction between states of the declared
+PoI.
+
+Response boundary:
+The braking action itself is treated as the response whose justification is
+evaluated against the operational situation rather than as part of the
+declared PoI.

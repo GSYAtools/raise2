@@ -1,0 +1,101 @@
+{
+  "run_id": "H3-run-019",
+  "concern_id": "H3",
+  "evaluation_target": {
+    "id": "T1",
+    "statement": "Evaluate whether the system prevents unintended braking.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The safety goal SG-3 explicitly states that the system shall prevent unintended braking, and the hazard H-3 defines the undesired braking event to be avoided."
+  },
+  "phenomenon_of_interest": {
+    "id": "P1",
+    "statement": "The vehicle's braking behavior in the operational situation where it is driving straight ahead on a less frequented urban road at 50 km/h, in good weather, with no visible obstacles or vehicles in front of the ego vehicle.",
+    "scope": "Operational situations matching the hazard description in H-3, including whether braking occurs and whether it is intended or unintended.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The hazard defines the operational situation and the hazardous event of the vehicle suddenly stopping without an obstacle in front, which is the phenomenon that must be characterized to evaluate prevention of unintended braking."
+  },
+  "distinctions": [
+    {
+      "id": "D1",
+      "dimension": "Braking intent",
+      "contrast_a": "Intended braking performed to avoid a detected obstacle",
+      "contrast_b": "Unintended braking occurring with no obstacle in front of the vehicle",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "The safety goal is about preventing unintended braking, while FR-7 requires braking to avoid collisions with obstacles. Collapsing intended and unintended braking would remove the information needed to judge whether braking is a safety-preserving maneuver or the hazardous event."
+    },
+    {
+      "id": "D2",
+      "dimension": "Presence of a forward obstacle",
+      "contrast_a": "Obstacle present in front of the ego vehicle",
+      "contrast_b": "No obstacle in front of the ego vehicle",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "The hazardous event is defined as stopping although no obstacle is in front of the vehicle, while FR-7 requires braking to avoid collisions with obstacles. Distinguishing these situations is necessary to evaluate whether braking is justified."
+    }
+  ],
+  "orrs": [
+    {
+      "id": "O1",
+      "covers": [
+        "D1"
+      ],
+      "obligation": "An admissible observable representation shall preserve whether a braking event is intended or unintended.",
+      "distinguishability_criterion": "Intended braking and unintended braking must remain distinguishable as separate classes of braking events.",
+      "assumptions": [
+        {
+          "id": "A1",
+          "statement": "The operational evaluation relies on the hazard's distinction between braking with and without a forward obstacle.",
+          "source": [
+            "hazard",
+            "requirements"
+          ],
+          "revalidation_conditions": [
+            {
+              "id": "RC1",
+              "condition": "If the operational situation, hazard description, or braking-related safety goal is revised."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "O2",
+      "covers": [
+        "D2"
+      ],
+      "obligation": "An admissible observable representation shall preserve whether a forward obstacle is present when braking occurs.",
+      "distinguishability_criterion": "Situations with a forward obstacle and situations without a forward obstacle must remain distinguishable in the representation.",
+      "assumptions": [
+        {
+          "id": "A2",
+          "statement": "The obstacle-related braking requirement is applicable to the concern because the system is expected to brake to avoid collisions with obstacles.",
+          "source": [
+            "requirements"
+          ],
+          "revalidation_conditions": [
+            {
+              "id": "RC2",
+              "condition": "If obstacle avoidance is removed or redefined in the safety goal or functional requirements."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rr5": {
+    "coverage": true,
+    "consistency": true,
+    "issues": []
+  }
+}

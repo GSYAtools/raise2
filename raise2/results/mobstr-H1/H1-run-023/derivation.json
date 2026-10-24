@@ -1,0 +1,138 @@
+{
+  "run_id": "H1-run-023",
+  "concern_id": "H1",
+  "evaluation_target": {
+    "id": "T1",
+    "statement": "Prevent omitting required braking maneuvers.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The safety goal states the system shall prevent omitting required braking maneuvers, and the hazard/functional requirement identify braking as the required response to avoid collision in the defined hazardous situation."
+  },
+  "phenomenon_of_interest": {
+    "id": "P1",
+    "statement": "The vehicle control situation in which obstacle presence and proximity can require a braking maneuver to avoid collision.",
+    "scope": "Operational situations in which the ego vehicle is driving and an obstacle or road user may be on or close to the trajectory such that braking may be required to avoid collision, including the hazard scenario described and the related obstacle-detection/path-planning/controller context.",
+    "source": [
+      "hazard",
+      "requirements",
+      "architecture"
+    ],
+    "rationale": "The concern is about whether braking is required and omitted in the presence of obstacles on or near the vehicle trajectory; the artefacts situate this within obstacle detection, distance assessment, path planning, and controller execution."
+  },
+  "distinctions": [
+    {
+      "id": "D1",
+      "dimension": "braking requirement state",
+      "contrast_a": "A situation in which a braking maneuver is required to avoid collision",
+      "contrast_b": "A situation in which no braking maneuver is required to avoid collision",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "Whether braking is required directly affects evaluation of omitted braking; collapsing these would lose the ability to judge if the system failed to brake when it should have."
+    },
+    {
+      "id": "D2",
+      "dimension": "obstacle proximity relevant to braking decision",
+      "contrast_a": "An obstacle or road user is sufficiently close to the ego vehicle/trajectory that braking may be needed to avoid collision",
+      "contrast_b": "An obstacle or road user is not in a proximity state that can require braking to avoid collision",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "The hazard and timing requirements distinguish situations where an obstacle is within the dangerous zone from those where it is not; collapsing them would remove information needed to decide whether braking was required."
+    },
+    {
+      "id": "D3",
+      "dimension": "obstacle category relevant to braking",
+      "contrast_a": "A vulnerable road user or other obstacle/static obstacle that can trigger braking for collision avoidance",
+      "contrast_b": "No relevant obstacle/road user present",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "The hazard references a pedestrian and the functional requirements reference obstacles and vulnerable road users; distinguishing presence versus absence is necessary to evaluate whether braking should have been initiated."
+    }
+  ],
+  "orrs": [
+    {
+      "id": "O1",
+      "covers": [
+        "D1"
+      ],
+      "obligation": "An Observable Representation shall preserve whether each evaluated driving situation is one in which braking is required to avoid collision.",
+      "distinguishability_criterion": "The representation must distinguish situations requiring braking from situations not requiring braking.",
+      "assumptions": [
+        {
+          "id": "A1",
+          "statement": "The evaluation concern is limited to situations in which the vehicle is operating in the driving context addressed by the hazard and functional braking requirements.",
+          "source": [
+            "hazard",
+            "requirements"
+          ],
+          "revalidation_conditions": [
+            {
+              "id": "R1",
+              "condition": "If the operational design domain or hazard scope is expanded to additional driving contexts or maneuver types."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "O2",
+      "covers": [
+        "D2"
+      ],
+      "obligation": "An Observable Representation shall preserve whether an obstacle or road user is in a proximity state that can necessitate braking to avoid collision.",
+      "distinguishability_criterion": "The representation must distinguish proximity states that can require braking from proximity states that cannot.",
+      "assumptions": [
+        {
+          "id": "A2",
+          "statement": "The hazardous and timing requirements use obstacle proximity as a relevant basis for deciding whether braking is needed.",
+          "source": [
+            "hazard",
+            "requirements"
+          ],
+          "revalidation_conditions": [
+            {
+              "id": "R2",
+              "condition": "If the braking decision is redefined to no longer depend on proximity to obstacles or road users."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "O3",
+      "covers": [
+        "D3"
+      ],
+      "obligation": "An Observable Representation shall preserve whether a relevant obstacle or vulnerable road user is present in the scene relevant to braking avoidance.",
+      "distinguishability_criterion": "The representation must distinguish presence of a relevant obstacle/road user from absence of such a relevant obstacle/road user.",
+      "assumptions": [
+        {
+          "id": "A3",
+          "statement": "Obstacle presence is relevant to the braking-avoidance concern stated in the hazard and requirements.",
+          "source": [
+            "hazard",
+            "requirements"
+          ],
+          "revalidation_conditions": [
+            {
+              "id": "R3",
+              "condition": "If future requirements exclude obstacle presence as a factor in braking evaluation."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rr5": {
+    "coverage": true,
+    "consistency": true,
+    "issues": []
+  }
+}

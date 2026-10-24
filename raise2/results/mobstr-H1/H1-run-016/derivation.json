@@ -1,0 +1,73 @@
+{
+  "run_id": "H1-run-016",
+  "concern_id": "H1",
+  "evaluation_target": {
+    "id": "T1",
+    "statement": "Prevent omitting required braking maneuvers.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The safety goal SG-1 states that the system shall prevent omitting required braking maneuvers, and the hazard describes the harmful consequence of failing to brake in time to avoid collision."
+  },
+  "phenomenon_of_interest": {
+    "id": "P1",
+    "statement": "The vehicle’s braking-relevant response to an obstacle or road user in the driving situation where braking may be required to avoid collision.",
+    "scope": "Operational situations in which the ego vehicle is driving and must evaluate whether braking is required to avoid colliding with a road user or static obstacle, including the stated straight-ahead single-lane-road scenario with a pedestrian crossing 20 m ahead.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The hazard and functional requirements concern obstacle-avoidance braking in driving situations where a collision must be prevented."
+  },
+  "distinctions": [
+    {
+      "id": "D1",
+      "dimension": "need for a braking maneuver",
+      "contrast_a": "A situation in which braking is required to avoid collision with a road user or static obstacle.",
+      "contrast_b": "A situation in which braking is not required to avoid collision.",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "The evaluation target concerns omission of required braking maneuvers, so the representation must preserve whether the situation calls for braking or not."
+    },
+    {
+      "id": "D2",
+      "dimension": "braking-relevant obstacle presence and proximity",
+      "contrast_a": "An obstacle or road user is present within the situation such that collision avoidance depends on timely braking.",
+      "contrast_b": "No such obstacle or the obstacle is not in a position where braking relevance arises for the evaluation.",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "FR-7 and FR-7.1/FR-7.2 link braking to obstacle detection and to obstacles in a dangerous zone; collapsing these cases would remove information needed to judge whether braking was omitted when required."
+    }
+  ],
+  "orrs": [
+    {
+      "id": "O1",
+      "covers": [
+        "D1",
+        "D2"
+      ],
+      "obligation": "An admissible Observable Representation shall preserve whether the current situation requires a braking maneuver to avoid collision, and whether an obstacle or road user is present in a braking-relevant position for that judgment.",
+      "distinguishability_criterion": "The representation must distinguish situations that require braking from situations that do not, and must distinguish braking-relevant obstacle/road-user presence from situations in which no such braking-relevant obstacle is present.",
+      "assumptions": []
+    },
+    {
+      "id": "O2",
+      "covers": [
+        "D2"
+      ],
+      "obligation": "An admissible Observable Representation shall preserve the presence of road users or static obstacles in the driving situation when that presence is relevant to evaluating whether braking is required.",
+      "distinguishability_criterion": "The representation must keep separate situations with a road user or static obstacle relevant to collision avoidance from situations without such a relevant obstacle.",
+      "assumptions": []
+    }
+  ],
+  "rr5": {
+    "coverage": true,
+    "consistency": true,
+    "issues": []
+  }
+}

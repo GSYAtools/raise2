@@ -1,0 +1,16 @@
+{
+  "run_id": "H1-run-010",
+  "concern_id": "H1",
+  "classification": "ALIGNED",
+  "rationale": "P characterises whether required collision-avoidance braking occurs in the declared hazardous situation, which directly addresses T. Braking behaviour itself is established as the subject of evaluation by SG-1 and FR-7. Its timeliness is supported by H-1's hazardous event of failing to stop in time, rather than inferred from sensing or processing deadlines. P does not incorporate supporting observation, computation, communication, or control mechanisms.",
+  "determining_elements": [
+    "Required braking behaviour and its presence or absence directly correspond to preventing omitted braking maneuvers under SG-1 and performing collision-avoidance braking under FR-7.",
+    "The declared scope reproduces H-1's operational situation: straight-ahead driving at 50 km/h on a less frequented single-lane road in good weather, with a pedestrian crossing 20 m ahead.",
+    "The inclusion of 'failure to brake in time' concerns the braking phenomenon's own temporal behaviour, supported by H-1's failure-to-stop-in-time hazardous event.",
+    "The scope remains focused on obstacle-avoidance braking rather than incorporating detection, sensor fusion, failure monitoring, warnings, or architectural data flows."
+  ],
+  "sources": [
+    "hazard",
+    "requirements"
+  ]
+}

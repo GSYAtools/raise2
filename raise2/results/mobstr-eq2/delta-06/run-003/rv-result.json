@@ -1,0 +1,9 @@
+{
+  "run_id": "run-003",
+  "change_id": "delta-06",
+  "decision": "REDERIVE",
+  "affected_orrs": [],
+  "return_point": "RR1",
+  "triggered_conditions": [],
+  "rationale": "The lifecycle change explicitly alters the Evaluation Target from determining whether braking is required to determining whether braking or an evasive lane-change maneuver is required. This changes T_H1, so the existing derivational basis is no longer applicable. Per the protocol, an Evaluation Target change requires REDERIVE and resumption at RR1. No existing ORRs are directly revalidated because the change is not merely an assumption or revalidation-condition update."
+}

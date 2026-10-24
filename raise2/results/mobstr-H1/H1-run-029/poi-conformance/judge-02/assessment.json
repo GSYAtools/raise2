@@ -1,0 +1,16 @@
+{
+  "run_id": "H1-run-029",
+  "concern_id": "H1",
+  "classification": "ALIGNED",
+  "rationale": "The target requires characterizing whether required braking occurs, so braking response itself legitimately belongs to P. SG-1 and FR-7 establish this behavior, while H-1 supplies the collision-relevant operational context. P remains focused on braking in relevant obstacle encounters; it does not incorporate sensing, computation, communication, or internal control mechanisms merely because they influence braking.",
+  "determining_elements": [
+    "“Vehicle/system braking behavior in obstacle-encounter situations” identifies the behavior required to evaluate omission under SG-1 and FR-7.",
+    "“Whether a braking maneuver is initiated when required to avoid collision” directly addresses omission; FR-7.1 also explicitly establishes braking initiation as required behavior.",
+    "The scope covers obstacles or road users on or near the trajectory where braking may be required, supported by H-1, FR-7, and FR-7.2.4.",
+    "References to obstacle-detection situations define encounter contexts rather than incorporating detection mechanisms or their timing into P."
+  ],
+  "sources": [
+    "hazard",
+    "requirements"
+  ]
+}

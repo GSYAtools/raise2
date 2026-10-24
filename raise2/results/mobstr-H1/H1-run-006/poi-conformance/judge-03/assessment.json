@@ -1,0 +1,15 @@
+{
+  "run_id": "H1-run-006",
+  "concern_id": "H1",
+  "classification": "ALIGNED",
+  "rationale": "P identifies the braking behaviour that must be characterised to evaluate whether required maneuvers are omitted. SG-1 and FR-7 establish braking performance itself—not merely mechanisms supporting it—as the subject of evaluation. The obstacle-related scope is supported by FR-7 and H-1, including the stated pedestrian scenario. P does not incorporate sensing, computation, communication, internal control mechanisms, or their timing constraints.",
+  "determining_elements": [
+    "“Vehicle/system braking response” directly addresses the behaviour required by SG-1 and FR-7.",
+    "“Whether braking is initiated and performed” characterises occurrence or omission of the required maneuver.",
+    "The scope limits evaluation to driving situations where collision avoidance may require braking, with the pedestrian encounter explicitly supported by H-1."
+  ],
+  "sources": [
+    "hazard",
+    "requirements"
+  ]
+}

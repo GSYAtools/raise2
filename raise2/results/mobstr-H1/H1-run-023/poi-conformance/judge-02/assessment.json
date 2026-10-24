@@ -1,0 +1,15 @@
+{
+  "run_id": "H1-run-023",
+  "concern_id": "H1",
+  "classification": "OVEREXTENDED",
+  "rationale": "The braking-required situation is supported by H-1, SG-1, FR-7 and FR-7.2.4. However, the declared scope also includes the surrounding obstacle-detection/path-planning/controller context. The artefacts establish these mechanisms as supporting perception and braking execution, but do not establish that this broader mechanism context belongs to the phenomenon itself. Required braking and its omission are target-relevant; that does not justify including the supporting mechanism chain wholesale.",
+  "determining_elements": [
+    "“Obstacle presence and proximity can require a braking maneuver to avoid collision” identifies a supported condition relevant to the evaluation target.",
+    "The scope explicitly includes “the related obstacle-detection/path-planning/controller context,” extending beyond the supported braking-required situation into observation, computation and control mechanisms."
+  ],
+  "sources": [
+    "hazard",
+    "requirements",
+    "architecture"
+  ]
+}

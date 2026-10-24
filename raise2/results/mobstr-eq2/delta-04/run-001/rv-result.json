@@ -1,0 +1,13 @@
+{
+  "run_id": "run-001",
+  "change_id": "delta-04",
+  "decision": "REVALIDATE",
+  "affected_orrs": [
+    "H1-ORR3"
+  ],
+  "return_point": null,
+  "triggered_conditions": [
+    "H1-RC3"
+  ],
+  "rationale": "The change introduces an explicit configurable braking-zone definition for the dangerous zone while stating that the concern and Phenomenon of Interest remain unchanged. This intersects the basis of H1-ORR3 because its assumption H1-A3 and revalidation condition H1-RC3 explicitly depend on the distance or spatial-information requirement and the dangerous-zone definition. H1-ORR1 and H1-ORR2 are not affected because the change does not alter obstacle presence or the object-category distinction."
+}

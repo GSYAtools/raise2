@@ -1,0 +1,16 @@
+{
+  "run_id": "H1-run-013",
+  "concern_id": "H1",
+  "classification": "ALIGNED",
+  "rationale": "Evaluating omission of required braking requires characterising both the need to brake and whether the required braking response occurs. H-1, SG-1 and FR-7 establish that response itself as part of the evaluation, not merely as a mechanism affecting it. H-1’s failure to stop in time and FR-7.1’s braking-initiation requirement also support considering when braking begins. The scope includes detected-obstacle response conditions without incorporating sensing algorithms, internal decision computations or communication mechanisms.",
+  "determining_elements": [
+    "“The vehicle’s need to brake” identifies the condition against which omission of a required maneuver must be evaluated.",
+    "“The braking response relevant to avoiding collision” is directly supported by SG-1 and FR-7.",
+    "“Whether and when to initiate braking” concerns the required response and its timing, supported by H-1 and FR-7.1; obstacle detection supplies a response-triggering event rather than expanding P to detection mechanisms.",
+    "The declared road, speed, weather and pedestrian-crossing conditions match H-1’s operational situation."
+  ],
+  "sources": [
+    "hazard",
+    "requirements"
+  ]
+}

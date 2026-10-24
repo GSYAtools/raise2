@@ -1,0 +1,13 @@
+{
+  "run_id": "run-004",
+  "change_id": "delta-04",
+  "decision": "REVALIDATE",
+  "affected_orrs": [
+    "H1-ORR3"
+  ],
+  "return_point": null,
+  "triggered_conditions": [
+    "H1-RC3"
+  ],
+  "rationale": "The change introduces an explicit configurable dangerous-zone/braking-zone definition where the baseline ORR3 and CRD3 relied on the previously unspecified dangerous-zone boundary and the need to revalidate if the distance or spatial-information requirement or the dangerous-zone definition changes. The Evaluation Target and Phenomenon of Interest remain unchanged, so the impact is limited to the ORR preserving braking-relevant distance classification."
+}

@@ -1,0 +1,23 @@
+MobSTr EQ1 Experimental Design
+
+Independent executions per held-out concern: 30
+
+H1:
+H1-run-001 through H1-run-030
+
+H3:
+H3-run-001 through H3-run-030
+
+The number of executions was fixed before inspecting the derived
+RAISE2 artefacts against the frozen downstream reference.
+
+Runs are executed independently and sequentially using the same
+frozen experiment manifests, RR protocol, derivation schema, and
+model snapshot.
+
+Invalid derivations remain part of the experimental record.
+Failed executions are not automatically retried.
+
+Model:
+gpt-5.4-mini-2026-03-17
+

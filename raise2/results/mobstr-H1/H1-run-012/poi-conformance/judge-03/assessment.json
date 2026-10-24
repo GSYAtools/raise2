@@ -1,0 +1,16 @@
+{
+  "run_id": "H1-run-012",
+  "concern_id": "H1",
+  "classification": "OVEREXTENDED",
+  "rationale": "Braking necessity and timely braking initiation are legitimate parts of P: SG-1 concerns omitted maneuvers, FR-7 requires collision-avoidance braking, and H-1 and FR-7.1 support its temporal aspect. However, the declared scope also incorporates obstacle detection and braking-command generation. These are observation and control mechanisms supporting the required response; their presence in the requirements and architecture does not establish their operation as part of the phenomenon that T requires characterised.",
+  "determining_elements": [
+    "“Whether braking is required to avoid collision” appropriately identifies the condition under which omission matters.",
+    "“Whether braking maneuver initiation occurs in time,” including required braking that is not initiated, is supported response behaviour rather than an overextension by itself.",
+    "The scope's inclusion of situations where “the system detects obstacles and generates vehicle commands for braking” extends P into supporting observation and control mechanisms."
+  ],
+  "sources": [
+    "hazard",
+    "requirements",
+    "architecture"
+  ]
+}

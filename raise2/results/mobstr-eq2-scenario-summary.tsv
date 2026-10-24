@@ -1,0 +1,7 @@
+change_id	expected_decision	runs	decision_correct	orr_set_correct	return_point_correct	exact_outcome_correct	distinct_outcomes	fully_reproducible
+delta-01	NONE	10	10			10	1	True
+delta-02	REVALIDATE	10	10	10		10	1	True
+delta-03	REVALIDATE	10	10	10		10	1	True
+delta-04	REVALIDATE	10	5	5		5	2	False
+delta-05	REDERIVE	10	10		10	10	1	True
+delta-06	REDERIVE	10	10		10	10	1	True

@@ -1,0 +1,11 @@
+{
+  "run_id": "run-006",
+  "change_id": "delta-04",
+  "decision": "REDERIVE",
+  "affected_orrs": [],
+  "return_point": "RR3",
+  "triggered_conditions": [
+    "H1-RC3"
+  ],
+  "rationale": "The change introduces an explicit configurable braking-zone definition replacing the previously unspecified dangerous-zone boundary. Per the baseline, H1-CRD3 and H1-ORR3 depend on FR-7.1 and on the dangerous-zone definition for distinguishing braking-relevant distance classes. This changes the required Concern-Relevant Distinction for the spatial/distance aspect of the phenomenon, while the Evaluation Target and overall Phenomenon of Interest remain the same. Therefore the derivation must resume at RR3 rather than merely revalidating existing ORRs."
+}

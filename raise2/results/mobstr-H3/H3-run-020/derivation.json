@@ -1,0 +1,91 @@
+{
+  "run_id": "H3-run-020",
+  "concern_id": "H3",
+  "evaluation_target": {
+    "id": "T1",
+    "statement": "Prevent unintended braking.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The safety goal SG-3 explicitly states that the system shall prevent unintended braking, and the hazard describes the corresponding hazardous event as the vehicle suddenly stopping without an obstacle in front."
+  },
+  "phenomenon_of_interest": {
+    "id": "P1",
+    "statement": "Braking behavior of the ego vehicle in the stated driving situation, specifically whether braking occurs as intended or unintentionally.",
+    "scope": "Straight ahead driving on a less frequented urban road at 50 km/h, with good weather and no visible obstacles or vehicles in front of the ego vehicle.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The hazardous event defines the relevant operational situation and characterizes the concern as an unexpected stop in that situation."
+  },
+  "distinctions": [
+    {
+      "id": "D1",
+      "dimension": "Brake application outcome",
+      "contrast_a": "The vehicle brakes as intended to avoid an obstacle or for another justified braking purpose within the operational situation.",
+      "contrast_b": "The vehicle brakes without an obstacle in front, i.e. an unintended braking event occurs.",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "Collapsing intended and unintended braking would remove the ability to evaluate whether the safety goal is satisfied, because the concern is specifically about distinguishing normal braking from the hazardous event."
+    },
+    {
+      "id": "D2",
+      "dimension": "Presence of obstacle ahead in the driving path",
+      "contrast_a": "An obstacle is present in front of the ego vehicle in the relevant trajectory.",
+      "contrast_b": "No obstacle is present in front of the ego vehicle.",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "The hazard and FR-7 indicate braking is expected in response to obstacles; without preserving whether an obstacle is present, one cannot distinguish justified braking from unintended braking."
+    },
+    {
+      "id": "D3",
+      "dimension": "Failure status relevant to braking control chain",
+      "contrast_a": "A controller failure or brake actuator failure is present.",
+      "contrast_b": "No controller failure or brake actuator failure is present.",
+      "source": [
+        "requirements"
+      ],
+      "rationale": "The requirements explicitly require identification and mitigation of controller failures and brake actuator failures, which are relevant because such failures may lead to unintended braking or loss of control."
+    }
+  ],
+  "orrs": [
+    {
+      "id": "O1",
+      "covers": [
+        "D1"
+      ],
+      "obligation": "An admissible observable representation shall preserve whether braking events are intended/justified versus unintended in the monitored operational situation.",
+      "distinguishability_criterion": "The representation must allow intended braking and unintended braking to be told apart as different cases; they must not be collapsed into a single braking outcome.",
+      "assumptions": []
+    },
+    {
+      "id": "O2",
+      "covers": [
+        "D2"
+      ],
+      "obligation": "An admissible observable representation shall preserve whether an obstacle is present in front of the ego vehicle in the relevant driving path.",
+      "distinguishability_criterion": "The representation must distinguish obstacle-present situations from obstacle-absent situations in front of the vehicle.",
+      "assumptions": []
+    },
+    {
+      "id": "O3",
+      "covers": [
+        "D3"
+      ],
+      "obligation": "An admissible observable representation shall preserve whether controller failures or brake actuator failures are present, insofar as these failures are relevant to braking behavior.",
+      "distinguishability_criterion": "The representation must distinguish failure-present from failure-absent states for the controller and brake actuators; these states must not be merged.",
+      "assumptions": []
+    }
+  ],
+  "rr5": {
+    "coverage": true,
+    "consistency": true,
+    "issues": []
+  }
+}

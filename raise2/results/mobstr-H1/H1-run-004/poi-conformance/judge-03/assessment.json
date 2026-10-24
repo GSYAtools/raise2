@@ -1,0 +1,17 @@
+{
+  "run_id": "H1-run-004",
+  "concern_id": "H1",
+  "classification": "OVEREXTENDED",
+  "rationale": "T requires characterising whether required braking is omitted in the hazardous scenario, so braking-response behaviour is legitimately relevant. P additionally makes perception state and timely obstacle detection part of the phenomenon. The detection requirements and architecture establish mechanisms supporting braking, but do not establish their behaviour as itself the subject of T. In particular, the detection timing requirement does not justify expanding P to include observation latency.",
+  "determining_elements": [
+    "“Braking-relevant perception and control state” extends P beyond the required braking response to supporting internal mechanisms.",
+    "“Whether an obstacle is detected in time” incorporates observation behaviour and its timing; FR-7.2 through FR-7.2.5 specify that supporting function but do not make it the phenomenon evaluated by T.",
+    "The braking-response aspect is grounded in SG-1, FR-7 and FR-7.1; system-response behaviour is not, by itself, the reason for the OVEREXTENDED classification.",
+    "The declared driving scenario is supported by H-1 and does not resolve the inclusion of perception mechanisms."
+  ],
+  "sources": [
+    "hazard",
+    "requirements",
+    "architecture"
+  ]
+}

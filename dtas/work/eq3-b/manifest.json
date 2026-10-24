@@ -1,0 +1,71 @@
+{
+  "study": "dTAS EQ3-B",
+  "source": {
+    "dtas_source_zip": {
+      "path": "dtas/original/dtas-v1.0-source.zip",
+      "sha256": "155b2f935bd21d43631a4d7cf0c5801e323d8ba872b8f112139401996e84c522"
+    },
+    "source_entity": {
+      "path": "dtas/work/source/dTAS/TAS_gui/resources/files/entities/System Entity 1.xml",
+      "sha256": "39cc30ce80f1f6ceab943244ef390deac6c48f1969b6ad51da04bff0c52a96e2",
+      "configuration": {
+        "MonitorMinFailureDelta": 0.005,
+        "MonitorFailureChange": 0.005
+      }
+    },
+    "eq3a_harness": {
+      "path": "dtas/work/eq3-harness/DTASEQ3Harness.java",
+      "sha256": "c84f3652738de5b96fdb7dd47a6ed37e648824f77ba8830429c17e51c6d8692f"
+    }
+  },
+  "experimental_design": {
+    "conditions_spec": {
+      "path": "dtas/work/eq3-b/conditions.json",
+      "sha256": "96802e932bfb2c51cab7badf3d535bbda588f05381f941c1f095ebe7a0cb9d11"
+    },
+    "independent_variable": "MonitorMinFailureDelta",
+    "controlled_variable": {
+      "MonitorFailureChange": 0.005
+    },
+    "runs_per_condition": 10,
+    "cycles_per_run": 20
+  },
+  "generated_conditions": [
+    {
+      "condition_id": "mfd-0005",
+      "min_failure_delta": 0.005,
+      "status": "original_baseline",
+      "path": "dtas/work/eq3-b/conditions/mfd-0005.xml",
+      "sha256": "c2d47c0201905717f88b0e794398acd677d282fc1810dd3b335571ca17be002c"
+    },
+    {
+      "condition_id": "mfd-0010",
+      "min_failure_delta": 0.01,
+      "status": "controlled_degradation",
+      "path": "dtas/work/eq3-b/conditions/mfd-0010.xml",
+      "sha256": "3d4cd596eaaa8bde87b603836ad698abeaa2f30c13a6453f6a1ce57410bdb4dc"
+    },
+    {
+      "condition_id": "mfd-0020",
+      "min_failure_delta": 0.02,
+      "status": "controlled_degradation",
+      "path": "dtas/work/eq3-b/conditions/mfd-0020.xml",
+      "sha256": "9c272b2c99629241949d36d5bb2fbfa20a6679c2df843c894641ca001579a8d3"
+    },
+    {
+      "condition_id": "mfd-0040",
+      "min_failure_delta": 0.04,
+      "status": "controlled_degradation",
+      "path": "dtas/work/eq3-b/conditions/mfd-0040.xml",
+      "sha256": "076038e45517cc8c8933e14af7015e2e4cc2495708938e638384ce178b259ea7"
+    }
+  ],
+  "generated_harness": {
+    "path": "dtas/work/eq3-b/DTASEQ3BHarness.java",
+    "sha256": "34dab2fde0d0865dddc4fff21dd7ba0154d579254606fe29306c957954f43645",
+    "compiled_class": {
+      "path": "dtas/work/eq3-b/bin/DTASEQ3BHarness.class",
+      "sha256": "ebf8719ba255e9a3fff1a303a10b3bfd4eef2dda3c060503947253a55d979c89"
+    }
+  }
+}

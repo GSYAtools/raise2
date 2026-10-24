@@ -1,0 +1,16 @@
+{
+  "run_id": "H1-run-012",
+  "concern_id": "H1",
+  "classification": "OVEREXTENDED",
+  "rationale": "Braking necessity and timely braking initiation are supported by the target, H-1, FR-7 and FR-7.1; including response and timing is therefore legitimate. However, the declared scope also incorporates obstacle detection and brake-command generation. The artefacts establish these as supporting observation and control activities, but do not establish their operation itself as part of the phenomenon required to evaluate omission of required braking. Their architectural relevance does not justify that expansion.",
+  "determining_elements": [
+    "“Whether braking is required to avoid collision” appropriately identifies the condition under which braking is required.",
+    "“Whether braking maneuver initiation occurs in time” and situations with no required braking initiation appropriately cover the response being evaluated; H-1 and FR-7.1 support its temporal aspect.",
+    "The scope’s inclusion of situations where the system “detects obstacles and generates vehicle commands for braking” extends P into supporting observation/control activities. FR-7.1 supports detection as a timing reference, not inclusion of the detection mechanism itself, and the architecture does not establish command generation as equivalent to actual braking initiation."
+  ],
+  "sources": [
+    "hazard",
+    "requirements",
+    "architecture"
+  ]
+}

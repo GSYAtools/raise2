@@ -1,0 +1,12 @@
+SHEET: FMEA
+ROWS: 42
+COLUMNS: 7
+1 ('Component', 'Fault Taxonomy Classification', 'Failure Mode', 'Local Effect', 'Global Effect', 'Selected Measures', '(Other) Possible Measures')
+2 ('GPS Grabber', 'Omission', 'No position information provided by the GPS grabber', 'No localization by GPS', '-', '-', None)
+3 ('GPS Grabber', 'Incorrect', 'Erroneous position information provided by the GPS grabber', 'Wrong GPS information or inaccurate localization', '-', None, None)
+4 ('GPS Grabber', 'Late', 'Stuck-at failure of the GPS grabber', 'Wrong GPS information', '-', None, None)
+5 ('Lidar Grabber', 'Omission', 'No point cloud provided by the lidar grabber', 'No information about objects provided by lidar', 'H-1 (Omitted braking maneuver)\nH-2 (Omitted avoidance maneuver)\nH-3 (Unintended braking)\nH-4 (Unintended acceleration)', '- Include a second environmental sensor ("Image Grabber")\n- Add plausibility checks in the "Sensor Fusion" component', '- Add a second lidar (redundancy)')
+6 ('Lidar Grabber', 'Too little', 'Erroneous point cloud provided by the lidar grabber (false negative)', 'Objects not detected by lidar', 'H-1 (Omitted braking maneuver)\nH-2 (Omitted avoidance maneuver)\nH-4 (Unintended acceleration)', None, None)
+7 ('Lidar Grabber', 'Too much', 'Erroneous point cloud provided by the lidar grabber (false positive)', 'Ghost objects provided by lidar', 'H-2 (Omitted avoidance maneuver)\nH-3 (Unintended braking)', None, None)
+8 ('Lidar Grabber', 'Late', 'Point cloud provided too late by the lidar grabber', 'Wrong (outdated) objects provided by lidar', 'H-2 (Omitted avoidance maneuver)\nH-3 (Unintended braking)', None, None)
+

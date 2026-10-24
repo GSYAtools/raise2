@@ -1,0 +1,9 @@
+{
+  "run_id": "run-007",
+  "change_id": "delta-04",
+  "decision": "REDERIVE",
+  "affected_orrs": [],
+  "return_point": "RR3",
+  "triggered_conditions": [],
+  "rationale": "The change introduces an explicit configurable braking-zone definition in place of the previously unspecified dangerous-zone boundary. The baseline ties H1-ORR3 to the dangerous-zone definition via H1-A3/H1-RC3, and its rationale explicitly says the dangerous-zone boundary is tbd. Because the distance/spatial-information requirement and dangerous-zone definition have changed, the existing derivational basis for the CRD H1-CRD3 is no longer applicable, while the evaluation target and overall phenomenon of interest remain the same. Therefore derivation must resume at RR3 rather than revalidating individual ORRs."
+}

@@ -1,0 +1,28 @@
+CONCERN: H2 -- Omitted avoidance maneuver
+
+RR1 -- Evaluative Intent:
+Determine whether the current operational situation requires and permits
+a safe avoidance maneuver (lane change) to prevent collision.
+
+Source rationale:
+- SG-2 requires prevention of omitted required avoidance maneuvers.
+- H2 describes failure to perform a required lane change to avoid collision.
+- FR-8 requires an avoidance maneuver to avoid collisions with obstacles,
+  if safe.
+
+RR2 -- Phenomenon of Interest:
+The operational traffic and road situation determining whether collision
+avoidance by lane change is required and safely feasible.
+
+Phenomenon scope:
+The phenomenon includes operational conditions relevant to the avoidance
+judgement, including the presence of a collision-relevant obstacle,
+road/lane geometry and boundaries, occupancy of the adjacent lane, and
+temporal conditions that can determine whether the required lane-change
+maneuver remains feasible.
+
+Representation boundary:
+Sensor states, detector outputs, controller states, and other observation
+or processing artefacts are not themselves treated as the Phenomenon of
+Interest. They may affect whether an Observable Representation preserves
+the distinctions required to evaluate the phenomenon.

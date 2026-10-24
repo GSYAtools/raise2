@@ -1,0 +1,7 @@
+CandidateFinal_CRDDecisionRationale
+H3-D1H3-CRD1KEEPObstacle presence directly determines whether an obstacle-based justification for braking exists; collapsing presence and absence prevents evaluation of C_H3.
+H3-D2REJECTAlthough FR-7.2.2 requires distinguishing vulnerable road users from other objects, the visible H3 evidence does not establish that this category difference, with presence and spatial relation held constant, changes whether braking is justified.
+H3-D3REJECTThe fine-grained object taxonomy supports object identification but the visible H3 evidence does not establish distinct preservation obligations among the individual labels for the unintended-braking judgement.
+H3-D4H3-CRD2KEEPWith obstacle presence held constant, spatial relation can distinguish a condition that justifies braking from one that does not; no numerical dangerous-zone threshold is introduced because the source marks it tbd.
+H3-D5RECLASSIFYBraking-initiation timing concerns the system response rather than a state of the declared PoI; it is retained as a response/control dependency.
+H3-D6RECLASSIFYObject-detection timing concerns the observation mechanism rather than a state of the declared PoI; it is retained as an observation/preservation dependency.

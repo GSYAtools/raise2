@@ -1,0 +1,44 @@
+{
+  "run_id": "H1-run-020",
+  "experiment_id": "mobstr-H1",
+  "concern_id": "H1",
+  "started_at_utc": "2026-10-24T04:57:05.547454+00:00",
+  "requested_model": "gpt-5.4-mini-2026-03-17",
+  "manifest_sha256": "ff1abecb327b47eed4bdbbab250e204692f11551a2da209adc89acbb81bff7cd",
+  "experiment_schema_sha256": "93a2088e99f065c1a5ca3114f06b6614d3986ec1710702b1cdcf441537a1ce1c",
+  "derivation_schema_sha256": "82c976968517ef181cf5d7fe9236973484a66227c979e56478e1ba7cc8f7f0f8",
+  "protocol_sha256": "2b84d05ab135a5c318ccabb951dc9f95387e3db71b1719fb48dec7dafb418b42",
+  "input_artefacts": [
+    {
+      "id": "hazard",
+      "type": "hazard",
+      "source_path": "mobstr/work/test-visible/H1/hazard.txt",
+      "sha256": "7014165ff60292db2b9c8184d371b39bde399fb7662dbcd4320c55a570c119a6"
+    },
+    {
+      "id": "requirements",
+      "type": "requirement",
+      "source_path": "mobstr/work/test-visible/H1/requirements.tsv",
+      "sha256": "56ca887bf40b4dc59abcb57e37cc4571e9ade8103d38a213e1984fb360693688"
+    },
+    {
+      "id": "architecture",
+      "type": "architecture",
+      "source_path": "mobstr/work/executor-input/H1/architecture.json",
+      "sha256": "b3fa51f949dc73baab35651bba2dd8f210a1c2e069be7433e9da839de0774e80"
+    }
+  ],
+  "response_id": "resp_0292e65b21894eb3006adc3aa1d71c87d2aa94fc544c05dc42",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "response_status": "completed",
+  "usage": {
+    "input_tokens": 9509,
+    "output_tokens": 384,
+    "total_tokens": 9893
+  },
+  "validation_passed": true,
+  "validation_errors": [],
+  "derivation_sha256": "2206967c2f12eb35447d114b0e750cc43209357c6e005d8cfb8ac62696b22516",
+  "completed_at_utc": "2026-10-24T04:57:08.673099+00:00",
+  "status": "completed_valid"
+}

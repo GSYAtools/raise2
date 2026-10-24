@@ -1,0 +1,2 @@
+155b2f935bd21d43631a4d7cf0c5801e323d8ba872b8f112139401996e84c522  dtas-v1.0-source.zip
+9dae192ac21336c9c0474b6c4c26cb4e0594cd60fafc518c55bbad8bfc72df77  dtas-paper-results.zip

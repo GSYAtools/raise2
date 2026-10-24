@@ -1,0 +1,16 @@
+{
+  "run_id": "H1-run-007",
+  "concern_id": "H1",
+  "classification": "ALIGNED",
+  "rationale": "P identifies the collision-relevant driving state needed to establish whether braking is required and hence whether a required maneuver could be omitted. H-1, SG-1 and FR-7 support this relationship; FR-7.2.4 supports the on-or-near-trajectory scope. The references to detection and determining braking need frame the operational situation without incorporating sensing, computation, control execution or mechanism timing into P.",
+  "determining_elements": [
+    "The vehicle's braking-relevant driving state is the property to be characterised.",
+    "Obstacle or road-user presence on the trajectory, with scope extending to nearby objects, is supported by H-1 and FR-7.2.4.",
+    "The qualification that braking may be required to avoid collision directly connects P to the Evaluation Target.",
+    "P does not incorporate sensor failures, detection processes, braking-control mechanisms or their timing constraints."
+  ],
+  "sources": [
+    "hazard",
+    "requirements"
+  ]
+}

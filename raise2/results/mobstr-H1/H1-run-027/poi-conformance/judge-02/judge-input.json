@@ -1,0 +1,685 @@
+{
+  "run_id": "H1-run-027",
+  "concern_id": "H1",
+  "evaluation_target": {
+    "statement": "Prevent omitting required braking maneuvers.",
+    "sources": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The safety goal explicitly requires the system to prevent omitting required braking maneuvers, and the functional requirement states the system shall perform a braking maneuver to avoid collisions with obstacles."
+  },
+  "phenomenon_of_interest": {
+    "statement": "The vehicle/system’s braking-maneuver state in obstacle-avoidance situations, including whether braking is required, started, performed, or omitted.",
+    "scope": "Operational situations in which the ego vehicle is driving and an obstacle or road user may require braking to avoid collision, including the hazardous event context described in the hazard and the braking-related functional context in the requirements.",
+    "sources": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "Evaluating whether required braking is omitted requires characterizing the braking behavior of the vehicle in the relevant obstacle-avoidance situations."
+  },
+  "upstream_engineering_artefacts": [
+    {
+      "id": "hazard",
+      "type": "hazard",
+      "content": "ID=H-1\nHazard=Omitted braking maneuver\nOperational Situation=Straight ahead drive on a less frequented single-lane road with 50 km/h at good weather conditions with a pedestrian running across the street 20 m in front of the ego vehicle\nHazardous Event=While driving, the vehicle is not able to stop in time to avoid a collision with a road user or a static obstacle and hits the road user or static obstacle.\n"
+    },
+    {
+      "id": "requirements",
+      "type": "requirement",
+      "content": "ID\tSource\tType\tTime\tComponent\tDescription\nSG-1\tnative\tSafety goal\tNone\tNone\tThe system shall prevent omitting required braking maneuvers.\nSR-1.1\tnative\tSafety (failure identification)\tNone\tObject Detection\tThe system shall identify sensor failures.\nSR-1.1.1\tnative\tSafety (redundancy)\tNone\tSensor Fusion\tThe system shall use more than one sensor used to identify obstacles.\nSR-1.1.2\tnative\tSafety (monitoring)\tNone\tLidar Grabber\tThe system shall identify when the lidar sensor has failed.\nSR-1.1.3\tnative\tSafety (monitoring)\tNone\tImage Grabber\tThe system shall identify when the camera has failed.\nSR-1.2\tnative\tSafety (failure mitigation)\tNone\t(all components)\tThe system shall mitigate sensor failures.\nSR-1.2.1\tnative\tSafety (redundancy)\tNone\tSensor Fusion\tThe system shall detect objects by using a combination of different sensors.\nSR-1.2.2\tnative\tSafety (redundancy)\tNone\tSensor Fusion\tThe system shall use only information from working sensors.\nSR-1.2.3\tnative\tSafety (warning)\tNone\tDriver Warnings\tThe system shall inform the driver about sensor failures.\nSR-1.3\tnative\tSafety (failure identification)\tNone\t(all components)\tThe system shall identify controller failures.\nSR-1.3.1\tnative\tSafety (monitoring)\tNone\tPath Planner\tThe system shall identify when the path planner has failed.\nSR-1.3.2\tnative\tSafety (monitoring)\tNone\tObject Detection\tThe system shall identify when the object detection has failed.\nSR-1.3.3\tnative\tSafety (monitoring)\tNone\tSensor Fusion\tThe system shall identify when the sensor fusion has failed.\nSR-1.4\tnative\tSafety (failure mitigation)\tNone\tPath Planner\tThe system shall mitigate controller failures.\nSR-1.5\tnative\tSafety (failure identification)\tNone\tController\tThe system shall identify failures of the brake actuators.\nSR-1.6\tnative\tSafety (failure mitigation)\tNone\tController\tThe system shall mitigate failures of the brake actuators.\nFR-7\tnative\tFunctional\tNone\tNone\tThe system shall perform a braking maneuver to avoid collisions with obstacles.\nFR-7.1\tnative\tTiming\t]0,50] ms\t(skipped at this point)\tThe system shall start braking within 50 ms (tbc) after the obstacle is detected within a dangerous zone (tbd).\nFR-7.2\tnative\tFunctional\tNone\tObject Detection\tThe system shall be able to detect obstacles.\nFR-7.2.1\tnative\tFunctional\tNone\tObject Detection\tThe system shall detect all obstacles.\nFR-7.2.2\tnative\tFunctional\tNone\tObject Detection\tThe system shall be able to distinguish vulnerable road users and other objects.\nFR-7.2.3\tnative\tFunctional\tNone\tObject Detection\tThe system shall be able to identify pedestrians, cars, trucks, busses, motorbikes, bicycles, riders, traffic lights, traffic signs.\nFR-7.2.4\tnative\tFunctional\tNone\tSensor Fusion\tThe system shall be able to determine the distance between the vehicle and the objects on or close to the trajectory.\nFR-7.2.5\tnative\tTiming\t]0,350] ms\t(skipped at this point)\tThe system shall detect obstacles in time, i.e. within 350 ms (tbc).\n"
+    },
+    {
+      "id": "architecture",
+      "type": "architecture",
+      "content": {
+        "model": {
+          "id": "_PlWtgH_XEeq1j4EUwdsVmw",
+          "name": "MobSTr"
+        },
+        "components": [
+          {
+            "id": "_8AlbcH_YEeq1j4EUwdsVmw",
+            "name": "GPS Grabber",
+            "parent": null,
+            "ports": [
+              {
+                "id": "_Eiy3oH_aEeq1j4EUwdsVmw",
+                "name": "gps_output"
+              }
+            ]
+          },
+          {
+            "id": "_QBDgIH_ZEeq1j4EUwdsVmw",
+            "name": "Lidar Grabber",
+            "parent": null,
+            "ports": [
+              {
+                "id": "_59JHkH_ZEeq1j4EUwdsVmw",
+                "name": "lidar_output"
+              },
+              {
+                "id": "_hDXfsH_bEeq1j4EUwdsVmw",
+                "name": "occupancy_grid"
+              }
+            ]
+          },
+          {
+            "id": "_ShCJkH_ZEeq1j4EUwdsVmw",
+            "name": "Localization",
+            "parent": null,
+            "ports": [
+              {
+                "id": "_C1C8YH_aEeq1j4EUwdsVmw",
+                "name": "gps_input"
+              },
+              {
+                "id": "_WMM-UH_aEeq1j4EUwdsVmw",
+                "name": "vehicle_status"
+              },
+              {
+                "id": "_bOFHUH_bEeq1j4EUwdsVmw",
+                "name": "environment_state"
+              },
+              {
+                "id": "_h7o4AEBYEeu6P58lsTAauw",
+                "name": "lidar_input"
+              }
+            ]
+          },
+          {
+            "id": "_UcJ0EEBYEeu6P58lsTAauw",
+            "name": "Particle Filter",
+            "parent": "_ShCJkH_ZEeq1j4EUwdsVmw",
+            "ports": [
+              {
+                "id": "_ovqJgEBYEeu6P58lsTAauw",
+                "name": "lidar_input"
+              },
+              {
+                "id": "_vzLuQEBmEeu6P58lsTAauw",
+                "name": "pose"
+              },
+              {
+                "id": "__369MEBmEeu6P58lsTAauw",
+                "name": "vehicle_status"
+              }
+            ]
+          },
+          {
+            "id": "_VcTCcEBYEeu6P58lsTAauw",
+            "name": "Extended Kalman Filter",
+            "parent": "_ShCJkH_ZEeq1j4EUwdsVmw",
+            "ports": [
+              {
+                "id": "_nPKewEBmEeu6P58lsTAauw",
+                "name": "environment_state"
+              },
+              {
+                "id": "_4-auwEBmEeu6P58lsTAauw",
+                "name": "fused_pose"
+              },
+              {
+                "id": "_CR9WsEBnEeu6P58lsTAauw",
+                "name": "vehicle_status"
+              }
+            ]
+          },
+          {
+            "id": "_zOEgwEBmEeu6P58lsTAauw",
+            "name": "Ego Pose Fusion",
+            "parent": "_ShCJkH_ZEeq1j4EUwdsVmw",
+            "ports": [
+              {
+                "id": "_7UBUMEBmEeu6P58lsTAauw",
+                "name": "pose"
+              },
+              {
+                "id": "_89zVcEBmEeu6P58lsTAauw",
+                "name": "fused_pose"
+              },
+              {
+                "id": "_9xzlQEBmEeu6P58lsTAauw",
+                "name": "gps_input"
+              }
+            ]
+          },
+          {
+            "id": "_IWw4gH_aEeq1j4EUwdsVmw",
+            "name": "CANBus Interface",
+            "parent": null,
+            "ports": [
+              {
+                "id": "_RXCmMH_aEeq1j4EUwdsVmw",
+                "name": "vehicle_status"
+              },
+              {
+                "id": "_Afzb8H_dEeq1j4EUwdsVmw",
+                "name": "vehicle_commands"
+              }
+            ]
+          },
+          {
+            "id": "_ZvuIYH_aEeq1j4EUwdsVmw",
+            "name": "Path Planner",
+            "parent": null,
+            "ports": [
+              {
+                "id": "_RYx2IH_bEeq1j4EUwdsVmw",
+                "name": "environment_state"
+              },
+              {
+                "id": "_fr1FAH_bEeq1j4EUwdsVmw",
+                "name": "occupancy_grid"
+              },
+              {
+                "id": "_hrPikH_cEeq1j4EUwdsVmw",
+                "name": "lane"
+              },
+              {
+                "id": "_2qlqUH_cEeq1j4EUwdsVmw",
+                "name": "vehicle_goal_state"
+              },
+              {
+                "id": "_vaSfYIlGEeqZns6eDXpo_Q",
+                "name": "fused objects"
+              },
+              {
+                "id": "_pv1OYGX6Eeu5Bd8fMshJEA",
+                "name": "object_classification"
+              }
+            ]
+          },
+          {
+            "id": "_8l-gIH_bEeq1j4EUwdsVmw",
+            "name": "Image Grabber (Camera)",
+            "parent": null,
+            "ports": [
+              {
+                "id": "__yOZsH_bEeq1j4EUwdsVmw",
+                "name": "frame"
+              }
+            ]
+          },
+          {
+            "id": "_EMPt8H_cEeq1j4EUwdsVmw",
+            "name": "Object Detection",
+            "parent": null,
+            "ports": [
+              {
+                "id": "_G3EVcH_cEeq1j4EUwdsVmw",
+                "name": "frame"
+              },
+              {
+                "id": "_IbumIH_cEeq1j4EUwdsVmw",
+                "name": "fused_objects"
+              },
+              {
+                "id": "_ZcYt0GR1Eeu5Bd8fMshJEA",
+                "name": "lidar_input"
+              },
+              {
+                "id": "_SOBJ4GX6Eeu5Bd8fMshJEA",
+                "name": "warnings"
+              },
+              {
+                "id": "_m_MSwGX6Eeu5Bd8fMshJEA",
+                "name": "object_list"
+              }
+            ]
+          },
+          {
+            "id": "_YZMdYGRzEeu5Bd8fMshJEA",
+            "name": "Object Localization",
+            "parent": "_EMPt8H_cEeq1j4EUwdsVmw",
+            "ports": [
+              {
+                "id": "_UHfM8GX6Eeu5Bd8fMshJEA",
+                "name": "warnings"
+              },
+              {
+                "id": "_bihlsGX7Eeu5Bd8fMshJEA",
+                "name": "fused_objects"
+              },
+              {
+                "id": "_7_dyIGX7Eeu5Bd8fMshJEA",
+                "name": "lidar_input"
+              },
+              {
+                "id": "__vo4IGX7Eeu5Bd8fMshJEA",
+                "name": "frame"
+              }
+            ]
+          },
+          {
+            "id": "_h63n8GRzEeu5Bd8fMshJEA",
+            "name": "Object Localization via Lidar",
+            "parent": "_YZMdYGRzEeu5Bd8fMshJEA",
+            "ports": [
+              {
+                "id": "_sRFVEGX4Eeu5Bd8fMshJEA",
+                "name": "lidar_input"
+              },
+              {
+                "id": "_kWg1wGX5Eeu5Bd8fMshJEA",
+                "name": "object_poses"
+              }
+            ]
+          },
+          {
+            "id": "_le1d8GRzEeu5Bd8fMshJEA",
+            "name": "Object Localization via Camera",
+            "parent": "_YZMdYGRzEeu5Bd8fMshJEA",
+            "ports": [
+              {
+                "id": "_w0ICcGX4Eeu5Bd8fMshJEA",
+                "name": "frame"
+              },
+              {
+                "id": "_sRE4kGX5Eeu5Bd8fMshJEA",
+                "name": "bounding_boxes"
+              }
+            ]
+          },
+          {
+            "id": "_t98fwH_bEeq1j4EUwdsVmw",
+            "name": "Sensor Fusion",
+            "parent": "_YZMdYGRzEeu5Bd8fMshJEA",
+            "ports": [
+              {
+                "id": "_x1uCkH_bEeq1j4EUwdsVmw",
+                "name": "object_poses"
+              },
+              {
+                "id": "_L-HHwH_cEeq1j4EUwdsVmw",
+                "name": "bounding_boxes"
+              },
+              {
+                "id": "_aVIDgIlGEeqZns6eDXpo_Q",
+                "name": "fused objects"
+              },
+              {
+                "id": "_uEEnYOH7EequeMCZdIuVEw",
+                "name": "sensor_warnings"
+              }
+            ]
+          },
+          {
+            "id": "_cbIBwGRzEeu5Bd8fMshJEA",
+            "name": "Object Classification",
+            "parent": "_EMPt8H_cEeq1j4EUwdsVmw",
+            "ports": [
+              {
+                "id": "_EF0xMGR7Eeu5Bd8fMshJEA",
+                "name": "frame"
+              },
+              {
+                "id": "_IvZkYGR7Eeu5Bd8fMshJEA",
+                "name": "object_list"
+              }
+            ]
+          },
+          {
+            "id": "_QPQz4H_cEeq1j4EUwdsVmw",
+            "name": "Lane Detection",
+            "parent": null,
+            "ports": [
+              {
+                "id": "_SkKOsH_cEeq1j4EUwdsVmw",
+                "name": "frame"
+              },
+              {
+                "id": "_fF54AH_cEeq1j4EUwdsVmw",
+                "name": "lane"
+              }
+            ]
+          },
+          {
+            "id": "_tXcrAH_cEeq1j4EUwdsVmw",
+            "name": "Controller",
+            "parent": null,
+            "ports": [
+              {
+                "id": "_5PlWoH_cEeq1j4EUwdsVmw",
+                "name": "vehicle_goal_state"
+              },
+              {
+                "id": "_-NCIEH_cEeq1j4EUwdsVmw",
+                "name": "vehicle_commands"
+              },
+              {
+                "id": "_jN75YOH9EequeMCZdIuVEw",
+                "name": "controller_warnings"
+              }
+            ]
+          },
+          {
+            "id": "_h5v1AOH6EequeMCZdIuVEw",
+            "name": "Driver Warnings",
+            "parent": null,
+            "ports": [
+              {
+                "id": "_3tc8cOH7EequeMCZdIuVEw",
+                "name": "object_detection_warnings"
+              },
+              {
+                "id": "_oDqSMOH9EequeMCZdIuVEw",
+                "name": "controller_input"
+              }
+            ]
+          }
+        ],
+        "usages": [
+          {
+            "id": "_tRTIsEBYEeu6P58lsTAauw",
+            "client": "_ovqJgEBYEeu6P58lsTAauw",
+            "supplier": "_h7o4AEBYEeu6P58lsTAauw",
+            "client_name": "Particle Filter.lidar_input",
+            "supplier_name": "Localization.lidar_input"
+          },
+          {
+            "id": "_BqkmkEBnEeu6P58lsTAauw",
+            "client": "__369MEBmEeu6P58lsTAauw",
+            "supplier": "_WMM-UH_aEeq1j4EUwdsVmw",
+            "client_name": "Particle Filter.vehicle_status",
+            "supplier_name": "Localization.vehicle_status"
+          },
+          {
+            "id": "_LKvVQEBnEeu6P58lsTAauw",
+            "client": "_CR9WsEBnEeu6P58lsTAauw",
+            "supplier": "_WMM-UH_aEeq1j4EUwdsVmw",
+            "client_name": "Extended Kalman Filter.vehicle_status",
+            "supplier_name": "Localization.vehicle_status"
+          },
+          {
+            "id": "_JV3eUEBnEeu6P58lsTAauw",
+            "client": "_9xzlQEBmEeu6P58lsTAauw",
+            "supplier": "_C1C8YH_aEeq1j4EUwdsVmw",
+            "client_name": "Ego Pose Fusion.gps_input",
+            "supplier_name": "Localization.gps_input"
+          },
+          {
+            "id": "_KBVdMEBnEeu6P58lsTAauw",
+            "client": "_7UBUMEBmEeu6P58lsTAauw",
+            "supplier": "_vzLuQEBmEeu6P58lsTAauw",
+            "client_name": "Ego Pose Fusion.pose",
+            "supplier_name": "Particle Filter.pose"
+          },
+          {
+            "id": "_8rluoEBnEeu6P58lsTAauw",
+            "client": "_4-auwEBmEeu6P58lsTAauw",
+            "supplier": "_89zVcEBmEeu6P58lsTAauw",
+            "client_name": "Extended Kalman Filter.fused_pose",
+            "supplier_name": "Ego Pose Fusion.fused_pose"
+          },
+          {
+            "id": "_pyDSQEBmEeu6P58lsTAauw",
+            "client": "_bOFHUH_bEeq1j4EUwdsVmw",
+            "supplier": "_nPKewEBmEeu6P58lsTAauw",
+            "client_name": "Localization.environment_state",
+            "supplier_name": "Extended Kalman Filter.environment_state"
+          },
+          {
+            "id": "_GUPAEH_aEeq1j4EUwdsVmw",
+            "client": "_C1C8YH_aEeq1j4EUwdsVmw",
+            "supplier": "_Eiy3oH_aEeq1j4EUwdsVmw",
+            "client_name": "Localization.gps_input",
+            "supplier_name": "GPS Grabber.gps_output"
+          },
+          {
+            "id": "_YSpGYH_aEeq1j4EUwdsVmw",
+            "client": "_WMM-UH_aEeq1j4EUwdsVmw",
+            "supplier": "_RXCmMH_aEeq1j4EUwdsVmw",
+            "client_name": "Localization.vehicle_status",
+            "supplier_name": "CANBus Interface.vehicle_status"
+          },
+          {
+            "id": "_diINkH_bEeq1j4EUwdsVmw",
+            "client": "_RYx2IH_bEeq1j4EUwdsVmw",
+            "supplier": "_bOFHUH_bEeq1j4EUwdsVmw",
+            "client_name": "Path Planner.environment_state",
+            "supplier_name": "Localization.environment_state"
+          },
+          {
+            "id": "_i8asAH_bEeq1j4EUwdsVmw",
+            "client": "_fr1FAH_bEeq1j4EUwdsVmw",
+            "supplier": "_hDXfsH_bEeq1j4EUwdsVmw",
+            "client_name": "Path Planner.occupancy_grid",
+            "supplier_name": "Lidar Grabber.occupancy_grid"
+          },
+          {
+            "id": "_4rC7oH_bEeq1j4EUwdsVmw",
+            "client": "_x1uCkH_bEeq1j4EUwdsVmw",
+            "supplier": "_59JHkH_ZEeq1j4EUwdsVmw",
+            "client_name": "Sensor Fusion.object_poses",
+            "supplier_name": "Lidar Grabber.lidar_output"
+          },
+          {
+            "id": "_KtvFAH_cEeq1j4EUwdsVmw",
+            "client": "_G3EVcH_cEeq1j4EUwdsVmw",
+            "supplier": "__yOZsH_bEeq1j4EUwdsVmw",
+            "client_name": "Object Detection.frame",
+            "supplier_name": "Image Grabber (Camera).frame"
+          },
+          {
+            "id": "_kKIm4H_cEeq1j4EUwdsVmw",
+            "client": "_hrPikH_cEeq1j4EUwdsVmw",
+            "supplier": "_fF54AH_cEeq1j4EUwdsVmw",
+            "client_name": "Path Planner.lane",
+            "supplier_name": "Lane Detection.lane"
+          },
+          {
+            "id": "_7T-3UH_cEeq1j4EUwdsVmw",
+            "client": "_5PlWoH_cEeq1j4EUwdsVmw",
+            "supplier": "_2qlqUH_cEeq1j4EUwdsVmw",
+            "client_name": "Controller.vehicle_goal_state",
+            "supplier_name": "Path Planner.vehicle_goal_state"
+          },
+          {
+            "id": "_lLuKQH_dEeq1j4EUwdsVmw",
+            "client": "_SkKOsH_cEeq1j4EUwdsVmw",
+            "supplier": "_PlWtgH_XEeq1j4EUwdsVmw",
+            "client_name": "Lane Detection.frame",
+            "supplier_name": "Model:MobSTr"
+          },
+          {
+            "id": "_ooKb8H_dEeq1j4EUwdsVmw",
+            "client": "_-NCIEH_cEeq1j4EUwdsVmw",
+            "supplier": "_Afzb8H_dEeq1j4EUwdsVmw",
+            "client_name": "Controller.vehicle_commands",
+            "supplier_name": "CANBus Interface.vehicle_commands"
+          },
+          {
+            "id": "_x193oIlGEeqZns6eDXpo_Q",
+            "client": "_vaSfYIlGEeqZns6eDXpo_Q",
+            "supplier": "_aVIDgIlGEeqZns6eDXpo_Q",
+            "client_name": "Path Planner.fused objects",
+            "supplier_name": "Sensor Fusion.fused objects"
+          },
+          {
+            "id": "_9BRmgOH7EequeMCZdIuVEw",
+            "client": "_3tc8cOH7EequeMCZdIuVEw",
+            "supplier": "_uEEnYOH7EequeMCZdIuVEw",
+            "client_name": "Driver Warnings.object_detection_warnings",
+            "supplier_name": "Sensor Fusion.sensor_warnings"
+          },
+          {
+            "id": "_pRDSYOH9EequeMCZdIuVEw",
+            "client": "_oDqSMOH9EequeMCZdIuVEw",
+            "supplier": "_PlWtgH_XEeq1j4EUwdsVmw",
+            "client_name": "Driver Warnings.controller_input",
+            "supplier_name": "Model:MobSTr"
+          },
+          {
+            "id": "_jpSFkEBYEeu6P58lsTAauw",
+            "client": "_h7o4AEBYEeu6P58lsTAauw",
+            "supplier": "_59JHkH_ZEeq1j4EUwdsVmw",
+            "client_name": "Localization.lidar_input",
+            "supplier_name": "Lidar Grabber.lidar_output"
+          },
+          {
+            "id": "_c263sGX5Eeu5Bd8fMshJEA",
+            "client": "_EF0xMGR7Eeu5Bd8fMshJEA",
+            "supplier": "_G3EVcH_cEeq1j4EUwdsVmw",
+            "client_name": "Object Classification.frame",
+            "supplier_name": "Object Detection.frame"
+          },
+          {
+            "id": "_gLdKkGX5Eeu5Bd8fMshJEA",
+            "client": "_w0ICcGX4Eeu5Bd8fMshJEA",
+            "supplier": "__vo4IGX7Eeu5Bd8fMshJEA",
+            "client_name": "Object Localization via Camera.frame",
+            "supplier_name": "Object Localization.frame"
+          },
+          {
+            "id": "_iRH2kGX5Eeu5Bd8fMshJEA",
+            "client": "_sRFVEGX4Eeu5Bd8fMshJEA",
+            "supplier": "_7_dyIGX7Eeu5Bd8fMshJEA",
+            "client_name": "Object Localization via Lidar.lidar_input",
+            "supplier_name": "Object Localization.lidar_input"
+          },
+          {
+            "id": "_rXC5QGX5Eeu5Bd8fMshJEA",
+            "client": "_x1uCkH_bEeq1j4EUwdsVmw",
+            "supplier": "_kWg1wGX5Eeu5Bd8fMshJEA",
+            "client_name": "Sensor Fusion.object_poses",
+            "supplier_name": "Object Localization via Lidar.object_poses"
+          },
+          {
+            "id": "_uhZVYGX5Eeu5Bd8fMshJEA",
+            "client": "_L-HHwH_cEeq1j4EUwdsVmw",
+            "supplier": "_sRE4kGX5Eeu5Bd8fMshJEA",
+            "client_name": "Sensor Fusion.bounding_boxes",
+            "supplier_name": "Object Localization via Camera.bounding_boxes"
+          },
+          {
+            "id": "_EZLhAGX6Eeu5Bd8fMshJEA",
+            "client": "_bihlsGX7Eeu5Bd8fMshJEA",
+            "supplier": "_aVIDgIlGEeqZns6eDXpo_Q",
+            "client_name": "Object Localization.fused_objects",
+            "supplier_name": "Sensor Fusion.fused objects"
+          },
+          {
+            "id": "_HCGrEGX6Eeu5Bd8fMshJEA",
+            "client": "_3tc8cOH7EequeMCZdIuVEw",
+            "supplier": "_SOBJ4GX6Eeu5Bd8fMshJEA",
+            "client_name": "Driver Warnings.object_detection_warnings",
+            "supplier_name": "Object Detection.warnings"
+          },
+          {
+            "id": "_LXZQUGX6Eeu5Bd8fMshJEA",
+            "client": "_ZcYt0GR1Eeu5Bd8fMshJEA",
+            "supplier": "_59JHkH_ZEeq1j4EUwdsVmw",
+            "client_name": "Object Detection.lidar_input",
+            "supplier_name": "Lidar Grabber.lidar_output"
+          },
+          {
+            "id": "_zCY-4GX6Eeu5Bd8fMshJEA",
+            "client": "_m_MSwGX6Eeu5Bd8fMshJEA",
+            "supplier": "_IvZkYGR7Eeu5Bd8fMshJEA",
+            "client_name": "Object Detection.object_list",
+            "supplier_name": "Object Classification.object_list"
+          },
+          {
+            "id": "_3oVPQGX6Eeu5Bd8fMshJEA",
+            "client": "_pv1OYGX6Eeu5Bd8fMshJEA",
+            "supplier": "_m_MSwGX6Eeu5Bd8fMshJEA",
+            "client_name": "Path Planner.object_classification",
+            "supplier_name": "Object Detection.object_list"
+          },
+          {
+            "id": "_5MslAGX6Eeu5Bd8fMshJEA",
+            "client": "_vaSfYIlGEeqZns6eDXpo_Q",
+            "supplier": "_IbumIH_cEeq1j4EUwdsVmw",
+            "client_name": "Path Planner.fused objects",
+            "supplier_name": "Object Detection.fused_objects"
+          },
+          {
+            "id": "_9_6cYGX6Eeu5Bd8fMshJEA",
+            "client": "_SOBJ4GX6Eeu5Bd8fMshJEA",
+            "supplier": "_UHfM8GX6Eeu5Bd8fMshJEA",
+            "client_name": "Object Detection.warnings",
+            "supplier_name": "Object Localization.warnings"
+          },
+          {
+            "id": "_BgXrYGX7Eeu5Bd8fMshJEA",
+            "client": "_UHfM8GX6Eeu5Bd8fMshJEA",
+            "supplier": "_uEEnYOH7EequeMCZdIuVEw",
+            "client_name": "Object Localization.warnings",
+            "supplier_name": "Sensor Fusion.sensor_warnings"
+          },
+          {
+            "id": "_jYdnMGX7Eeu5Bd8fMshJEA",
+            "client": "_IbumIH_cEeq1j4EUwdsVmw",
+            "supplier": "_bihlsGX7Eeu5Bd8fMshJEA",
+            "client_name": "Object Detection.fused_objects",
+            "supplier_name": "Object Localization.fused_objects"
+          },
+          {
+            "id": "_-pd6QGX7Eeu5Bd8fMshJEA",
+            "client": "_7_dyIGX7Eeu5Bd8fMshJEA",
+            "supplier": "_ZcYt0GR1Eeu5Bd8fMshJEA",
+            "client_name": "Object Localization.lidar_input",
+            "supplier_name": "Object Detection.lidar_input"
+          },
+          {
+            "id": "_Bhug0GX8Eeu5Bd8fMshJEA",
+            "client": "__vo4IGX7Eeu5Bd8fMshJEA",
+            "supplier": "_G3EVcH_cEeq1j4EUwdsVmw",
+            "client_name": "Object Localization.frame",
+            "supplier_name": "Object Detection.frame"
+          },
+          {
+            "id": "_hklGYHwCEeuNhcGKPoMAnQ",
+            "client": "_ovqJgEBYEeu6P58lsTAauw",
+            "supplier": "_h7o4AEBYEeu6P58lsTAauw",
+            "client_name": "Particle Filter.lidar_input",
+            "supplier_name": "Localization.lidar_input"
+          },
+          {
+            "id": "_i4qkcHwCEeuNhcGKPoMAnQ",
+            "client": "_9xzlQEBmEeu6P58lsTAauw",
+            "supplier": "_C1C8YH_aEeq1j4EUwdsVmw",
+            "client_name": "Ego Pose Fusion.gps_input",
+            "supplier_name": "Localization.gps_input"
+          },
+          {
+            "id": "_jeVdUHwCEeuNhcGKPoMAnQ",
+            "client": "_7UBUMEBmEeu6P58lsTAauw",
+            "supplier": "_vzLuQEBmEeu6P58lsTAauw",
+            "client_name": "Ego Pose Fusion.pose",
+            "supplier_name": "Particle Filter.pose"
+          },
+          {
+            "id": "_s8HmYHwCEeuNhcGKPoMAnQ",
+            "client": "__369MEBmEeu6P58lsTAauw",
+            "supplier": "_WMM-UH_aEeq1j4EUwdsVmw",
+            "client_name": "Particle Filter.vehicle_status",
+            "supplier_name": "Localization.vehicle_status"
+          },
+          {
+            "id": "_ueZ4gHwCEeuNhcGKPoMAnQ",
+            "client": "_CR9WsEBnEeu6P58lsTAauw",
+            "supplier": "_WMM-UH_aEeq1j4EUwdsVmw",
+            "client_name": "Extended Kalman Filter.vehicle_status",
+            "supplier_name": "Localization.vehicle_status"
+          },
+          {
+            "id": "_4VZy0HwCEeuNhcGKPoMAnQ",
+            "client": "_4-auwEBmEeu6P58lsTAauw",
+            "supplier": "_89zVcEBmEeu6P58lsTAauw",
+            "client_name": "Extended Kalman Filter.fused_pose",
+            "supplier_name": "Ego Pose Fusion.fused_pose"
+          },
+          {
+            "id": "_4uoLIHwCEeuNhcGKPoMAnQ",
+            "client": "_bOFHUH_bEeq1j4EUwdsVmw",
+            "supplier": "_nPKewEBmEeu6P58lsTAauw",
+            "client_name": "Localization.environment_state",
+            "supplier_name": "Extended Kalman Filter.environment_state"
+          }
+        ]
+      }
+    }
+  ]
+}

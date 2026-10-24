@@ -1,0 +1,16 @@
+{
+  "run_id": "H1-run-015",
+  "concern_id": "H1",
+  "classification": "ALIGNED",
+  "rationale": "P characterises the braking-relevant situation, whether required braking occurs, and whether timely stopping is possible. These are established by the target, SG-1, the braking requirements, and H-1's collision-related hazardous event. Braking initiation is itself behaviour under evaluation, not merely an enabling control mechanism. The temporal aspect concerns stopping before collision, rather than internal sensing or processing deadlines. P does not incorporate implementation mechanisms.",
+  "determining_elements": [
+    "The braking-relevant operational state in obstacle/collision-avoidance situations establishes the context in which braking is required.",
+    "Whether a required braking maneuver is initiated directly addresses the target and SG-1, supported by FR-7 and FR-7.1.",
+    "Whether the vehicle can stop in time to avoid collision directly reflects H-1's hazardous event and supports inclusion of this temporal property.",
+    "The declared straight-ahead road scope is grounded in H-1; inclusion of road users and static obstacles is supported by its hazardous event and FR-7."
+  ],
+  "sources": [
+    "hazard",
+    "requirements"
+  ]
+}

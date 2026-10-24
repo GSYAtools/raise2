@@ -1,0 +1,1403 @@
+{
+  "study": "MobSTr EQ2",
+  "valid_runs": 60,
+  "global_metrics": {
+    "decision_accuracy": {
+      "correct": 55,
+      "total": 60,
+      "rate": 0.9166666666666666
+    },
+    "affected_orr_exact_accuracy": {
+      "correct": 25,
+      "total": 30,
+      "rate": 0.8333333333333334
+    },
+    "return_point_accuracy": {
+      "correct": 20,
+      "total": 20,
+      "rate": 1.0
+    },
+    "exact_outcome_accuracy": {
+      "correct": 55,
+      "total": 60,
+      "rate": 0.9166666666666666
+    }
+  },
+  "decision_confusion_matrix": {
+    "NONE": {
+      "NONE": 10,
+      "REVALIDATE": 0,
+      "REDERIVE": 0
+    },
+    "REVALIDATE": {
+      "NONE": 0,
+      "REVALIDATE": 25,
+      "REDERIVE": 5
+    },
+    "REDERIVE": {
+      "NONE": 0,
+      "REVALIDATE": 0,
+      "REDERIVE": 20
+    }
+  },
+  "scenario_summaries": [
+    {
+      "change_id": "delta-01",
+      "expected_decision": "NONE",
+      "expected_orrs": [],
+      "expected_return_point": null,
+      "runs": 10,
+      "decision_counts": {
+        "NONE": 10
+      },
+      "decision_correct": 10,
+      "orr_set_correct": null,
+      "return_point_correct": null,
+      "exact_outcome_correct": 10,
+      "distinct_outcomes": 1,
+      "fully_reproducible": true
+    },
+    {
+      "change_id": "delta-02",
+      "expected_decision": "REVALIDATE",
+      "expected_orrs": [
+        "H1-ORR1"
+      ],
+      "expected_return_point": null,
+      "runs": 10,
+      "decision_counts": {
+        "REVALIDATE": 10
+      },
+      "decision_correct": 10,
+      "orr_set_correct": 10,
+      "return_point_correct": null,
+      "exact_outcome_correct": 10,
+      "distinct_outcomes": 1,
+      "fully_reproducible": true
+    },
+    {
+      "change_id": "delta-03",
+      "expected_decision": "REVALIDATE",
+      "expected_orrs": [
+        "H1-ORR2"
+      ],
+      "expected_return_point": null,
+      "runs": 10,
+      "decision_counts": {
+        "REVALIDATE": 10
+      },
+      "decision_correct": 10,
+      "orr_set_correct": 10,
+      "return_point_correct": null,
+      "exact_outcome_correct": 10,
+      "distinct_outcomes": 1,
+      "fully_reproducible": true
+    },
+    {
+      "change_id": "delta-04",
+      "expected_decision": "REVALIDATE",
+      "expected_orrs": [
+        "H1-ORR3"
+      ],
+      "expected_return_point": null,
+      "runs": 10,
+      "decision_counts": {
+        "REVALIDATE": 5,
+        "REDERIVE": 5
+      },
+      "decision_correct": 5,
+      "orr_set_correct": 5,
+      "return_point_correct": null,
+      "exact_outcome_correct": 5,
+      "distinct_outcomes": 2,
+      "fully_reproducible": false
+    },
+    {
+      "change_id": "delta-05",
+      "expected_decision": "REDERIVE",
+      "expected_orrs": [],
+      "expected_return_point": "RR2",
+      "runs": 10,
+      "decision_counts": {
+        "REDERIVE": 10
+      },
+      "decision_correct": 10,
+      "orr_set_correct": null,
+      "return_point_correct": 10,
+      "exact_outcome_correct": 10,
+      "distinct_outcomes": 1,
+      "fully_reproducible": true
+    },
+    {
+      "change_id": "delta-06",
+      "expected_decision": "REDERIVE",
+      "expected_orrs": [],
+      "expected_return_point": "RR1",
+      "runs": 10,
+      "decision_counts": {
+        "REDERIVE": 10
+      },
+      "decision_correct": 10,
+      "orr_set_correct": null,
+      "return_point_correct": 10,
+      "exact_outcome_correct": 10,
+      "distinct_outcomes": 1,
+      "fully_reproducible": true
+    }
+  ],
+  "token_usage": {
+    "input_tokens_total": 165210,
+    "output_tokens_total": 9866,
+    "total_tokens": 175076,
+    "mean_input_tokens": 2753.5,
+    "mean_output_tokens": 164.43333333333334
+  },
+  "runs": [
+    {
+      "change_id": "delta-01",
+      "run_id": "run-001",
+      "expected_decision": "NONE",
+      "actual_decision": "NONE",
+      "decision_correct": true,
+      "expected_orrs": [],
+      "actual_orrs": [],
+      "orr_set_correct": null,
+      "expected_return_point": null,
+      "actual_return_point": null,
+      "return_point_correct": null,
+      "exact_outcome": true,
+      "triggered_conditions": [],
+      "input_tokens": 2742,
+      "output_tokens": 152,
+      "total_tokens": 2894
+    },
+    {
+      "change_id": "delta-01",
+      "run_id": "run-002",
+      "expected_decision": "NONE",
+      "actual_decision": "NONE",
+      "decision_correct": true,
+      "expected_orrs": [],
+      "actual_orrs": [],
+      "orr_set_correct": null,
+      "expected_return_point": null,
+      "actual_return_point": null,
+      "return_point_correct": null,
+      "exact_outcome": true,
+      "triggered_conditions": [],
+      "input_tokens": 2742,
+      "output_tokens": 153,
+      "total_tokens": 2895
+    },
+    {
+      "change_id": "delta-01",
+      "run_id": "run-003",
+      "expected_decision": "NONE",
+      "actual_decision": "NONE",
+      "decision_correct": true,
+      "expected_orrs": [],
+      "actual_orrs": [],
+      "orr_set_correct": null,
+      "expected_return_point": null,
+      "actual_return_point": null,
+      "return_point_correct": null,
+      "exact_outcome": true,
+      "triggered_conditions": [],
+      "input_tokens": 2742,
+      "output_tokens": 146,
+      "total_tokens": 2888
+    },
+    {
+      "change_id": "delta-01",
+      "run_id": "run-004",
+      "expected_decision": "NONE",
+      "actual_decision": "NONE",
+      "decision_correct": true,
+      "expected_orrs": [],
+      "actual_orrs": [],
+      "orr_set_correct": null,
+      "expected_return_point": null,
+      "actual_return_point": null,
+      "return_point_correct": null,
+      "exact_outcome": true,
+      "triggered_conditions": [],
+      "input_tokens": 2742,
+      "output_tokens": 137,
+      "total_tokens": 2879
+    },
+    {
+      "change_id": "delta-01",
+      "run_id": "run-005",
+      "expected_decision": "NONE",
+      "actual_decision": "NONE",
+      "decision_correct": true,
+      "expected_orrs": [],
+      "actual_orrs": [],
+      "orr_set_correct": null,
+      "expected_return_point": null,
+      "actual_return_point": null,
+      "return_point_correct": null,
+      "exact_outcome": true,
+      "triggered_conditions": [],
+      "input_tokens": 2742,
+      "output_tokens": 156,
+      "total_tokens": 2898
+    },
+    {
+      "change_id": "delta-01",
+      "run_id": "run-006",
+      "expected_decision": "NONE",
+      "actual_decision": "NONE",
+      "decision_correct": true,
+      "expected_orrs": [],
+      "actual_orrs": [],
+      "orr_set_correct": null,
+      "expected_return_point": null,
+      "actual_return_point": null,
+      "return_point_correct": null,
+      "exact_outcome": true,
+      "triggered_conditions": [],
+      "input_tokens": 2742,
+      "output_tokens": 131,
+      "total_tokens": 2873
+    },
+    {
+      "change_id": "delta-01",
+      "run_id": "run-007",
+      "expected_decision": "NONE",
+      "actual_decision": "NONE",
+      "decision_correct": true,
+      "expected_orrs": [],
+      "actual_orrs": [],
+      "orr_set_correct": null,
+      "expected_return_point": null,
+      "actual_return_point": null,
+      "return_point_correct": null,
+      "exact_outcome": true,
+      "triggered_conditions": [],
+      "input_tokens": 2742,
+      "output_tokens": 155,
+      "total_tokens": 2897
+    },
+    {
+      "change_id": "delta-01",
+      "run_id": "run-008",
+      "expected_decision": "NONE",
+      "actual_decision": "NONE",
+      "decision_correct": true,
+      "expected_orrs": [],
+      "actual_orrs": [],
+      "orr_set_correct": null,
+      "expected_return_point": null,
+      "actual_return_point": null,
+      "return_point_correct": null,
+      "exact_outcome": true,
+      "triggered_conditions": [],
+      "input_tokens": 2742,
+      "output_tokens": 159,
+      "total_tokens": 2901
+    },
+    {
+      "change_id": "delta-01",
+      "run_id": "run-009",
+      "expected_decision": "NONE",
+      "actual_decision": "NONE",
+      "decision_correct": true,
+      "expected_orrs": [],
+      "actual_orrs": [],
+      "orr_set_correct": null,
+      "expected_return_point": null,
+      "actual_return_point": null,
+      "return_point_correct": null,
+      "exact_outcome": true,
+      "triggered_conditions": [],
+      "input_tokens": 2742,
+      "output_tokens": 152,
+      "total_tokens": 2894
+    },
+    {
+      "change_id": "delta-01",
+      "run_id": "run-010",
+      "expected_decision": "NONE",
+      "actual_decision": "NONE",
+      "decision_correct": true,
+      "expected_orrs": [],
+      "actual_orrs": [],
+      "orr_set_correct": null,
+      "expected_return_point": null,
+      "actual_return_point": null,
+      "return_point_correct": null,
+      "exact_outcome": true,
+      "triggered_conditions": [],
+      "input_tokens": 2742,
+      "output_tokens": 169,
+      "total_tokens": 2911
+    },
+    {
+      "change_id": "delta-02",
+      "run_id": "run-001",
+      "expected_decision": "REVALIDATE",
+      "actual_decision": "REVALIDATE",
+      "decision_correct": true,
+      "expected_orrs": [
+        "H1-ORR1"
+      ],
+      "actual_orrs": [
+        "H1-ORR1"
+      ],
+      "orr_set_correct": true,
+      "expected_return_point": null,
+      "actual_return_point": null,
+      "return_point_correct": null,
+      "exact_outcome": true,
+      "triggered_conditions": [
+        "H1-RC1"
+      ],
+      "input_tokens": 2754,
+      "output_tokens": 164,
+      "total_tokens": 2918
+    },
+    {
+      "change_id": "delta-02",
+      "run_id": "run-002",
+      "expected_decision": "REVALIDATE",
+      "actual_decision": "REVALIDATE",
+      "decision_correct": true,
+      "expected_orrs": [
+        "H1-ORR1"
+      ],
+      "actual_orrs": [
+        "H1-ORR1"
+      ],
+      "orr_set_correct": true,
+      "expected_return_point": null,
+      "actual_return_point": null,
+      "return_point_correct": null,
+      "exact_outcome": true,
+      "triggered_conditions": [
+        "H1-RC1"
+      ],
+      "input_tokens": 2754,
+      "output_tokens": 200,
+      "total_tokens": 2954
+    },
+    {
+      "change_id": "delta-02",
+      "run_id": "run-003",
+      "expected_decision": "REVALIDATE",
+      "actual_decision": "REVALIDATE",
+      "decision_correct": true,
+      "expected_orrs": [
+        "H1-ORR1"
+      ],
+      "actual_orrs": [
+        "H1-ORR1"
+      ],
+      "orr_set_correct": true,
+      "expected_return_point": null,
+      "actual_return_point": null,
+      "return_point_correct": null,
+      "exact_outcome": true,
+      "triggered_conditions": [
+        "H1-RC1"
+      ],
+      "input_tokens": 2754,
+      "output_tokens": 214,
+      "total_tokens": 2968
+    },
+    {
+      "change_id": "delta-02",
+      "run_id": "run-004",
+      "expected_decision": "REVALIDATE",
+      "actual_decision": "REVALIDATE",
+      "decision_correct": true,
+      "expected_orrs": [
+        "H1-ORR1"
+      ],
+      "actual_orrs": [
+        "H1-ORR1"
+      ],
+      "orr_set_correct": true,
+      "expected_return_point": null,
+      "actual_return_point": null,
+      "return_point_correct": null,
+      "exact_outcome": true,
+      "triggered_conditions": [
+        "H1-RC1"
+      ],
+      "input_tokens": 2754,
+      "output_tokens": 180,
+      "total_tokens": 2934
+    },
+    {
+      "change_id": "delta-02",
+      "run_id": "run-005",
+      "expected_decision": "REVALIDATE",
+      "actual_decision": "REVALIDATE",
+      "decision_correct": true,
+      "expected_orrs": [
+        "H1-ORR1"
+      ],
+      "actual_orrs": [
+        "H1-ORR1"
+      ],
+      "orr_set_correct": true,
+      "expected_return_point": null,
+      "actual_return_point": null,
+      "return_point_correct": null,
+      "exact_outcome": true,
+      "triggered_conditions": [
+        "H1-RC1"
+      ],
+      "input_tokens": 2754,
+      "output_tokens": 180,
+      "total_tokens": 2934
+    },
+    {
+      "change_id": "delta-02",
+      "run_id": "run-006",
+      "expected_decision": "REVALIDATE",
+      "actual_decision": "REVALIDATE",
+      "decision_correct": true,
+      "expected_orrs": [
+        "H1-ORR1"
+      ],
+      "actual_orrs": [
+        "H1-ORR1"
+      ],
+      "orr_set_correct": true,
+      "expected_return_point": null,
+      "actual_return_point": null,
+      "return_point_correct": null,
+      "exact_outcome": true,
+      "triggered_conditions": [
+        "H1-RC1"
+      ],
+      "input_tokens": 2754,
+      "output_tokens": 229,
+      "total_tokens": 2983
+    },
+    {
+      "change_id": "delta-02",
+      "run_id": "run-007",
+      "expected_decision": "REVALIDATE",
+      "actual_decision": "REVALIDATE",
+      "decision_correct": true,
+      "expected_orrs": [
+        "H1-ORR1"
+      ],
+      "actual_orrs": [
+        "H1-ORR1"
+      ],
+      "orr_set_correct": true,
+      "expected_return_point": null,
+      "actual_return_point": null,
+      "return_point_correct": null,
+      "exact_outcome": true,
+      "triggered_conditions": [
+        "H1-RC1"
+      ],
+      "input_tokens": 2754,
+      "output_tokens": 200,
+      "total_tokens": 2954
+    },
+    {
+      "change_id": "delta-02",
+      "run_id": "run-008",
+      "expected_decision": "REVALIDATE",
+      "actual_decision": "REVALIDATE",
+      "decision_correct": true,
+      "expected_orrs": [
+        "H1-ORR1"
+      ],
+      "actual_orrs": [
+        "H1-ORR1"
+      ],
+      "orr_set_correct": true,
+      "expected_return_point": null,
+      "actual_return_point": null,
+      "return_point_correct": null,
+      "exact_outcome": true,
+      "triggered_conditions": [
+        "H1-RC1"
+      ],
+      "input_tokens": 2754,
+      "output_tokens": 200,
+      "total_tokens": 2954
+    },
+    {
+      "change_id": "delta-02",
+      "run_id": "run-009",
+      "expected_decision": "REVALIDATE",
+      "actual_decision": "REVALIDATE",
+      "decision_correct": true,
+      "expected_orrs": [
+        "H1-ORR1"
+      ],
+      "actual_orrs": [
+        "H1-ORR1"
+      ],
+      "orr_set_correct": true,
+      "expected_return_point": null,
+      "actual_return_point": null,
+      "return_point_correct": null,
+      "exact_outcome": true,
+      "triggered_conditions": [
+        "H1-RC1"
+      ],
+      "input_tokens": 2754,
+      "output_tokens": 187,
+      "total_tokens": 2941
+    },
+    {
+      "change_id": "delta-02",
+      "run_id": "run-010",
+      "expected_decision": "REVALIDATE",
+      "actual_decision": "REVALIDATE",
+      "decision_correct": true,
+      "expected_orrs": [
+        "H1-ORR1"
+      ],
+      "actual_orrs": [
+        "H1-ORR1"
+      ],
+      "orr_set_correct": true,
+      "expected_return_point": null,
+      "actual_return_point": null,
+      "return_point_correct": null,
+      "exact_outcome": true,
+      "triggered_conditions": [
+        "H1-RC1"
+      ],
+      "input_tokens": 2754,
+      "output_tokens": 186,
+      "total_tokens": 2940
+    },
+    {
+      "change_id": "delta-03",
+      "run_id": "run-001",
+      "expected_decision": "REVALIDATE",
+      "actual_decision": "REVALIDATE",
+      "decision_correct": true,
+      "expected_orrs": [
+        "H1-ORR2"
+      ],
+      "actual_orrs": [
+        "H1-ORR2"
+      ],
+      "orr_set_correct": true,
+      "expected_return_point": null,
+      "actual_return_point": null,
+      "return_point_correct": null,
+      "exact_outcome": true,
+      "triggered_conditions": [
+        "H1-RC2"
+      ],
+      "input_tokens": 2761,
+      "output_tokens": 176,
+      "total_tokens": 2937
+    },
+    {
+      "change_id": "delta-03",
+      "run_id": "run-002",
+      "expected_decision": "REVALIDATE",
+      "actual_decision": "REVALIDATE",
+      "decision_correct": true,
+      "expected_orrs": [
+        "H1-ORR2"
+      ],
+      "actual_orrs": [
+        "H1-ORR2"
+      ],
+      "orr_set_correct": true,
+      "expected_return_point": null,
+      "actual_return_point": null,
+      "return_point_correct": null,
+      "exact_outcome": true,
+      "triggered_conditions": [
+        "H1-RC2"
+      ],
+      "input_tokens": 2761,
+      "output_tokens": 185,
+      "total_tokens": 2946
+    },
+    {
+      "change_id": "delta-03",
+      "run_id": "run-003",
+      "expected_decision": "REVALIDATE",
+      "actual_decision": "REVALIDATE",
+      "decision_correct": true,
+      "expected_orrs": [
+        "H1-ORR2"
+      ],
+      "actual_orrs": [
+        "H1-ORR2"
+      ],
+      "orr_set_correct": true,
+      "expected_return_point": null,
+      "actual_return_point": null,
+      "return_point_correct": null,
+      "exact_outcome": true,
+      "triggered_conditions": [
+        "H1-RC2"
+      ],
+      "input_tokens": 2761,
+      "output_tokens": 189,
+      "total_tokens": 2950
+    },
+    {
+      "change_id": "delta-03",
+      "run_id": "run-004",
+      "expected_decision": "REVALIDATE",
+      "actual_decision": "REVALIDATE",
+      "decision_correct": true,
+      "expected_orrs": [
+        "H1-ORR2"
+      ],
+      "actual_orrs": [
+        "H1-ORR2"
+      ],
+      "orr_set_correct": true,
+      "expected_return_point": null,
+      "actual_return_point": null,
+      "return_point_correct": null,
+      "exact_outcome": true,
+      "triggered_conditions": [
+        "H1-RC2"
+      ],
+      "input_tokens": 2761,
+      "output_tokens": 166,
+      "total_tokens": 2927
+    },
+    {
+      "change_id": "delta-03",
+      "run_id": "run-005",
+      "expected_decision": "REVALIDATE",
+      "actual_decision": "REVALIDATE",
+      "decision_correct": true,
+      "expected_orrs": [
+        "H1-ORR2"
+      ],
+      "actual_orrs": [
+        "H1-ORR2"
+      ],
+      "orr_set_correct": true,
+      "expected_return_point": null,
+      "actual_return_point": null,
+      "return_point_correct": null,
+      "exact_outcome": true,
+      "triggered_conditions": [
+        "H1-RC2"
+      ],
+      "input_tokens": 2761,
+      "output_tokens": 182,
+      "total_tokens": 2943
+    },
+    {
+      "change_id": "delta-03",
+      "run_id": "run-006",
+      "expected_decision": "REVALIDATE",
+      "actual_decision": "REVALIDATE",
+      "decision_correct": true,
+      "expected_orrs": [
+        "H1-ORR2"
+      ],
+      "actual_orrs": [
+        "H1-ORR2"
+      ],
+      "orr_set_correct": true,
+      "expected_return_point": null,
+      "actual_return_point": null,
+      "return_point_correct": null,
+      "exact_outcome": true,
+      "triggered_conditions": [
+        "H1-RC2"
+      ],
+      "input_tokens": 2761,
+      "output_tokens": 171,
+      "total_tokens": 2932
+    },
+    {
+      "change_id": "delta-03",
+      "run_id": "run-007",
+      "expected_decision": "REVALIDATE",
+      "actual_decision": "REVALIDATE",
+      "decision_correct": true,
+      "expected_orrs": [
+        "H1-ORR2"
+      ],
+      "actual_orrs": [
+        "H1-ORR2"
+      ],
+      "orr_set_correct": true,
+      "expected_return_point": null,
+      "actual_return_point": null,
+      "return_point_correct": null,
+      "exact_outcome": true,
+      "triggered_conditions": [
+        "H1-RC2"
+      ],
+      "input_tokens": 2761,
+      "output_tokens": 138,
+      "total_tokens": 2899
+    },
+    {
+      "change_id": "delta-03",
+      "run_id": "run-008",
+      "expected_decision": "REVALIDATE",
+      "actual_decision": "REVALIDATE",
+      "decision_correct": true,
+      "expected_orrs": [
+        "H1-ORR2"
+      ],
+      "actual_orrs": [
+        "H1-ORR2"
+      ],
+      "orr_set_correct": true,
+      "expected_return_point": null,
+      "actual_return_point": null,
+      "return_point_correct": null,
+      "exact_outcome": true,
+      "triggered_conditions": [
+        "H1-RC2"
+      ],
+      "input_tokens": 2761,
+      "output_tokens": 174,
+      "total_tokens": 2935
+    },
+    {
+      "change_id": "delta-03",
+      "run_id": "run-009",
+      "expected_decision": "REVALIDATE",
+      "actual_decision": "REVALIDATE",
+      "decision_correct": true,
+      "expected_orrs": [
+        "H1-ORR2"
+      ],
+      "actual_orrs": [
+        "H1-ORR2"
+      ],
+      "orr_set_correct": true,
+      "expected_return_point": null,
+      "actual_return_point": null,
+      "return_point_correct": null,
+      "exact_outcome": true,
+      "triggered_conditions": [
+        "H1-RC2"
+      ],
+      "input_tokens": 2761,
+      "output_tokens": 161,
+      "total_tokens": 2922
+    },
+    {
+      "change_id": "delta-03",
+      "run_id": "run-010",
+      "expected_decision": "REVALIDATE",
+      "actual_decision": "REVALIDATE",
+      "decision_correct": true,
+      "expected_orrs": [
+        "H1-ORR2"
+      ],
+      "actual_orrs": [
+        "H1-ORR2"
+      ],
+      "orr_set_correct": true,
+      "expected_return_point": null,
+      "actual_return_point": null,
+      "return_point_correct": null,
+      "exact_outcome": true,
+      "triggered_conditions": [
+        "H1-RC2"
+      ],
+      "input_tokens": 2761,
+      "output_tokens": 160,
+      "total_tokens": 2921
+    },
+    {
+      "change_id": "delta-04",
+      "run_id": "run-001",
+      "expected_decision": "REVALIDATE",
+      "actual_decision": "REVALIDATE",
+      "decision_correct": true,
+      "expected_orrs": [
+        "H1-ORR3"
+      ],
+      "actual_orrs": [
+        "H1-ORR3"
+      ],
+      "orr_set_correct": true,
+      "expected_return_point": null,
+      "actual_return_point": null,
+      "return_point_correct": null,
+      "exact_outcome": true,
+      "triggered_conditions": [
+        "H1-RC3"
+      ],
+      "input_tokens": 2740,
+      "output_tokens": 177,
+      "total_tokens": 2917
+    },
+    {
+      "change_id": "delta-04",
+      "run_id": "run-002",
+      "expected_decision": "REVALIDATE",
+      "actual_decision": "REDERIVE",
+      "decision_correct": false,
+      "expected_orrs": [
+        "H1-ORR3"
+      ],
+      "actual_orrs": [],
+      "orr_set_correct": false,
+      "expected_return_point": null,
+      "actual_return_point": "RR3",
+      "return_point_correct": null,
+      "exact_outcome": false,
+      "triggered_conditions": [],
+      "input_tokens": 2740,
+      "output_tokens": 184,
+      "total_tokens": 2924
+    },
+    {
+      "change_id": "delta-04",
+      "run_id": "run-003",
+      "expected_decision": "REVALIDATE",
+      "actual_decision": "REVALIDATE",
+      "decision_correct": true,
+      "expected_orrs": [
+        "H1-ORR3"
+      ],
+      "actual_orrs": [
+        "H1-ORR3"
+      ],
+      "orr_set_correct": true,
+      "expected_return_point": null,
+      "actual_return_point": null,
+      "return_point_correct": null,
+      "exact_outcome": true,
+      "triggered_conditions": [
+        "H1-RC3"
+      ],
+      "input_tokens": 2740,
+      "output_tokens": 196,
+      "total_tokens": 2936
+    },
+    {
+      "change_id": "delta-04",
+      "run_id": "run-004",
+      "expected_decision": "REVALIDATE",
+      "actual_decision": "REVALIDATE",
+      "decision_correct": true,
+      "expected_orrs": [
+        "H1-ORR3"
+      ],
+      "actual_orrs": [
+        "H1-ORR3"
+      ],
+      "orr_set_correct": true,
+      "expected_return_point": null,
+      "actual_return_point": null,
+      "return_point_correct": null,
+      "exact_outcome": true,
+      "triggered_conditions": [
+        "H1-RC3"
+      ],
+      "input_tokens": 2740,
+      "output_tokens": 150,
+      "total_tokens": 2890
+    },
+    {
+      "change_id": "delta-04",
+      "run_id": "run-005",
+      "expected_decision": "REVALIDATE",
+      "actual_decision": "REVALIDATE",
+      "decision_correct": true,
+      "expected_orrs": [
+        "H1-ORR3"
+      ],
+      "actual_orrs": [
+        "H1-ORR3"
+      ],
+      "orr_set_correct": true,
+      "expected_return_point": null,
+      "actual_return_point": null,
+      "return_point_correct": null,
+      "exact_outcome": true,
+      "triggered_conditions": [
+        "H1-RC3"
+      ],
+      "input_tokens": 2740,
+      "output_tokens": 156,
+      "total_tokens": 2896
+    },
+    {
+      "change_id": "delta-04",
+      "run_id": "run-006",
+      "expected_decision": "REVALIDATE",
+      "actual_decision": "REDERIVE",
+      "decision_correct": false,
+      "expected_orrs": [
+        "H1-ORR3"
+      ],
+      "actual_orrs": [],
+      "orr_set_correct": false,
+      "expected_return_point": null,
+      "actual_return_point": "RR3",
+      "return_point_correct": null,
+      "exact_outcome": false,
+      "triggered_conditions": [
+        "H1-RC3"
+      ],
+      "input_tokens": 2740,
+      "output_tokens": 174,
+      "total_tokens": 2914
+    },
+    {
+      "change_id": "delta-04",
+      "run_id": "run-007",
+      "expected_decision": "REVALIDATE",
+      "actual_decision": "REDERIVE",
+      "decision_correct": false,
+      "expected_orrs": [
+        "H1-ORR3"
+      ],
+      "actual_orrs": [],
+      "orr_set_correct": false,
+      "expected_return_point": null,
+      "actual_return_point": "RR3",
+      "return_point_correct": null,
+      "exact_outcome": false,
+      "triggered_conditions": [],
+      "input_tokens": 2740,
+      "output_tokens": 181,
+      "total_tokens": 2921
+    },
+    {
+      "change_id": "delta-04",
+      "run_id": "run-008",
+      "expected_decision": "REVALIDATE",
+      "actual_decision": "REDERIVE",
+      "decision_correct": false,
+      "expected_orrs": [
+        "H1-ORR3"
+      ],
+      "actual_orrs": [],
+      "orr_set_correct": false,
+      "expected_return_point": null,
+      "actual_return_point": "RR3",
+      "return_point_correct": null,
+      "exact_outcome": false,
+      "triggered_conditions": [
+        "H1-RC3"
+      ],
+      "input_tokens": 2740,
+      "output_tokens": 176,
+      "total_tokens": 2916
+    },
+    {
+      "change_id": "delta-04",
+      "run_id": "run-009",
+      "expected_decision": "REVALIDATE",
+      "actual_decision": "REDERIVE",
+      "decision_correct": false,
+      "expected_orrs": [
+        "H1-ORR3"
+      ],
+      "actual_orrs": [],
+      "orr_set_correct": false,
+      "expected_return_point": null,
+      "actual_return_point": "RR3",
+      "return_point_correct": null,
+      "exact_outcome": false,
+      "triggered_conditions": [
+        "H1-RC3"
+      ],
+      "input_tokens": 2740,
+      "output_tokens": 182,
+      "total_tokens": 2922
+    },
+    {
+      "change_id": "delta-04",
+      "run_id": "run-010",
+      "expected_decision": "REVALIDATE",
+      "actual_decision": "REVALIDATE",
+      "decision_correct": true,
+      "expected_orrs": [
+        "H1-ORR3"
+      ],
+      "actual_orrs": [
+        "H1-ORR3"
+      ],
+      "orr_set_correct": true,
+      "expected_return_point": null,
+      "actual_return_point": null,
+      "return_point_correct": null,
+      "exact_outcome": true,
+      "triggered_conditions": [
+        "H1-RC3"
+      ],
+      "input_tokens": 2740,
+      "output_tokens": 194,
+      "total_tokens": 2934
+    },
+    {
+      "change_id": "delta-05",
+      "run_id": "run-001",
+      "expected_decision": "REDERIVE",
+      "actual_decision": "REDERIVE",
+      "decision_correct": true,
+      "expected_orrs": [],
+      "actual_orrs": [],
+      "orr_set_correct": null,
+      "expected_return_point": "RR2",
+      "actual_return_point": "RR2",
+      "return_point_correct": true,
+      "exact_outcome": true,
+      "triggered_conditions": [],
+      "input_tokens": 2774,
+      "output_tokens": 157,
+      "total_tokens": 2931
+    },
+    {
+      "change_id": "delta-05",
+      "run_id": "run-002",
+      "expected_decision": "REDERIVE",
+      "actual_decision": "REDERIVE",
+      "decision_correct": true,
+      "expected_orrs": [],
+      "actual_orrs": [],
+      "orr_set_correct": null,
+      "expected_return_point": "RR2",
+      "actual_return_point": "RR2",
+      "return_point_correct": true,
+      "exact_outcome": true,
+      "triggered_conditions": [],
+      "input_tokens": 2774,
+      "output_tokens": 143,
+      "total_tokens": 2917
+    },
+    {
+      "change_id": "delta-05",
+      "run_id": "run-003",
+      "expected_decision": "REDERIVE",
+      "actual_decision": "REDERIVE",
+      "decision_correct": true,
+      "expected_orrs": [],
+      "actual_orrs": [],
+      "orr_set_correct": null,
+      "expected_return_point": "RR2",
+      "actual_return_point": "RR2",
+      "return_point_correct": true,
+      "exact_outcome": true,
+      "triggered_conditions": [],
+      "input_tokens": 2774,
+      "output_tokens": 142,
+      "total_tokens": 2916
+    },
+    {
+      "change_id": "delta-05",
+      "run_id": "run-004",
+      "expected_decision": "REDERIVE",
+      "actual_decision": "REDERIVE",
+      "decision_correct": true,
+      "expected_orrs": [],
+      "actual_orrs": [],
+      "orr_set_correct": null,
+      "expected_return_point": "RR2",
+      "actual_return_point": "RR2",
+      "return_point_correct": true,
+      "exact_outcome": true,
+      "triggered_conditions": [],
+      "input_tokens": 2774,
+      "output_tokens": 137,
+      "total_tokens": 2911
+    },
+    {
+      "change_id": "delta-05",
+      "run_id": "run-005",
+      "expected_decision": "REDERIVE",
+      "actual_decision": "REDERIVE",
+      "decision_correct": true,
+      "expected_orrs": [],
+      "actual_orrs": [],
+      "orr_set_correct": null,
+      "expected_return_point": "RR2",
+      "actual_return_point": "RR2",
+      "return_point_correct": true,
+      "exact_outcome": true,
+      "triggered_conditions": [],
+      "input_tokens": 2774,
+      "output_tokens": 150,
+      "total_tokens": 2924
+    },
+    {
+      "change_id": "delta-05",
+      "run_id": "run-006",
+      "expected_decision": "REDERIVE",
+      "actual_decision": "REDERIVE",
+      "decision_correct": true,
+      "expected_orrs": [],
+      "actual_orrs": [],
+      "orr_set_correct": null,
+      "expected_return_point": "RR2",
+      "actual_return_point": "RR2",
+      "return_point_correct": true,
+      "exact_outcome": true,
+      "triggered_conditions": [],
+      "input_tokens": 2774,
+      "output_tokens": 142,
+      "total_tokens": 2916
+    },
+    {
+      "change_id": "delta-05",
+      "run_id": "run-007",
+      "expected_decision": "REDERIVE",
+      "actual_decision": "REDERIVE",
+      "decision_correct": true,
+      "expected_orrs": [],
+      "actual_orrs": [],
+      "orr_set_correct": null,
+      "expected_return_point": "RR2",
+      "actual_return_point": "RR2",
+      "return_point_correct": true,
+      "exact_outcome": true,
+      "triggered_conditions": [],
+      "input_tokens": 2774,
+      "output_tokens": 192,
+      "total_tokens": 2966
+    },
+    {
+      "change_id": "delta-05",
+      "run_id": "run-008",
+      "expected_decision": "REDERIVE",
+      "actual_decision": "REDERIVE",
+      "decision_correct": true,
+      "expected_orrs": [],
+      "actual_orrs": [],
+      "orr_set_correct": null,
+      "expected_return_point": "RR2",
+      "actual_return_point": "RR2",
+      "return_point_correct": true,
+      "exact_outcome": true,
+      "triggered_conditions": [],
+      "input_tokens": 2774,
+      "output_tokens": 148,
+      "total_tokens": 2922
+    },
+    {
+      "change_id": "delta-05",
+      "run_id": "run-009",
+      "expected_decision": "REDERIVE",
+      "actual_decision": "REDERIVE",
+      "decision_correct": true,
+      "expected_orrs": [],
+      "actual_orrs": [],
+      "orr_set_correct": null,
+      "expected_return_point": "RR2",
+      "actual_return_point": "RR2",
+      "return_point_correct": true,
+      "exact_outcome": true,
+      "triggered_conditions": [],
+      "input_tokens": 2774,
+      "output_tokens": 170,
+      "total_tokens": 2944
+    },
+    {
+      "change_id": "delta-05",
+      "run_id": "run-010",
+      "expected_decision": "REDERIVE",
+      "actual_decision": "REDERIVE",
+      "decision_correct": true,
+      "expected_orrs": [],
+      "actual_orrs": [],
+      "orr_set_correct": null,
+      "expected_return_point": "RR2",
+      "actual_return_point": "RR2",
+      "return_point_correct": true,
+      "exact_outcome": true,
+      "triggered_conditions": [],
+      "input_tokens": 2774,
+      "output_tokens": 166,
+      "total_tokens": 2940
+    },
+    {
+      "change_id": "delta-06",
+      "run_id": "run-001",
+      "expected_decision": "REDERIVE",
+      "actual_decision": "REDERIVE",
+      "decision_correct": true,
+      "expected_orrs": [],
+      "actual_orrs": [],
+      "orr_set_correct": null,
+      "expected_return_point": "RR1",
+      "actual_return_point": "RR1",
+      "return_point_correct": true,
+      "exact_outcome": true,
+      "triggered_conditions": [],
+      "input_tokens": 2750,
+      "output_tokens": 136,
+      "total_tokens": 2886
+    },
+    {
+      "change_id": "delta-06",
+      "run_id": "run-002",
+      "expected_decision": "REDERIVE",
+      "actual_decision": "REDERIVE",
+      "decision_correct": true,
+      "expected_orrs": [],
+      "actual_orrs": [],
+      "orr_set_correct": null,
+      "expected_return_point": "RR1",
+      "actual_return_point": "RR1",
+      "return_point_correct": true,
+      "exact_outcome": true,
+      "triggered_conditions": [],
+      "input_tokens": 2750,
+      "output_tokens": 148,
+      "total_tokens": 2898
+    },
+    {
+      "change_id": "delta-06",
+      "run_id": "run-003",
+      "expected_decision": "REDERIVE",
+      "actual_decision": "REDERIVE",
+      "decision_correct": true,
+      "expected_orrs": [],
+      "actual_orrs": [],
+      "orr_set_correct": null,
+      "expected_return_point": "RR1",
+      "actual_return_point": "RR1",
+      "return_point_correct": true,
+      "exact_outcome": true,
+      "triggered_conditions": [],
+      "input_tokens": 2750,
+      "output_tokens": 150,
+      "total_tokens": 2900
+    },
+    {
+      "change_id": "delta-06",
+      "run_id": "run-004",
+      "expected_decision": "REDERIVE",
+      "actual_decision": "REDERIVE",
+      "decision_correct": true,
+      "expected_orrs": [],
+      "actual_orrs": [],
+      "orr_set_correct": null,
+      "expected_return_point": "RR1",
+      "actual_return_point": "RR1",
+      "return_point_correct": true,
+      "exact_outcome": true,
+      "triggered_conditions": [],
+      "input_tokens": 2750,
+      "output_tokens": 139,
+      "total_tokens": 2889
+    },
+    {
+      "change_id": "delta-06",
+      "run_id": "run-005",
+      "expected_decision": "REDERIVE",
+      "actual_decision": "REDERIVE",
+      "decision_correct": true,
+      "expected_orrs": [],
+      "actual_orrs": [],
+      "orr_set_correct": null,
+      "expected_return_point": "RR1",
+      "actual_return_point": "RR1",
+      "return_point_correct": true,
+      "exact_outcome": true,
+      "triggered_conditions": [],
+      "input_tokens": 2750,
+      "output_tokens": 158,
+      "total_tokens": 2908
+    },
+    {
+      "change_id": "delta-06",
+      "run_id": "run-006",
+      "expected_decision": "REDERIVE",
+      "actual_decision": "REDERIVE",
+      "decision_correct": true,
+      "expected_orrs": [],
+      "actual_orrs": [],
+      "orr_set_correct": null,
+      "expected_return_point": "RR1",
+      "actual_return_point": "RR1",
+      "return_point_correct": true,
+      "exact_outcome": true,
+      "triggered_conditions": [],
+      "input_tokens": 2750,
+      "output_tokens": 141,
+      "total_tokens": 2891
+    },
+    {
+      "change_id": "delta-06",
+      "run_id": "run-007",
+      "expected_decision": "REDERIVE",
+      "actual_decision": "REDERIVE",
+      "decision_correct": true,
+      "expected_orrs": [],
+      "actual_orrs": [],
+      "orr_set_correct": null,
+      "expected_return_point": "RR1",
+      "actual_return_point": "RR1",
+      "return_point_correct": true,
+      "exact_outcome": true,
+      "triggered_conditions": [],
+      "input_tokens": 2750,
+      "output_tokens": 129,
+      "total_tokens": 2879
+    },
+    {
+      "change_id": "delta-06",
+      "run_id": "run-008",
+      "expected_decision": "REDERIVE",
+      "actual_decision": "REDERIVE",
+      "decision_correct": true,
+      "expected_orrs": [],
+      "actual_orrs": [],
+      "orr_set_correct": null,
+      "expected_return_point": "RR1",
+      "actual_return_point": "RR1",
+      "return_point_correct": true,
+      "exact_outcome": true,
+      "triggered_conditions": [],
+      "input_tokens": 2750,
+      "output_tokens": 146,
+      "total_tokens": 2896
+    },
+    {
+      "change_id": "delta-06",
+      "run_id": "run-009",
+      "expected_decision": "REDERIVE",
+      "actual_decision": "REDERIVE",
+      "decision_correct": true,
+      "expected_orrs": [],
+      "actual_orrs": [],
+      "orr_set_correct": null,
+      "expected_return_point": "RR1",
+      "actual_return_point": "RR1",
+      "return_point_correct": true,
+      "exact_outcome": true,
+      "triggered_conditions": [],
+      "input_tokens": 2750,
+      "output_tokens": 124,
+      "total_tokens": 2874
+    },
+    {
+      "change_id": "delta-06",
+      "run_id": "run-010",
+      "expected_decision": "REDERIVE",
+      "actual_decision": "REDERIVE",
+      "decision_correct": true,
+      "expected_orrs": [],
+      "actual_orrs": [],
+      "orr_set_correct": null,
+      "expected_return_point": "RR1",
+      "actual_return_point": "RR1",
+      "return_point_correct": true,
+      "exact_outcome": true,
+      "triggered_conditions": [],
+      "input_tokens": 2750,
+      "output_tokens": 126,
+      "total_tokens": 2876
+    }
+  ]
+}

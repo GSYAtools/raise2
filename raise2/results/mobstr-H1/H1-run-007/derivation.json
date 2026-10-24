@@ -1,0 +1,88 @@
+{
+  "run_id": "H1-run-007",
+  "concern_id": "H1",
+  "evaluation_target": {
+    "id": "T1",
+    "statement": "Prevent omission of required braking maneuvers in the hazardous driving situation.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The safety goal explicitly requires preventing omitted braking maneuvers, and the hazard describes the harmful outcome when braking is not performed in time to avoid collision."
+  },
+  "phenomenon_of_interest": {
+    "id": "P1",
+    "statement": "The vehicle's braking-relevant driving state in which an obstacle or road user is present on the trajectory such that a braking maneuver may be required to avoid collision.",
+    "scope": "Operational situations covered by the hazard and braking-related functional requirements: driving on a road where obstacles or road users can be detected on or near the trajectory, with the need to determine whether braking must be initiated to avoid collision.",
+    "source": [
+      "hazard",
+      "requirements",
+      "architecture"
+    ],
+    "rationale": "Evaluating omission of braking requires characterising the situation in which braking may be required, namely obstacle/road-user presence and collision-avoidance relevance."
+  },
+  "distinctions": [
+    {
+      "id": "D1",
+      "dimension": "Obstacle / road-user presence in the vehicle's path-relevant scene",
+      "contrast_a": "A situation in which a pedestrian or other obstacle is present on or close to the trajectory and is relevant to collision avoidance.",
+      "contrast_b": "A situation in which no obstacle or road user is present on or close to the trajectory requiring braking for collision avoidance.",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "Whether a braking maneuver is required depends on the presence of an obstacle or road user that creates a collision risk; collapsing presence vs absence would lose information needed to evaluate omission of braking."
+    },
+    {
+      "id": "D2",
+      "dimension": "Distance to the obstacle / road user",
+      "contrast_a": "A situation in which the obstacle or road user is sufficiently near that braking may be needed to avoid collision.",
+      "contrast_b": "A situation in which the obstacle or road user is present but at a distance where braking is not yet needed for collision avoidance.",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "The hazard and FR-7.1/FR-7.2.4 indicate that the need to brake depends not only on presence but also on distance; collapsing near vs not-yet-near would remove information required to judge whether braking should have been initiated."
+    }
+  ],
+  "orrs": [
+    {
+      "id": "O1",
+      "covers": [
+        "D1"
+      ],
+      "obligation": "An admissible Observable Representation must preserve whether a collision-relevant obstacle or road user is present on or close to the vehicle trajectory.",
+      "distinguishability_criterion": "The representation must distinguish obstacle/road-user-present cases from obstacle/road-user-absent cases within the declared operational scope.",
+      "assumptions": []
+    },
+    {
+      "id": "O2",
+      "covers": [
+        "D2"
+      ],
+      "obligation": "An admissible Observable Representation must preserve the obstacle's or road user's proximity relative to the vehicle trajectory sufficiently to separate braking-required situations from situations where braking is not yet required.",
+      "distinguishability_criterion": "The representation must distinguish at least the cases 'braking-relevant proximity' and 'not-yet-braking-relevant proximity' for the same operational scope.",
+      "assumptions": [
+        {
+          "id": "A1",
+          "statement": "Braking requirement is determined in relation to obstacle proximity to the trajectory.",
+          "source": [
+            "requirements",
+            "architecture"
+          ],
+          "revalidation_conditions": [
+            {
+              "id": "R1",
+              "condition": "If the hazard definition, braking logic, or operational design changes such that braking is no longer based on proximity to obstacles on or close to the trajectory."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rr5": {
+    "coverage": true,
+    "consistency": true,
+    "issues": []
+  }
+}

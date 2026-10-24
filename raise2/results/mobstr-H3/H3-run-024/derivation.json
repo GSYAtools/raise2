@@ -1,0 +1,66 @@
+{
+  "run_id": "H3-run-024",
+  "concern_id": "H3",
+  "evaluation_target": {
+    "id": "T1",
+    "statement": "Evaluate whether the system prevents unintended braking.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The hazard identifies unintended braking as the hazardous event, and SG-3 states that the system shall prevent unintended braking."
+  },
+  "phenomenon_of_interest": {
+    "id": "P1",
+    "statement": "The vehicle's braking behavior while driving in the stated operational situation, specifically whether braking occurs as intended or unintentionally.",
+    "scope": "Straight ahead drive on a less frequented urban road at 50 km/h, with no visible obstacles or vehicles in front of the ego vehicle, in good weather conditions.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The hazard defines the operational situation in which the unintended braking event must be considered; the concern is about the braking behavior that leads to the hazardous event."
+  },
+  "distinctions": [
+    {
+      "id": "D1",
+      "dimension": "Braking intent",
+      "contrast_a": "Braking occurs as intended in response to a relevant obstacle or collision-avoidance need.",
+      "contrast_b": "Braking occurs without a relevant obstacle or collision-avoidance need, i.e. unintended braking.",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "The evaluation target is specifically about preventing unintended braking. Collapsing intended and unintended braking would remove the information needed to determine whether the safety goal is satisfied."
+    }
+  ],
+  "orrs": [
+    {
+      "id": "ORR1",
+      "covers": [
+        "D1"
+      ],
+      "obligation": "An observable representation must preserve whether observed braking is intended in context or unintended.",
+      "distinguishability_criterion": "The representation must distinguish braking associated with a relevant obstacle/collision-avoidance situation from braking occurring when no such situation is present.",
+      "assumptions": [
+        {
+          "id": "A1",
+          "statement": "The operational situation described in the hazard is the relevant context for evaluating this concern.",
+          "source": [
+            "hazard"
+          ],
+          "revalidation_conditions": [
+            {
+              "id": "RV1",
+              "condition": "The operational situation for the concern is changed or broadened."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rr5": {
+    "coverage": true,
+    "consistency": true,
+    "issues": []
+  }
+}

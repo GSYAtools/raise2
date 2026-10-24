@@ -1,0 +1,16 @@
+{
+  "run_id": "H1-run-006",
+  "concern_id": "H1",
+  "classification": "ALIGNED",
+  "rationale": "Evaluating prevention of omitted required braking maneuvers requires characterising whether the vehicle initiates and performs braking when needed for collision avoidance. SG-1 and FR-7 establish braking response itself as the subject of evaluation, rather than merely a mechanism affecting another phenomenon. The obstacle-related scope is supported by the requirements and H-1. P does not extend to sensing, computation, communication, failure-management mechanisms, or their timing constraints.",
+  "determining_elements": [
+    "“Vehicle/system braking response” directly addresses the braking-omission target established by SG-1 and H-1.",
+    "“Whether braking is initiated and performed” characterises occurrence or omission of the required maneuver, supported by FR-7 and the braking-initiation requirement FR-7.1.",
+    "“When an obstacle requires avoidance,” read with the declared scope, limits the response to situations potentially requiring braking to avoid collision.",
+    "The scope includes the pedestrian encounter specified in H-1; its broader inclusion of road users and obstacles is supported by H-1's hazardous event and FR-7."
+  ],
+  "sources": [
+    "hazard",
+    "requirements"
+  ]
+}

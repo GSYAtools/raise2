@@ -1,0 +1,16 @@
+{
+  "run_id": "H1-run-023",
+  "concern_id": "H1",
+  "classification": "OVEREXTENDED",
+  "rationale": "The obstacle–vehicle situation that makes braking necessary is supported by H-1, SG-1, FR-7, and FR-7.2.4. However, the declared scope additionally includes the obstacle-detection/path-planning/controller context. The artefacts establish these mechanisms as supporting detection and vehicle control, but their relevance to preventing omitted braking does not establish the broader mechanism context as part of P. Required braking behaviour is justified; wholesale inclusion of its supporting mechanisms is not.",
+  "determining_elements": [
+    "“Obstacle presence and proximity can require a braking maneuver to avoid collision” identifies a supported core phenomenon.",
+    "The scope explicitly adds “the related obstacle-detection/path-planning/controller context,” extending beyond the operational conditions requiring braking.",
+    "That additional scope is not confined to the braking response established by the evaluation target and FR-7."
+  ],
+  "sources": [
+    "hazard",
+    "requirements",
+    "architecture"
+  ]
+}

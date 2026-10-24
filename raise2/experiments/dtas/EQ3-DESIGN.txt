@@ -1,0 +1,114 @@
+dTAS EQ3 Experimental Design
+============================
+
+Research purpose
+
+Evaluate whether a concern-relative Representation Requirement can identify
+runtime states in which an operational representation no longer preserves
+the distinction required to evaluate a reliability concern.
+
+System
+
+dTAS v1.0.
+
+Concern
+
+Determine whether the selected service combination satisfies the configured
+reliability goal.
+
+Evaluation Target
+
+Determine whether the operational failure rate of the selected service
+combination satisfies the configured FAILURE_RATE goal.
+
+Concern-Relevant Distinction
+
+The original dTAS goal for System Entity 1 is:
+
+FAILURE_RATE LOWER_THAN 0.19
+
+Therefore the concern-relevant distinction is:
+
+SATISFIED:
+failure_rate < 0.19
+
+VIOLATED:
+failure_rate >= 0.19
+
+Operational Representation Requirement
+
+The representation used for reliability evaluation shall preserve whether
+the failure rate of the selected service combination lies below the configured
+reliability threshold or at/above it.
+
+Operational test
+
+For each adaptation cycle:
+
+real_state =
+    SATISFIED if real_failure_rate < 0.19
+    VIOLATED otherwise
+
+represented_state =
+    SATISFIED if represented_failure_rate < 0.19
+    VIOLATED otherwise
+
+The ORR is preserved iff:
+
+real_state == represented_state
+
+Violation types
+
+MISSED_VIOLATION:
+real_state = VIOLATED and represented_state = SATISFIED
+
+FALSE_VIOLATION:
+real_state = SATISFIED and represented_state = VIOLATED
+
+EQ3-A -- Natural representation dynamics
+
+Use the unmodified dTAS v1.0 configuration.
+
+Profile:
+SingleEntityRunNoProtocol.xml
+
+Entity:
+System Entity 1
+
+Execution cycles per independent run:
+20
+
+Independent runs:
+30
+
+Total planned cycle-level observations:
+600
+
+No random seed is imposed because the original exemplar uses unseeded random
+behaviour. Each run is an independent execution of the original configuration.
+
+Primary measures
+
+1. ORR violation rate.
+2. Run-level incidence of at least one ORR violation.
+3. Missed-violation rate.
+4. False-violation rate.
+5. Absolute representation error.
+6. Absolute-error distribution for preserved versus violated ORR states.
+
+The magnitude of numerical representation error is not used to define an ORR
+violation.
+
+EQ3-B -- Controlled native degradation
+
+A second phase will modify only native dTAS Monitor parameters governing the
+update of approximated failure-rate knowledge.
+
+The EQ3-B conditions and parameter levels must be frozen before EQ3-A results
+are inspected.
+
+Source preservation
+
+The downloaded dTAS source archive and paper-result archive remain unmodified.
+The experimental harness operates externally against the original compiled
+dTAS classes.

@@ -1,0 +1,85 @@
+{
+  "run_id": "H1-run-027",
+  "concern_id": "H1",
+  "evaluation_target": {
+    "id": "T1",
+    "statement": "Prevent omitting required braking maneuvers.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The safety goal explicitly requires the system to prevent omitting required braking maneuvers, and the functional requirement states the system shall perform a braking maneuver to avoid collisions with obstacles."
+  },
+  "phenomenon_of_interest": {
+    "id": "P1",
+    "statement": "The vehicle/system’s braking-maneuver state in obstacle-avoidance situations, including whether braking is required, started, performed, or omitted.",
+    "scope": "Operational situations in which the ego vehicle is driving and an obstacle or road user may require braking to avoid collision, including the hazardous event context described in the hazard and the braking-related functional context in the requirements.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "Evaluating whether required braking is omitted requires characterizing the braking behavior of the vehicle in the relevant obstacle-avoidance situations."
+  },
+  "distinctions": [
+    {
+      "id": "D1",
+      "dimension": "Braking maneuver outcome in a required-braking situation",
+      "contrast_a": "A braking maneuver is performed when required to avoid collision.",
+      "contrast_b": "A required braking maneuver is omitted.",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "Collapsing performed vs omitted braking would remove exactly the information needed to evaluate whether the safety goal is satisfied in the hazardous obstacle-avoidance situation."
+    },
+    {
+      "id": "D2",
+      "dimension": "Braking initiation relative to obstacle detection",
+      "contrast_a": "Braking starts after obstacle detection in time to support avoidance.",
+      "contrast_b": "Braking does not start after obstacle detection in time to support avoidance.",
+      "source": [
+        "requirements"
+      ],
+      "rationale": "The timing requirement states the system shall start braking within 50 ms after the obstacle is detected within a dangerous zone; collapsing timely start vs no timely start would lose information needed to assess omission of required braking in time-critical cases."
+    }
+  ],
+  "orrs": [
+    {
+      "id": "ORR1",
+      "covers": [
+        "D1"
+      ],
+      "obligation": "An observable representation shall preserve whether a required braking maneuver is performed or omitted in each relevant obstacle-avoidance situation.",
+      "distinguishability_criterion": "The representation must allow performed braking and omitted braking to be distinguished as separate observable states/classes.",
+      "assumptions": []
+    },
+    {
+      "id": "ORR2",
+      "covers": [
+        "D2"
+      ],
+      "obligation": "An observable representation shall preserve whether braking initiation occurs in the time-relevant relation to obstacle detection needed to distinguish timely braking from failure to start braking in time.",
+      "distinguishability_criterion": "The representation must distinguish timely braking initiation after obstacle detection from cases in which braking does not begin in the required time-relevant interval.",
+      "assumptions": [
+        {
+          "id": "A1",
+          "statement": "Obstacle detection is available as the reference event for evaluating braking initiation timing.",
+          "source": [
+            "requirements"
+          ],
+          "revalidation_conditions": [
+            {
+              "id": "RV1",
+              "condition": "If the obstacle-detection timing basis or detection definition changes."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rr5": {
+    "coverage": true,
+    "consistency": true,
+    "issues": []
+  }
+}

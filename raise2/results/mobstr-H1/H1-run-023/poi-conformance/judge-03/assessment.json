@@ -1,0 +1,17 @@
+{
+  "run_id": "H1-run-023",
+  "concern_id": "H1",
+  "classification": "OVEREXTENDED",
+  "rationale": "The core obstacle–vehicle situation requiring braking is supported by the hazard and requirements. However, the declared scope additionally includes the obstacle-detection/path-planning/controller context. These are supporting observation, computation and control mechanisms; their relevance to preventing omitted braking does not establish the broader mechanism context as part of P. Required braking behaviour itself is justified by T and FR-7.",
+  "determining_elements": [
+    "“Obstacle presence and proximity can require a braking maneuver” identifies a supported condition relevant to T.",
+    "Obstacles or road users “on or close to the trajectory” are supported by H-1 and FR-7.2.4.",
+    "The scope’s inclusion of “the related obstacle-detection/path-planning/controller context” extends beyond the braking-required situation to supporting mechanisms without establishing their membership in the phenomenon.",
+    "SG-1 and FR-7 establish required braking as the relevant response, while the architecture establishes implementation relationships rather than justification for including the entire related mechanism context."
+  ],
+  "sources": [
+    "hazard",
+    "requirements",
+    "architecture"
+  ]
+}

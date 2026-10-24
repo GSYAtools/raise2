@@ -1,0 +1,16 @@
+{
+  "run_id": "H1-run-001",
+  "concern_id": "H1",
+  "classification": "ALIGNED",
+  "rationale": "T requires characterising whether required braking occurs in collision-avoidance situations. H-1, SG-1 and FR-7 establish the braking response itself—not merely an environmental condition—as the relevant phenomenon. FR-7.1 further connects obstacle detection to braking initiation. The scope references detection and control as situations surrounding that response, without separately incorporating sensing, computation, communication or controller operation as phenomena to be characterised.",
+  "determining_elements": [
+    "“The vehicle’s braking-relevant response” directly addresses the occurrence or omission of required braking.",
+    "“Obstacle/collision-avoidance situations” is supported by H-1’s collision scenario and FR-7’s requirement to brake to avoid obstacles.",
+    "“Whether to initiate a braking maneuver” concerns the response required by T and supported by FR-7 and FR-7.1.",
+    "The reference to “obstacle-detection and control situations” remains tied to braking-response contexts; P does not independently include mechanism behaviour or mechanism timing constraints."
+  ],
+  "sources": [
+    "hazard",
+    "requirements"
+  ]
+}

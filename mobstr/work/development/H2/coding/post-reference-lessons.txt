@@ -1,0 +1,36 @@
+H2 post-reference lessons
+
+1. Phenomenon-scope consistency
+Every CRD must contrast situations belonging to the declared Phenomenon of
+Interest. H2 exposed a potential inconsistency: lane-change initiation timing
+and steering-command timing concern system-response behaviour, whereas the
+initial H2 PoI was defined as the traffic/road situation determining necessity
+and safe feasibility.
+
+2. Possible PoI decomposition
+When one evaluative concern depends on operationally distinct phenomena
+(e.g., environmental situation and system-response timing), the method may
+need either an explicitly composite PoI or multiple PoIs. This issue remains
+provisional until tested against H5.
+
+3. Abstraction
+The FTA contains multiple technical failure mechanisms affecting lane,
+localization, object, distance, and observation information. These do not
+require separate CRDs when they threaten the same concern-relative
+preservation obligation. This supports CP7.
+
+4. Phenomenon/representation separation
+False positives, false negatives, missing information, stale information,
+and erroneous sensor or processing outputs are preservation threats rather
+than CRDs unless they establish a source-supported difference in the PoI.
+This supports CP6 and CP11.
+
+5. Downstream non-invention
+The presence of downstream failures such as wrong object classification does
+not justify introducing an object-category CRD when the visible evaluative
+source does not require such categories. This supports CP3.
+
+6. Temporal-scope refinement
+A temporal requirement is admissible as a CRD only when the timed event
+belongs to the declared PoI (or to an explicitly identified additional PoI).
+Temporal relevance alone is insufficient.

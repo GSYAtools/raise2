@@ -1,0 +1,9 @@
+{
+  "run_id": "run-008",
+  "change_id": "delta-01",
+  "decision": "NONE",
+  "affected_orrs": [],
+  "return_point": null,
+  "triggered_conditions": [],
+  "rationale": "The lifecycle change is limited to driver-warning presentation (new visual layout and notification presentation). The supplied description explicitly states that obstacle information, object category information, ego-object spatial information, the Phenomenon of Interest, and the Evaluation Target are unchanged. In the frozen baseline, the ORRs depend on obstacle presence, object category, or braking-relevant spatial information and their associated revalidation conditions; none of these are affected by a presentation-only change. Therefore there is no representational impact on the existing ORRs."
+}

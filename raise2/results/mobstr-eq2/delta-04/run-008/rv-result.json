@@ -1,0 +1,11 @@
+{
+  "run_id": "run-008",
+  "change_id": "delta-04",
+  "decision": "REDERIVE",
+  "affected_orrs": [],
+  "return_point": "RR3",
+  "triggered_conditions": [
+    "H1-RC3"
+  ],
+  "rationale": "The change introduces an explicit configurable braking-zone definition and therefore changes the dangerous-zone definition referenced by H1-CRD3 / H1-ORR3. The evaluation target remains applicable and the phenomenon of interest remains the collision-relevant spatial situation, but the required concern-relevant distinction for braking-relevant distance must be rederived because the prior basis explicitly treated the dangerous-zone boundary as tbd. This intersects the assumption supporting H1-ORR3 via H1-RC3, so the earliest derivation step to resume is RR3."
+}

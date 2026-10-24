@@ -1,0 +1,17 @@
+{
+  "run_id": "H1-run-014",
+  "concern_id": "H1",
+  "classification": "OVEREXTENDED",
+  "rationale": "The target, H-1, SG-1 and FR-7 support characterising the hazardous encounter, the need for braking, and whether required braking is initiated or performed. However, P's scope also incorporates the supporting perception, planning and command-generation chain because it contributes to deciding and executing braking. The requirements and architecture establish these mechanisms' relevance, but not their membership in the phenomenon required by T.",
+  "determining_elements": [
+    "The inclusion of 'obstacle detection' and 'object interpretation' imports observation and computation mechanisms, rather than limiting P to the hazardous situation and required braking behaviour.",
+    "The inclusion of 'path planning' and 'controller command generation' extends P to internal implementation processes; their involvement in producing braking does not establish that those processes themselves must belong to P.",
+    "Braking initiation and actual braking execution are not themselves grounds for overextension: SG-1, FR-7 and FR-7.1 establish required braking and its initiation as relevant system behaviour.",
+    "The stated road, speed, weather and pedestrian encounter are supported by H-1; the decisive overextension is the additional mechanism-inclusive scope."
+  ],
+  "sources": [
+    "hazard",
+    "requirements",
+    "architecture"
+  ]
+}

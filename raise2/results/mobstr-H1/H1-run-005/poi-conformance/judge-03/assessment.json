@@ -1,0 +1,15 @@
+{
+  "run_id": "H1-run-005",
+  "concern_id": "H1",
+  "classification": "ALIGNED",
+  "rationale": "P identifies the relationship between collision-avoidance situations requiring braking and the system's braking response. That response is itself the subject of T: SG-1 prohibits omitting required braking, and FR-7 explicitly requires braking to avoid collisions. H-1 establishes the road-user/static-obstacle collision context. 'Decide and execute braking' remains at the functional-response level rather than incorporating internal computation or control mechanisms. P does not add sensing pipelines, communications, failure-management behaviour, or mechanism timing.",
+  "determining_elements": [
+    "'Vehicle-control situation' connects the circumstances requiring braking with the response whose omission T addresses.",
+    "'Must decide and execute braking' describes the required braking behaviour established by SG-1 and FR-7, without specifying implementation mechanisms.",
+    "'Obstacles or other road users ... relevant to collision avoidance' and the declared road-driving scope are supported by H-1 and FR-7."
+  ],
+  "sources": [
+    "hazard (H-1)",
+    "requirements (SG-1, FR-7)"
+  ]
+}

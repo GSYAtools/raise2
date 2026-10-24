@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raise2.org/schemas/rv-result.schema.json",
+  "title": "RAISE2 Representation Revalidation Result",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "run_id",
+    "change_id",
+    "decision",
+    "affected_orrs",
+    "return_point",
+    "triggered_conditions",
+    "rationale"
+  ],
+  "properties": {
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "change_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "decision": {
+      "type": "string",
+      "enum": [
+        "NONE",
+        "REVALIDATE",
+        "REDERIVE"
+      ]
+    },
+    "affected_orrs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "H1-ORR1",
+          "H1-ORR2",
+          "H1-ORR3"
+        ]
+      }
+    },
+    "return_point": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "RR1",
+        "RR2",
+        "RR3",
+        null
+      ]
+    },
+    "triggered_conditions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "H1-RC1",
+          "H1-RC2",
+          "H1-RC3"
+        ]
+      }
+    },
+    "rationale": {
+      "type": "string",
+      "minLength": 1
+    }
+  }
+}
+

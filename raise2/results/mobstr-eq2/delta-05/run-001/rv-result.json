@@ -1,0 +1,9 @@
+{
+  "run_id": "run-001",
+  "change_id": "delta-05",
+  "decision": "REDERIVE",
+  "affected_orrs": [],
+  "return_point": "RR2",
+  "triggered_conditions": [],
+  "rationale": "The change explicitly extends the Phenomenon of Interest scope by adding road-surface condition as part of what must be characterized for the braking decision. The Evaluation Target remains the same, but the phenomenon now includes an additional aspect beyond the frozen baseline’s collision-relevant spatial situation. This changes the representational basis at RR2, so the existing CRD/ORR derivation must be resumed from RR2 rather than merely revalidating existing ORRs."
+}

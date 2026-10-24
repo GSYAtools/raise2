@@ -1,0 +1,15 @@
+{
+  "run_id": "H3-run-026",
+  "concern_id": "H3",
+  "classification": "ALIGNED",
+  "rationale": "SG-3 and H-3 establish vehicle braking behavior as what must be characterised to evaluate prevention of unintended braking, with H-3 identifying sudden stopping without an obstacle as the hazardous event. P's declared scope matches the supplied hazard's operational situation. Braking behavior is therefore the evaluated phenomenon itself, not an ancillary control mechanism. P does not incorporate sensing, computation, communication, failure-mitigation mechanisms, or their timing constraints.",
+  "determining_elements": [
+    "\"Vehicle braking behavior\" directly identifies the behavior relevant to the evaluation target.",
+    "\"Straight-ahead driving on a less frequented urban road at 50 km/h in good weather\" matches H-3's operational conditions.",
+    "\"No visible obstacles or vehicles in front of the ego vehicle\" matches H-3's stated operational situation without adding obstacle-detection mechanisms."
+  ],
+  "sources": [
+    "hazard",
+    "requirements"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "run_id": "H3-run-024",
+  "concern_id": "H3",
+  "assessment_id": "judge-03-resume-01",
+  "started_at_utc": "2026-10-24T06:38:53.065349+00:00",
+  "completed_at_utc": "2026-10-24T06:39:01.702427+00:00",
+  "requested_model": "gpt-6-astra",
+  "returned_model": "gpt-6-astra",
+  "response_id": "resp_0ac8d2c227b7751e006adc527d4a0087d2b8e5a65dcc02a306",
+  "response_status": "completed",
+  "reasoning_effort": "high",
+  "validation_passed": true,
+  "validation_errors": [],
+  "status": "completed_valid",
+  "usage": {
+    "input_tokens": 8799,
+    "output_tokens": 394,
+    "total_tokens": 9193
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "H1-run-003",
+  "concern_id": "H1",
+  "classification": "ALIGNED",
+  "rationale": "P identifies the braking-necessary operational situation and corresponding vehicle braking state needed to evaluate omission of required braking. SG-1 and FR-7 establish braking response itself as relevant, while H-1 and FR-7.1 establish its timeliness. The declared scope remains at this functional level without incorporating internal sensing, computation, communication, or fault-handling mechanisms.",
+  "determining_elements": [
+    "“Situations where a braking maneuver is required” identifies the condition against which omission must be evaluated.",
+    "“Avoid a collision with a road user or static obstacle” matches the hazardous event in H-1 and the collision-avoidance behavior required by FR-7.",
+    "The scope’s “decide whether braking is required and execute it in time” concerns braking necessity and required response, rather than specific decision-making mechanisms; timely braking is supported by H-1 and FR-7.1."
+  ],
+  "sources": [
+    "hazard",
+    "requirements"
+  ]
+}

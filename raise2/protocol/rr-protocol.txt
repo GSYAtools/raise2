@@ -1,0 +1,201 @@
+RAISE2 REPRESENTATION REQUIREMENTS PROTOCOL
+===========================================
+
+PURPOSE
+
+Apply the Representation Requirements activity of RAISE2 to the engineering
+artefacts provided for a single engineering concern.
+
+The objective is to derive the representational obligations that an Observable
+Representation must satisfy for the concern to be operationally evaluated.
+
+Use only the engineering artefacts provided in the experiment input. Do not
+assume access to additional requirements, runtime telemetry, downstream
+analyses, reference results, or information from previous executions.
+
+
+GENERAL PRINCIPLES
+
+1. Derive representational requirements from the engineering concern rather
+   than from the information that happens to be operationally available.
+
+2. Keep the Phenomenon of Interest distinct from sensors, telemetry, runtime
+   models, algorithms, components, and other mechanisms used to observe,
+   represent, process, or control it.
+
+3. A requirement, architectural element, variable, failure mode, or other
+   engineering element does not automatically define a Concern-Relevant
+   Distinction.
+
+4. Retain a distinction only when both contrasted situations belong to the
+   declared Phenomenon of Interest and making them indistinguishable would
+   remove information required to evaluate the Evaluation Target.
+
+5. Do not attempt to construct an informationally complete representation.
+   Preserve only distinctions established as necessary for the current
+   Evaluation Target.
+
+6. Do not invent thresholds, categories, assumptions, operational boundaries,
+   or dependencies that are not supported by the provided engineering
+   artefacts.
+
+7. Preserve explicit traceability from every derived element to the source
+   artefacts supporting it.
+
+
+RR1 -- IDENTIFY THE EVALUATION TARGET
+
+Identify the Evaluation Target T specified by the engineering artefacts.
+
+T states the property, condition, behaviour, or relationship whose operational
+state must be evaluated for the engineering concern.
+
+Record:
+
+- a unique identifier;
+- a concise statement of T;
+- the source artefacts supporting T;
+- the engineering rationale.
+
+Do not describe how T will be monitored or represented.
+
+
+RR2 -- IDENTIFY THE PHENOMENON OF INTEREST
+
+Identify the Phenomenon of Interest P that must be characterised to evaluate T.
+
+P describes the system-related property, condition, behaviour, or relationship
+about which the evaluation is made.
+
+Define its operational scope sufficiently to determine which situations belong
+to the phenomenon.
+
+Record:
+
+- a unique identifier;
+- a concise statement of P;
+- its operational scope;
+- the source artefacts supporting P;
+- the engineering rationale.
+
+Do not define P in terms of a particular sensor, metric, log, data structure,
+runtime model, or representation technology unless that mechanism is itself
+the phenomenon being evaluated.
+
+
+RR3 -- ELICIT CONCERN-RELEVANT DISTINCTIONS
+
+Identify operational dimensions of P whose variation may alter the evaluation
+of T.
+
+For each candidate dimension, construct contrasting operational situations or
+classes of situations and apply the collapse test:
+
+"If an Observable Representation made these situations indistinguishable,
+would information required to evaluate T be lost?"
+
+Retain the candidate as a Concern-Relevant Distinction only when:
+
+1. both contrasted situations are states within the declared scope of P; and
+2. collapsing them would remove information required to evaluate T.
+
+For every retained distinction record:
+
+- a unique identifier;
+- the evaluation dimension;
+- contrast A;
+- contrast B;
+- the source artefacts supporting the distinction;
+- the rationale explaining why the collapse test is satisfied.
+
+Distinctions may describe classes or predicates rather than individual
+enumerated situations.
+
+Prefer the most general distinction supported by the engineering artefacts
+when several variables or mechanisms impose the same preservation obligation.
+
+Keep distinctions separate when they support different evaluative judgements
+or require different distinguishability criteria.
+
+Do not retain a candidate merely because it appears in a requirement or is
+important to system operation.
+
+
+RR4 -- SPECIFY OPERATIONAL REPRESENTATION REQUIREMENTS
+
+Translate the retained Concern-Relevant Distinctions into Operational
+Representation Requirements.
+
+Each ORR must state what an admissible Observable Representation must preserve
+without prescribing a particular sensor, metric, monitoring mechanism, data
+source, model, or representation technology.
+
+For every ORR record:
+
+- a unique identifier;
+- the Concern-Relevant Distinction or distinctions it covers;
+- the preservation obligation;
+- an explicit distinguishability criterion.
+
+The distinguishability criterion specifies how preservation of the covered
+distinction can be assessed. It may use categories, separation between values,
+structural properties, or another criterion justified by the concern. Do not
+invent a numerical threshold when the engineering artefacts do not provide or
+justify one.
+
+For each ORR, identify any assumptions on which its applicability or
+satisfaction depends.
+
+For every assumption record:
+
+- a unique identifier;
+- the assumption statement;
+- the source artefacts supporting it;
+- one or more revalidation conditions when applicable.
+
+A revalidation condition identifies a class of lifecycle changes under which
+the corresponding assumption, or its role in ORR satisfaction, must be
+reassessed. It does not state that the assumption has already become false.
+
+Do not invent assumptions solely to populate the output. If no explicit or
+traceably supported assumption is identified for an ORR, return an empty
+assumption list.
+
+
+RR5 -- CHECK COVERAGE AND CONSISTENCY
+
+Check the complete derivation before returning it.
+
+Coverage requires every retained Concern-Relevant Distinction to be covered by
+at least one ORR.
+
+Consistency requires checking that:
+
+- every ORR refers to an existing retained distinction;
+- every retained distinction is covered;
+- duplicate preservation obligations have not been introduced;
+- preservation obligations are mutually compatible;
+- each ORR has an assessable distinguishability criterion;
+- every recorded assumption is traceable to provided engineering artefacts;
+- every recorded revalidation condition is associated with an assumption.
+
+Record whether coverage and consistency hold and report any identified issues.
+
+Do not remove or silently repair an issue merely to make RR5 pass. Report the
+issue in the structured output.
+
+
+OUTPUT REQUIREMENTS
+
+Return only one structured derivation conforming to the provided
+derivation.schema.json contract.
+
+Do not include explanatory text outside the structured output.
+
+Use only source identifiers that occur in the supplied experiment artefacts.
+
+Do not cite or infer information from artefacts that were not supplied.
+
+Do not use knowledge from previous executions.
+
+Treat each execution as independent.

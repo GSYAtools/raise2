@@ -1,0 +1,28 @@
+Development record
+
+Development concerns:
+- H2: Omitted avoidance maneuver
+- H5: Unintended leaving of the road
+
+Held-out test concerns:
+- H1: Omitted braking maneuver
+- H3: Unintended braking
+
+The development phase was used to stabilise the operational coding protocol
+before analysis of the held-out concerns.
+
+Main refinement identified during development:
+Requirements relevant to an evaluative concern do not automatically establish
+Concern-Relevant Distinctions. Candidate contrasts must first satisfy
+Phenomenon-of-Interest membership and the collapse test.
+
+In particular, H2/H5 exposed that timing, observation, computation, and
+control requirements may establish dependencies or preservation conditions
+without defining independent CRDs of the declared PoI.
+
+Downstream reference interpretation was consequently fixed to distinguish:
+(1) phenomenon-level distinction evidence;
+(2) preservation/dependency threats; and
+(3) execution/control failures.
+
+No H2 or H5 observation contributes to the held-out EQ1 effectiveness metrics.

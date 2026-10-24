@@ -1,0 +1,74 @@
+ID	CauseType	GateType	Name	FailureRef	CausesRef
+617	OutputEvent	OutputEvent	H-5 Unintended leaving of the road	//@odeProductPackages.0/@failureModels.0/@failures.0	//@odeProductPackages.0/@failureModels.0/@causes.38
+618	BasicEvent		Controller.Omission of steering commands	//@odeProductPackages.0/@failureModels.0/@failures.1	
+619	BasicEvent		Lane Detection.Incorrect lane detection (false negative)	//@odeProductPackages.0/@failureModels.0/@failures.2	
+620	BasicEvent		Image Grabber.Partially erroneous image provided by the image grabber	//@odeProductPackages.0/@failureModels.0/@failures.3	
+621	BasicEvent		Image Grabber.Completely erroneous image provided by the image grabber	//@odeProductPackages.0/@failureModels.0/@failures.4	
+622	BasicEvent		Lane Detection.Internal failure leading to loss of lane detection	//@odeProductPackages.0/@failureModels.0/@failures.5	
+623	BasicEvent		Image Grabber.Internal failure leading to omission of image	//@odeProductPackages.0/@failureModels.0/@failures.6	
+624	BasicEvent		Lidar Grabber.Occupancy grid provided too late by the lidar grabber	//@odeProductPackages.0/@failureModels.0/@failures.7	
+625	BasicEvent		GPS Grabber.No position information provided by the GPS grabber	//@odeProductPackages.0/@failureModels.0/@failures.8	
+626	BasicEvent		Lidar Grabber.Erroneous point cloud provided by the lidar grabber (false positive)	//@odeProductPackages.0/@failureModels.0/@failures.9	
+627	BasicEvent		Lidar Grabber.No point cloud provided by the lidar grabber	//@odeProductPackages.0/@failureModels.0/@failures.10	
+628	BasicEvent		CAN Bus.Loss of CAN messages	//@odeProductPackages.0/@failureModels.0/@failures.11	
+629	BasicEvent		Localization.Loss of localization	//@odeProductPackages.0/@failureModels.0/@failures.12	
+630	BasicEvent		Path Panner.Internal failure leading to omission of control commands	//@odeProductPackages.0/@failureModels.0/@failures.13	
+631	BasicEvent		Object Detection.Internal failure leading to loss of object detection	//@odeProductPackages.0/@failureModels.0/@failures.14	
+632	BasicEvent		Lidar Grabber.Erroneous point cloud provided by the lidar grabber (false negative)	//@odeProductPackages.0/@failureModels.0/@failures.15	
+633	BasicEvent		Object Detection.Incorrect object detection (false negative)	//@odeProductPackages.0/@failureModels.0/@failures.16	
+634	BasicEvent		Controller.Erroneous steering commands	//@odeProductPackages.0/@failureModels.0/@failures.17	
+635	BasicEvent		Path Panner.Internal failure leading to erroneous control commands	//@odeProductPackages.0/@failureModels.0/@failures.18	
+636	BasicEvent		CAN Bus.Erroneous CAN message	//@odeProductPackages.0/@failureModels.0/@failures.19	
+637	BasicEvent		Localization.Internal failure leading to an erroneously calculated vehicle position	//@odeProductPackages.0/@failureModels.0/@failures.20	
+638	BasicEvent		GPS Grabber.Erroneous position information provided by the GPS grabber	//@odeProductPackages.0/@failureModels.0/@failures.21	
+639	BasicEvent		Lidar Grabber.No occupancy grid provided by the lidar grabber	//@odeProductPackages.0/@failureModels.0/@failures.22	
+640	BasicEvent		Localization.Delayed calculation of vehicle position data	//@odeProductPackages.0/@failureModels.0/@failures.23	
+641	BasicEvent		CAN Bus.Delay of CAN messages	//@odeProductPackages.0/@failureModels.0/@failures.24	
+642	BasicEvent		GPS Grabber.Stuck-at failure of the GPS grabber	//@odeProductPackages.0/@failureModels.0/@failures.25	
+643	BasicEvent		Lidar Grabber.Erroneous occupancy grid provided by the lidar grabber (false negative)	//@odeProductPackages.0/@failureModels.0/@failures.26	
+644	BasicEvent		Lane Detection.Incorrect lane detection (false positive)	//@odeProductPackages.0/@failureModels.0/@failures.27	
+645	BasicEvent		Lidar Grabber.Erroneous occupancy grid provided by the lidar grabber (false positive)	//@odeProductPackages.0/@failureModels.0/@failures.28	
+646	BasicEvent		Object Detection.Internal failure leading to wrong positioning of objects	//@odeProductPackages.0/@failureModels.0/@failures.29	
+647	BasicEvent		Image Grabber.Stuck-at failure of the image grabber (still image)	//@odeProductPackages.0/@failureModels.0/@failures.30	
+648	BasicEvent		Image Grabber.Image provided too late by the image grabber (old image)	//@odeProductPackages.0/@failureModels.0/@failures.31	
+649	BasicEvent		Object Detection.Incorrect object detection (false positive)	//@odeProductPackages.0/@failureModels.0/@failures.32	
+650	BasicEvent		Object Detection.Wrong classification of objects	//@odeProductPackages.0/@failureModels.0/@failures.33	
+651	BasicEvent		Object Detection.Delayed detection of objects	//@odeProductPackages.0/@failureModels.0/@failures.34	
+652	BasicEvent		Lane Detection.Delayed detection of lanes	//@odeProductPackages.0/@failureModels.0/@failures.35	
+653	BasicEvent		Path Panner.Internal failure leading to delayed control commands	//@odeProductPackages.0/@failureModels.0/@failures.36	
+654	BasicEvent		Controller.Delayed steering commands	//@odeProductPackages.0/@failureModels.0/@failures.37	
+655	Gate		or3		//@odeProductPackages.0/@failureModels.0/@causes.39 //@odeProductPackages.0/@failureModels.0/@causes.50 //@odeProductPackages.0/@failureModels.0/@causes.68
+656	Gate		Controller.or1		//@odeProductPackages.0/@failureModels.0/@causes.1 //@odeProductPackages.0/@failureModels.0/@causes.40
+657	Gate	AND	Controller.and1		//@odeProductPackages.0/@failureModels.0/@causes.41 //@odeProductPackages.0/@failureModels.0/@causes.11
+658	Gate	AND	Path Panner.and2		//@odeProductPackages.0/@failureModels.0/@causes.44 //@odeProductPackages.0/@failureModels.0/@causes.13 //@odeProductPackages.0/@failureModels.0/@causes.42 //@odeProductPackages.0/@failureModels.0/@causes.48
+659	Gate		Lane Detection.or1		//@odeProductPackages.0/@failureModels.0/@causes.2 //@odeProductPackages.0/@failureModels.0/@causes.5 //@odeProductPackages.0/@failureModels.0/@causes.43 //@odeProductPackages.0/@failureModels.0/@causes.6
+660	Gate		Image Grabber.or3		//@odeProductPackages.0/@failureModels.0/@causes.3 //@odeProductPackages.0/@failureModels.0/@causes.4
+661	Gate	AND	Path Panner.No precise distance information		//@odeProductPackages.0/@failureModels.0/@causes.7 //@odeProductPackages.0/@failureModels.0/@causes.45
+662	Gate		Localization.or1		//@odeProductPackages.0/@failureModels.0/@causes.46 //@odeProductPackages.0/@failureModels.0/@causes.12 //@odeProductPackages.0/@failureModels.0/@causes.11
+663	Gate	AND	Localization.and1		//@odeProductPackages.0/@failureModels.0/@causes.47 //@odeProductPackages.0/@failureModels.0/@causes.8
+664	Gate		Localization.or5		//@odeProductPackages.0/@failureModels.0/@causes.9 //@odeProductPackages.0/@failureModels.0/@causes.10
+665	Gate		Object Detection.or1		//@odeProductPackages.0/@failureModels.0/@causes.14 //@odeProductPackages.0/@failureModels.0/@causes.49 //@odeProductPackages.0/@failureModels.0/@causes.16
+666	Gate	AND	Object Detection.and3		//@odeProductPackages.0/@failureModels.0/@causes.15 //@odeProductPackages.0/@failureModels.0/@causes.6
+667	Gate		Controller.or2		//@odeProductPackages.0/@failureModels.0/@causes.17 //@odeProductPackages.0/@failureModels.0/@causes.51
+668	Gate	AND	Controller.and2		//@odeProductPackages.0/@failureModels.0/@causes.52 //@odeProductPackages.0/@failureModels.0/@causes.19
+669	Gate		Path Panner.or2		//@odeProductPackages.0/@failureModels.0/@causes.18 //@odeProductPackages.0/@failureModels.0/@causes.53 //@odeProductPackages.0/@failureModels.0/@causes.56 //@odeProductPackages.0/@failureModels.0/@causes.61 //@odeProductPackages.0/@failureModels.0/@causes.59 //@odeProductPackages.0/@failureModels.0/@causes.28
+670	Gate	AND	Path Panner.and4		//@odeProductPackages.0/@failureModels.0/@causes.54 //@odeProductPackages.0/@failureModels.0/@causes.22
+671	Gate		Localization.or2		//@odeProductPackages.0/@failureModels.0/@causes.20 //@odeProductPackages.0/@failureModels.0/@causes.55 //@odeProductPackages.0/@failureModels.0/@causes.19
+672	Gate	AND	Localization.and2		//@odeProductPackages.0/@failureModels.0/@causes.47 //@odeProductPackages.0/@failureModels.0/@causes.21
+673	Gate	AND	Path Panner.and1		//@odeProductPackages.0/@failureModels.0/@causes.57 //@odeProductPackages.0/@failureModels.0/@causes.26
+674	Gate		Localization.or3		//@odeProductPackages.0/@failureModels.0/@causes.23 //@odeProductPackages.0/@failureModels.0/@causes.58 //@odeProductPackages.0/@failureModels.0/@causes.24
+675	Gate	AND	Localization.and3		//@odeProductPackages.0/@failureModels.0/@causes.25 //@odeProductPackages.0/@failureModels.0/@causes.15
+676	Gate		Lane Detection.or2		//@odeProductPackages.0/@failureModels.0/@causes.27 //@odeProductPackages.0/@failureModels.0/@causes.60
+677	Gate		Image Grabber.or2		//@odeProductPackages.0/@failureModels.0/@causes.3 //@odeProductPackages.0/@failureModels.0/@causes.4
+678	Gate		Path Panner.Erroeneous object detection		//@odeProductPackages.0/@failureModels.0/@causes.62 //@odeProductPackages.0/@failureModels.0/@causes.65 //@odeProductPackages.0/@failureModels.0/@causes.67
+679	Gate		Object Detection.or5		//@odeProductPackages.0/@failureModels.0/@causes.29 //@odeProductPackages.0/@failureModels.0/@causes.63
+680	Gate	AND	Object Detection.and1		//@odeProductPackages.0/@failureModels.0/@causes.10 //@odeProductPackages.0/@failureModels.0/@causes.64
+681	Gate		Image Grabber.or1		//@odeProductPackages.0/@failureModels.0/@causes.30 //@odeProductPackages.0/@failureModels.0/@causes.31
+682	Gate		Object Detection.or2		//@odeProductPackages.0/@failureModels.0/@causes.32 //@odeProductPackages.0/@failureModels.0/@causes.66
+683	Gate	AND	Object Detection.and2		//@odeProductPackages.0/@failureModels.0/@causes.60 //@odeProductPackages.0/@failureModels.0/@causes.9
+684	Gate		Object Detection.or4		//@odeProductPackages.0/@failureModels.0/@causes.33 //@odeProductPackages.0/@failureModels.0/@causes.64
+685	Gate		Controller.or8		//@odeProductPackages.0/@failureModels.0/@causes.69 //@odeProductPackages.0/@failureModels.0/@causes.37
+686	Gate	AND	Controller.and3		//@odeProductPackages.0/@failureModels.0/@causes.70 //@odeProductPackages.0/@failureModels.0/@causes.24
+687	Gate	AND	Path Panner.and3		//@odeProductPackages.0/@failureModels.0/@causes.36 //@odeProductPackages.0/@failureModels.0/@causes.71 //@odeProductPackages.0/@failureModels.0/@causes.72 //@odeProductPackages.0/@failureModels.0/@causes.22
+688	Gate		Object Detection.or3		//@odeProductPackages.0/@failureModels.0/@causes.34 //@odeProductPackages.0/@failureModels.0/@causes.43
+689	Gate		Lane Detection.or3		//@odeProductPackages.0/@failureModels.0/@causes.35 //@odeProductPackages.0/@failureModels.0/@causes.64

@@ -1,0 +1,16 @@
+{
+  "run_id": "H1-run-030",
+  "concern_id": "H1",
+  "classification": "OVEREXTENDED",
+  "rationale": "Braking execution or omission is legitimately part of P: H-1, SG-1 and FR-7 require characterising whether required braking occurs. However, the declared scope also incorporates obstacle detection and perception-generated distance information. FR-7.2, FR-7.2.4 and the architecture establish these as supporting perception functions and inputs, not as constituent behaviours of the braking-omission phenomenon. Their causal relevance to braking does not by itself establish membership in P.",
+  "determining_elements": [
+    "“Braking-maneuver ... execution state” is supported target behaviour, not an overextension merely because it concerns system response.",
+    "“Including obstacle detection” explicitly adds an observation function to the phenomenon rather than treating it as a supporting mechanism.",
+    "“Distance-to-obstacle information,” grouped with detection, extends P into perception outputs; the physical obstacle distance can contextualise required braking without incorporating the mechanisms that determine it."
+  ],
+  "sources": [
+    "hazard",
+    "requirements",
+    "architecture"
+  ]
+}

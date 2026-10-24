@@ -1,0 +1,106 @@
+RAISE2 REPRESENTATION REVALIDATION PROTOCOL
+===========================================
+
+PURPOSE
+
+Determine the representational impact of one lifecycle change on an existing
+RAISE2 specification.
+
+Use only the supplied frozen baseline and the supplied lifecycle change.
+Do not infer or consult any evaluation ground truth.
+
+
+RV1 -- CHARACTERISE THE CHANGE
+
+Identify what engineering element has changed and whether the change concerns:
+
+- the Evaluation Target;
+- the Phenomenon of Interest or its scope;
+- a Concern-Relevant Distinction;
+- an assumption or Revalidation Condition supporting an ORR;
+- or an element with no representational impact.
+
+Do not classify a change as relevant merely because it modifies the system.
+
+
+RV2 -- TRACE DEPENDENCIES
+
+Trace the changed element through the frozen RAISE2 specification.
+
+Use the dependency structure:
+
+change
+  -> revalidation condition
+  -> assumption
+  -> ORR
+  -> CRD
+  -> Phenomenon of Interest
+  -> Evaluation Target
+
+Identify only dependencies supported by the supplied baseline.
+
+
+RV3 -- DETERMINE LIFECYCLE ACTION
+
+Return exactly one lifecycle decision:
+
+NONE
+
+Use NONE when the change does not intersect the representational basis of the
+frozen specification and does not change the Evaluation Target or Phenomenon
+of Interest.
+
+REVALIDATE
+
+Use REVALIDATE when the Evaluation Target and Phenomenon of Interest remain
+applicable but the change intersects an assumption or Revalidation Condition
+supporting one or more existing ORRs.
+
+For REVALIDATE, identify exactly the ORRs whose satisfaction must be
+reassessed.
+
+REDERIVE
+
+Use REDERIVE when the existing derivational basis is no longer applicable.
+
+If the Evaluation Target changes, return to RR1.
+
+If the Evaluation Target remains applicable but the Phenomenon of Interest or
+its scope changes, return to RR2.
+
+If T and P remain applicable but the required Concern-Relevant Distinctions
+change, return to RR3.
+
+
+RV4 -- LOCALISE IMPACT
+
+For REVALIDATE, return only the affected ORRs.
+
+Do not revalidate all ORRs merely because one dependency changes.
+
+For NONE, the affected ORR set must be empty.
+
+For REDERIVE, do not attempt to repair the existing ORRs. Return the earliest
+RR step at which derivation must resume.
+
+
+RV5 -- CHECK CONSISTENCY
+
+Before returning the result, verify:
+
+- NONE has no affected ORRs and no return point;
+- REVALIDATE has at least one affected existing ORR and no return point;
+- REDERIVE has no affected ORRs and has return point RR1, RR2, or RR3;
+- every affected ORR exists in the supplied baseline;
+- the rationale is traceable to the supplied baseline and lifecycle change.
+
+
+OUTPUT
+
+Return only one structured result conforming to the supplied
+rv-result.schema.json contract.
+
+Treat each execution independently.
+
+Do not use information from other executions or from evaluation ground truth.
+

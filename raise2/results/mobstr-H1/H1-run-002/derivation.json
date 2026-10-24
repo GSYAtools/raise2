@@ -1,0 +1,72 @@
+{
+  "run_id": "H1-run-002",
+  "concern_id": "H1",
+  "evaluation_target": {
+    "id": "T1",
+    "statement": "Prevent omitting required braking maneuvers.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The safety goal explicitly requires preventing omission of required braking maneuvers, and the hazard/functional requirements describe braking as the action needed to avoid collision in the stated operational situation."
+  },
+  "phenomenon_of_interest": {
+    "id": "P1",
+    "statement": "Whether the vehicle executes a braking maneuver when braking is required to avoid a collision with an obstacle or road user in the declared operational situation.",
+    "scope": "Straight-ahead driving on a less frequented single-lane road at 50 km/h in good weather, including the hazardous situation where a pedestrian runs across the street 20 m in front of the ego vehicle and the system must decide and perform braking to avoid collision with a road user or static obstacle.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The concern is about omitted braking in a concrete hazardous operational situation; the phenomenon to characterise is the occurrence or non-occurrence of the needed braking action in that situation."
+  },
+  "distinctions": [
+    {
+      "id": "D1",
+      "dimension": "Braking decision outcome in the hazardous situation",
+      "contrast_a": "Required braking maneuver is initiated/performed",
+      "contrast_b": "Required braking maneuver is not initiated / is omitted",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "Collapsing these cases would remove the very information needed to evaluate whether the safety goal is satisfied, because the concern is specifically omission of braking when required."
+    },
+    {
+      "id": "D2",
+      "dimension": "Collision-avoidance relevance of the detected obstacle/road user",
+      "contrast_a": "Obstacle or road user is present in a way that requires braking to avoid collision",
+      "contrast_b": "No such braking-relevant obstacle/road user is present",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "The braking obligation depends on whether a collision-relevant obstacle or road user exists; if these cases were indistinguishable, one could not tell when braking is required."
+    }
+  ],
+  "orrs": [
+    {
+      "id": "ORR1",
+      "covers": [
+        "D1"
+      ],
+      "obligation": "An admissible Observable Representation shall preserve whether a required braking maneuver occurs or is omitted in the hazardous operational situation.",
+      "distinguishability_criterion": "The representation must distinguish braking-initiated/performed cases from braking-omitted/non-initiated cases for the same operational situation.",
+      "assumptions": []
+    },
+    {
+      "id": "ORR2",
+      "covers": [
+        "D2"
+      ],
+      "obligation": "An admissible Observable Representation shall preserve whether the operational situation contains a collision-relevant obstacle or road user that makes braking required.",
+      "distinguishability_criterion": "The representation must distinguish the presence of a braking-relevant obstacle or road user from its absence within the declared operational scope.",
+      "assumptions": []
+    }
+  ],
+  "rr5": {
+    "coverage": true,
+    "consistency": true,
+    "issues": []
+  }
+}

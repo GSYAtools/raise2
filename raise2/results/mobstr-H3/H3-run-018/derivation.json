@@ -1,0 +1,68 @@
+{
+  "run_id": "H3-run-018",
+  "concern_id": "H3",
+  "evaluation_target": {
+    "id": "T1",
+    "statement": "The system shall prevent unintended braking.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The safety goal explicitly states prevention of unintended braking, and the hazard defines the harmful event as the vehicle suddenly stopping without an obstacle in front."
+  },
+  "phenomenon_of_interest": {
+    "id": "P1",
+    "statement": "Braking behaviour of the ego vehicle in the stated operational situation, specifically whether braking occurs without a corresponding obstacle in front of the vehicle.",
+    "scope": "Straight ahead drive on a less frequented urban road at 50 km/h, in good weather conditions, with no visible obstacles or vehicles in front of the ego vehicle.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The hazardous event describes an unintended stop in a specific driving situation; evaluating prevention of that event requires characterising when braking occurs in that situation and whether it is justified by an obstacle."
+  },
+  "distinctions": [
+    {
+      "id": "D1",
+      "dimension": "Braking state relative to the presence of an obstacle in front of the ego vehicle",
+      "contrast_a": "Vehicle brakes or stops while no obstacle is in front of the ego vehicle",
+      "contrast_b": "Vehicle brakes or stops in response to an obstacle in front of the ego vehicle",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "The hazardous event is a sudden stop with no obstacle in front, while FR-7 requires braking to avoid collisions with obstacles. Collapsing these situations would remove the information needed to determine whether braking is unintended."
+    }
+  ],
+  "orrs": [
+    {
+      "id": "O1",
+      "covers": [
+        "D1"
+      ],
+      "obligation": "An admissible Observable Representation shall preserve whether a braking event occurs without an obstacle in front of the ego vehicle versus occurring in response to an obstacle in front of the ego vehicle.",
+      "distinguishability_criterion": "The representation must distinguish braking events associated with no in-front obstacle from braking events associated with an in-front obstacle; these two classes must not be represented identically.",
+      "assumptions": [
+        {
+          "id": "A1",
+          "statement": "Obstacle presence in front of the ego vehicle is evaluable from the available system context used for the concern.",
+          "source": [
+            "hazard",
+            "requirements",
+            "architecture"
+          ],
+          "revalidation_conditions": [
+            {
+              "id": "R1",
+              "condition": "If the operational scenario or system architecture changes such that the meaning or availability of obstacle-related information changes, this assumption must be reassessed."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rr5": {
+    "coverage": true,
+    "consistency": true,
+    "issues": []
+  }
+}

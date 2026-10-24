@@ -1,0 +1,53 @@
+{
+  "run_id": "test-001",
+  "concern_id": "synthetic-service-availability",
+  "evaluation_target": {
+    "id": "T1",
+    "statement": "Evaluate whether the service is operationally available.",
+    "source": ["REQ-1"],
+    "rationale": "REQ-1 establishes service availability as the evaluation target."
+  },
+  "phenomenon_of_interest": {
+    "id": "P1",
+    "statement": "Operational availability of the service.",
+    "scope": "Service operation",
+    "source": ["REQ-1"],
+    "rationale": "Service operation is the phenomenon that must be characterised to evaluate T1."
+  },
+  "distinctions": [
+    {
+      "id": "D1",
+      "dimension": "Availability",
+      "contrast_a": "Service available",
+      "contrast_b": "Service unavailable",
+      "source": ["REQ-1"],
+      "rationale": "Collapsing these situations would prevent evaluation of T1."
+    }
+  ],
+  "orrs": [
+    {
+      "id": "ORR1",
+      "covers": ["D1"],
+      "obligation": "The Observable Representation shall preserve whether the service is available.",
+      "distinguishability_criterion": "Available_R(x) != Available_R(y)",
+      "assumptions": [
+        {
+          "id": "A1",
+          "statement": "Service-status information remains observable.",
+          "source": ["REQ-1"],
+          "revalidation_conditions": [
+            {
+              "id": "RC1",
+              "condition": "A lifecycle change affects service-status observability."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rr5": {
+    "coverage": true,
+    "consistency": true,
+    "issues": []
+  }
+}

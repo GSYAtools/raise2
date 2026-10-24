@@ -1,0 +1,92 @@
+MobSTr EQ1 Held-Out Reference Matching Protocol
+===============================================
+
+Purpose
+
+Determine whether each independent RAISE2 derivation recovers the
+Concern-Relevant Distinctions established from held-out downstream evidence.
+
+The reference distinctions were frozen before the automated H1/H3 executions.
+
+
+Matching unit
+
+Matching is performed between one derived CRD and one frozen reference CRD.
+
+A match is based on the operational separation expressed by the contrasted
+situations, not on exact lexical equality of the dimension labels.
+
+
+Reference H1-REF1 -- Obstacle presence
+
+A derived CRD matches H1-REF1 when its contrasts distinguish the presence of
+a collision- or braking-relevant obstacle or road user from its absence.
+
+Equivalent wording and reversed contrast order are permitted.
+
+A CRD does not match merely because it concerns obstacle detection,
+detectability, sensor availability, or another observation mechanism.
+
+
+Reference H1-REF2 -- Braking-relevant spatial relation
+
+A derived CRD matches H1-REF2 when its contrasts distinguish a spatial,
+distance, proximity, or trajectory relation that requires braking from one
+that does not require braking.
+
+Equivalent wording and reversed contrast order are permitted.
+
+No numerical threshold is required.
+
+A CRD does not match merely because it distinguishes braking execution,
+braking timing, obstacle-detection timing, or control behaviour.
+
+
+Reference H3-REF1 -- Obstacle presence
+
+A derived CRD matches H3-REF1 when its contrasts distinguish the presence of
+a braking-relevant obstacle condition from its absence.
+
+Equivalent wording and reversed contrast order are permitted.
+
+A CRD does not match merely because it distinguishes braking occurrence,
+braking intent, detection status, or another system-response or observation
+state.
+
+
+Reference H3-REF2 -- Braking-relevant spatial relation
+
+A derived CRD matches H3-REF2 when its contrasts distinguish a spatial,
+distance, proximity, or trajectory relation that justifies braking from one
+that does not justify braking.
+
+Equivalent wording and reversed contrast order are permitted.
+
+No numerical threshold is required.
+
+A CRD does not match merely because it distinguishes braking occurrence,
+braking intent, timing, or control behaviour.
+
+
+Run-level recovery
+
+A reference distinction is RECOVERED for a run when at least one derived CRD
+matches that reference distinction.
+
+Multiple derived CRDs matching the same reference distinction count as one
+run-level recovery.
+
+A derived CRD may match at most one reference distinction within the same
+concern.
+
+
+Reported analyses
+
+Recovery is reported over:
+
+1. all 30 executions of each concern; and
+2. the subset whose Phenomenon of Interest was independently classified
+   as ALIGNED.
+
+No derived CRD is removed or modified during matching.
+

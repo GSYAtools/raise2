@@ -1,0 +1,10 @@
+Lidar Grabber	7
+Object Detection	6
+Image Grabber	5
+Lane Detection	4
+Controller	3
+GPS Grabber	3
+CAN Bus	3
+Localization	3
+Path Panner	3
+(top event)	1

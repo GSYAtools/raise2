@@ -1,0 +1,9 @@
+{
+  "run_id": "run-005",
+  "change_id": "delta-06",
+  "decision": "REDERIVE",
+  "affected_orrs": [],
+  "return_point": "RR1",
+  "triggered_conditions": [],
+  "rationale": "The lifecycle change explicitly alters the Evaluation Target from deciding only whether braking is required to deciding whether braking or an evasive lane-change maneuver is required. Per the baseline, all ORRs are derived from the original target T_H1 and its phenomenon of interest P_H1 about the collision-relevant spatial situation for braking. Because the Evaluation Target changes, the existing derivational basis is no longer applicable and rederivation must restart at RR1. No specific existing ORR is selectively revalidated."
+}

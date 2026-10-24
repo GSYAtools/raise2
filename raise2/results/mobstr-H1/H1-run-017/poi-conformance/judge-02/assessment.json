@@ -1,0 +1,16 @@
+{
+  "run_id": "H1-run-017",
+  "concern_id": "H1",
+  "classification": "ALIGNED",
+  "rationale": "T requires characterising whether braking is required and whether the system performs or omits that braking. H-1 establishes the collision-threatening situation, while SG-1 and FR-7 establish braking response itself as the behaviour being evaluated. P's declared scope connects vehicle/system behaviour to that requirement without incorporating supporting sensing, computation, communication, or fault-management mechanisms, or their timing constraints.",
+  "determining_elements": [
+    "“Operational situations where braking is required” identifies the condition against which braking omission must be evaluated.",
+    "“Avoid collision with a road user or static obstacle” corresponds to the hazardous event in H-1 and the braking function in FR-7.",
+    "“Decide and execute braking” includes the functional braking response required by T, rather than specifying internal decision-making or control mechanisms.",
+    "The declared scope is bounded by the supplied hazard and braking-related requirements."
+  ],
+  "sources": [
+    "hazard",
+    "requirements"
+  ]
+}

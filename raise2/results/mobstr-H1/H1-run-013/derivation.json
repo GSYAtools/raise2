@@ -1,0 +1,85 @@
+{
+  "run_id": "H1-run-013",
+  "concern_id": "H1",
+  "evaluation_target": {
+    "id": "T1",
+    "statement": "Prevent omission of required braking maneuvers in the hazardous driving situation.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The safety goal states that the system shall prevent omitting required braking maneuvers, and the hazard describes the omitted braking maneuver leading to collision in the specified operational situation."
+  },
+  "phenomenon_of_interest": {
+    "id": "P1",
+    "statement": "The vehicle’s need to brake, and the braking response relevant to avoiding collision with obstacles or road users in the specified operational situation.",
+    "scope": "Straight ahead driving on a less frequented single-lane road at 50 km/h in good weather, with a pedestrian running across the street 20 m in front of the ego vehicle, including the states in which an obstacle is detected and the vehicle must decide whether and when to initiate braking.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The hazard and functional requirements define the operational situation and the need for obstacle-related braking behavior; evaluating omission of braking requires characterising whether a braking maneuver is required and whether the system responds accordingly."
+  },
+  "distinctions": [
+    {
+      "id": "D1",
+      "dimension": "Obstacle presence within the driving trajectory/dangerous zone",
+      "contrast_a": "An obstacle or road user is present such that braking is required to avoid collision",
+      "contrast_b": "No obstacle requiring braking is present",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "The safety goal and braking functional requirement require distinguishing situations where braking is needed from those where it is not; collapsing these would remove information needed to evaluate whether a required braking maneuver was omitted."
+    },
+    {
+      "id": "D2",
+      "dimension": "Timely initiation of braking after obstacle detection",
+      "contrast_a": "Braking is initiated within the required reaction window after obstacle detection",
+      "contrast_b": "Braking is not initiated within that required reaction window, including no braking initiation",
+      "source": [
+        "requirements"
+      ],
+      "rationale": "FR-7.1 and FR-7.2.5 require timely obstacle detection and braking start; collapsing timely and untimely/no braking would remove information needed to evaluate whether the braking maneuver was omitted in time."
+    }
+  ],
+  "orrs": [
+    {
+      "id": "O1",
+      "covers": [
+        "D1"
+      ],
+      "obligation": "An observable representation shall preserve whether the driving situation contains an obstacle or road user in the relevant path such that braking is required.",
+      "distinguishability_criterion": "States with a braking-relevant obstacle present must remain distinguishable from states without such a braking-relevant obstacle.",
+      "assumptions": []
+    },
+    {
+      "id": "O2",
+      "covers": [
+        "D2"
+      ],
+      "obligation": "An observable representation shall preserve whether braking was initiated in time after obstacle detection, versus late or absent braking initiation.",
+      "distinguishability_criterion": "The representation must distinguish timely braking initiation from untimely or missing braking initiation.",
+      "assumptions": [
+        {
+          "id": "A1",
+          "statement": "Obstacle detection can serve as the reference event for judging the timing of braking initiation.",
+          "source": [
+            "requirements"
+          ],
+          "revalidation_conditions": [
+            {
+              "id": "RC1",
+              "condition": "If the timing reference for braking evaluation changes, for example due to revised obstacle-detection criteria or a different braking trigger definition."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rr5": {
+    "coverage": true,
+    "consistency": true,
+    "issues": []
+  }
+}

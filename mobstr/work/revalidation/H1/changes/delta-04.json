@@ -1,0 +1,12 @@
+{
+  "baseline_id": "mobstr-H1-revalidation-baseline-v1",
+  "baseline_sha256": "e7e53a8058e7da0a0d22bc43c6dd38e629e704897b701239597302e777cc9965",
+  "change_id": "delta-04",
+  "title": "Dangerous-zone definition introduced",
+  "change_type": "requirement",
+  "description": "The previously unspecified dangerous-zone boundary is replaced by an explicit configurable braking-zone definition determined by the active operational profile. The engineering concern and Phenomenon of Interest remain unchanged.",
+  "changed_elements": [
+    "FR-7.1",
+    "dangerous-zone definition"
+  ]
+}

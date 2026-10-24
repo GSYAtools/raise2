@@ -1,0 +1,16 @@
+{
+  "run_id": "H1-run-008",
+  "concern_id": "H1",
+  "classification": "ALIGNED",
+  "rationale": "P characterises whether braking is required and whether that required behaviour occurs in time, directly supporting evaluation of SG-1. H-1's failure-to-stop-in-time event and FR-7's collision-avoidance braking requirement establish braking execution and its timeliness as part of the phenomenon itself. The scope mentions detection and decision-making as context without incorporating their internal mechanisms or processing latencies into P.",
+  "determining_elements": [
+    "“Whether a braking maneuver is required” identifies the condition necessary to evaluate omission of required braking under SG-1.",
+    "“Whether braking is performed in time to avoid collision” includes response behaviour legitimately required by SG-1 and FR-7, with temporal relevance established by H-1.",
+    "Obstacle encounters involving road users or obstacles in or close to the vehicle's trajectory are supported by H-1 and FR-7.2.4.",
+    "The declared scope does not make sensor operation, computation, communication, or detection latency independent subjects of characterisation."
+  ],
+  "sources": [
+    "hazard",
+    "requirements"
+  ]
+}

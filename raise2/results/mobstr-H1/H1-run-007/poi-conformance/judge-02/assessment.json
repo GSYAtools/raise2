@@ -1,0 +1,16 @@
+{
+  "run_id": "H1-run-007",
+  "concern_id": "H1",
+  "classification": "ALIGNED",
+  "rationale": "P identifies the driving condition that makes braking necessary, which must be characterised to evaluate omission of required braking. The hazard and functional requirements support obstacle/road-user presence, trajectory proximity, and collision-avoidance relevance. P does not incorporate the mechanisms used to detect that condition or execute braking, nor their timing constraints.",
+  "determining_elements": [
+    "The 'braking-relevant driving state' identifies the condition underlying required braking in H-1 and SG-1.",
+    "Obstacle or road-user presence on the trajectory and the need for braking to avoid collision are supported by H-1 and FR-7.",
+    "The scope's inclusion of objects 'on or near the trajectory' is supported by FR-7.2.4.",
+    "The 'need to determine whether braking must be initiated' expresses the evaluation question about braking necessity, rather than including a detection, computation, or control process within P."
+  ],
+  "sources": [
+    "hazard",
+    "requirements"
+  ]
+}

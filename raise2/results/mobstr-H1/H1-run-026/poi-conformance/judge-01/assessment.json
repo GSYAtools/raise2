@@ -1,0 +1,15 @@
+{
+  "run_id": "H1-run-026",
+  "concern_id": "H1",
+  "classification": "ALIGNED",
+  "rationale": "P identifies whether required braking is initiated and performed—the system behaviour directly required to evaluate T. SG-1 and FR-7 establish braking itself as the subject, while FR-7.1 establishes obstacle detection as a trigger for braking initiation. P uses timely detection as a condition rather than expanding into sensing mechanisms or their timing performance. Its operational scope matches the supplied hazard.",
+  "determining_elements": [
+    "\"Whether braking is initiated and performed\" directly characterises omission of required braking, supported by SG-1 and FR-7.",
+    "\"When an obstacle is detected in time\" provides the triggering context for braking; FR-7.1 explicitly requires braking initiation after detection within a dangerous zone. P does not incorporate the detection pipeline as an additional phenomenon.",
+    "The straight-ahead, single-lane-road scenario at 50 km/h in good weather, with a pedestrian crossing 20 m ahead, matches H-1's operational situation."
+  ],
+  "sources": [
+    "hazard",
+    "requirements"
+  ]
+}

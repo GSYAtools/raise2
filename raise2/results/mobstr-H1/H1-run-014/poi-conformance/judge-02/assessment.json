@@ -1,0 +1,17 @@
+{
+  "run_id": "H1-run-014",
+  "concern_id": "H1",
+  "classification": "OVEREXTENDED",
+  "rationale": "The target and H-1, SG-1, and FR-7 support characterising the hazardous situation requiring braking and whether the required maneuver is initiated or performed. However, P's scope also incorporates detection, interpretation, and planning mechanisms because they contribute to deciding and executing braking. The requirements and architecture establish those mechanisms' functional relevance, not their membership in the phenomenon being evaluated. The overextension is this inclusion of implementation mechanisms, not the inclusion of braking response itself.",
+  "determining_elements": [
+    "The straight-ahead driving scenario at 50 km/h with a pedestrian crossing 20 m ahead is directly supported by H-1.",
+    "The scope explicitly includes 'obstacle detection, object interpretation, path planning'; these are observation and computation mechanisms, not established as constituent properties of the required-braking situation or the occurrence of braking.",
+    "The qualifier 'relevant to deciding and executing braking' uses causal relevance to expand P across the implementation chain; relevance alone does not establish phenomenon membership.",
+    "Braking initiation and brake actuation can legitimately describe the required system response under SG-1 and FR-7; their inclusion does not by itself make P overextended."
+  ],
+  "sources": [
+    "hazard",
+    "requirements",
+    "architecture"
+  ]
+}

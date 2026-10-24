@@ -1,0 +1,16 @@
+{
+  "run_id": "H3-run-018",
+  "concern_id": "H3",
+  "classification": "ALIGNED",
+  "rationale": "P identifies the vehicle braking behaviour and its relationship to obstacle presence needed to evaluate prevention of unintended braking. SG-3 establishes that behaviour as the evaluation subject, while H-3 supports the obstacle-absence condition and declared operational scope. P does not expand the phenomenon to include sensing, computation, communication, failure mitigation, or mechanism timing requirements.",
+  "determining_elements": [
+    "“Braking behaviour of the ego vehicle” is itself the behaviour targeted by SG-3, rather than merely a mechanism affecting evaluation.",
+    "“Whether braking occurs without a corresponding obstacle in front” directly reflects H-3’s hazardous event of stopping despite no obstacle being present.",
+    "The declared straight-ahead urban-driving scope at 50 km/h, in good weather and without visible obstacles or vehicles ahead, matches H-3’s operational situation.",
+    "P does not incorporate obstacle-detection processes, controller responses, warnings, redundancy, or the detection and braking-response deadlines listed in the requirements."
+  ],
+  "sources": [
+    "hazard",
+    "requirements"
+  ]
+}

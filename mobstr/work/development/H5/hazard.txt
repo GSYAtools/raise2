@@ -1,0 +1,5 @@
+ID=H-5
+Hazard=Unintended leaving of the road
+Operational Situation=Driving through a narrow road curve on the right-hand lane at 40 km/h in close proximity of a weekly market at good weather conditions
+Hazardous Event=While driving, the vehicle is  following a wrong trajectory and leaves the road and may hit an obstacle.
+Probable Causes=Sensor or actuator failures; misinterpretation of sensor signals; wrong localization; wrong classification of the road; erroneous trajactory planning; controller failure; wrong timing of steering command

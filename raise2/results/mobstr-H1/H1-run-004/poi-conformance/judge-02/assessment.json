@@ -1,0 +1,17 @@
+{
+  "run_id": "H1-run-004",
+  "concern_id": "H1",
+  "classification": "OVEREXTENDED",
+  "rationale": "T requires characterising whether required braking occurs in time in the hazardous situation. P additionally includes perception state and timely obstacle detection as parts of the phenomenon. The detection requirements and architecture establish mechanisms supporting braking, but their relevance and timing constraints do not establish detection performance itself as part of what T evaluates. Braking-response behaviour is supported; the overextension is the inclusion of perception and its timing.",
+  "determining_elements": [
+    "“The system’s braking-relevant perception and control state” extends P beyond required braking behaviour to upstream perception state.",
+    "“Whether an obstacle is detected in time” incorporates observation performance and timing. FR-7.2 and FR-7.2.5 specify detection functionality and latency, but do not make those mechanisms part of the phenomenon required by T.",
+    "The braking-response aspect of “whether braking is commanded to avoid collision” is supported by SG-1, FR-7 and FR-7.1; system-response content alone is not the reason for classifying P as overextended.",
+    "The declared driving scenario is supported by H-1 and does not determine the overextension."
+  ],
+  "sources": [
+    "hazard",
+    "requirements",
+    "architecture"
+  ]
+}

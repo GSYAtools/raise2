@@ -1,0 +1,16 @@
+{
+  "run_id": "H1-run-028",
+  "concern_id": "H1",
+  "classification": "OVEREXTENDED",
+  "rationale": "The target and artefacts establish the braking-relevant driving situation and actual braking response as necessary to evaluate whether required braking is omitted. However, the declared scope also incorporates obstacle detection, an enabling observation function. Its presence in the requirements and its use as the timing trigger in FR-7.1 do not establish detection itself as part of the phenomenon being evaluated. The overextension concerns this observation function, not the inclusion of braking response or activation.",
+  "determining_elements": [
+    "“Braking-relevant driving situation” is supported by H-1's collision scenario and FR-7's requirement to brake to avoid obstacles.",
+    "“Braking response” and braking activation are supported by SG-1, FR-7, and FR-7.1: whether required braking occurs is directly relevant to the target.",
+    "The scope explicitly includes “obstacle detection,” extending P to an observation function rather than only the obstacle-related situation and required braking response.",
+    "FR-7.2 establishes detection as a system function, while FR-7.1 uses detection as a braking-timing trigger; neither role by itself establishes detection-function behaviour as belonging to P."
+  ],
+  "sources": [
+    "hazard",
+    "requirements"
+  ]
+}

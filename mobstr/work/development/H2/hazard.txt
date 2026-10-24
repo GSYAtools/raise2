@@ -1,0 +1,5 @@
+ID=H-2
+Hazard=Omitted avoidance maneuver
+Operational Situation=Straight ahead drive on a less frequented multi-lane road with 50 km/h at good weather conditions with a pedestrian running across the street 20 m in front of the ego vehicle
+Hazardous Event=While driving, the vehicle is not able to perform a required avoidance maneuver (i.e., a lane change) to avoid a collision with a road user or a static obstacle and hits the road user or static obstacle.
+Probable Causes=Sensor failure in the detection of obstacles; controller failure; failure of the motor control; failure of the steering or brake actuators

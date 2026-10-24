@@ -1,0 +1,1040 @@
+{
+  "reference_recovery": {
+    "H1-REF1": {
+      "all_runs": {
+        "recovered": 9,
+        "total": 30,
+        "rate": 0.3
+      },
+      "poi_aligned_runs": {
+        "recovered": 5,
+        "total": 22,
+        "rate": 0.22727272727272727
+      }
+    },
+    "H1-REF2": {
+      "all_runs": {
+        "recovered": 5,
+        "total": 30,
+        "rate": 0.16666666666666666
+      },
+      "poi_aligned_runs": {
+        "recovered": 3,
+        "total": 22,
+        "rate": 0.13636363636363635
+      }
+    },
+    "H3-REF1": {
+      "all_runs": {
+        "recovered": 23,
+        "total": 30,
+        "rate": 0.7666666666666667
+      },
+      "poi_aligned_runs": {
+        "recovered": 23,
+        "total": 30,
+        "rate": 0.7666666666666667
+      }
+    },
+    "H3-REF2": {
+      "all_runs": {
+        "recovered": 0,
+        "total": 30,
+        "rate": 0.0
+      },
+      "poi_aligned_runs": {
+        "recovered": 0,
+        "total": 30,
+        "rate": 0.0
+      }
+    }
+  },
+  "complete_recovery": {
+    "H1": {
+      "all_runs": {
+        "complete": 3,
+        "total": 30,
+        "rate": 0.1
+      },
+      "poi_aligned_runs": {
+        "complete": 2,
+        "total": 22,
+        "rate": 0.09090909090909091
+      }
+    },
+    "H3": {
+      "all_runs": {
+        "complete": 0,
+        "total": 30,
+        "rate": 0.0
+      },
+      "poi_aligned_runs": {
+        "complete": 0,
+        "total": 30,
+        "rate": 0.0
+      }
+    }
+  },
+  "run_reference_decisions": [
+    {
+      "concern": "H1",
+      "run_id": "H1-run-001",
+      "reference_id": "H1-REF1",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "deterministic_no_match"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-001",
+      "reference_id": "H1-REF2",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "frozen_adjudication"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-002",
+      "reference_id": "H1-REF1",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "deterministic_no_match"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-002",
+      "reference_id": "H1-REF2",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "deterministic_no_match"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-003",
+      "reference_id": "H1-REF1",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "deterministic_no_match"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-003",
+      "reference_id": "H1-REF2",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "deterministic_no_match"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-004",
+      "reference_id": "H1-REF1",
+      "poi_classification": "OVEREXTENDED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "deterministic_no_match"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-004",
+      "reference_id": "H1-REF2",
+      "poi_classification": "OVEREXTENDED",
+      "decision": "RECOVERED",
+      "decision_source": "deterministic_match"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-005",
+      "reference_id": "H1-REF1",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "deterministic_no_match"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-005",
+      "reference_id": "H1-REF2",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "deterministic_no_match"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-006",
+      "reference_id": "H1-REF1",
+      "poi_classification": "ALIGNED",
+      "decision": "RECOVERED",
+      "decision_source": "deterministic_match"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-006",
+      "reference_id": "H1-REF2",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "deterministic_no_match"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-007",
+      "reference_id": "H1-REF1",
+      "poi_classification": "ALIGNED",
+      "decision": "RECOVERED",
+      "decision_source": "deterministic_match"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-007",
+      "reference_id": "H1-REF2",
+      "poi_classification": "ALIGNED",
+      "decision": "RECOVERED",
+      "decision_source": "frozen_adjudication"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-008",
+      "reference_id": "H1-REF1",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "deterministic_no_match"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-008",
+      "reference_id": "H1-REF2",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "frozen_adjudication"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-009",
+      "reference_id": "H1-REF1",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "deterministic_no_match"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-009",
+      "reference_id": "H1-REF2",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "deterministic_no_match"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-010",
+      "reference_id": "H1-REF1",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "deterministic_no_match"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-010",
+      "reference_id": "H1-REF2",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "frozen_adjudication"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-011",
+      "reference_id": "H1-REF1",
+      "poi_classification": "OVEREXTENDED",
+      "decision": "RECOVERED",
+      "decision_source": "deterministic_match"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-011",
+      "reference_id": "H1-REF2",
+      "poi_classification": "OVEREXTENDED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "frozen_adjudication"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-012",
+      "reference_id": "H1-REF1",
+      "poi_classification": "OVEREXTENDED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "deterministic_no_match"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-012",
+      "reference_id": "H1-REF2",
+      "poi_classification": "OVEREXTENDED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "deterministic_no_match"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-013",
+      "reference_id": "H1-REF1",
+      "poi_classification": "ALIGNED",
+      "decision": "RECOVERED",
+      "decision_source": "deterministic_match"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-013",
+      "reference_id": "H1-REF2",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "frozen_adjudication"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-014",
+      "reference_id": "H1-REF1",
+      "poi_classification": "OVEREXTENDED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "frozen_adjudication"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-014",
+      "reference_id": "H1-REF2",
+      "poi_classification": "OVEREXTENDED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "deterministic_no_match"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-015",
+      "reference_id": "H1-REF1",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "deterministic_no_match"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-015",
+      "reference_id": "H1-REF2",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "deterministic_no_match"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-016",
+      "reference_id": "H1-REF1",
+      "poi_classification": "ALIGNED",
+      "decision": "RECOVERED",
+      "decision_source": "deterministic_match"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-016",
+      "reference_id": "H1-REF2",
+      "poi_classification": "ALIGNED",
+      "decision": "RECOVERED",
+      "decision_source": "frozen_adjudication"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-017",
+      "reference_id": "H1-REF1",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "deterministic_no_match"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-017",
+      "reference_id": "H1-REF2",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "deterministic_no_match"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-018",
+      "reference_id": "H1-REF1",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "deterministic_no_match"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-018",
+      "reference_id": "H1-REF2",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "deterministic_no_match"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-019",
+      "reference_id": "H1-REF1",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "deterministic_no_match"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-019",
+      "reference_id": "H1-REF2",
+      "poi_classification": "ALIGNED",
+      "decision": "RECOVERED",
+      "decision_source": "frozen_adjudication"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-020",
+      "reference_id": "H1-REF1",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "deterministic_no_match"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-020",
+      "reference_id": "H1-REF2",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "deterministic_no_match"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-021",
+      "reference_id": "H1-REF1",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "deterministic_no_match"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-021",
+      "reference_id": "H1-REF2",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "deterministic_no_match"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-022",
+      "reference_id": "H1-REF1",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "deterministic_no_match"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-022",
+      "reference_id": "H1-REF2",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "deterministic_no_match"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-023",
+      "reference_id": "H1-REF1",
+      "poi_classification": "OVEREXTENDED",
+      "decision": "RECOVERED",
+      "decision_source": "deterministic_match"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-023",
+      "reference_id": "H1-REF2",
+      "poi_classification": "OVEREXTENDED",
+      "decision": "RECOVERED",
+      "decision_source": "deterministic_match"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-024",
+      "reference_id": "H1-REF1",
+      "poi_classification": "OVEREXTENDED",
+      "decision": "RECOVERED",
+      "decision_source": "deterministic_match"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-024",
+      "reference_id": "H1-REF2",
+      "poi_classification": "OVEREXTENDED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "deterministic_no_match"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-025",
+      "reference_id": "H1-REF1",
+      "poi_classification": "ALIGNED",
+      "decision": "RECOVERED",
+      "decision_source": "deterministic_match"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-025",
+      "reference_id": "H1-REF2",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "deterministic_no_match"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-026",
+      "reference_id": "H1-REF1",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "deterministic_no_match"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-026",
+      "reference_id": "H1-REF2",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "deterministic_no_match"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-027",
+      "reference_id": "H1-REF1",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "deterministic_no_match"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-027",
+      "reference_id": "H1-REF2",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "deterministic_no_match"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-028",
+      "reference_id": "H1-REF1",
+      "poi_classification": "OVEREXTENDED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "deterministic_no_match"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-028",
+      "reference_id": "H1-REF2",
+      "poi_classification": "OVEREXTENDED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "deterministic_no_match"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-029",
+      "reference_id": "H1-REF1",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "deterministic_no_match"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-029",
+      "reference_id": "H1-REF2",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "deterministic_no_match"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-030",
+      "reference_id": "H1-REF1",
+      "poi_classification": "OVEREXTENDED",
+      "decision": "RECOVERED",
+      "decision_source": "deterministic_match"
+    },
+    {
+      "concern": "H1",
+      "run_id": "H1-run-030",
+      "reference_id": "H1-REF2",
+      "poi_classification": "OVEREXTENDED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "deterministic_no_match"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-001",
+      "reference_id": "H3-REF1",
+      "poi_classification": "ALIGNED",
+      "decision": "RECOVERED",
+      "decision_source": "deterministic_match"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-001",
+      "reference_id": "H3-REF2",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "frozen_adjudication"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-002",
+      "reference_id": "H3-REF1",
+      "poi_classification": "ALIGNED",
+      "decision": "RECOVERED",
+      "decision_source": "frozen_adjudication"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-002",
+      "reference_id": "H3-REF2",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "frozen_adjudication"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-003",
+      "reference_id": "H3-REF1",
+      "poi_classification": "ALIGNED",
+      "decision": "RECOVERED",
+      "decision_source": "deterministic_match"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-003",
+      "reference_id": "H3-REF2",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "frozen_adjudication"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-004",
+      "reference_id": "H3-REF1",
+      "poi_classification": "ALIGNED",
+      "decision": "RECOVERED",
+      "decision_source": "deterministic_match"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-004",
+      "reference_id": "H3-REF2",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "frozen_adjudication"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-005",
+      "reference_id": "H3-REF1",
+      "poi_classification": "ALIGNED",
+      "decision": "RECOVERED",
+      "decision_source": "deterministic_match"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-005",
+      "reference_id": "H3-REF2",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "frozen_adjudication"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-006",
+      "reference_id": "H3-REF1",
+      "poi_classification": "ALIGNED",
+      "decision": "RECOVERED",
+      "decision_source": "deterministic_match"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-006",
+      "reference_id": "H3-REF2",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "frozen_adjudication"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-007",
+      "reference_id": "H3-REF1",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "frozen_adjudication"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-007",
+      "reference_id": "H3-REF2",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "frozen_adjudication"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-008",
+      "reference_id": "H3-REF1",
+      "poi_classification": "ALIGNED",
+      "decision": "RECOVERED",
+      "decision_source": "deterministic_match"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-008",
+      "reference_id": "H3-REF2",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "frozen_adjudication"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-009",
+      "reference_id": "H3-REF1",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "frozen_adjudication"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-009",
+      "reference_id": "H3-REF2",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "frozen_adjudication"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-010",
+      "reference_id": "H3-REF1",
+      "poi_classification": "ALIGNED",
+      "decision": "RECOVERED",
+      "decision_source": "deterministic_match"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-010",
+      "reference_id": "H3-REF2",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "frozen_adjudication"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-011",
+      "reference_id": "H3-REF1",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "deterministic_no_match"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-011",
+      "reference_id": "H3-REF2",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "frozen_adjudication"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-012",
+      "reference_id": "H3-REF1",
+      "poi_classification": "ALIGNED",
+      "decision": "RECOVERED",
+      "decision_source": "deterministic_match"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-012",
+      "reference_id": "H3-REF2",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "frozen_adjudication"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-013",
+      "reference_id": "H3-REF1",
+      "poi_classification": "ALIGNED",
+      "decision": "RECOVERED",
+      "decision_source": "deterministic_match"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-013",
+      "reference_id": "H3-REF2",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "frozen_adjudication"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-014",
+      "reference_id": "H3-REF1",
+      "poi_classification": "ALIGNED",
+      "decision": "RECOVERED",
+      "decision_source": "deterministic_match"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-014",
+      "reference_id": "H3-REF2",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "frozen_adjudication"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-015",
+      "reference_id": "H3-REF1",
+      "poi_classification": "ALIGNED",
+      "decision": "RECOVERED",
+      "decision_source": "deterministic_match"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-015",
+      "reference_id": "H3-REF2",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "frozen_adjudication"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-016",
+      "reference_id": "H3-REF1",
+      "poi_classification": "ALIGNED",
+      "decision": "RECOVERED",
+      "decision_source": "deterministic_match"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-016",
+      "reference_id": "H3-REF2",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "frozen_adjudication"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-017",
+      "reference_id": "H3-REF1",
+      "poi_classification": "ALIGNED",
+      "decision": "RECOVERED",
+      "decision_source": "frozen_adjudication"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-017",
+      "reference_id": "H3-REF2",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "frozen_adjudication"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-018",
+      "reference_id": "H3-REF1",
+      "poi_classification": "ALIGNED",
+      "decision": "RECOVERED",
+      "decision_source": "deterministic_match"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-018",
+      "reference_id": "H3-REF2",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "frozen_adjudication"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-019",
+      "reference_id": "H3-REF1",
+      "poi_classification": "ALIGNED",
+      "decision": "RECOVERED",
+      "decision_source": "deterministic_match"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-019",
+      "reference_id": "H3-REF2",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "frozen_adjudication"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-020",
+      "reference_id": "H3-REF1",
+      "poi_classification": "ALIGNED",
+      "decision": "RECOVERED",
+      "decision_source": "deterministic_match"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-020",
+      "reference_id": "H3-REF2",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "frozen_adjudication"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-021",
+      "reference_id": "H3-REF1",
+      "poi_classification": "ALIGNED",
+      "decision": "RECOVERED",
+      "decision_source": "deterministic_match"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-021",
+      "reference_id": "H3-REF2",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "frozen_adjudication"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-022",
+      "reference_id": "H3-REF1",
+      "poi_classification": "ALIGNED",
+      "decision": "RECOVERED",
+      "decision_source": "frozen_adjudication"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-022",
+      "reference_id": "H3-REF2",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "frozen_adjudication"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-023",
+      "reference_id": "H3-REF1",
+      "poi_classification": "ALIGNED",
+      "decision": "RECOVERED",
+      "decision_source": "deterministic_match"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-023",
+      "reference_id": "H3-REF2",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "frozen_adjudication"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-024",
+      "reference_id": "H3-REF1",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "deterministic_no_match"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-024",
+      "reference_id": "H3-REF2",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "frozen_adjudication"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-025",
+      "reference_id": "H3-REF1",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "frozen_adjudication"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-025",
+      "reference_id": "H3-REF2",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "frozen_adjudication"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-026",
+      "reference_id": "H3-REF1",
+      "poi_classification": "ALIGNED",
+      "decision": "RECOVERED",
+      "decision_source": "deterministic_match"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-026",
+      "reference_id": "H3-REF2",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "frozen_adjudication"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-027",
+      "reference_id": "H3-REF1",
+      "poi_classification": "ALIGNED",
+      "decision": "RECOVERED",
+      "decision_source": "deterministic_match"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-027",
+      "reference_id": "H3-REF2",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "frozen_adjudication"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-028",
+      "reference_id": "H3-REF1",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "frozen_adjudication"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-028",
+      "reference_id": "H3-REF2",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "frozen_adjudication"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-029",
+      "reference_id": "H3-REF1",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "frozen_adjudication"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-029",
+      "reference_id": "H3-REF2",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "frozen_adjudication"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-030",
+      "reference_id": "H3-REF1",
+      "poi_classification": "ALIGNED",
+      "decision": "RECOVERED",
+      "decision_source": "frozen_adjudication"
+    },
+    {
+      "concern": "H3",
+      "run_id": "H3-run-030",
+      "reference_id": "H3-REF2",
+      "poi_classification": "ALIGNED",
+      "decision": "NOT_RECOVERED",
+      "decision_source": "frozen_adjudication"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "run_id": "H3-run-021",
+  "concern_id": "H3",
+  "classification": "ALIGNED",
+  "rationale": "P characterises the vehicle braking behaviour required to evaluate prevention of unintended braking under SG-3. Its operational scope and sudden-stopping event are directly supported by H-3, while FR-7 supplies the intended collision-avoidance braking context. Braking behaviour is itself the subject of evaluation, not merely a control mechanism affecting another phenomenon. P does not incorporate sensing, computation, communication, failure mitigation, or their timing constraints.",
+  "determining_elements": [
+    "The focus on whether braking occurs as intended or unexpectedly directly addresses the evaluation target.",
+    "Straight-ahead driving on a less frequented urban road at 50 km/h, good weather, and no visible obstacles or vehicles ahead match H-3's operational situation.",
+    "Sudden stopping while driving belongs to H-3's hazardous event; its temporal character is intrinsic to the braking phenomenon.",
+    "The reference to braking intended to avoid obstacle collisions is supported by FR-7 and does not incorporate the mechanisms used to detect obstacles or initiate braking."
+  ],
+  "sources": [
+    "hazard",
+    "requirements"
+  ]
+}

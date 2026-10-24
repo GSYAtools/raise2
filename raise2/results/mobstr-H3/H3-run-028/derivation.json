@@ -1,0 +1,52 @@
+{
+  "run_id": "H3-run-028",
+  "concern_id": "H3",
+  "evaluation_target": {
+    "id": "T1",
+    "statement": "Prevent unintended braking.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The hazard identifies unintended braking as the unsafe event, and SG-3 states the system shall prevent unintended braking."
+  },
+  "phenomenon_of_interest": {
+    "id": "P1",
+    "statement": "The vehicle's braking behavior in the operating situation where it drives straight ahead on a less frequented urban road at 50 km/h in good weather with no visible obstacles or vehicles in front of the ego vehicle.",
+    "scope": "Situations matching the stated operational situation in which braking behavior can be observed, including cases where braking occurs or does not occur while no obstacle is visible in front of the ego vehicle.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "To evaluate whether unintended braking is prevented, the relevant phenomenon is the vehicle's braking behavior under the hazardous operating situation described in the hazard."
+  },
+  "distinctions": [
+    {
+      "id": "D1",
+      "dimension": "Braking occurrence in the stated no-obstacle driving situation",
+      "contrast_a": "The vehicle brakes or stops suddenly while no obstacle is in front of it.",
+      "contrast_b": "The vehicle does not brake unexpectedly and continues driving normally in the same situation.",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "Collapsing these situations would remove the information needed to evaluate whether unintended braking has occurred, which is directly required to judge the safety goal."
+    }
+  ],
+  "orrs": [
+    {
+      "id": "ORR1",
+      "covers": [
+        "D1"
+      ],
+      "obligation": "An admissible Observable Representation must preserve whether the vehicle brakes unexpectedly versus does not brake unexpectedly in the specified operating situation.",
+      "distinguishability_criterion": "The representation must allow these two braking states to be distinguished as different observations in the declared phenomenon of interest.",
+      "assumptions": []
+    }
+  ],
+  "rr5": {
+    "coverage": true,
+    "consistency": true,
+    "issues": []
+  }
+}

@@ -1,0 +1,40 @@
+CONCERN: H5 -- Unintended leaving of the road
+
+RR1 -- Evaluative Intent:
+Determine whether the vehicle's operational motion remains consistent with
+the intended trajectory and road boundaries.
+
+Source rationale:
+- SG-5 requires prevention of unintended leaving of the road.
+- H5 describes the vehicle following a wrong trajectory and leaving the road.
+- FR-6 requires the vehicle to define and follow a trajectory through
+  predetermined way points.
+- FR-6.5--FR-6.10 constrain steering, speed, vehicle state, and localization
+  relevant to maintaining that trajectory.
+
+RR2 -- Phenomenon of Interest:
+The vehicle's trajectory-relative operational motion with respect to the
+road boundaries.
+
+Phenomenon scope:
+The phenomenon includes the vehicle's actual position and motion, its
+relationship to the intended trajectory and road boundaries, and the
+longitudinal and lateral evolution of that relationship.
+
+Representation/control boundary:
+Sensor outputs, localization estimates, path-planner states, controller
+states, and control-command generation mechanisms are not themselves treated
+as the Phenomenon of Interest. Requirements on these mechanisms support a CRD
+only when they establish a concern-relevant difference between operational
+situations within the declared phenomenon.
+
+PoI scope-consistency check:
+Candidate CRDs must contrast two situations belonging to the vehicle's
+trajectory-relative operational motion. A requirement relevant to H5 does not
+automatically define a CRD when it constrains only the mechanism used to
+observe, compute, communicate, or control that phenomenon.
+
+Possible additional PoIs:
+None introduced at this stage. A single PoI is retained unless RR3 identifies
+a source-supported concern-relevant distinction that cannot be expressed as a
+difference within the declared phenomenon.

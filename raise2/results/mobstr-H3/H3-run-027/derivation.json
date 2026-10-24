@@ -1,0 +1,66 @@
+{
+  "run_id": "H3-run-027",
+  "concern_id": "H3",
+  "evaluation_target": {
+    "id": "T1",
+    "statement": "Prevent unintended braking.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The hazard describes an unintended stop while no obstacle is in front of the vehicle, and SG-3 explicitly states that the system shall prevent unintended braking."
+  },
+  "phenomenon_of_interest": {
+    "id": "P1",
+    "statement": "Vehicle braking behavior in straight-ahead urban driving without visible obstacles or vehicles in front of the ego vehicle under good weather conditions.",
+    "scope": "Operational situations matching the hazard description: straight ahead drive on a less frequented urban road at 50 km/h, with no visible obstacles or vehicles in front of the ego vehicle, in good weather conditions, including whether braking occurs and its manifestation.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The evaluation concerns the braking behavior that can lead to the hazardous event described in the hazard artefact, within the operational situation stated there."
+  },
+  "distinctions": [
+    {
+      "id": "D1",
+      "dimension": "Braking outcome in the declared operational situation",
+      "contrast_a": "The vehicle does not brake unintentionally.",
+      "contrast_b": "The vehicle suddenly stops although no obstacle is in front of the vehicle.",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "Both contrasted situations fall within the declared hazard scope, and collapsing them would remove the information needed to evaluate whether unintended braking is prevented."
+    }
+  ],
+  "orrs": [
+    {
+      "id": "O1",
+      "covers": [
+        "D1"
+      ],
+      "obligation": "An admissible Observable Representation shall preserve whether, in the declared operational situation, the vehicle remains non-braking or instead exhibits an unintended stop/braking event with no obstacle in front.",
+      "distinguishability_criterion": "The representation must distinguish the non-braking case from the unintended braking case described in the hazard; these two classes must not be conflated.",
+      "assumptions": [
+        {
+          "id": "A1",
+          "statement": "The operational concern is evaluated only within the hazard's stated situation: straight ahead urban driving at 50 km/h, no visible obstacles or vehicles in front, and good weather conditions.",
+          "source": [
+            "hazard"
+          ],
+          "revalidation_conditions": [
+            {
+              "id": "R1",
+              "condition": "Reassess if the intended evaluation scope changes to a different road type, speed range, traffic condition, or weather condition."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rr5": {
+    "coverage": true,
+    "consistency": true,
+    "issues": []
+  }
+}

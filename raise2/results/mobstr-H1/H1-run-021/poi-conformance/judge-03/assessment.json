@@ -1,0 +1,16 @@
+{
+  "run_id": "H1-run-021",
+  "concern_id": "H1",
+  "classification": "ALIGNED",
+  "rationale": "P characterises whether required braking occurs, which is the system behaviour directly evaluated by T and SG-1. Its collision-avoidance timing is supported by H-1's failure to stop in time and FR-7's required braking maneuver, rather than inferred from observation or computation deadlines. P does not incorporate supporting sensing, planning, communication, or failure-management mechanisms.",
+  "determining_elements": [
+    "\"Whether braking is required, initiated, or omitted\" directly captures the relationship between braking necessity and execution required to evaluate prevention of omitted braking maneuvers.",
+    "\"In time to avoid collision\" concerns the braking response itself: H-1 identifies failure to stop in time, FR-7 requires collision-avoidance braking, and FR-7.1 explicitly addresses braking initiation.",
+    "\"The vehicle's braking-response state\" is legitimately system-response behaviour because braking execution is itself the subject of T, not merely a mechanism for evaluating another phenomenon.",
+    "The scope covers road users and static obstacles identified in H-1 and obstacles covered by FR-7, while retaining the supplied pedestrian-crossing scenario."
+  ],
+  "sources": [
+    "hazard",
+    "requirements"
+  ]
+}

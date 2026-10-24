@@ -1,0 +1,24 @@
+{
+  "experiment_id": "mobstr-H3",
+  "concern_id": "H3",
+  "artefacts": [
+    {
+      "id": "hazard",
+      "type": "hazard",
+      "path": "mobstr/work/test-visible/H3/hazard.txt",
+      "sha256": "dec3470519d5a86f0f42791cbfe06096c26189be9353c2a79682b52c815514c5"
+    },
+    {
+      "id": "requirements",
+      "type": "requirement",
+      "path": "mobstr/work/test-visible/H3/requirements.tsv",
+      "sha256": "88b0593f17746de952c2da8ef85a07e2f73857af9e0e3e6e45d201b4a1fb59f2"
+    },
+    {
+      "id": "architecture",
+      "type": "architecture",
+      "path": "mobstr/work/executor-input/H3/architecture.json",
+      "sha256": "b3fa51f949dc73baab35651bba2dd8f210a1c2e069be7433e9da839de0774e80"
+    }
+  ]
+}

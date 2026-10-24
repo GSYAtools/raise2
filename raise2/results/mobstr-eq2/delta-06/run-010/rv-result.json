@@ -1,0 +1,9 @@
+{
+  "run_id": "run-010",
+  "change_id": "delta-06",
+  "decision": "REDERIVE",
+  "affected_orrs": [],
+  "return_point": "RR1",
+  "triggered_conditions": [],
+  "rationale": "The change explicitly modifies the Evaluation Target from deciding whether braking is required to deciding whether braking or an evasive lane-change maneuver is required to avoid collision. This alters T_H1 itself rather than merely an assumption or revalidation condition. Under the protocol, a change to the Evaluation Target requires REDERIVE and return to RR1."
+}

@@ -1,0 +1,7 @@
+CandidateFinal_CRDDecisionRationale
+H1-D1H1-CRD1KEEPObstacle presence imposes a preservation obligation distinct from distance and category; presence can vary while the other dimensions are held fixed.
+H1-D2H1-CRD2KEEPThe visible source explicitly requires preservation of the vulnerable-road-user versus other-object distinction; it is not equivalent to presence or distance.
+H1-D3REJECTThe fine-grained taxonomy is required for object identification but the visible source does not establish distinct preservation obligations among the individual labels for the H1 evaluative judgement.
+H1-D4H1-CRD3KEEPRelative distance can change whether braking is required while obstacle presence is held constant, imposing a preservation obligation distinct from obstacle presence.
+H1-D5RECLASSIFYBraking-initiation timing concerns the system response rather than a state of the declared PoI; it is retained as a response/control dependency.
+H1-D6RECLASSIFYObject-detection timing concerns the observation mechanism rather than a state of the declared PoI; it is retained as an observation/preservation dependency.

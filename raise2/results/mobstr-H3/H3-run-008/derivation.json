@@ -1,0 +1,52 @@
+{
+  "run_id": "H3-run-008",
+  "concern_id": "H3",
+  "evaluation_target": {
+    "id": "T1",
+    "statement": "Prevent unintended braking.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The safety goal explicitly states that the system shall prevent unintended braking, and the hazard describes the adverse event as the vehicle suddenly stopping without an obstacle in front."
+  },
+  "phenomenon_of_interest": {
+    "id": "P1",
+    "statement": "The vehicle braking behavior in the stated operational situation, including whether braking occurs and whether it is justified by an obstacle or collision-avoidance need.",
+    "scope": "Straight ahead driving on a less frequented urban road at 50 km/h, in good weather, with no visible obstacles or vehicles in front of the ego vehicle.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The hazard defines the operational situation and the hazardous event. The phenomenon must cover braking behavior within that situation so the safety goal can be evaluated."
+  },
+  "distinctions": [
+    {
+      "id": "D1",
+      "dimension": "Presence of an obstacle or collision-relevant object ahead of the vehicle",
+      "contrast_a": "A situation in which an obstacle is present in front of the ego vehicle and braking may be required to avoid collision",
+      "contrast_b": "A situation in which no obstacle is in front of the ego vehicle",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "The hazardous event is specifically defined as stopping although no obstacle is in front of the vehicle, while FR-7 states that braking is to avoid collisions with obstacles. Collapsing these situations would lose the information needed to judge whether braking is intended or unintended."
+    }
+  ],
+  "orrs": [
+    {
+      "id": "ORR1",
+      "covers": [
+        "D1"
+      ],
+      "obligation": "An admissible Observable Representation shall preserve whether the observed driving situation contains an obstacle or other collision-relevant object in front of the vehicle.",
+      "distinguishability_criterion": "Situations with an obstacle ahead and situations with no obstacle ahead must remain distinguishable in the representation.",
+      "assumptions": []
+    }
+  ],
+  "rr5": {
+    "coverage": true,
+    "consistency": true,
+    "issues": []
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "H1-run-020",
+  "concern_id": "H1",
+  "classification": "ALIGNED",
+  "rationale": "Evaluating omission of required braking requires characterising braking execution itself. SG-1 and FR-7 establish this system response as the subject of evaluation, while H-1 supports the obstacle and road-user context. The declared scope uses obstacle-detection/braking scenarios as context without incorporating detection, computation, communication, or internal control mechanisms into P, and adds no unsupported temporal behaviour.",
+  "determining_elements": [
+    "“Braking-maneuver execution state” directly identifies the behaviour whose omission T seeks to prevent.",
+    "The scope restricts consideration to driving situations where braking may be required to avoid collision with obstacles or road users.",
+    "Including the hazardous operational situation and related requirement scenarios is supported by H-1 and FR-7; it does not make the mechanisms used to detect obstacles part of the phenomenon."
+  ],
+  "sources": [
+    "hazard",
+    "requirements"
+  ]
+}

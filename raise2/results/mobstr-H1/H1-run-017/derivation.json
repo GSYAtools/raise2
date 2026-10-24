@@ -1,0 +1,79 @@
+{
+  "run_id": "H1-run-017",
+  "concern_id": "H1",
+  "evaluation_target": {
+    "id": "T1",
+    "statement": "Prevent omitting required braking maneuvers.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The safety goal states that the system shall prevent omitting required braking maneuvers, and the hazard describes the harmful outcome when braking is omitted in the specified operational situation."
+  },
+  "phenomenon_of_interest": {
+    "id": "P1",
+    "statement": "The vehicle/system behavior in operational situations where braking is required to avoid collision with a road user or static obstacle.",
+    "scope": "Operational situations covered by the provided hazard and braking-related requirements, especially obstacle encounters where the vehicle must decide and execute braking to avoid collision.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "Evaluating omission of required braking requires characterizing whether the vehicle is in a situation demanding braking and whether the system behavior corresponds to that requirement."
+  },
+  "distinctions": [
+    {
+      "id": "D1",
+      "dimension": "Braking-required situation versus no braking-required situation",
+      "contrast_a": "An operational situation in which braking is required to avoid collision with a road user or static obstacle.",
+      "contrast_b": "An operational situation in which braking is not required for collision avoidance.",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "If these cases were indistinguishable, the observable representation could not support evaluation of whether a required braking maneuver was omitted."
+    },
+    {
+      "id": "D2",
+      "dimension": "Braking maneuver executed versus braking maneuver omitted",
+      "contrast_a": "The system performs the braking maneuver needed to avoid collision.",
+      "contrast_b": "The system does not perform the required braking maneuver.",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "The concern directly depends on distinguishing successful braking from omission; collapsing them would remove the information needed to evaluate the safety goal."
+    }
+  ],
+  "orrs": [
+    {
+      "id": "O1",
+      "covers": [
+        "D1",
+        "D2"
+      ],
+      "obligation": "The observable representation shall preserve whether the current situation is one that requires braking for collision avoidance and whether the required braking maneuver is performed or omitted.",
+      "distinguishability_criterion": "The representation must distinguish at least the two classes: braking-required situations and non-braking-required situations, and within braking-required situations it must distinguish braking performed from braking omitted.",
+      "assumptions": [
+        {
+          "id": "A1",
+          "statement": "The hazard and braking-related requirements define the relevant evaluation context for identifying required braking maneuvers.",
+          "source": [
+            "hazard",
+            "requirements"
+          ],
+          "revalidation_conditions": [
+            {
+              "id": "R1",
+              "condition": "The operational scenario or safety goal is revised so that additional or different collision-avoidance maneuvers become relevant."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rr5": {
+    "coverage": true,
+    "consistency": true,
+    "issues": []
+  }
+}

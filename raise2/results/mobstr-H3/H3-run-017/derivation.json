@@ -1,0 +1,52 @@
+{
+  "run_id": "H3-run-017",
+  "concern_id": "H3",
+  "evaluation_target": {
+    "id": "T1",
+    "statement": "Prevent unintended braking.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The safety goal explicitly states that the system shall prevent unintended braking, and the hazard describes the undesired sudden stop without an obstacle in front of the vehicle."
+  },
+  "phenomenon_of_interest": {
+    "id": "P1",
+    "statement": "Braking behavior of the ego vehicle in the stated urban-road driving situation, especially whether braking occurs when no obstacle is present in front of the vehicle.",
+    "scope": "Straight ahead driving on a less frequented urban road at 50 km/h, in good weather, with no visible obstacles or vehicles in front of the ego vehicle, including any braking maneuver occurring in that situation.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The hazard defines the operating situation and the hazardous event, which together delimit the relevant braking phenomenon to be characterized for evaluating the safety goal."
+  },
+  "distinctions": [
+    {
+      "id": "D1",
+      "dimension": "Presence of an obstacle in front of the ego vehicle",
+      "contrast_a": "An obstacle is present in front of the ego vehicle and braking is a response to it.",
+      "contrast_b": "No obstacle is present in front of the ego vehicle and braking occurs anyway.",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "Collapsing these cases would lose the information needed to judge whether braking is justified or unintended in the hazard scenario."
+    }
+  ],
+  "orrs": [
+    {
+      "id": "O1",
+      "covers": [
+        "D1"
+      ],
+      "obligation": "An Observable Representation shall preserve whether braking occurs in the presence or absence of a relevant obstacle in front of the ego vehicle, so that unintended braking can be distinguished from obstacle-justified braking.",
+      "distinguishability_criterion": "The representation must distinguish at least the two conditions: braking with a present obstacle in front of the ego vehicle, and braking with no obstacle in front of the ego vehicle.",
+      "assumptions": []
+    }
+  ],
+  "rr5": {
+    "coverage": true,
+    "consistency": true,
+    "issues": []
+  }
+}

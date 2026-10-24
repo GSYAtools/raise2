@@ -1,0 +1,1204 @@
+{
+  "total_crds": 115,
+  "crds_by_concern": {
+    "H1": 71,
+    "H3": 44
+  },
+  "dimension_frequencies": [
+    {
+      "concern": "H1",
+      "dimension": "brake actuation successful versus ineffective",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "brake command versus no brake command",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "brake-actuator availability for executing a commanded braking maneuver",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "braking action occurrence when braking is required",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "braking decision outcome in the hazardous situation",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "braking decision outcome under a collision-avoidance situation",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "braking decision/execution outcome",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "braking initiation relative to obstacle detection",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "braking maneuver executed versus braking maneuver omitted",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "braking maneuver executed vs omitted when required",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "braking maneuver execution in a required-braking situation",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "braking maneuver execution vs omission",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "braking maneuver execution when required",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "braking maneuver initiation",
+      "count": 4
+    },
+    {
+      "concern": "H1",
+      "dimension": "braking maneuver occurrence when required",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "braking maneuver outcome in a required-braking situation",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "braking maneuver presence",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "braking maneuver status relative to the need to avoid collision",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "braking necessity",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "braking requirement state",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "braking requirement status in the current situation",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "braking response in a collision-avoidance situation",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "braking response occurrence",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "braking response outcome in a braking-required situation",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "braking response status",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "braking response to a detected hazardous obstacle",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "braking response to a required maneuver",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "braking response vs. no braking response when braking is required",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "braking-relevant obstacle presence and proximity",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "braking-required situation versus no braking-required situation",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "collision-avoidance outcome",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "collision-avoidance relevance of the detected obstacle/road user",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "collision-avoidance urgency",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "distance to the obstacle / road user",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "need for a braking maneuver",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "need for braking due to detected obstacle/road user",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "need for braking versus no need for braking",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "obstacle / road-user presence in the vehicle's path-relevant scene",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "obstacle avoidance outcome",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "obstacle category relevant to braking",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "obstacle detected in time for braking vs. detected too late or not detected",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "obstacle detected in time vs not detected in time for braking",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "obstacle detection outcome within the dangerous situation",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "obstacle detection preceding braking obligation",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "obstacle detection state relevant to braking",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "obstacle detection state relevant to braking decision",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "obstacle detection status relevant to braking decision",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "obstacle detection sufficiency for braking decision",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "obstacle presence and detectability",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "obstacle presence relevant to braking",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "obstacle presence within the driving trajectory/dangerous zone",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "obstacle present in the relevant driving path vs. no such obstacle present",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "obstacle proximity relevant to braking decision",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "obstacle proximity to vehicle trajectory",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "obstacle relevance for avoidance braking",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "obstacle relevance to the trajectory",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "obstacle requiring braking vs no such obstacle present",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "obstacle/road-user presence in the vehicle's trajectory-relevant environment",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "temporal relation between obstacle detection and braking initiation",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "timeliness of braking after obstacle detection in a dangerous zone",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "timeliness of braking initiation relative to obstacle detection",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "timely braking initiation after obstacle detection",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "timely braking initiation relative to obstacle detection",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "timely braking response after obstacle detection",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "timely initiation of braking after obstacle detection",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "timely initiation relative to obstacle detection",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "timely start of braking after obstacle detection",
+      "count": 2
+    },
+    {
+      "concern": "H3",
+      "dimension": "brake application outcome",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "braking cause",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "braking initiation context",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "braking intent",
+      "count": 3
+    },
+    {
+      "concern": "H3",
+      "dimension": "braking occurrence in the absence of a detected obstacle ahead",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "braking occurrence in the stated no-obstacle driving situation",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "braking occurrence in the stated operational situation",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "braking occurrence relative to front-obstacle presence",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "braking occurrence relative to obstacle presence",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "braking occurrence relative to the driving situation",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "braking occurrence relative to the stated hazard context",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "braking occurrence versus no braking during driving",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "braking occurrence with no visible trigger ahead",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "braking outcome",
+      "count": 2
+    },
+    {
+      "concern": "H3",
+      "dimension": "braking outcome in the declared operational situation",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "braking state",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "braking state in the declared operational situation",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "braking state relative to the driving situation",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "braking state relative to the presence of an obstacle in front of the ego vehicle",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "failure status relevant to braking control chain",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "intentionality of braking",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "presence of a forward obstacle",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "presence of a forward obstacle relevant to braking",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "presence of a forward obstacle/vehicle as braking trigger",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "presence of a relevant forward obstacle in the stated operational situation",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "presence of a relevant obstacle ahead",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "presence of a relevant obstacle ahead of the ego vehicle",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "presence of a visible obstacle or vehicle ahead",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "presence of a visible obstacle or vehicle in front of the ego vehicle",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "presence of an obstacle in front of the ego vehicle",
+      "count": 4
+    },
+    {
+      "concern": "H3",
+      "dimension": "presence of an obstacle in the vehicle's forward path",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "presence of an obstacle or collision-relevant object ahead of the vehicle",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "presence of an obstacle relevant to initiating braking",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "presence of braking event",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "presence of obstacle ahead in the driving path",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "vehicle braking state",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "whether braking occurs",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "whether braking occurs as a maneuver to avoid collisions versus as a sudden stop without a front obstacle",
+      "count": 1
+    }
+  ],
+  "source_set_frequencies": [
+    {
+      "concern": "H1",
+      "source_set": "architecture;hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "source_set": "architecture;requirements",
+      "count": 2
+    },
+    {
+      "concern": "H1",
+      "source_set": "hazard;requirements",
+      "count": 53
+    },
+    {
+      "concern": "H1",
+      "source_set": "requirements",
+      "count": 15
+    },
+    {
+      "concern": "H3",
+      "source_set": "hazard;requirements",
+      "count": 43
+    },
+    {
+      "concern": "H3",
+      "source_set": "requirements",
+      "count": 1
+    }
+  ],
+  "dimension_source_frequencies": [
+    {
+      "concern": "H1",
+      "dimension": "brake actuation successful versus ineffective",
+      "source_set": "architecture;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "brake command versus no brake command",
+      "source_set": "architecture;hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "brake-actuator availability for executing a commanded braking maneuver",
+      "source_set": "requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "braking action occurrence when braking is required",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "braking decision outcome in the hazardous situation",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "braking decision outcome under a collision-avoidance situation",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "braking decision/execution outcome",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "braking initiation relative to obstacle detection",
+      "source_set": "requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "braking maneuver executed versus braking maneuver omitted",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "braking maneuver executed vs omitted when required",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "braking maneuver execution in a required-braking situation",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "braking maneuver execution vs omission",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "braking maneuver execution when required",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "braking maneuver initiation",
+      "source_set": "hazard;requirements",
+      "count": 4
+    },
+    {
+      "concern": "H1",
+      "dimension": "braking maneuver occurrence when required",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "braking maneuver outcome in a required-braking situation",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "braking maneuver presence",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "braking maneuver status relative to the need to avoid collision",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "braking necessity",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "braking requirement state",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "braking requirement status in the current situation",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "braking response in a collision-avoidance situation",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "braking response occurrence",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "braking response outcome in a braking-required situation",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "braking response status",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "braking response to a detected hazardous obstacle",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "braking response to a required maneuver",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "braking response vs. no braking response when braking is required",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "braking-relevant obstacle presence and proximity",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "braking-required situation versus no braking-required situation",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "collision-avoidance outcome",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "collision-avoidance relevance of the detected obstacle/road user",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "collision-avoidance urgency",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "distance to the obstacle / road user",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "need for a braking maneuver",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "need for braking due to detected obstacle/road user",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "need for braking versus no need for braking",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "obstacle / road-user presence in the vehicle's path-relevant scene",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "obstacle avoidance outcome",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "obstacle category relevant to braking",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "obstacle detected in time for braking vs. detected too late or not detected",
+      "source_set": "requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "obstacle detected in time vs not detected in time for braking",
+      "source_set": "requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "obstacle detection outcome within the dangerous situation",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "obstacle detection preceding braking obligation",
+      "source_set": "requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "obstacle detection state relevant to braking",
+      "source_set": "requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "obstacle detection state relevant to braking decision",
+      "source_set": "requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "obstacle detection status relevant to braking decision",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "obstacle detection sufficiency for braking decision",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "obstacle presence and detectability",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "obstacle presence relevant to braking",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "obstacle presence within the driving trajectory/dangerous zone",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "obstacle present in the relevant driving path vs. no such obstacle present",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "obstacle proximity relevant to braking decision",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "obstacle proximity to vehicle trajectory",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "obstacle relevance for avoidance braking",
+      "source_set": "requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "obstacle relevance to the trajectory",
+      "source_set": "architecture;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "obstacle requiring braking vs no such obstacle present",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "obstacle/road-user presence in the vehicle's trajectory-relevant environment",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "temporal relation between obstacle detection and braking initiation",
+      "source_set": "requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "timeliness of braking after obstacle detection in a dangerous zone",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "timeliness of braking initiation relative to obstacle detection",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "timely braking initiation after obstacle detection",
+      "source_set": "requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "timely braking initiation relative to obstacle detection",
+      "source_set": "requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "timely braking response after obstacle detection",
+      "source_set": "requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "timely initiation of braking after obstacle detection",
+      "source_set": "requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "timely initiation relative to obstacle detection",
+      "source_set": "requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "timely start of braking after obstacle detection",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H1",
+      "dimension": "timely start of braking after obstacle detection",
+      "source_set": "requirements",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "brake application outcome",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "braking cause",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "braking initiation context",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "braking intent",
+      "source_set": "hazard;requirements",
+      "count": 3
+    },
+    {
+      "concern": "H3",
+      "dimension": "braking occurrence in the absence of a detected obstacle ahead",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "braking occurrence in the stated no-obstacle driving situation",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "braking occurrence in the stated operational situation",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "braking occurrence relative to front-obstacle presence",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "braking occurrence relative to obstacle presence",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "braking occurrence relative to the driving situation",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "braking occurrence relative to the stated hazard context",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "braking occurrence versus no braking during driving",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "braking occurrence with no visible trigger ahead",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "braking outcome",
+      "source_set": "hazard;requirements",
+      "count": 2
+    },
+    {
+      "concern": "H3",
+      "dimension": "braking outcome in the declared operational situation",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "braking state",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "braking state in the declared operational situation",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "braking state relative to the driving situation",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "braking state relative to the presence of an obstacle in front of the ego vehicle",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "failure status relevant to braking control chain",
+      "source_set": "requirements",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "intentionality of braking",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "presence of a forward obstacle",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "presence of a forward obstacle relevant to braking",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "presence of a forward obstacle/vehicle as braking trigger",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "presence of a relevant forward obstacle in the stated operational situation",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "presence of a relevant obstacle ahead",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "presence of a relevant obstacle ahead of the ego vehicle",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "presence of a visible obstacle or vehicle ahead",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "presence of a visible obstacle or vehicle in front of the ego vehicle",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "presence of an obstacle in front of the ego vehicle",
+      "source_set": "hazard;requirements",
+      "count": 4
+    },
+    {
+      "concern": "H3",
+      "dimension": "presence of an obstacle in the vehicle's forward path",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "presence of an obstacle or collision-relevant object ahead of the vehicle",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "presence of an obstacle relevant to initiating braking",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "presence of braking event",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "presence of obstacle ahead in the driving path",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "vehicle braking state",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "whether braking occurs",
+      "source_set": "hazard;requirements",
+      "count": 1
+    },
+    {
+      "concern": "H3",
+      "dimension": "whether braking occurs as a maneuver to avoid collisions versus as a sudden stop without a front obstacle",
+      "source_set": "hazard;requirements",
+      "count": 1
+    }
+  ]
+}

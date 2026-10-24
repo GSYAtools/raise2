@@ -1,0 +1,4 @@
+ID=H-1
+Hazard=Omitted braking maneuver
+Operational Situation=Straight ahead drive on a less frequented single-lane road with 50 km/h at good weather conditions with a pedestrian running across the street 20 m in front of the ego vehicle
+Hazardous Event=While driving, the vehicle is not able to stop in time to avoid a collision with a road user or a static obstacle and hits the road user or static obstacle.

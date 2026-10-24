@@ -1,0 +1,88 @@
+{
+  "run_id": "H1-run-006",
+  "concern_id": "H1",
+  "evaluation_target": {
+    "id": "T1",
+    "statement": "Prevent omitting required braking maneuvers.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The safety goal explicitly states prevention of omitted required braking maneuvers, and the functional requirement states the system shall perform a braking maneuver to avoid collisions with obstacles."
+  },
+  "phenomenon_of_interest": {
+    "id": "P1",
+    "statement": "The vehicle/system braking response in obstacle-related driving situations, including whether braking is initiated and performed when an obstacle requires avoidance.",
+    "scope": "Operational situations in which the ego vehicle is driving and an obstacle or road user may require a braking maneuver to avoid collision, including the declared hazardous scenario of a pedestrian running across the street 20 m in front of the ego vehicle on a straight single-lane road under good weather at 50 km/h.",
+    "source": [
+      "hazard",
+      "requirements",
+      "architecture"
+    ],
+    "rationale": "The concern concerns braking omission in the presence of obstacles; the hazard and functional requirements define braking avoidance behavior in obstacle encounters."
+  },
+  "distinctions": [
+    {
+      "id": "D1",
+      "dimension": "Braking maneuver execution vs omission",
+      "contrast_a": "A required braking maneuver is initiated and performed",
+      "contrast_b": "A required braking maneuver is omitted",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "The evaluation target depends directly on whether the system brakes when required; collapsing execution and omission would remove the information needed to determine whether the safety goal is satisfied."
+    },
+    {
+      "id": "D2",
+      "dimension": "Obstacle requiring braking vs no such obstacle present",
+      "contrast_a": "A relevant obstacle or road user is present such that braking is required to avoid collision",
+      "contrast_b": "No relevant obstacle or road user is present, so braking is not required for collision avoidance",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "Whether braking is required depends on the presence of an obstacle or road user in the vehicle trajectory; collapsing these situations would lose the basis for judging whether omission has occurred."
+    }
+  ],
+  "orrs": [
+    {
+      "id": "O1",
+      "covers": [
+        "D1"
+      ],
+      "obligation": "The observable representation must preserve whether a required braking maneuver is initiated and performed versus omitted.",
+      "distinguishability_criterion": "The representation must allow the two states 'braking initiated/performed' and 'braking omitted' to remain distinguishable.",
+      "assumptions": []
+    },
+    {
+      "id": "O2",
+      "covers": [
+        "D2"
+      ],
+      "obligation": "The observable representation must preserve whether the driving situation contains a relevant obstacle or road user that makes braking required for collision avoidance versus not.",
+      "distinguishability_criterion": "The representation must allow the two states 'braking-required obstacle present' and 'no braking-required obstacle present' to remain distinguishable.",
+      "assumptions": [
+        {
+          "id": "A1",
+          "statement": "Obstacle-related driving situations are characterized by the presence or absence of a relevant obstacle or road user on or near the vehicle trajectory.",
+          "source": [
+            "hazard",
+            "requirements"
+          ],
+          "revalidation_conditions": [
+            {
+              "id": "R1",
+              "condition": "The operational scenario or safety goal is extended to include additional reasons for braking beyond obstacle or road-user avoidance."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rr5": {
+    "coverage": true,
+    "consistency": true,
+    "issues": []
+  }
+}

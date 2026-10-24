@@ -1,0 +1,51 @@
+{
+  "run_id": "H3-run-004",
+  "concern_id": "H3",
+  "evaluation_target": {
+    "id": "T1",
+    "statement": "Evaluate whether the system prevents unintended braking.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The safety goal SG-3 explicitly states that the system shall prevent unintended braking, and the hazard description defines the concern as unintended braking leading to a hazardous event."
+  },
+  "phenomenon_of_interest": {
+    "id": "P1",
+    "statement": "The vehicle's braking behavior during straight-ahead driving on a less frequented urban road at 50 km/h in good weather and without visible obstacles or vehicles directly in front.",
+    "scope": "Operational situations matching the hazard context: straight ahead drive on a less frequented urban road, 50 km/h, good weather, and no visible obstacles or vehicles in front of the ego vehicle.",
+    "source": [
+      "hazard"
+    ],
+    "rationale": "The hazard specifies the operational situation in which unintended braking is relevant, so the phenomenon to be characterized is braking behavior within that situation."
+  },
+  "distinctions": [
+    {
+      "id": "D1",
+      "dimension": "Braking state",
+      "contrast_a": "The vehicle brakes unexpectedly without an obstacle in front",
+      "contrast_b": "The vehicle does not brake unexpectedly in the same driving situation",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "The hazardous event is the vehicle suddenly stopping although no obstacle is in front, while SG-3 requires prevention of unintended braking; collapsing these states would remove the ability to determine whether the concern is present."
+    }
+  ],
+  "orrs": [
+    {
+      "id": "O1",
+      "covers": [
+        "D1"
+      ],
+      "obligation": "An admissible observable representation shall preserve whether the vehicle is in an unintended braking state or not within the declared operational situation.",
+      "distinguishability_criterion": "The representation must allow the unintended-braking case to remain distinguishable from the non-braking case; these two states must not be represented as the same state.",
+      "assumptions": []
+    }
+  ],
+  "rr5": {
+    "coverage": true,
+    "consistency": true,
+    "issues": []
+  }
+}

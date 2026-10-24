@@ -1,0 +1,4 @@
+ClassOperational_Criterion
+EquivalentThe derived and reference distinctions preserve the same operational separation in P for the same evaluative role, irrespective of terminology or implementation detail.
+PartialThe derived and reference distinctions concern the same evaluation dimension and evaluative role but differ materially in scope, abstraction, or granularity.
+NoMatchNo source-supported semantic correspondence exists between the operational separations represented by the derived and reference distinctions.

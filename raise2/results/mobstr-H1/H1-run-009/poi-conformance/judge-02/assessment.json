@@ -1,0 +1,17 @@
+{
+  "run_id": "H1-run-009",
+  "concern_id": "H1",
+  "classification": "ALIGNED",
+  "rationale": "Evaluating omission of required braking requires characterising both the need for braking and whether the vehicle actually initiates it. The braking response itself therefore belongs to P. H-1 and FR-7 establish its collision-avoidance purpose, while H-1 and FR-7.1 support including timeliness of braking. The declared operational situation matches H-1, and P does not incorporate the internal observation, computation, or communication mechanisms used to produce the response.",
+  "determining_elements": [
+    "“Whether a braking maneuver is required” identifies the condition necessary to evaluate SG-1's prohibition on omitting required braking.",
+    "“Whether braking is actually initiated” identifies the vehicle behaviour directly required by SG-1 and FR-7.",
+    "“In time to avoid collision” is supported by H-1's failure to stop in time and FR-7.1's braking-onset requirement; it is not merely an imported sensing deadline.",
+    "The specified road, speed, weather, and pedestrian encounter reproduce H-1's operational situation.",
+    "The scoped “braking/avoidance response” corresponds to FR-7's braking maneuver to avoid collisions."
+  ],
+  "sources": [
+    "hazard",
+    "requirements"
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "run_id": "H1-run-022",
+  "concern_id": "H1",
+  "evaluation_target": {
+    "id": "T1",
+    "statement": "Prevent omitting required braking maneuvers.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The safety goal SG-1 explicitly states the system shall prevent omitting required braking maneuvers, and the hazard H-1 describes the harmful outcome when braking is omitted in a pedestrian-crossing scenario."
+  },
+  "phenomenon_of_interest": {
+    "id": "P1",
+    "statement": "Whether the vehicle performs the braking maneuver required to avoid collision in the stated hazardous driving situation.",
+    "scope": "Straight-ahead driving on a less frequented single-lane road at 50 km/h in good weather when a pedestrian is running across the street 20 m in front of the ego vehicle, including cases where the vehicle does or does not initiate and execute braking in time to avoid collision.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The hazard defines the operational situation and hazardous event, while FR-7 states the system shall perform a braking maneuver to avoid collisions with obstacles. The phenomenon to evaluate is the actual presence or absence of the required braking response in that situation."
+  },
+  "distinctions": [
+    {
+      "id": "D1",
+      "dimension": "Braking response occurrence",
+      "contrast_a": "The vehicle performs the required braking maneuver.",
+      "contrast_b": "The vehicle omits the required braking maneuver.",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "The evaluation target is precisely about omission of braking maneuvers, so distinguishing whether braking occurs is necessary to determine if the concern is realized."
+    },
+    {
+      "id": "D2",
+      "dimension": "Timeliness of braking initiation relative to obstacle detection",
+      "contrast_a": "Braking starts within the required reaction window after the obstacle is detected.",
+      "contrast_b": "Braking starts too late to avoid collision or does not start in time.",
+      "source": [
+        "requirements",
+        "hazard"
+      ],
+      "rationale": "FR-7.1 states braking shall start within 50 ms after the obstacle is detected within a dangerous zone, and the hazard states the vehicle is not able to stop in time and collides. Collapsing timely and untimely initiation would remove information needed to evaluate whether the required braking maneuver is effectively omitted in the hazardous situation."
+    },
+    {
+      "id": "D3",
+      "dimension": "Obstacle avoidance outcome",
+      "contrast_a": "The vehicle avoids collision with the road user or static obstacle.",
+      "contrast_b": "The vehicle hits the road user or static obstacle.",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "The hazardous event is defined by the collision outcome, while FR-7 sets collision avoidance by braking as the intended functional behavior. Distinguishing avoided versus not avoided collision is required to evaluate whether braking was operationally sufficient."
+    }
+  ],
+  "orrs": [
+    {
+      "id": "ORR1",
+      "covers": [
+        "D1"
+      ],
+      "obligation": "The observable representation shall preserve whether a braking maneuver was initiated/performed or omitted in the hazardous situation.",
+      "distinguishability_criterion": "It shall remain distinguishable whether braking occurred versus did not occur.",
+      "assumptions": []
+    },
+    {
+      "id": "ORR2",
+      "covers": [
+        "D2"
+      ],
+      "obligation": "The observable representation shall preserve whether braking initiation was timely enough to satisfy the stated braking-response requirement after obstacle detection.",
+      "distinguishability_criterion": "It shall distinguish timely braking initiation from late or absent braking initiation.",
+      "assumptions": [
+        {
+          "id": "A1",
+          "statement": "The obstacle detection event used as the reference point for the braking-response timing requirement is available in the evaluation context.",
+          "source": [
+            "requirements"
+          ],
+          "revalidation_conditions": [
+            {
+              "id": "R1",
+              "condition": "If the braking-response requirement is revised so that timing is no longer referenced to obstacle detection, or if the obstacle-detection trigger definition changes."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ORR3",
+      "covers": [
+        "D3"
+      ],
+      "obligation": "The observable representation shall preserve whether the driving situation ended in collision avoidance or collision with the road user or static obstacle.",
+      "distinguishability_criterion": "It shall distinguish collision avoidance from collision occurrence.",
+      "assumptions": []
+    }
+  ],
+  "rr5": {
+    "coverage": true,
+    "consistency": true,
+    "issues": []
+  }
+}

@@ -1,0 +1,24 @@
+Provisional protocol refinement from H2/H5 development
+
+CP3 -- Dimension admissibility
+Admit an evaluation dimension only when:
+(1) the contrasted situations are states of the Phenomenon of Interest
+    established in RR2; and
+(2) variation along that dimension can be traced to visible engineering
+    artefacts as potentially changing the judgement expressed by C.
+
+A requirement constraining an observation, computation, communication, or
+control mechanism does not by itself establish a CRD of P, even when violation
+of that requirement may affect the evaluation.
+
+CP12 -- Temporal scope
+A temporal contrast is admissible only when the timed property belongs to P
+and its temporal evolution is required by C. Timing constraints on mechanisms
+used to observe, compute, communicate, or control P are treated as dependencies
+or preservation conditions unless the source artefacts establish the timed
+behaviour itself as part of the phenomenon being evaluated.
+
+Development implication for H2
+The initially derived H2 temporal CRDs must be re-examined under these refined
+rules before the development protocol is frozen. The original pre-reference
+H2 derivation remains preserved as the development record.

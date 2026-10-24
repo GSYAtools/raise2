@@ -1,0 +1,15 @@
+{
+  "run_id": "H1-run-024",
+  "concern_id": "H1",
+  "classification": "OVEREXTENDED",
+  "rationale": "Braking initiation and execution legitimately belong to the phenomenon because T concerns omitted required braking, supported by H-1, SG-1 and FR-7. However, the declared scope also incorporates obstacle detection and broadly stated driver/controller conditions. The artefacts establish supporting detection, warning and failure-handling functions, but do not establish those functions generally as constituents of the braking phenomenon. FR-7.1 supports obstacle detection as a braking-trigger event, not inclusion of detection behaviour as a whole.",
+  "determining_elements": [
+    "The core 'vehicle braking decision and execution state' and 'whether a braking maneuver is initiated when required' are supported system behaviours, not grounds for overextension.",
+    "The scope explicitly includes 'obstacle detection', extending beyond the obstacle circumstances requiring braking and the occurrence or omission of braking.",
+    "The inclusion of 'driver- and controller-related conditions' is not bounded to their relationship with required or omitted braking; their relevance through warning and failure-handling requirements does not establish general membership in P."
+  ],
+  "sources": [
+    "hazard",
+    "requirements"
+  ]
+}

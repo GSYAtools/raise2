@@ -1,0 +1,9 @@
+{
+  "run_id": "run-006",
+  "change_id": "delta-06",
+  "decision": "REDERIVE",
+  "affected_orrs": [],
+  "return_point": "RR1",
+  "triggered_conditions": [],
+  "rationale": "The lifecycle change explicitly alters the Evaluation Target: the task expands from determining whether braking is required to determining whether braking or an evasive lane-change maneuver is required to avoid collision. Under the RAISE2 protocol, a change to the Evaluation Target invalidates the existing derivational basis and requires restarting at RR1. No existing ORRs are revalidated because the change is not a local assumption or revalidation-condition update but a target change."
+}

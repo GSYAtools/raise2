@@ -1,0 +1,72 @@
+{
+  "run_id": "H3-run-021",
+  "concern_id": "H3",
+  "evaluation_target": {
+    "id": "T1",
+    "statement": "Prevent unintended braking.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The safety goal SG-3 directly states the concern, and the hazard describes the hazardous event as the vehicle suddenly stopping without an obstacle in front."
+  },
+  "phenomenon_of_interest": {
+    "id": "P1",
+    "statement": "The vehicle's braking behaviour in straight-ahead driving on a less frequented urban road at 50 km/h in good weather, specifically whether braking occurs only as intended to avoid collisions with obstacles and not unexpectedly.",
+    "scope": "Operational situations matching the hazard description: straight-ahead driving on a less frequented urban road at 50 km/h, in good weather, with no visible obstacles or vehicles in front of the ego vehicle, and the hazardous event of sudden stopping while driving.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The hazard defines the operating situation and the adverse event to be evaluated; FR-7 states braking is intended to avoid collisions with obstacles, which sets the relevant behavioural context."
+  },
+  "distinctions": [
+    {
+      "id": "D1",
+      "dimension": "presence of a relevant obstacle ahead",
+      "contrast_a": "An obstacle is present ahead of the ego vehicle such that braking is intended to avoid a collision.",
+      "contrast_b": "No obstacle is present ahead of the ego vehicle.",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "The evaluation of unintended braking depends on distinguishing intended braking for obstacle avoidance from braking when no obstacle is present. Collapsing these cases would lose the information needed to judge whether braking was unintended."
+    },
+    {
+      "id": "D2",
+      "dimension": "braking occurrence versus no braking during driving",
+      "contrast_a": "The vehicle is braking or has braked while driving.",
+      "contrast_b": "The vehicle continues driving without braking.",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "The hazard is specifically about a sudden stop during driving. If braking and non-braking situations were made indistinguishable, the occurrence of the hazardous event could not be evaluated."
+    }
+  ],
+  "orrs": [
+    {
+      "id": "ORR1",
+      "covers": [
+        "D1"
+      ],
+      "obligation": "An observable representation shall preserve whether braking occurs in a situation with a relevant obstacle ahead versus in a situation with no obstacle ahead.",
+      "distinguishability_criterion": "The representation must allow the two contrast classes to remain distinguishable as separate operational cases; it must not conflate obstacle-present and obstacle-absent situations.",
+      "assumptions": []
+    },
+    {
+      "id": "ORR2",
+      "covers": [
+        "D2"
+      ],
+      "obligation": "An observable representation shall preserve whether the vehicle is braking or not braking during the relevant driving situation.",
+      "distinguishability_criterion": "The representation must distinguish braking states from non-braking states within the operational scope of the hazard.",
+      "assumptions": []
+    }
+  ],
+  "rr5": {
+    "coverage": true,
+    "consistency": true,
+    "issues": []
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "run_id": "H1-run-002",
+  "concern_id": "H1",
+  "classification": "ALIGNED",
+  "rationale": "P characterises whether required braking occurs—the system behaviour directly evaluated by T and explicitly established by SG-1 and FR-7. H-1 supports the declared operational conditions and collision context. The braking response is therefore part of the phenomenon, not merely a mechanism affecting its evaluation. P does not incorporate sensing, communication, internal computation, or mechanism-specific timing constraints.",
+  "determining_elements": [
+    "“Whether the vehicle executes a braking maneuver when braking is required” directly addresses occurrence versus omission of the action required by T.",
+    "The collision-avoidance condition involving a road user or static obstacle is supported by H-1 and FR-7.",
+    "The straight-ahead, single-lane-road scenario at 50 km/h in good weather, with a pedestrian crossing 20 m ahead, matches H-1's operational situation.",
+    "The scope's “decide and perform braking” describes the required functional response without separately including decision algorithms or other implementation mechanisms."
+  ],
+  "sources": [
+    "hazard",
+    "requirements"
+  ]
+}

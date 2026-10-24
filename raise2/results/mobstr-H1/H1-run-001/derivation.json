@@ -1,0 +1,91 @@
+{
+  "run_id": "H1-run-001",
+  "concern_id": "H1",
+  "evaluation_target": {
+    "id": "T1",
+    "statement": "Prevent omitting required braking maneuvers.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The safety goal explicitly states that the system shall prevent omitting required braking maneuvers, and the hazard describes omission of braking as the hazardous event leading to collision."
+  },
+  "phenomenon_of_interest": {
+    "id": "P1",
+    "statement": "The vehicle’s braking-relevant response to obstacle/collision-avoidance situations.",
+    "scope": "Situations in which the system is driving and must decide whether to initiate a braking maneuver to avoid collision with an obstacle or road user, including obstacle-detection and control situations referenced by the provided requirements and hazard.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The concern is about omitted braking in collision-avoidance contexts, so the relevant phenomenon is the braking response in those situations rather than any specific sensor or controller implementation."
+  },
+  "distinctions": [
+    {
+      "id": "D1",
+      "dimension": "Braking response in a collision-avoidance situation",
+      "contrast_a": "A required braking maneuver is initiated in time to avoid collision",
+      "contrast_b": "A required braking maneuver is omitted or not initiated in time",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "The hazard distinguishes the presence versus omission of braking, and FR-7/FR-7.1 indicate that braking must occur after obstacle detection to avoid collisions. Collapsing these would remove exactly the information needed to evaluate whether braking omission occurs."
+    },
+    {
+      "id": "D2",
+      "dimension": "Obstacle detection status relevant to braking decision",
+      "contrast_a": "An obstacle is detected within the relevant dangerous zone / in time for braking",
+      "contrast_b": "An obstacle is not detected, or not detected in time, for braking to be triggered",
+      "source": [
+        "requirements",
+        "hazard"
+      ],
+      "rationale": "FR-7.1 and FR-7.2.5 require timely obstacle detection within the dangerous zone, and FR-7.2/FR-7.2.1 require obstacle detection. Collapsing detected-versus-not-detected/too-late situations would lose information needed to judge whether an omitted braking maneuver is attributable to missed detection."
+    },
+    {
+      "id": "D3",
+      "dimension": "Brake-actuator availability for executing a commanded braking maneuver",
+      "contrast_a": "Brake actuators are functioning sufficiently to execute braking",
+      "contrast_b": "Brake actuators have failed and cannot execute braking as commanded",
+      "source": [
+        "requirements"
+      ],
+      "rationale": "SR-1.5 and SR-1.6 require identification and mitigation of brake actuator failures. If these situations were indistinguishable, the representation could not support evaluation of whether braking omission is due to actuator failure rather than a missing braking command."
+    }
+  ],
+  "orrs": [
+    {
+      "id": "ORR1",
+      "covers": [
+        "D1"
+      ],
+      "obligation": "An admissible Observable Representation shall preserve whether a braking maneuver required for collision avoidance was initiated versus omitted/not initiated in time.",
+      "distinguishability_criterion": "The representation must distinguish states in which the required braking maneuver occurs in time from states in which it does not occur or occurs too late.",
+      "assumptions": []
+    },
+    {
+      "id": "ORR2",
+      "covers": [
+        "D2"
+      ],
+      "obligation": "An admissible Observable Representation shall preserve whether obstacle detection relevant to the braking decision occurred in time for braking to be triggered.",
+      "distinguishability_criterion": "The representation must distinguish obstacle-detected-in-time states from obstacle-not-detected or detected-too-late states.",
+      "assumptions": []
+    },
+    {
+      "id": "ORR3",
+      "covers": [
+        "D3"
+      ],
+      "obligation": "An admissible Observable Representation shall preserve whether brake actuator failure is present when evaluating omission of braking.",
+      "distinguishability_criterion": "The representation must distinguish functioning brake-actuator states from brake-actuator-failed states.",
+      "assumptions": []
+    }
+  ],
+  "rr5": {
+    "coverage": true,
+    "consistency": true,
+    "issues": []
+  }
+}

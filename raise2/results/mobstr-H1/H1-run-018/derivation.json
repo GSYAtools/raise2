@@ -1,0 +1,52 @@
+{
+  "run_id": "H1-run-018",
+  "concern_id": "H1",
+  "evaluation_target": {
+    "id": "T1",
+    "statement": "Prevent omitting required braking maneuvers.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The safety goal explicitly states that the system shall prevent omitting required braking maneuvers, and the hazard describes the harmful case as failing to stop in time and colliding with a road user or obstacle."
+  },
+  "phenomenon_of_interest": {
+    "id": "P1",
+    "statement": "The vehicle’s braking behavior in situations where braking is required to avoid collision with an obstacle or road user.",
+    "scope": "Operational situations in which an obstacle or road user is present on or near the vehicle trajectory such that a braking maneuver may be required to avoid collision, including the stated pedestrian-crossing scenario and analogous obstacle-avoidance cases within the system’s driving context.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The hazard and functional requirements focus on braking to avoid collisions, so the relevant phenomenon is whether the vehicle brakes when required in such situations."
+  },
+  "distinctions": [
+    {
+      "id": "D1",
+      "dimension": "Braking maneuver execution in a required-braking situation",
+      "contrast_a": "A braking maneuver is executed when required to avoid collision.",
+      "contrast_b": "A required braking maneuver is omitted.",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "The evaluation target is directly about preventing omitted braking maneuvers; collapsing execution and omission would remove the ability to evaluate whether the hazard is prevented."
+    }
+  ],
+  "orrs": [
+    {
+      "id": "O1",
+      "covers": [
+        "D1"
+      ],
+      "obligation": "An admissible observable representation shall preserve whether, in a required-braking situation, a braking maneuver is executed or omitted.",
+      "distinguishability_criterion": "The representation must distinguish the presence of braking action from its omission in the same required-braking situation.",
+      "assumptions": []
+    }
+  ],
+  "rr5": {
+    "coverage": true,
+    "consistency": true,
+    "issues": []
+  }
+}

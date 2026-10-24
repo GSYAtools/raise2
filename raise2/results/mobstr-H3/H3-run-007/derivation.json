@@ -1,0 +1,52 @@
+{
+  "run_id": "H3-run-007",
+  "concern_id": "H3",
+  "evaluation_target": {
+    "id": "T1",
+    "statement": "Prevent unintended braking.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The hazard identifies unintended braking as the hazardous event, and SG-3 states that the system shall prevent unintended braking."
+  },
+  "phenomenon_of_interest": {
+    "id": "P1",
+    "statement": "The vehicle's braking behavior in the specified straight-ahead urban driving situation, including whether braking occurs without a front obstacle.",
+    "scope": "Straight ahead drive on a less frequented urban road at 50 km/h in good weather, with no visible obstacles or vehicles in front of the ego vehicle; includes both normal non-braking operation and any braking that occurs in that situation.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The hazardous event is defined by the vehicle suddenly stopping although no obstacle is in front of it, so the relevant phenomenon is the braking behavior of the vehicle under that operational situation."
+  },
+  "distinctions": [
+    {
+      "id": "D1",
+      "dimension": "Braking occurrence relative to front-obstacle presence",
+      "contrast_a": "Vehicle brakes or stops while no obstacle is in front of the ego vehicle.",
+      "contrast_b": "Vehicle does not brake or stop while no obstacle is in front of the ego vehicle.",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "Collapsing these situations would remove the information needed to evaluate whether unintended braking occurs, which is the target concern."
+    }
+  ],
+  "orrs": [
+    {
+      "id": "ORR1",
+      "covers": [
+        "D1"
+      ],
+      "obligation": "An admissible Observable Representation shall preserve whether braking or stopping occurs when no obstacle is in front of the ego vehicle.",
+      "distinguishability_criterion": "The representation must distinguish braking/stopping from non-braking/non-stopping in the no-front-obstacle situation.",
+      "assumptions": []
+    }
+  ],
+  "rr5": {
+    "coverage": true,
+    "consistency": true,
+    "issues": []
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "run_id": "H3-run-011",
+  "concern_id": "H3",
+  "evaluation_target": {
+    "id": "T1",
+    "statement": "Prevent unintended braking.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The hazard defines the unwanted operational event as the vehicle suddenly stopping with no obstacle in front, and SG-3 states the system shall prevent unintended braking."
+  },
+  "phenomenon_of_interest": {
+    "id": "P1",
+    "statement": "Vehicle braking behavior in the stated urban driving situation, including whether braking occurs without a forward obstacle present.",
+    "scope": "Straight ahead drive on a less frequented urban road at 50 km/h, in good weather, with no visible obstacles or vehicles in front of the ego vehicle.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The hazard specifies the operational situation and the hazardous event that characterizes the relevant braking phenomenon to be evaluated."
+  },
+  "distinctions": [
+    {
+      "id": "D1",
+      "dimension": "Presence of a forward obstacle relevant to braking",
+      "contrast_a": "A forward obstacle is present in front of the ego vehicle in the operational situation.",
+      "contrast_b": "No forward obstacle is present in front of the ego vehicle in the operational situation.",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "The hazardous event explicitly contrasts braking with no obstacle in front; collapsing these cases would remove the information needed to evaluate whether braking is unintended versus a collision-avoidance response."
+    },
+    {
+      "id": "D2",
+      "dimension": "Whether braking occurs",
+      "contrast_a": "The vehicle brakes or stops.",
+      "contrast_b": "The vehicle does not brake.",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "The safety goal concerns unintended braking itself, so distinguishing braking from non-braking is necessary to evaluate whether the hazard occurs."
+    }
+  ],
+  "orrs": [
+    {
+      "id": "O1",
+      "covers": [
+        "D1",
+        "D2"
+      ],
+      "obligation": "An admissible observable representation shall preserve whether braking occurs and whether a forward obstacle is present in the declared operational situation.",
+      "distinguishability_criterion": "The representation must allow the cases 'braking with no forward obstacle' and 'no braking' to remain distinguishable, and must also distinguish braking with a forward obstacle from braking with no forward obstacle.",
+      "assumptions": []
+    },
+    {
+      "id": "O2",
+      "covers": [
+        "D1"
+      ],
+      "obligation": "An admissible observable representation shall preserve whether an obstacle is present in front of the ego vehicle when braking behavior is evaluated.",
+      "distinguishability_criterion": "The representation must not collapse obstacle-present and obstacle-absent forward scene states into the same representation when assessing braking behavior.",
+      "assumptions": []
+    }
+  ],
+  "rr5": {
+    "coverage": true,
+    "consistency": true,
+    "issues": []
+  }
+}

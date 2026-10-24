@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raise2.org/schemas/poi-conformance.schema.json",
+  "title": "RAISE2 Phenomenon-of-Interest Conformance Assessment",
+  "type": "object",
+  "additionalProperties": false,
+
+  "required": [
+    "run_id",
+    "concern_id",
+    "classification",
+    "rationale",
+    "determining_elements",
+    "sources"
+  ],
+
+  "properties": {
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+
+    "concern_id": {
+      "type": "string",
+      "minLength": 1
+    },
+
+    "classification": {
+      "type": "string",
+      "enum": [
+        "ALIGNED",
+        "OVEREXTENDED",
+        "UNDERDETERMINED"
+      ]
+    },
+
+    "rationale": {
+      "type": "string",
+      "minLength": 1
+    },
+
+    "determining_elements": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  }
+}
+

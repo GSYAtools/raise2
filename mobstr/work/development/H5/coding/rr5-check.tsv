@@ -1,0 +1,9 @@
+CheckResultEvidence_or_Rationale
+CoveragePASSBoth final CRDs are covered by at least one ORR; D_O = D_C for the identified distinction set.
+Duplicate obligationsPASSH5-ORR1 and H5-ORR2 preserve different operational separations.
+CompatibilityPASSTrajectory consistency and road containment can be preserved simultaneously.
+TraceabilityPASSEach ORR traces to a final CRD and visible source artefacts.
+Orphan ORRsPASSNo ORR lacks an originating CRD.
+Uncovered CRDsPASSNo identified final CRD lacks a corresponding ORR.
+Assessability H5-ORR1PASSA candidate representation can be assessed for preservation of trajectory-consistent versus trajectory-inconsistent operational motion.
+Assessability H5-ORR2PASSA candidate representation can be assessed for preservation of within-road-boundaries versus outside-road-boundaries operational motion.

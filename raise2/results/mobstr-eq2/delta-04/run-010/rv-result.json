@@ -1,0 +1,13 @@
+{
+  "run_id": "run-010",
+  "change_id": "delta-04",
+  "decision": "REVALIDATE",
+  "affected_orrs": [
+    "H1-ORR3"
+  ],
+  "return_point": null,
+  "triggered_conditions": [
+    "H1-RC3"
+  ],
+  "rationale": "The change introduces an explicit configurable braking-zone definition in place of the previously unspecified dangerous-zone boundary. This directly affects the assumption behind H1-ORR3 that the representation continues to receive sufficient information to distinguish braking-relevant spatial conditions, and it triggers H1-RC3 ('Revalidate if the distance or spatial-information requirement, the dangerous-zone definition, or the architectural responsibility or information used to determine the ego-object spatial relation changes.'). The Evaluation Target and Phenomenon of Interest remain unchanged, and the change does not affect the obstacle-presence or object-category ORRs."
+}

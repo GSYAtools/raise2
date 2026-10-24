@@ -1,0 +1,16 @@
+{
+  "run_id": "H1-run-019",
+  "concern_id": "H1",
+  "classification": "ALIGNED",
+  "rationale": "P identifies the braking behaviour that must be characterised to evaluate whether required braking maneuvers are omitted. SG-1 and FR-7 establish braking itself—not merely mechanisms supporting it—as the relevant system behaviour. The hazard supports the collision-avoidance context and pedestrian scenario. P does not extend to sensing, computation, communication, failure mitigation, or mechanism-specific timing.",
+  "determining_elements": [
+    "“Vehicle braking behavior” directly addresses performance or omission of the required maneuver identified by T and SG-1.",
+    "“Where a braking maneuver is required to avoid a collision” appropriately limits the phenomenon to the circumstances established by FR-7 and H-1.",
+    "The scope includes obstacles and road users, with the pedestrian crossing 20 m ahead explicitly supported by H-1.",
+    "Neither the statement nor scope incorporates supporting mechanisms or their timing constraints into P."
+  ],
+  "sources": [
+    "hazard",
+    "requirements"
+  ]
+}

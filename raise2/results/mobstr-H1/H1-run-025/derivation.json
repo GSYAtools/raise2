@@ -1,0 +1,72 @@
+{
+  "run_id": "H1-run-025",
+  "concern_id": "H1",
+  "evaluation_target": {
+    "id": "T1",
+    "statement": "Prevent omitting required braking maneuvers.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The safety goal explicitly states that the system shall prevent omitting required braking maneuvers, and the hazard describes the harmful consequence of not stopping in time."
+  },
+  "phenomenon_of_interest": {
+    "id": "P1",
+    "statement": "The vehicle’s braking-behaviour state in situations where a braking maneuver is required to avoid a collision.",
+    "scope": "Operational situations in which the vehicle is driving and an obstacle or road user may require braking to avoid collision, including the hazardous event scenario and the functional situations described for obstacle detection and braking.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "To evaluate whether required braking is omitted, the relevant phenomenon is not the sensor or controller itself but whether the vehicle is in a state where braking is required and whether braking occurs in time to avoid collision."
+  },
+  "distinctions": [
+    {
+      "id": "D1",
+      "dimension": "Braking response to a required maneuver",
+      "contrast_a": "A required braking maneuver is initiated and performed in time to avoid collision.",
+      "contrast_b": "A required braking maneuver is omitted or started too late, leading to inability to stop in time.",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "The hazard defines the adverse condition as being unable to stop in time, while FR-7 and FR-7.1 require the system to perform/start braking to avoid collisions. Collapsing timely braking and omitted/late braking would remove the information needed to assess whether the safety goal is met."
+    },
+    {
+      "id": "D2",
+      "dimension": "Need for braking due to detected obstacle/road user",
+      "contrast_a": "A situation in which an obstacle or road user is detected and braking is required to avoid collision.",
+      "contrast_b": "A situation in which no obstacle or road user is present that requires braking.",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "FR-7.1 ties braking to obstacle detection within a dangerous zone, and FR-7.2/FR-7.2.1 establish obstacle detection as relevant to braking. Collapsing situations where braking is required with those where it is not would lose information needed to judge omission of required braking."
+    }
+  ],
+  "orrs": [
+    {
+      "id": "ORR1",
+      "covers": [
+        "D1"
+      ],
+      "obligation": "An admissible Observable Representation shall preserve whether a required braking maneuver is initiated and performed in time versus omitted or initiated too late.",
+      "distinguishability_criterion": "The representation must allow the two outcome classes 'timely braking performed' and 'braking omitted or too late' to remain distinguishable.",
+      "assumptions": []
+    },
+    {
+      "id": "ORR2",
+      "covers": [
+        "D2"
+      ],
+      "obligation": "An admissible Observable Representation shall preserve whether the operational situation requires braking because an obstacle or road user is present in the relevant driving context.",
+      "distinguishability_criterion": "The representation must allow situations with a braking-relevant obstacle or road user to remain distinguishable from situations in which no such braking-relevant entity is present.",
+      "assumptions": []
+    }
+  ],
+  "rr5": {
+    "coverage": true,
+    "consistency": true,
+    "issues": []
+  }
+}

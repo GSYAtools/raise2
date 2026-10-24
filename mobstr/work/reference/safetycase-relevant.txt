@@ -1,0 +1,27 @@
+#106 TAG=value
+ATTRS: {'lang': 'English', 'content': 'Avoid hazard H-1 (Omitted braking maneuver)\n\nASIL C'}
+
+#124 TAG=value
+ATTRS: {'lang': 'English', 'content': 'Avoid hazard H-3 (Unintended braking)\n\nASIL B'}
+
+#195 TAG=value
+ATTRS: {'lang': 'English', 'content': 'FMEA for hazard H-1 (Omitted braking maneuver)'}
+
+#203 TAG=value
+ATTRS: {'lang': 'English', 'content': 'No failure mode in FMEA leads to hazard H-1 without an appropriate measure.'}
+
+#208 TAG=value
+ATTRS: {'lang': 'English', 'content': 'The tolerable hazard rate of hazard H-1 (random hardware failures) is sufficiently low (< 10E-7/h for ASIL C).'}
+
+#221 TAG=value
+ATTRS: {'lang': 'English', 'content': 'Fault Tree Analysis for top event H-1'}
+
+#229 TAG=value
+ATTRS: {'lang': 'English', 'content': 'Each failure combination leading to hazard H-1 is addressed properly by a safety requirement.'}
+
+#239 TAG=value
+ATTRS: {'lang': 'English', 'content': 'Safety test cases cover all defined safety requirements relevant for the assurance of hazard H-1 and are associated with the system architecture.'}
+
+#244 TAG=value
+ATTRS: {'lang': 'English', 'content': 'All safety test cases relevant for hazard H-1 have been executed successfully.'}
+

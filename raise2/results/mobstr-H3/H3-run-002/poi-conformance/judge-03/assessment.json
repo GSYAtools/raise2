@@ -1,0 +1,15 @@
+{
+  "run_id": "H3-run-002",
+  "concern_id": "H3",
+  "classification": "ALIGNED",
+  "rationale": "The target requires braking behaviour itself to be characterised, so including vehicle braking and stopping is not an extraneous control-response expansion. H-3 establishes sudden stopping without an obstacle as the hazardous event, while SG-3 and FR-7 support distinguishing unintended braking from braking justified by an obstacle. P retains the stated operational context without incorporating sensing, computation, failure mitigation, communication, or mechanism-specific timing.",
+  "determining_elements": [
+    "“Vehicle braking behavior” and whether the vehicle “brakes or stops unexpectedly” directly address prevention of unintended braking.",
+    "The relationship between braking and the presence or absence of an actual obstacle requiring braking is supported by H-3 and FR-7 and characterises whether braking is justified.",
+    "The declared straight-ahead, 50 km/h, good-weather urban-road context with no visible obstacles or vehicles in front matches H-3's operational situation."
+  ],
+  "sources": [
+    "hazard",
+    "requirements"
+  ]
+}

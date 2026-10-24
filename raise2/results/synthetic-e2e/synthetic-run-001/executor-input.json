@@ -1,0 +1,16 @@
+{
+  "experiment_id": "synthetic-e2e",
+  "concern_id": "availability",
+  "engineering_artefacts": [
+    {
+      "id": "requirement",
+      "type": "requirement",
+      "content": "REQ-TEST-1: The service shall remain operationally available to authorised users.\n\n"
+    },
+    {
+      "id": "context",
+      "type": "other",
+      "content": "The service processes requests from authorised users during normal operation.\n\n"
+    }
+  ]
+}

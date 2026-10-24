@@ -1,0 +1,72 @@
+{
+  "run_id": "H1-run-026",
+  "concern_id": "H1",
+  "evaluation_target": {
+    "id": "T1",
+    "statement": "Prevent omission of required braking maneuvers in the hazardous braking scenario.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The safety goal explicitly requires preventing omitted braking maneuvers, and the hazard concerns failure to brake in time in the stated operational situation."
+  },
+  "phenomenon_of_interest": {
+    "id": "P1",
+    "statement": "Vehicle braking behavior in the obstacle-avoidance scenario, specifically whether braking is initiated and performed when an obstacle is detected in time.",
+    "scope": "Straight-ahead driving on a less frequented single-lane road at 50 km/h in good weather, with a pedestrian running across the street 20 m ahead of the ego vehicle, where obstacle detection and subsequent braking are relevant to avoiding collision.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The hazard defines the operational situation and the hazardous event as failure to stop in time. The functional requirements state that the system shall perform a braking maneuver to avoid collisions and start braking after an obstacle is detected within a dangerous zone."
+  },
+  "distinctions": [
+    {
+      "id": "D1",
+      "dimension": "Braking response to a detected hazardous obstacle",
+      "contrast_a": "Braking maneuver is initiated and performed in response to the detected obstacle",
+      "contrast_b": "Required braking maneuver is omitted despite the obstacle being present in the operational situation",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "To evaluate whether required braking maneuvers are omitted, the representation must distinguish successful braking response from omission. Collapsing these would lose the information needed to assess the safety goal and functional braking requirement."
+    },
+    {
+      "id": "D2",
+      "dimension": "Timely start of braking after obstacle detection",
+      "contrast_a": "Braking starts within the allowed response window after obstacle detection",
+      "contrast_b": "Braking starts too late or not at all after obstacle detection",
+      "source": [
+        "requirements",
+        "hazard"
+      ],
+      "rationale": "FR-7.1 requires braking to start within 50 ms after obstacle detection within a dangerous zone, and the hazard concerns failure to stop in time. Distinguishing timely from untimely braking is necessary to evaluate whether braking omission or lateness contributes to the hazardous event."
+    }
+  ],
+  "orrs": [
+    {
+      "id": "ORR1",
+      "covers": [
+        "D1"
+      ],
+      "obligation": "An admissible observable representation shall preserve whether the vehicle initiates and performs the required braking maneuver versus omitting that maneuver in the stated obstacle-avoidance situation.",
+      "distinguishability_criterion": "The representation must allow the two classes 'braking performed' and 'braking omitted' to remain distinguishable.",
+      "assumptions": []
+    },
+    {
+      "id": "ORR2",
+      "covers": [
+        "D2"
+      ],
+      "obligation": "An admissible observable representation shall preserve whether braking onset occurs in a timely manner after obstacle detection, as distinct from late or absent braking onset.",
+      "distinguishability_criterion": "The representation must allow 'timely braking onset after detection' to be distinguished from 'late or absent braking onset after detection'.",
+      "assumptions": []
+    }
+  ],
+  "rr5": {
+    "coverage": true,
+    "consistency": true,
+    "issues": []
+  }
+}

@@ -1,0 +1,2 @@
+REQ-TEST-1: The service shall remain operationally available to authorised users.
+

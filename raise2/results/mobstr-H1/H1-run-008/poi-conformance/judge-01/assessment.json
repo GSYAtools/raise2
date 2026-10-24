@@ -1,0 +1,16 @@
+{
+  "run_id": "H1-run-008",
+  "concern_id": "H1",
+  "classification": "ALIGNED",
+  "rationale": "P characterises whether braking is required and whether that required maneuver occurs in time—the relationship needed to evaluate omission under SG-1. Braking execution and its timeliness are part of the phenomenon itself, supported by FR-7 and H-1's failure-to-stop hazardous event. The scope references detection and decision-making as encounter context without incorporating their internal mechanisms or timing constraints into P.",
+  "determining_elements": [
+    "\"Whether a braking maneuver is required\" directly addresses the condition governing omission under SG-1.",
+    "\"Whether braking is performed in time to avoid collision\" is supported by H-1 and FR-7; inclusion of braking response and temporal behaviour is therefore justified.",
+    "Obstacle encounters involving objects in or close to the vehicle's trajectory are supported by H-1 and FR-7.2.4.",
+    "P does not extend to sensor processing, communication, failure-management mechanisms or obstacle-detection deadlines."
+  ],
+  "sources": [
+    "hazard",
+    "requirements"
+  ]
+}

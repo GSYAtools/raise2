@@ -1,0 +1,10 @@
+{
+  "run_id": "H3-run-030",
+  "concern_id": "H3",
+  "assessment_id": "judge-01",
+  "requested_model": "gpt-6-astra",
+  "started_at_utc": "2026-10-24T06:19:42.087406+00:00",
+  "completed_at_utc": "2026-10-24T06:19:45.229492+00:00",
+  "status": "api_error",
+  "error": "Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}"
+}

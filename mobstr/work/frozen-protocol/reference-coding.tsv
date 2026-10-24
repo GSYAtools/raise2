@@ -1,0 +1,4 @@
+ClassIn_D_C_refOperational_Criterion
+Phenomenon-level distinction evidenceYESThe downstream artefact establishes two operational states of the declared PoI whose distinction is required to evaluate C.
+Preservation/dependency threatNOThe downstream artefact describes loss, corruption, ambiguity, staleness, delay, or another condition capable of preventing a representation from preserving a CRD, without itself establishing a new concern-relevant state distinction in P.
+Execution/control failureNOThe downstream artefact describes omission, error, delay, or failure of an action or control mechanism whose consequences may affect P but which is not itself a concern-relevant distinction between states of the declared PoI.

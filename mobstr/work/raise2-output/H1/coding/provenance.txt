@@ -1,0 +1,12 @@
+Concern: H1 -- Omitted braking maneuver
+
+Input:
+work/test-visible/H1/
+
+Coding protocol:
+work/frozen-protocol/
+
+Protocol frozen at:
+2026-10-06T10:47:55Z
+
+Held-out artefacts must not be consulted during RR1--RR5.

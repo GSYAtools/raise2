@@ -1,0 +1,562 @@
+{
+  "study": "dTAS EQ3-A",
+  "runs": 30,
+  "cycles_per_run": 20,
+  "observations": 600,
+  "threshold": 0.19,
+  "orr_adequacy": {
+    "violations": 30,
+    "preserved": 570,
+    "violation_rate": 0.05,
+    "runs_with_violation": 27,
+    "run_incidence": 0.9
+  },
+  "violation_types": {
+    "missed_violations": 30,
+    "false_violations": 0,
+    "real_violated_cycles": 30,
+    "real_satisfied_cycles": 570,
+    "missed_violation_rate": 1.0,
+    "false_violation_rate": 0.0
+  },
+  "absolute_error": {
+    "all": {
+      "n": 600,
+      "min": 6.492600000129745e-07,
+      "q1": 0.0020882310050000102,
+      "median": 0.0040855169866666485,
+      "mean": 0.011443062276811107,
+      "q3": 0.007398505871666669,
+      "max": 0.08416973824
+    },
+    "orr_preserved": {
+      "n": 570,
+      "min": 6.492600000129745e-07,
+      "q1": 0.001958845486666659,
+      "median": 0.003747096623333321,
+      "mean": 0.009605891900643274,
+      "q3": 0.006705131176666691,
+      "max": 0.08416973824
+    },
+    "orr_violated": {
+      "n": 30,
+      "min": 0.008019871099999937,
+      "q1": 0.04013392534333326,
+      "median": 0.04491840162666663,
+      "mean": 0.04634929942399995,
+      "q3": 0.05304506065666663,
+      "max": 0.07841787391999995
+    },
+    "missed_violation": {
+      "n": 30,
+      "min": 0.008019871099999937,
+      "q1": 0.04013392534333326,
+      "median": 0.04491840162666663,
+      "mean": 0.04634929942399995,
+      "q3": 0.05304506065666663,
+      "max": 0.07841787391999995
+    },
+    "false_violation": {
+      "n": 0,
+      "min": null,
+      "q1": null,
+      "median": null,
+      "mean": null,
+      "q3": null,
+      "max": null
+    }
+  },
+  "accuracy_adequacy_relation": {
+    "inversion_exists": true,
+    "preserved_observations_with_error_larger_than_some_violation": 110,
+    "violations_with_error_smaller_than_some_preserved_observation": 30,
+    "maximum_preserved_error_observation": {
+      "run_id": "run-021",
+      "cycle": 1,
+      "real_failure_rate": 0.15327053824,
+      "represented_failure_rate": 0.0691008,
+      "absolute_error": 0.08416973824,
+      "threshold": 0.19,
+      "real_goal_state": "SATISFIED",
+      "represented_goal_state": "SATISFIED",
+      "orr_preserved": true,
+      "violation_type": "NONE"
+    },
+    "minimum_violation_error_observation": {
+      "run_id": "run-002",
+      "cycle": 4,
+      "real_failure_rate": 0.19736143359999994,
+      "represented_failure_rate": 0.1893415625,
+      "absolute_error": 0.008019871099999937,
+      "threshold": 0.19,
+      "real_goal_state": "VIOLATED",
+      "represented_goal_state": "SATISFIED",
+      "orr_preserved": false,
+      "violation_type": "MISSED_VIOLATION"
+    }
+  },
+  "temporal_distribution": [
+    {
+      "cycle": 1,
+      "observations": 30,
+      "orr_violations": 4,
+      "missed_violations": 4,
+      "false_violations": 0,
+      "mean_absolute_error": 0.076415813168
+    },
+    {
+      "cycle": 2,
+      "observations": 30,
+      "orr_violations": 6,
+      "missed_violations": 6,
+      "false_violations": 0,
+      "mean_absolute_error": 0.024672113346888874
+    },
+    {
+      "cycle": 3,
+      "observations": 30,
+      "orr_violations": 3,
+      "missed_violations": 3,
+      "false_violations": 0,
+      "mean_absolute_error": 0.015144630369999993
+    },
+    {
+      "cycle": 4,
+      "observations": 30,
+      "orr_violations": 3,
+      "missed_violations": 3,
+      "false_violations": 0,
+      "mean_absolute_error": 0.012548551871333332
+    },
+    {
+      "cycle": 5,
+      "observations": 30,
+      "orr_violations": 1,
+      "missed_violations": 1,
+      "false_violations": 0,
+      "mean_absolute_error": 0.008358439104888885
+    },
+    {
+      "cycle": 6,
+      "observations": 30,
+      "orr_violations": 0,
+      "missed_violations": 0,
+      "false_violations": 0,
+      "mean_absolute_error": 0.007346869193555552
+    },
+    {
+      "cycle": 7,
+      "observations": 30,
+      "orr_violations": 2,
+      "missed_violations": 2,
+      "false_violations": 0,
+      "mean_absolute_error": 0.008418517938666657
+    },
+    {
+      "cycle": 8,
+      "observations": 30,
+      "orr_violations": 0,
+      "missed_violations": 0,
+      "false_violations": 0,
+      "mean_absolute_error": 0.003958285743777769
+    },
+    {
+      "cycle": 9,
+      "observations": 30,
+      "orr_violations": 1,
+      "missed_violations": 1,
+      "false_violations": 0,
+      "mean_absolute_error": 0.005235115531999995
+    },
+    {
+      "cycle": 10,
+      "observations": 30,
+      "orr_violations": 5,
+      "missed_violations": 5,
+      "false_violations": 0,
+      "mean_absolute_error": 0.010701412554222219
+    },
+    {
+      "cycle": 11,
+      "observations": 30,
+      "orr_violations": 1,
+      "missed_violations": 1,
+      "false_violations": 0,
+      "mean_absolute_error": 0.006340472960444441
+    },
+    {
+      "cycle": 12,
+      "observations": 30,
+      "orr_violations": 1,
+      "missed_violations": 1,
+      "false_violations": 0,
+      "mean_absolute_error": 0.005095812960444436
+    },
+    {
+      "cycle": 13,
+      "observations": 30,
+      "orr_violations": 0,
+      "missed_violations": 0,
+      "false_violations": 0,
+      "mean_absolute_error": 0.005452036088222226
+    },
+    {
+      "cycle": 14,
+      "observations": 30,
+      "orr_violations": 0,
+      "missed_violations": 0,
+      "false_violations": 0,
+      "mean_absolute_error": 0.006835258973111106
+    },
+    {
+      "cycle": 15,
+      "observations": 30,
+      "orr_violations": 1,
+      "missed_violations": 1,
+      "false_violations": 0,
+      "mean_absolute_error": 0.00670539655088889
+    },
+    {
+      "cycle": 16,
+      "observations": 30,
+      "orr_violations": 0,
+      "missed_violations": 0,
+      "false_violations": 0,
+      "mean_absolute_error": 0.004842896293777776
+    },
+    {
+      "cycle": 17,
+      "observations": 30,
+      "orr_violations": 0,
+      "missed_violations": 0,
+      "false_violations": 0,
+      "mean_absolute_error": 0.005263029576666671
+    },
+    {
+      "cycle": 18,
+      "observations": 30,
+      "orr_violations": 1,
+      "missed_violations": 1,
+      "false_violations": 0,
+      "mean_absolute_error": 0.005294425549111104
+    },
+    {
+      "cycle": 19,
+      "observations": 30,
+      "orr_violations": 0,
+      "missed_violations": 0,
+      "false_violations": 0,
+      "mean_absolute_error": 0.0036778112555555594
+    },
+    {
+      "cycle": 20,
+      "observations": 30,
+      "orr_violations": 1,
+      "missed_violations": 1,
+      "false_violations": 0,
+      "mean_absolute_error": 0.006554356504666661
+    }
+  ],
+  "run_summary": [
+    {
+      "run_id": "run-001",
+      "cycles": 20,
+      "orr_violations": 1,
+      "missed_violations": 1,
+      "false_violations": 0,
+      "has_violation": true,
+      "mean_absolute_error": 0.01228982753066666,
+      "max_absolute_error": 0.07382950527999996
+    },
+    {
+      "run_id": "run-002",
+      "cycles": 20,
+      "orr_violations": 2,
+      "missed_violations": 2,
+      "false_violations": 0,
+      "has_violation": true,
+      "mean_absolute_error": 0.01157662900466665,
+      "max_absolute_error": 0.07422190463999997
+    },
+    {
+      "run_id": "run-003",
+      "cycles": 20,
+      "orr_violations": 1,
+      "missed_violations": 1,
+      "false_violations": 0,
+      "has_violation": true,
+      "mean_absolute_error": 0.012355822919333327,
+      "max_absolute_error": 0.07459787392
+    },
+    {
+      "run_id": "run-004",
+      "cycles": 20,
+      "orr_violations": 2,
+      "missed_violations": 2,
+      "false_violations": 0,
+      "has_violation": true,
+      "mean_absolute_error": 0.012090369897333328,
+      "max_absolute_error": 0.07448803216000001
+    },
+    {
+      "run_id": "run-005",
+      "cycles": 20,
+      "orr_violations": 1,
+      "missed_violations": 1,
+      "false_violations": 0,
+      "has_violation": true,
+      "mean_absolute_error": 0.009118858251666655,
+      "max_absolute_error": 0.07424232319999999
+    },
+    {
+      "run_id": "run-006",
+      "cycles": 20,
+      "orr_violations": 1,
+      "missed_violations": 1,
+      "false_violations": 0,
+      "has_violation": true,
+      "mean_absolute_error": 0.012277291973666653,
+      "max_absolute_error": 0.07412903295999997
+    },
+    {
+      "run_id": "run-007",
+      "cycles": 20,
+      "orr_violations": 1,
+      "missed_violations": 1,
+      "false_violations": 0,
+      "has_violation": true,
+      "mean_absolute_error": 0.011950371867333333,
+      "max_absolute_error": 0.07431369087999998
+    },
+    {
+      "run_id": "run-008",
+      "cycles": 20,
+      "orr_violations": 1,
+      "missed_violations": 1,
+      "false_violations": 0,
+      "has_violation": true,
+      "mean_absolute_error": 0.011316338537666677,
+      "max_absolute_error": 0.07409276848000002
+    },
+    {
+      "run_id": "run-009",
+      "cycles": 20,
+      "orr_violations": 1,
+      "missed_violations": 1,
+      "false_violations": 0,
+      "has_violation": true,
+      "mean_absolute_error": 0.01205420782066667,
+      "max_absolute_error": 0.07398432032000003
+    },
+    {
+      "run_id": "run-010",
+      "cycles": 20,
+      "orr_violations": 2,
+      "missed_violations": 2,
+      "false_violations": 0,
+      "has_violation": true,
+      "mean_absolute_error": 0.011624093226333315,
+      "max_absolute_error": 0.07799234047999992
+    },
+    {
+      "run_id": "run-011",
+      "cycles": 20,
+      "orr_violations": 1,
+      "missed_violations": 1,
+      "false_violations": 0,
+      "has_violation": true,
+      "mean_absolute_error": 0.011620697417333334,
+      "max_absolute_error": 0.07418337264000005
+    },
+    {
+      "run_id": "run-012",
+      "cycles": 20,
+      "orr_violations": 1,
+      "missed_violations": 1,
+      "false_violations": 0,
+      "has_violation": true,
+      "mean_absolute_error": 0.010979617789000005,
+      "max_absolute_error": 0.08123784960000004
+    },
+    {
+      "run_id": "run-013",
+      "cycles": 20,
+      "orr_violations": 1,
+      "missed_violations": 1,
+      "false_violations": 0,
+      "has_violation": true,
+      "mean_absolute_error": 0.012586315082333332,
+      "max_absolute_error": 0.07825829887999991
+    },
+    {
+      "run_id": "run-014",
+      "cycles": 20,
+      "orr_violations": 0,
+      "missed_violations": 0,
+      "false_violations": 0,
+      "has_violation": false,
+      "mean_absolute_error": 0.010535220363333337,
+      "max_absolute_error": 0.07449681663999999
+    },
+    {
+      "run_id": "run-015",
+      "cycles": 20,
+      "orr_violations": 1,
+      "missed_violations": 1,
+      "false_violations": 0,
+      "has_violation": true,
+      "mean_absolute_error": 0.011441488516333323,
+      "max_absolute_error": 0.07439848575999995
+    },
+    {
+      "run_id": "run-016",
+      "cycles": 20,
+      "orr_violations": 1,
+      "missed_violations": 1,
+      "false_violations": 0,
+      "has_violation": true,
+      "mean_absolute_error": 0.011817956103666651,
+      "max_absolute_error": 0.0809990656
+    },
+    {
+      "run_id": "run-017",
+      "cycles": 20,
+      "orr_violations": 1,
+      "missed_violations": 1,
+      "false_violations": 0,
+      "has_violation": true,
+      "mean_absolute_error": 0.011076503191999997,
+      "max_absolute_error": 0.07517826496000005
+    },
+    {
+      "run_id": "run-018",
+      "cycles": 20,
+      "orr_violations": 1,
+      "missed_violations": 1,
+      "false_violations": 0,
+      "has_violation": true,
+      "mean_absolute_error": 0.01127481720366666,
+      "max_absolute_error": 0.07394544240000002
+    },
+    {
+      "run_id": "run-019",
+      "cycles": 20,
+      "orr_violations": 1,
+      "missed_violations": 1,
+      "false_violations": 0,
+      "has_violation": true,
+      "mean_absolute_error": 0.011887854904,
+      "max_absolute_error": 0.07841787391999995
+    },
+    {
+      "run_id": "run-020",
+      "cycles": 20,
+      "orr_violations": 1,
+      "missed_violations": 1,
+      "false_violations": 0,
+      "has_violation": true,
+      "mean_absolute_error": 0.012055664487666661,
+      "max_absolute_error": 0.07378673536
+    },
+    {
+      "run_id": "run-021",
+      "cycles": 20,
+      "orr_violations": 1,
+      "missed_violations": 1,
+      "false_violations": 0,
+      "has_violation": true,
+      "mean_absolute_error": 0.010148376985999998,
+      "max_absolute_error": 0.08416973824
+    },
+    {
+      "run_id": "run-022",
+      "cycles": 20,
+      "orr_violations": 1,
+      "missed_violations": 1,
+      "false_violations": 0,
+      "has_violation": true,
+      "mean_absolute_error": 0.01083818369366666,
+      "max_absolute_error": 0.07821397247999996
+    },
+    {
+      "run_id": "run-023",
+      "cycles": 20,
+      "orr_violations": 0,
+      "missed_violations": 0,
+      "false_violations": 0,
+      "has_violation": false,
+      "mean_absolute_error": 0.009763242705666666,
+      "max_absolute_error": 0.07427877184000001
+    },
+    {
+      "run_id": "run-024",
+      "cycles": 20,
+      "orr_violations": 1,
+      "missed_violations": 1,
+      "false_violations": 0,
+      "has_violation": true,
+      "mean_absolute_error": 0.01228403756599999,
+      "max_absolute_error": 0.08105637376000002
+    },
+    {
+      "run_id": "run-025",
+      "cycles": 20,
+      "orr_violations": 1,
+      "missed_violations": 1,
+      "false_violations": 0,
+      "has_violation": true,
+      "mean_absolute_error": 0.010635977294666657,
+      "max_absolute_error": 0.07454934848000001
+    },
+    {
+      "run_id": "run-026",
+      "cycles": 20,
+      "orr_violations": 0,
+      "missed_violations": 0,
+      "false_violations": 0,
+      "has_violation": false,
+      "mean_absolute_error": 0.009851266863333333,
+      "max_absolute_error": 0.07424673279999999
+    },
+    {
+      "run_id": "run-027",
+      "cycles": 20,
+      "orr_violations": 1,
+      "missed_violations": 1,
+      "false_violations": 0,
+      "has_violation": true,
+      "mean_absolute_error": 0.011400325107000009,
+      "max_absolute_error": 0.07429785168000004
+    },
+    {
+      "run_id": "run-028",
+      "cycles": 20,
+      "orr_violations": 1,
+      "missed_violations": 1,
+      "false_violations": 0,
+      "has_violation": true,
+      "mean_absolute_error": 0.011383427768666663,
+      "max_absolute_error": 0.08320340992
+    },
+    {
+      "run_id": "run-029",
+      "cycles": 20,
+      "orr_violations": 1,
+      "missed_violations": 1,
+      "false_violations": 0,
+      "has_violation": true,
+      "mean_absolute_error": 0.012682234239999993,
+      "max_absolute_error": 0.07429973312000003
+    },
+    {
+      "run_id": "run-030",
+      "cycles": 20,
+      "orr_violations": 1,
+      "missed_violations": 1,
+      "false_violations": 0,
+      "has_violation": true,
+      "mean_absolute_error": 0.012374849990666667,
+      "max_absolute_error": 0.08336446464000002
+    }
+  ]
+}

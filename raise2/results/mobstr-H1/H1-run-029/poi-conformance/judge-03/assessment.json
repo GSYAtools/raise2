@@ -1,0 +1,16 @@
+{
+  "run_id": "H1-run-029",
+  "concern_id": "H1",
+  "classification": "ALIGNED",
+  "rationale": "P characterises the braking behaviour whose omission T requires preventing. SG-1 and FR-7 establish that this system response is itself the subject of evaluation, not merely a mechanism affecting another phenomenon. The obstacle-encounter scope and inclusion of braking initiation are supported by the supplied artefacts. P does not expand into sensing, computation, communication, or unrelated control behaviour.",
+  "determining_elements": [
+    "“Vehicle/system braking behavior” directly corresponds to preventing omitted braking under SG-1 and performing collision-avoidance braking under FR-7.",
+    "“Whether a braking maneuver is initiated when required” is supported by FR-7 and FR-7.1, which explicitly require braking and specify its initiation after dangerous-zone obstacle detection.",
+    "The scope covering obstacles or road users on or near the trajectory is supported by H-1, FR-7, and FR-7.2.4, and remains conditional on potential collision-avoidance braking need.",
+    "The reference to obstacle-detection situations supplies encounter context; it does not incorporate detection mechanisms or their processing-time requirements into P."
+  ],
+  "sources": [
+    "hazard",
+    "requirements"
+  ]
+}

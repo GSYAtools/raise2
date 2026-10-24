@@ -1,0 +1,13 @@
+{
+  "run_id": "run-003",
+  "change_id": "delta-03",
+  "decision": "REVALIDATE",
+  "affected_orrs": [
+    "H1-ORR2"
+  ],
+  "return_point": null,
+  "triggered_conditions": [
+    "H1-RC2"
+  ],
+  "rationale": "The change revises the object-category scheme and explicitly affects FR-7.2.2, which is the source and revalidation basis for H1-CRD2 and H1-ORR2. The Evaluation Target and Phenomenon of Interest are stated to remain unchanged, so the existing derivational basis remains applicable, but the satisfaction of H1-ORR2 must be reassessed because H1-A2/H1-RC2 require revalidation when FR-7.2.2, the object-category scheme, or the information used to represent object category changes."
+}

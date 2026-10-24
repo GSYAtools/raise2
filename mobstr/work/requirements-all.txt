@@ -1,0 +1,98 @@
+001	ID=ID	Hazard=Hazard	Type=Type	Time=Time Interval	Component=Allocated on Component	Description=Description
+002	ID=SG-1	Hazard=H-1	Type=Safety goal	Time=None	Component=None	Description=The system shall prevent omitting required braking maneuvers.
+003	ID=SR-1.1	Hazard=None	Type=Safety (failure identification)	Time=None	Component=Object Detection	Description=The system shall identify sensor failures.
+004	ID=SR-1.1.1	Hazard=None	Type=Safety (redundancy)	Time=None	Component=Sensor Fusion	Description=The system shall use more than one sensor used to identify obstacles.
+005	ID=SR-1.1.2	Hazard=None	Type=Safety (monitoring)	Time=None	Component=Lidar Grabber	Description=The system shall identify when the lidar sensor has failed.
+006	ID=SR-1.1.3	Hazard=None	Type=Safety (monitoring)	Time=None	Component=Image Grabber	Description=The system shall identify when the camera has failed.
+008	ID=SR-1.2	Hazard=None	Type=Safety (failure mitigation)	Time=None	Component=(all components)	Description=The system shall mitigate sensor failures.
+009	ID=SR-1.2.1	Hazard=None	Type=Safety (redundancy)	Time=None	Component=Sensor Fusion	Description=The system shall detect objects by using a combination of different sensors.
+010	ID=SR-1.2.2	Hazard=None	Type=Safety (redundancy)	Time=None	Component=Sensor Fusion	Description=The system shall use only information from working sensors.
+011	ID=SR-1.2.3	Hazard=None	Type=Safety (warning)	Time=None	Component=Driver Warnings	Description=The system shall inform the driver about sensor failures.
+013	ID=SR-1.3	Hazard=None	Type=Safety (failure identification)	Time=None	Component=(all components)	Description=The system shall identify controller failures.
+014	ID=SR-1.3.1	Hazard=None	Type=Safety (monitoring)	Time=None	Component=Path Planner	Description=The system shall identify when the path planner has failed.
+015	ID=SR-1.3.2	Hazard=None	Type=Safety (monitoring)	Time=None	Component=Object Detection	Description=The system shall identify when the object detection has failed.
+016	ID=SR-1.3.3	Hazard=None	Type=Safety (monitoring)	Time=None	Component=Sensor Fusion	Description=The system shall identify when the sensor fusion has failed.
+018	ID=SR-1.4	Hazard=None	Type=Safety (failure mitigation)	Time=None	Component=Path Planner	Description=The system shall mitigate controller failures.
+020	ID=SR-1.5	Hazard=None	Type=Safety (failure identification)	Time=None	Component=Controller	Description=The system shall identify failures of the brake actuators.
+022	ID=SR-1.6	Hazard=None	Type=Safety (failure mitigation)	Time=None	Component=Controller	Description=The system shall mitigate failures of the brake actuators.
+026	ID=SG-2	Hazard=H-2	Type=Safety goal	Time=None	Component=None	Description=The system shall prevent omitting required avoidance maneuvers.
+027	ID=SR-2.1	Hazard=None	Type=[Same as SR-1.1]	Time=None	Component=[Same as SR-1.1]	Description=[Reference to SR-1.1 including sub-requirements]
+028	ID=SR-2.2	Hazard=None	Type=[Same as SR-1.2]	Time=None	Component=[Same as SR-1.2]	Description=[Reference to SR-1.2 including sub-requirements]
+029	ID=SR-2.3	Hazard=None	Type=Safety (failure identification)	Time=None	Component=Path Planner	Description=The system shall identify controller failures.
+031	ID=SR-2.4	Hazard=None	Type=Safety (failure mitigation)	Time=None	Component=(all components)	Description=The system shall mitigate controller failures.
+032	ID=SR-2.4.1	Hazard=None	Type=Safety (monitoring)	Time=None	Component=Controller	Description=The system shall detect when the steering commands are not on time (tbd).
+033	ID=SR-2.4.2	Hazard=None	Type=Safety (monitoring)	Time=None	Component=Controller	Description=The system shall detect when the steering commands are out of reasonable bounds (tbd).
+035	ID=SR-2.5	Hazard=None	Type=Safety (failure identification)	Time=None	Component=Controller	Description=The system shall identify failures of the steering actuators.
+036	ID=SR-2.5.1	Hazard=None	Type=Safety (monitoring)	Time=None	Component=Controller	Description=The system shall identify when the steering actuators do not engage.
+037	ID=SR-2.5.2	Hazard=None	Type=Safety (monitoring)	Time=None	Component=Controller	Description=The system shall identify when the steering actuators over- or undershoot the steering commands.
+039	ID=SR-2.6	Hazard=None	Type=Safety (failure mitigation)	Time=None	Component=Controller	Description=The system shall mitigate failures of the steering actuators.
+041	ID=SR-2.7	Hazard=None	Type=Safety (failure identification)	Time=None	Component=Controller	Description=The system shall identify failures of the brake actuators.
+042	ID=SR-2.7.1	Hazard=None	Type=Safety (monitoring)	Time=None	Component=Controller	Description=The system shall identify when the brake actuators do not engage.
+044	ID=SR-2.8	Hazard=None	Type=Safety (failure mitigation)	Time=None	Component=Controller	Description=The system shall mitigate failures of the brake actuators.
+048	ID=SG-3	Hazard=H-3	Type=Safety goal	Time=None	Component=None	Description=The system shall prevent unintended braking.
+049	ID=SR-3.1	Hazard=None	Type=[Same as SR-1.1]	Time=None	Component=[Same as SR-1.1]	Description=[Reference to SR-1.1 including sub-requirements]
+050	ID=SR-3.2	Hazard=None	Type=[Same as SR-1.2]	Time=None	Component=[Same as SR-1.2]	Description=[Reference to SR-1.2 including sub-requirements]
+051	ID=SR-3.3	Hazard=None	Type=Safety (failure identification)	Time=None	Component=Path Planner	Description=The system shall identify controller failures.
+053	ID=SR-3.4	Hazard=None	Type=Safety (failure mitigation)	Time=None	Component=Path Planner	Description=The system shall mitigate controller failures.
+055	ID=SR-3.5	Hazard=None	Type=Safety (failure identification)	Time=None	Component=Controller	Description=The system shall identify failures of the brake actuators.
+057	ID=SR-3.6	Hazard=None	Type=Safety (failure mitigation)	Time=None	Component=Controller	Description=The system shall mitigate failures of the brake actuators.
+058	ID=SR-3.6.1	Hazard=None	Type=Safety (warning)	Time=None	Component=Driver Warnings	Description=The system shall warn the driver in case of controller failures.
+059	ID=SR-3.6.2	Hazard=None	Type=Safety (redundancy)	Time=None	Component=(external system)	Description=The system shall have a redundant braking system.
+062	ID=SG-4	Hazard=H-4	Type=Safety goal	Time=None	Component=None	Description=The system shall prevent unintended acceleration.
+063	ID=SR-4.1	Hazard=None	Type=[Same as SR-1.1]	Time=None	Component=[Same as SR-1.1]	Description=[Reference to SR-1.1 including sub-requirements]
+064	ID=SR-4.2	Hazard=None	Type=[Same as SR-1.2]	Time=None	Component=[Same as SR-1.2]	Description=[Reference to SR-1.2 including sub-requirements]
+065	ID=SR-4.3	Hazard=None	Type=Safety (failure identification)	Time=None	Component=(all components)	Description=The system shall identify controller failures.
+066	ID=SR-4.3.1	Hazard=None	Type=Safety (check)	Time=None	Component=Path Planner	Description=The system shall do a sanity check on the calculated speed profile to avoid unintended acceleration.
+067	ID=SR-4.3.2	Hazard=None	Type=Safety (check)	Time=None	Component=Object Detection	Description=The system shall do a sanity check on the identified objects to avoid unintended acceleration.
+068	ID=SR-4.3.3	Hazard=None	Type=Safety (check)	Time=None	Component=Localization	Description=The system shall do a sanity check on the current location to avoid unintended acceleration.
+069	ID=SR-4.3.3.1	Hazard=None	Type=Safety (check)	Time=None	Component=Localization	Description=The system shall check whether a change in location is attainable at the current speed.
+070	ID=SR-4.3.3.2	Hazard=None	Type=Safety (check)	Time=None	Component=Localization	Description=The system shall check whether a change in location is attainable with the current trajectory.
+071	ID=SR-4.3.4	Hazard=None	Type=Safety (check)	Time=None	Component=Sensor Fusion	Description=The system shall do a sanity check on the fused sensor data to avoid unintended acceleration.
+073	ID=SR-4.4	Hazard=None	Type=Safety (failure mitigation)	Time=None	Component=(all components)	Description=The system shall mitigate controller failures.
+074	ID=SR-4.4.1	Hazard=None	Type=Safety (warning)	Time=None	Component=Driver Warnings	Description=The system shall warn the driver in case of controller failures.
+076	ID=SR-4.5	Hazard=None	Type=Safety (failure identification)	Time=None	Component=Controller	Description=The system shall identify failures of the motor control.
+078	ID=SR-4.6	Hazard=None	Type=Safety (failure mitigation)	Time=None	Component=Controller	Description=The system shall mitigate failures of the motor control.
+082	ID=SG-5	Hazard=H-5	Type=Safety goal	Time=None	Component=None	Description=The system shall prevent unintended leaving of the road.
+083	ID=SR-5.1	Hazard=None	Type=Safety (failure identification)	Time=None	Component=Sensor Fusion	Description=The system shall identify sensor failures.
+084	ID=SR-5.1.1	Hazard=None	Type=Safety (monitoring)	Time=None	Component=Image Grabber	Description=The system shall identify when the camera has failed.
+086	ID=SR-5.2	Hazard=None	Type=Safety (failure mitigation)	Time=None	Component=Sensor Fusion	Description=The system shall mitigate sensor failures.
+087	ID=SR-5.2.1	Hazard=None	Type=Safety (redundancy)	Time=None	Component=Image Grabber	Description=The system shall have more than one sensor used to identify the road lane.
+088	ID=SR-5.2.2	Hazard=None	Type=Safety (warning)	Time=None	Component=Driver Warnings	Description=The system shall inform the driver about sensor failures.
+089	ID=SR-5.3.3	Hazard=None	Type=Safety (monitoring)	Time=None	Component=Path Planner	Description=The system shall detect when the road lane cannot be identified unambiguously.
+091	ID=SR-5.3	Hazard=None	Type=Safety (failure identification)	Time=None	Component=(all components)	Description=The system shall identify controller failures.
+092	ID=SR-5.3.1	Hazard=None	Type=Safety (monitoring)	Time=None	Component=Controller	Description=The system shall detect when the steering commands are not on time (tbd).
+093	ID=SR-5.3.2	Hazard=None	Type=Safety (monitoring)	Time=None	Component=Controller	Description=The system shall detect when the steering commands will bring the vehicle outside of road boundaries.
+095	ID=SR-5.4	Hazard=None	Type=Safety (failure mitigation)	Time=None	Component=(all components)	Description=The system shall mitigate controller failures.
+096	ID=SR-5.4.1	Hazard=None	Type=Safety (check)	Time=None	Component=Path Planner	Description=The system shall do a sanity check on the calculated speed profile to avoid leaving the road unintentionally.
+098	ID=SR-5.5	Hazard=None	Type=Safety (failure identification)	Time=None	Component=Controller	Description=The system shall identify failures of the steering actuators.
+100	ID=SR-5.6	Hazard=None	Type=Safety (failure mitigation)	Time=None	Component=Controller	Description=The system shall mitigate failures of the steering actuators.
+102	ID=SR-5.7	Hazard=None	Type=Safety (failure identification)	Time=None	Component=Controller	Description=The system shall identify failures of the motor control.
+104	ID=SR-5.8	Hazard=None	Type=Safety (failure mitigation)	Time=None	Component=Controller	Description=The system shall mitigate failures of the motor control.
+106	ID=SR-5.9	Hazard=None	Type=Safety (failure identification)	Time=None	Component=Controller	Description=The system shall identify failures of the brake actuators.
+108	ID=SR-5.10	Hazard=None	Type=Safety (failure mitigation)	Time=None	Component=Controller	Description=The system shall mitigate failures of the brake actuators.
+112	ID=FR-6	Hazard=None	Type=Functional	Time=None	Component=None	Description=The system shall drive through a pre-determined set of way points.
+113	ID=FR-6.1	Hazard=None	Type=Functional	Time=None	Component=Path Planner	Description=The system shall define a trajectory through a set of way points.
+114	ID=FR-6.2	Hazard=None	Type=Functional	Time=None	Component=Path Planner	Description=The system shall update the trajectory whenever the way points change or the vehicle has left the trajectory.
+115	ID=FR-6.3	Hazard=None	Type=Functional	Time=None	Component=Path Planner	Description=The system shall follow the defined trajectory.
+116	ID=FR-6.4	Hazard=None	Type=Functional	Time=None	Component=Path Planner	Description=The system shall translate the trajectory into vehicle commands.
+117	ID=FR-6.4.1	Hazard=None	Type=Timing	Time=every 15 ms	Component=(skipped at this point)	Description=The system shall provide longitudinal control value updates every 15 ms (tbc).
+118	ID=FR-6.4.2	Hazard=None	Type=Timing	Time=every 5 ms	Component=(skipped at this point)	Description=The system shall provide lateral control value updates every 5 ms (tbc).
+119	ID=FR-6.5	Hazard=None	Type=Functional	Time=None	Component=Path Planner	Description=The system shall calculate the correct steering angle to follow the trajectory.
+120	ID=FR-6.6	Hazard=None	Type=Functional	Time=None	Component=Path Planner	Description=The system shall calculate a speed profile to follow the trajectory.
+121	ID=FR-6.7	Hazard=None	Type=Functional	Time=None	Component=Controller	Description=The system shall control the vehicle using the calculated vehicle commands.
+122	ID=FR-6.8	Hazard=None	Type=Functional	Time=None	Component=Path Planner	Description=The system shall follow the pre-defined speed profile when moving in the defined trajectory.
+123	ID=FR-6.9	Hazard=None	Type=Functional	Time=None	Component=Path Planner	Description=The system shall be aware of key vehicle information such as steer/wheel/brake/acceleration status at any point in time.
+124	ID=FR-6.10	Hazard=None	Type=Functional	Time=None	Component=Localization	Description=The system shall be aware of its current position at all times.
+127	ID=FR-7	Hazard=None	Type=Functional	Time=None	Component=None	Description=The system shall perform a braking maneuver to avoid collisions with obstacles.
+128	ID=FR-7.1	Hazard=None	Type=Timing	Time=]0,50] ms	Component=(skipped at this point)	Description=The system shall start braking within 50 ms (tbc) after the obstacle is detected within a dangerous zone (tbd).
+129	ID=FR-7.2	Hazard=None	Type=Functional	Time=None	Component=Object Detection	Description=The system shall be able to detect obstacles.
+130	ID=FR-7.2.1	Hazard=None	Type=Functional	Time=None	Component=Object Detection	Description=The system shall detect all obstacles.
+131	ID=FR-7.2.2	Hazard=None	Type=Functional	Time=None	Component=Object Detection	Description=The system shall be able to distinguish vulnerable road users and other objects.
+132	ID=FR-7.2.3	Hazard=None	Type=Functional	Time=None	Component=Object Detection	Description=The system shall be able to identify pedestrians, cars, trucks, busses, motorbikes, bicycles, riders, traffic lights, traffic signs.
+133	ID=FR-7.2.4	Hazard=None	Type=Functional	Time=None	Component=Sensor Fusion	Description=The system shall be able to determine the distance between the vehicle and the objects on or close to the trajectory.
+134	ID=FR-7.2.5	Hazard=None	Type=Timing	Time=]0,350] ms	Component=(skipped at this point)	Description=The system shall detect obstacles in time, i.e. within 350 ms (tbc).
+137	ID=FR-8	Hazard=None	Type=Functional	Time=None	Component=None	Description=The system shall perform an avoidance maneuver (i.e., a lane change) to avoid collisions with obstacles, if safe.
+138	ID=FR-8.1	Hazard=None	Type=Functional	Time=None	Component=Lane Detection	Description=The system shall detect road boundaries and the shape of each lane.
+139	ID=FR-8.2	Hazard=None	Type=Functional	Time=None	Component=Sensor Fusion, Path Planner	Description=The system shall detect other vehicles or obstacles on adjacent lane.
+140	ID=FR-8.3	Hazard=None	Type=Timing	Time=]0,100] ms	Component=(skipped at this point)	Description=The system shall start switch road lanes within 100 ms (tbc) after an obstacle is detected within a dangerous zone (tbd).
+141	ID=FR-8.4	Hazard=None	Type=Timing	Time=]0,50] ms	Component=(skipped at this point)	Description=The system shall ensure that steering commands are provided within 50 ms (tbc).

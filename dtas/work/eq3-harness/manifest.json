@@ -1,0 +1,29 @@
+{
+  "study": "dTAS EQ3-A",
+  "java_target": "1.8",
+  "source_artifacts": {
+    "harness": {
+      "path": "dtas/work/eq3-harness/DTASEQ3Harness.java",
+      "sha256": "c84f3652738de5b96fdb7dd47a6ed37e648824f77ba8830429c17e51c6d8692f"
+    },
+    "pair_shim": {
+      "path": "dtas/work/eq3-harness/shim-src/javafx/util/Pair.java",
+      "sha256": "d08fcb8c575ea64ad5e170c490bbcbcdd752bc543836d19df503f9320a7220b0"
+    }
+  },
+  "compiled_artifacts": {
+    "harness_class": {
+      "path": "dtas/work/eq3-harness/DTASEQ3Harness.class",
+      "sha256": "020145faf4539f45756a49b20b3c0a9bde652d3a88a6ccdf4c06139ff6f6677f"
+    },
+    "pair_class": {
+      "path": "dtas/work/eq3-harness/shim-bin/javafx/util/Pair.class",
+      "sha256": "d28171566376b4b756dfbdd43b5a6af7e1ec1b40b3141b9ec6378ba71c37ba2f"
+    }
+  },
+  "execution": {
+    "runs": 30,
+    "cycles_per_run": 20,
+    "runner": "raise2.experiments.run_dtas_eq3"
+  }
+}

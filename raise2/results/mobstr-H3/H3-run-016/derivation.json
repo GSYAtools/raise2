@@ -1,0 +1,52 @@
+{
+  "run_id": "H3-run-016",
+  "concern_id": "H3",
+  "evaluation_target": {
+    "id": "T1",
+    "statement": "Operationally evaluate whether the system prevents unintended braking.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The concern is the hazard of unintended braking, and the stated safety goal is that the system shall prevent unintended braking."
+  },
+  "phenomenon_of_interest": {
+    "id": "P1",
+    "statement": "Braking behaviour of the ego vehicle in the stated urban driving situation, especially whether braking occurs unintentionally in the absence of a visible obstacle or vehicle ahead.",
+    "scope": "Straight ahead drive on a less frequented urban road at 50 km/h, in good weather, with no visible obstacles or vehicles in front of the ego vehicle.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The hazard defines the operational situation and the hazardous event as the vehicle suddenly stopping although no obstacle is in front of the vehicle."
+  },
+  "distinctions": [
+    {
+      "id": "D1",
+      "dimension": "Presence of a relevant obstacle ahead of the ego vehicle",
+      "contrast_a": "An obstacle is present in front of the ego vehicle in the declared operational situation.",
+      "contrast_b": "No obstacle is present in front of the ego vehicle in the declared operational situation.",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "The hazard explicitly contrasts braking with and without an obstacle in front of the vehicle. Collapsing these cases would remove information needed to evaluate whether braking was unintended."
+    }
+  ],
+  "orrs": [
+    {
+      "id": "ORR1",
+      "covers": [
+        "D1"
+      ],
+      "obligation": "An admissible observable representation shall preserve whether a relevant obstacle is present in front of the ego vehicle versus absent, so that braking can be evaluated in relation to obstacle presence.",
+      "distinguishability_criterion": "The representation must make the two states distinguishable: obstacle present ahead versus no obstacle ahead.",
+      "assumptions": []
+    }
+  ],
+  "rr5": {
+    "coverage": true,
+    "consistency": true,
+    "issues": []
+  }
+}

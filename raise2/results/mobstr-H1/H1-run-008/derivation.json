@@ -1,0 +1,86 @@
+{
+  "run_id": "H1-run-008",
+  "concern_id": "H1",
+  "evaluation_target": {
+    "id": "T1",
+    "statement": "Prevent omitting required braking maneuvers.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The safety goal SG-1 explicitly states that the system shall prevent omitting required braking maneuvers, and the hazard describes the hazardous event as failing to stop in time and colliding with a road user or obstacle."
+  },
+  "phenomenon_of_interest": {
+    "id": "P1",
+    "statement": "The vehicle's braking-relevant operational state in obstacle-encounter situations, including whether a braking maneuver is required and whether braking is performed in time to avoid collision.",
+    "scope": "Situations covered by the hazard and functional requirements: driving on a road with obstacles or road users in the vehicle's path or close to its trajectory, where obstacle detection and subsequent braking decision/execution determine collision avoidance.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The concern concerns omission of braking in the presence of obstacles, and the requirements refer to obstacle detection, dangerous zones, and braking maneuvers to avoid collisions."
+  },
+  "distinctions": [
+    {
+      "id": "D1",
+      "dimension": "Braking action occurrence when braking is required",
+      "contrast_a": "A required braking maneuver is initiated/performed.",
+      "contrast_b": "A required braking maneuver is omitted.",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "Collapsing these situations would remove the core information needed to evaluate whether the safety goal is satisfied, since the concern is specifically about omission of required braking maneuvers."
+    },
+    {
+      "id": "D2",
+      "dimension": "Timeliness of braking after obstacle detection in a dangerous zone",
+      "contrast_a": "Braking starts within the required time after the obstacle is detected in the dangerous zone.",
+      "contrast_b": "Braking starts too late to satisfy the timing requirement after obstacle detection in the dangerous zone.",
+      "source": [
+        "requirements",
+        "hazard"
+      ],
+      "rationale": "The functional requirement FR-7.1 states that braking shall start within 50 ms after obstacle detection within a dangerous zone, and the hazard concerns failure to stop in time. Distinguishing timely from untimely braking is necessary to evaluate whether braking avoidance is achieved."
+    }
+  ],
+  "orrs": [
+    {
+      "id": "O1",
+      "covers": [
+        "D1"
+      ],
+      "obligation": "An admissible Observable Representation shall preserve whether, in a relevant obstacle-encounter situation, a braking maneuver that is required is actually initiated/performed or is omitted.",
+      "distinguishability_criterion": "The representation must make the presence of required braking behavior distinguishable from its absence; the two cases may not be represented as the same state.",
+      "assumptions": []
+    },
+    {
+      "id": "O2",
+      "covers": [
+        "D2"
+      ],
+      "obligation": "An admissible Observable Representation shall preserve whether braking begins within the required post-detection interval in dangerous-zone situations, as distinct from braking that begins too late.",
+      "distinguishability_criterion": "The representation must distinguish the class of timely braking-start events from the class of late braking-start events; these classes may not be collapsed into one undifferentiated outcome.",
+      "assumptions": [
+        {
+          "id": "A1",
+          "statement": "The timing obligation is applicable in situations where the obstacle has been detected within a dangerous zone.",
+          "source": [
+            "requirements"
+          ],
+          "revalidation_conditions": [
+            {
+              "id": "R1",
+              "condition": "If the dangerous-zone definition or obstacle-detection criterion is revised or replaced."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rr5": {
+    "coverage": true,
+    "consistency": true,
+    "issues": []
+  }
+}

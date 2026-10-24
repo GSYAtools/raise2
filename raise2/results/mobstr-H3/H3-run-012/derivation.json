@@ -1,0 +1,72 @@
+{
+  "run_id": "H3-run-012",
+  "concern_id": "H3",
+  "evaluation_target": {
+    "id": "T1",
+    "statement": "Evaluate whether the system prevents unintended braking.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The safety goal explicitly states that the system shall prevent unintended braking, and the hazard defines the adverse event as the vehicle suddenly stopping without an obstacle in front."
+  },
+  "phenomenon_of_interest": {
+    "id": "P1",
+    "statement": "Vehicle braking behavior in the operational situation where the ego vehicle drives straight ahead on a less frequented urban road at 50 km/h, with no visible obstacles or vehicles in front and in good weather conditions.",
+    "scope": "States and events of the driving situation described in the hazard, including whether braking occurs unexpectedly in the absence of a relevant forward obstacle.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The hazard specifies the operational situation and the hazardous event that characterizes the phenomenon to be evaluated."
+  },
+  "distinctions": [
+    {
+      "id": "D1",
+      "dimension": "Braking occurrence in the stated operational situation",
+      "contrast_a": "The vehicle brakes or stops unexpectedly while no obstacle is in front of the vehicle",
+      "contrast_b": "The vehicle does not brake unexpectedly in the same situation",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "If these cases were indistinguishable, it would be impossible to evaluate whether unintended braking occurred, which is the core of the safety goal."
+    },
+    {
+      "id": "D2",
+      "dimension": "Presence of a relevant forward obstacle in the stated operational situation",
+      "contrast_a": "An obstacle is present in front of the ego vehicle",
+      "contrast_b": "No obstacle is present in front of the ego vehicle",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "The hazard defines unintended braking by the absence of an obstacle; preserving this distinction is necessary to judge whether braking is intended as collision avoidance or is unintended."
+    }
+  ],
+  "orrs": [
+    {
+      "id": "O1",
+      "covers": [
+        "D1"
+      ],
+      "obligation": "An Observable Representation must preserve whether the vehicle performed an unexpected braking or stopping event in the declared operational situation.",
+      "distinguishability_criterion": "The representation must allow one to distinguish unexpected braking/stopping from no unexpected braking/stopping within the same operational situation.",
+      "assumptions": []
+    },
+    {
+      "id": "O2",
+      "covers": [
+        "D2"
+      ],
+      "obligation": "An Observable Representation must preserve whether a relevant obstacle is present in front of the ego vehicle in the declared operational situation.",
+      "distinguishability_criterion": "The representation must allow one to distinguish presence of a forward obstacle from absence of a forward obstacle.",
+      "assumptions": []
+    }
+  ],
+  "rr5": {
+    "coverage": true,
+    "consistency": true,
+    "issues": []
+  }
+}

@@ -1,0 +1,56 @@
+MobSTr EQ2 Experimental Design
+
+Research purpose
+
+Evaluate whether RAISE2 Representation Revalidation can localise the
+representational impact of controlled lifecycle changes and distinguish
+NONE, REVALIDATE, and REDERIVE actions.
+
+Frozen baseline
+
+mobstr-H1-revalidation-baseline-v1
+
+Controlled lifecycle changes
+
+delta-01 through delta-06.
+
+Ground-truth distribution
+
+NONE:       1 scenario
+REVALIDATE: 3 scenarios
+REDERIVE:   2 scenarios
+
+Independent executions
+
+10 executions per lifecycle-change scenario.
+
+Total planned executions
+
+60.
+
+Executor
+
+gpt-5.4-mini-2026-03-17
+
+The executor receives only the frozen RAISE2 baseline, the lifecycle change,
+the frozen RV1-RV5 protocol, and the structured-output contract.
+
+The executor does not receive the EQ2 ground truth.
+
+Evaluation
+
+The resulting lifecycle decision is compared deterministically with the
+frozen scenario ground truth.
+
+For REVALIDATE scenarios, the affected ORR set is evaluated against the
+expected affected ORR set.
+
+For REDERIVE scenarios, the returned RR step is evaluated against the
+expected return point.
+
+The number of executions and ground truth were fixed before inspecting
+experimental results.
+
+Invalid executions remain part of the experimental record and are not
+automatically retried.
+

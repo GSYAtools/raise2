@@ -1,0 +1,16 @@
+{
+  "run_id": "H3-run-025",
+  "concern_id": "H3",
+  "classification": "ALIGNED",
+  "rationale": "P identifies whether unintended braking occurs, which is the vehicle behaviour that must be characterised to evaluate T and safety goal SG-3. Its declared scope is directly supported by H-3's operational situation and hazardous event. Braking behaviour itself is therefore legitimately included, while sensing, computation, communication, failure mitigation, and mechanism-specific timing requirements are not incorporated into P.",
+  "determining_elements": [
+    "The focus on the vehicle's braking behaviour, specifically whether braking occurs unintentionally, directly addresses the evaluation target.",
+    "The absence of visible obstacles or vehicles ahead is supported by H-3 as the operational context, rather than introduced as an observation mechanism.",
+    "The declared scope—straight-ahead driving on a less frequented urban road at 50 km/h in good weather—matches H-3's operational situation.",
+    "P remains focused on the braking occurrence without expanding to controller responses, sensor processing, warnings, redundancy, or detection and braking-response deadlines."
+  ],
+  "sources": [
+    "hazard",
+    "requirements"
+  ]
+}

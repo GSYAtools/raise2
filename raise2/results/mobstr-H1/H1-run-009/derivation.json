@@ -1,0 +1,85 @@
+{
+  "run_id": "H1-run-009",
+  "concern_id": "H1",
+  "evaluation_target": {
+    "id": "T1",
+    "statement": "The system shall prevent omitting required braking maneuvers.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The hazard describes a collision occurring because braking is omitted, and SG-1 explicitly states that the system shall prevent omitting required braking maneuvers."
+  },
+  "phenomenon_of_interest": {
+    "id": "P1",
+    "statement": "The vehicle’s braking-relevant operational state in the hazardous driving situation, including whether a braking maneuver is required and whether braking is actually initiated in time to avoid collision.",
+    "scope": "Straight ahead driving on a less frequented single-lane road at 50 km/h in good weather, with a pedestrian running across the street 20 m in front of the ego vehicle, and the resulting braking/avoidance response of the vehicle in that situation.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "Evaluating omission of required braking requires characterising the driving situation in which braking should occur and the vehicle response that follows obstacle detection."
+  },
+  "distinctions": [
+    {
+      "id": "D1",
+      "dimension": "braking response status",
+      "contrast_a": "A required braking maneuver is initiated",
+      "contrast_b": "A required braking maneuver is omitted",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "The hazard and SG-1 distinguish successful execution of required braking from omission; collapsing them would remove the information needed to judge whether the safety goal is satisfied."
+    },
+    {
+      "id": "D2",
+      "dimension": "timely braking initiation after obstacle detection",
+      "contrast_a": "Braking starts within the required time after the obstacle is detected",
+      "contrast_b": "Braking starts too late or does not start after obstacle detection",
+      "source": [
+        "requirements"
+      ],
+      "rationale": "FR-7.1 and FR-7.2.5 state that braking must start within a bounded time after obstacle detection; collapsing timely versus untimely initiation would remove information needed to evaluate whether the braking maneuver is started in time."
+    }
+  ],
+  "orrs": [
+    {
+      "id": "ORR1",
+      "covers": [
+        "D1"
+      ],
+      "obligation": "An admissible Observable Representation shall preserve whether a required braking maneuver was initiated or omitted in the declared hazardous driving situation.",
+      "distinguishability_criterion": "The representation must allow the two states 'braking initiated' and 'braking omitted' to remain distinguishable.",
+      "assumptions": []
+    },
+    {
+      "id": "ORR2",
+      "covers": [
+        "D2"
+      ],
+      "obligation": "An admissible Observable Representation shall preserve whether braking initiation occurred within the required time after obstacle detection versus after that time or not at all.",
+      "distinguishability_criterion": "The representation must allow timely braking initiation to be distinguished from late or absent braking initiation.",
+      "assumptions": [
+        {
+          "id": "A1",
+          "statement": "Obstacle detection is available as the reference event from which braking initiation timing is judged.",
+          "source": [
+            "requirements"
+          ],
+          "revalidation_conditions": [
+            {
+              "id": "R1",
+              "condition": "If the braking-relevant evaluation is changed so that timing is judged from a different triggering event, the assumption must be reassessed."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rr5": {
+    "coverage": true,
+    "consistency": true,
+    "issues": []
+  }
+}

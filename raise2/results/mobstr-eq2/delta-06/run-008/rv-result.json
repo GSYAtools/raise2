@@ -1,0 +1,9 @@
+{
+  "run_id": "run-008",
+  "change_id": "delta-06",
+  "decision": "REDERIVE",
+  "affected_orrs": [],
+  "return_point": "RR1",
+  "triggered_conditions": [],
+  "rationale": "The change modifies the Evaluation Target by expanding the task from determining whether braking is required to determining whether braking or an evasive lane-change maneuver is required to avoid collision. This alters T_H1 itself, so the existing representational basis cannot be reused as-is and derivation must restart at RR1. No specific existing ORR is merely revalidated because the target change is upstream of the current ORR set."
+}

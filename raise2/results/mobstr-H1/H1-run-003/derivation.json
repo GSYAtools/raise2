@@ -1,0 +1,86 @@
+{
+  "run_id": "H1-run-003",
+  "concern_id": "H1",
+  "evaluation_target": {
+    "id": "T1",
+    "statement": "Prevent omitting required braking maneuvers.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The safety goal SG-1 explicitly states that the system shall prevent omitting required braking maneuvers, and the hazard describes the hazardous event as failure to stop in time and collide."
+  },
+  "phenomenon_of_interest": {
+    "id": "P1",
+    "statement": "The vehicle’s braking-relevant operational state in situations where a braking maneuver is required to avoid a collision with a road user or static obstacle.",
+    "scope": "Driving situations covered by the supplied hazard and braking-related requirements, including obstacle/collision-avoidance scenarios in which the system must decide whether braking is required and execute it in time.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "Evaluating omission of required braking requires characterising whether a braking-necessary situation exists and whether the vehicle enters the corresponding braking-relevant state."
+  },
+  "distinctions": [
+    {
+      "id": "D1",
+      "dimension": "Braking necessity",
+      "contrast_a": "A situation in which braking is required to avoid a collision with a road user or static obstacle.",
+      "contrast_b": "A situation in which braking is not required for collision avoidance.",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "If these situations were indistinguishable, the representation could not support evaluation of whether a required braking maneuver was omitted."
+    },
+    {
+      "id": "D2",
+      "dimension": "Collision-avoidance urgency",
+      "contrast_a": "A situation in which the obstacle is detected early enough that braking can still be started in time to avoid collision.",
+      "contrast_b": "A situation in which the obstacle is detected too late for braking to prevent collision.",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "The hazard and timing requirements indicate that evaluation depends on whether braking is started soon enough after obstacle detection; collapsing timely and untimely situations would remove information relevant to omission of required braking."
+    }
+  ],
+  "orrs": [
+    {
+      "id": "O1",
+      "covers": [
+        "D1"
+      ],
+      "obligation": "An admissible Observable Representation shall preserve whether the operational situation is one in which braking is required to avoid collision versus one in which braking is not required.",
+      "distinguishability_criterion": "The representation shall allow the two braking-necessity classes to remain distinguishable as distinct operational states.",
+      "assumptions": []
+    },
+    {
+      "id": "O2",
+      "covers": [
+        "D2"
+      ],
+      "obligation": "An admissible Observable Representation shall preserve whether obstacle detection occurs early enough to support braking in time versus too late to support collision avoidance.",
+      "distinguishability_criterion": "The representation shall allow timely and untimely braking-opportunity classes to remain distinguishable as distinct operational states.",
+      "assumptions": [
+        {
+          "id": "A1",
+          "statement": "Obstacle detection is available as the event basis for assessing braking timeliness.",
+          "source": [
+            "requirements"
+          ],
+          "revalidation_conditions": [
+            {
+              "id": "R1",
+              "condition": "If the obstacle-detection timing requirement or the obstacle-detection mechanism changes in a way that alters what counts as detection for braking assessment."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rr5": {
+    "coverage": true,
+    "consistency": true,
+    "issues": []
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "run_id": "run-002",
+  "change_id": "delta-01",
+  "decision": "NONE",
+  "affected_orrs": [],
+  "return_point": null,
+  "triggered_conditions": [],
+  "rationale": "The change is limited to driver-warning presentation (a new visual layout and notification presentation). The supplied change explicitly states that obstacle information, object category information, ego-object spatial information, the Phenomenon of Interest, and the Evaluation Target are unchanged. The baseline ORRs depend on obstacle presence, object category, or braking-relevant spatial information, not on warning presentation. Therefore the change does not intersect the representational basis of H1 and requires no revalidation or rederivation."
+}

@@ -1,0 +1,16 @@
+{
+  "run_id": "H3-run-011",
+  "concern_id": "H3",
+  "classification": "ALIGNED",
+  "rationale": "P identifies vehicle braking behavior in the obstacle-free situation specified by H-3, which must be characterised to evaluate the target of preventing unintended braking in SG-3. Braking behavior is itself the subject of evaluation, not merely a control mechanism affecting another phenomenon. The declared scope matches the hazard's operational situation, and P does not expand into sensing, computation, communication, failure mitigation, or mechanism timing.",
+  "determining_elements": [
+    "“Vehicle braking behavior” identifies the system behavior directly required by the evaluation target.",
+    "“Whether braking occurs without a forward obstacle present” captures the relationship central to H-3's hazardous event.",
+    "The scope specifies straight-ahead driving on a less frequented urban road at 50 km/h, in good weather, without visible obstacles or vehicles ahead, matching H-3.",
+    "P introduces no observation or control mechanisms and no additional timing constraints."
+  ],
+  "sources": [
+    "hazard",
+    "requirements"
+  ]
+}

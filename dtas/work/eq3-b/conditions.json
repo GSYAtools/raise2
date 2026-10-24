@@ -1,0 +1,37 @@
+{
+  "study": "dTAS EQ3-B",
+  "independent_variable": "MonitorMinFailureDelta",
+  "controlled_variables": {
+    "MonitorFailureChange": 0.005
+  },
+  "conditions": [
+    {
+      "condition_id": "mfd-0005",
+      "min_failure_delta": 0.005,
+      "status": "original_baseline"
+    },
+    {
+      "condition_id": "mfd-0010",
+      "min_failure_delta": 0.01,
+      "status": "controlled_degradation"
+    },
+    {
+      "condition_id": "mfd-0020",
+      "min_failure_delta": 0.02,
+      "status": "controlled_degradation"
+    },
+    {
+      "condition_id": "mfd-0040",
+      "min_failure_delta": 0.04,
+      "status": "controlled_degradation"
+    }
+  ],
+  "runs_per_condition": 10,
+  "cycles_per_run": 20,
+  "total_condition_runs": 40,
+  "baseline_reuse": {
+    "condition_id": "mfd-0005",
+    "source": "EQ3-A runs 001-010",
+    "new_executions_required": 0
+  }
+}

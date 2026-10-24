@@ -1,0 +1,28 @@
+Development summary after H2 and H5
+
+Main refinement:
+A requirement relevant to an evaluative concern does not automatically define
+a Concern-Relevant Distinction.
+
+Refined CP3 -- Dimension admissibility:
+Admit an evaluation dimension only when:
+(1) the contrasted situations are states of the Phenomenon of Interest
+    established in RR2; and
+(2) variation along that dimension is supported by visible engineering
+    artefacts as potentially changing the judgement expressed by C.
+Requirements constraining observation, computation, communication, or control
+mechanisms do not by themselves establish CRDs of P.
+
+Refined CP12 -- Temporal scope:
+A temporal contrast is admissible only when the timed property belongs to P
+and its temporal evolution is required by C. Timing constraints on mechanisms
+used to observe, compute, communicate, or control P are instead treated as
+dependencies, assumptions, revalidation conditions, or preservation threats
+unless the source establishes the timed behaviour itself as part of P.
+
+Reference interpretation:
+Downstream evidence is classified as:
+(a) phenomenon-level distinction evidence;
+(b) preservation/dependency threat;
+(c) execution/control failure;
+before matching against derived CRDs.

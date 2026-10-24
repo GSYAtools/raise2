@@ -1,0 +1,15 @@
+{
+  "run_id": "H3-run-010",
+  "concern_id": "H3",
+  "classification": "ALIGNED",
+  "rationale": "P identifies the braking behaviour that must be characterised to evaluate prevention of unintended braking under SG-3. Its operational scope and sudden-stop event are explicitly supported by H-3. Braking behaviour is itself the subject of evaluation, rather than merely a control mechanism affecting another phenomenon. The sudden-stop aspect belongs to the hazardous event; P does not import detection or braking-response deadlines, sensing mechanisms, computation, communication, or failure-mitigation behaviour.",
+  "determining_elements": [
+    "The vehicle's braking behaviour, including whether braking occurs without an obstacle in front of the ego vehicle.",
+    "The declared scope of straight-ahead driving on a less frequented urban road at 50 km/h in good weather, with no visible obstacles or vehicles ahead, matches H-3's operational situation.",
+    "The vehicle suddenly stopping although no obstacle is ahead directly corresponds to H-3's hazardous event and supports inclusion of that temporal behaviour."
+  ],
+  "sources": [
+    "hazard",
+    "requirements"
+  ]
+}

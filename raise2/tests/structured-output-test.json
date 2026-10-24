@@ -1,0 +1,63 @@
+{
+  "run_id": "run-test-1",
+  "concern_id": "concern-test-1",
+  "evaluation_target": {
+    "id": "ET-1",
+    "statement": "The service shall remain operationally available to authorised users.",
+    "source": [
+      "REQ-TEST-1"
+    ],
+    "rationale": "This is the requirement statement to be evaluated."
+  },
+  "phenomenon_of_interest": {
+    "id": "POI-1",
+    "statement": "Operational availability of the service to authorised users over time.",
+    "scope": "Service operation under normal and degraded conditions relevant to availability.",
+    "source": [
+      "REQ-TEST-1"
+    ],
+    "rationale": "The requirement concerns continued availability to a specific user class."
+  },
+  "distinctions": [
+    {
+      "id": "D-1",
+      "dimension": "user access scope",
+      "contrast_a": "authorised users can access the service",
+      "contrast_b": "unauthorised users cannot access the service",
+      "source": [
+        "REQ-TEST-1"
+      ],
+      "rationale": "Availability is qualified by authorisation, so access scope is the relevant distinction."
+    }
+  ],
+  "orrs": [
+    {
+      "id": "ORR-1",
+      "covers": [
+        "D-1"
+      ],
+      "obligation": "Specify measurable criteria for service availability as experienced by authorised users versus lack of access for unauthorised users.",
+      "distinguishability_criterion": "An operational measure can separate successful service access by authorised users from denied access by unauthorised users.",
+      "assumptions": [
+        {
+          "id": "A-1",
+          "statement": "Authorisation status can be determined by the service's access-control mechanism.",
+          "source": [
+            "REQ-TEST-1"
+          ],
+          "revalidation_conditions": [
+            {
+              "id": "RC-1",
+              "condition": "Revalidate if the access-control model or authorisation mechanism changes."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rr5": {
+    "coverage": true,
+    "consistency": true,
+    "issues": []
+  }
+}

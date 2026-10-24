@@ -1,0 +1,9 @@
+{
+  "run_id": "run-004",
+  "change_id": "delta-06",
+  "decision": "REDERIVE",
+  "affected_orrs": [],
+  "return_point": "RR1",
+  "triggered_conditions": [],
+  "rationale": "The change alters the Evaluation Target: the original target was limited to whether braking is required to avoid collision, but it now includes either braking or an evasive lane-change maneuver. This changes the representational basis at the target level, so the existing derivation cannot be reused as-is. Per the protocol, evaluation-target changes require REDERIVE starting again at RR1. No existing ORRs are directly revalidated under this change."
+}

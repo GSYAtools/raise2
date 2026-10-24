@@ -1,0 +1,15 @@
+{
+  "run_id": "H1-run-022",
+  "concern_id": "H1",
+  "classification": "ALIGNED",
+  "rationale": "P characterises whether the required braking maneuver is performed or omitted, directly addressing T and SG-1. FR-7 establishes braking itself as required system behaviour, so including that response is appropriate. H-1 establishes both the driving situation and the need to stop in time to avoid collision, supporting P's temporal scope. P does not incorporate sensing, computation, communication, or internal control mechanisms merely because they influence braking.",
+  "determining_elements": [
+    "The presence or absence of the required braking maneuver directly corresponds to the omission-prevention target.",
+    "The straight-ahead, single-lane-road scenario at 50 km/h in good weather, with a pedestrian crossing 20 m ahead, follows H-1's operational situation.",
+    "Including whether braking is initiated and executed in time to avoid collision characterises the required response itself, supported by H-1's hazardous event and FR-7, rather than importing timing constraints on observation mechanisms."
+  ],
+  "sources": [
+    "hazard",
+    "requirements"
+  ]
+}

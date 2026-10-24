@@ -1,0 +1,93 @@
+{
+  "run_id": "H1-run-004",
+  "concern_id": "H1",
+  "evaluation_target": {
+    "id": "T1",
+    "statement": "Prevent omission of required braking maneuvers in the hazardous braking scenario.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The safety goal explicitly requires preventing omission of required braking maneuvers, and the hazard describes the consequence of failing to brake in time to avoid collision in the stated operational situation."
+  },
+  "phenomenon_of_interest": {
+    "id": "P1",
+    "statement": "The system’s braking-relevant perception and control state in the hazardous driving situation, including whether an obstacle is detected in time and whether braking is commanded to avoid collision.",
+    "scope": "Straight ahead driving on a less frequented single-lane road at 50 km/h in good weather with a pedestrian running across the street 20 m ahead, where the vehicle must react to an obstacle/road user or static obstacle on or near the trajectory.",
+    "source": [
+      "hazard",
+      "requirements",
+      "architecture"
+    ],
+    "rationale": "Evaluating omission of braking maneuvers requires characterising the situation in which an obstacle appears in the vehicle’s path and the system must decide and command braking; the artefacts define this scenario and the related obstacle detection, distance, timing, and braking requirements."
+  },
+  "distinctions": [
+    {
+      "id": "D1",
+      "dimension": "Obstacle detection outcome within the dangerous situation",
+      "contrast_a": "An obstacle/road user on or near the trajectory is detected in time for braking to be considered and commanded.",
+      "contrast_b": "The obstacle/road user is not detected, or is detected too late to support braking.",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "The hazard and FR-7/FR-7.1/FR-7.2 require evaluation of whether detection occurs in time to start braking; collapsing timely detection with missed/late detection would remove information needed to judge omission of braking."
+    },
+    {
+      "id": "D2",
+      "dimension": "Braking maneuver initiation",
+      "contrast_a": "Braking is initiated after obstacle detection within the relevant scenario.",
+      "contrast_b": "Braking is not initiated after obstacle detection, resulting in omission of the required braking maneuver.",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "SG-1 and FR-7 make braking itself the evaluated behaviour; collapsing initiated braking with omitted braking would eliminate the very information needed to evaluate the safety goal."
+    },
+    {
+      "id": "D3",
+      "dimension": "Obstacle relevance to the trajectory",
+      "contrast_a": "The detected obstacle is on or close to the vehicle trajectory and therefore relevant to collision avoidance.",
+      "contrast_b": "The detected object is not on or close to the trajectory and does not require braking for collision avoidance.",
+      "source": [
+        "requirements",
+        "architecture"
+      ],
+      "rationale": "FR-7.2.4 and the path-planning inputs reference objects on or close to the trajectory; distinguishing trajectory-relevant from irrelevant objects is necessary to decide whether braking is required."
+    }
+  ],
+  "orrs": [
+    {
+      "id": "O1",
+      "covers": [
+        "D1"
+      ],
+      "obligation": "An admissible Observable Representation shall preserve whether an obstacle/road user in the declared hazardous situation is detected in time for braking-relevant action to be assessed.",
+      "distinguishability_criterion": "The representation must distinguish timely detection from missed or late detection for the same hazardous situation.",
+      "assumptions": []
+    },
+    {
+      "id": "O2",
+      "covers": [
+        "D2"
+      ],
+      "obligation": "An admissible Observable Representation shall preserve whether braking is initiated or omitted in response to the detected hazardous situation.",
+      "distinguishability_criterion": "The representation must distinguish braking initiation from non-initiation/omission.",
+      "assumptions": []
+    },
+    {
+      "id": "O3",
+      "covers": [
+        "D3"
+      ],
+      "obligation": "An admissible Observable Representation shall preserve whether the perceived object is relevant to the vehicle trajectory for collision avoidance decisions.",
+      "distinguishability_criterion": "The representation must distinguish trajectory-relevant objects from non-relevant objects.",
+      "assumptions": []
+    }
+  ],
+  "rr5": {
+    "coverage": true,
+    "consistency": true,
+    "issues": []
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "run_id": "H3-run-015",
+  "concern_id": "H3",
+  "evaluation_target": {
+    "id": "T1",
+    "statement": "Prevent unintended braking.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The safety goal SG-3 explicitly states that the system shall prevent unintended braking, and the hazard describes the hazardous event as the vehicle suddenly stopping without an obstacle in front."
+  },
+  "phenomenon_of_interest": {
+    "id": "P1",
+    "statement": "The vehicle's braking behavior in the operating situation where unintended braking may occur.",
+    "scope": "Straight ahead driving on a less frequented urban road at 50 km/h, in good weather, with no visible obstacles or vehicles in front of the ego vehicle, including whether the vehicle continues normally or suddenly stops without an obstacle present.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The hazard defines the operational situation in which unintended braking is relevant and the hazardous event that must be evaluated."
+  },
+  "distinctions": [
+    {
+      "id": "D1",
+      "dimension": "Braking outcome",
+      "contrast_a": "The vehicle continues driving normally without an unintended stop.",
+      "contrast_b": "The vehicle suddenly stops although no obstacle is in front of the vehicle.",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "These are the two operationally relevant outcomes named by the hazard and safety goal. Collapsing them would remove the ability to evaluate whether unintended braking has occurred."
+    }
+  ],
+  "orrs": [
+    {
+      "id": "O1",
+      "covers": [
+        "D1"
+      ],
+      "obligation": "An admissible Observable Representation shall preserve whether the vehicle is continuing normally or has suddenly stopped in the no-obstacle operating situation.",
+      "distinguishability_criterion": "The representation must distinguish normal continued motion from a sudden stop in the declared operating situation.",
+      "assumptions": []
+    }
+  ],
+  "rr5": {
+    "coverage": true,
+    "consistency": true,
+    "issues": []
+  }
+}

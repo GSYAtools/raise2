@@ -1,0 +1,39 @@
+ID	OriginType	FailureClass	Name
+305	Output	Failure	H-1 Omitted braking maneuver
+306	Internal		Controller.Erroneous speed commands
+307	Internal		Path Panner.Internal failure leading to erroneous control commands
+308	Internal		CAN Bus.Erroneous CAN message
+309	Internal		Localization.Internal failure leading to an erroneously calculated vehicle position
+310	Internal		GPS Grabber.Erroneous position information provided by the GPS grabber
+311	Internal		Lidar Grabber.Erroneous point cloud provided by the lidar grabber (false positive)
+312	Internal		Lidar Grabber.No point cloud provided by the lidar grabber
+313	Internal		Lidar Grabber.No occupancy grid provided by the lidar grabber
+314	Internal		Localization.Delayed calculation of vehicle position data
+315	Internal		CAN Bus.Delay of CAN messages
+316	Internal		GPS Grabber.Stuck-at failure of the GPS grabber
+317	Internal		Lidar Grabber.Erroneous point cloud provided by the lidar grabber (false negative)
+318	Internal		Lidar Grabber.Erroneous occupancy grid provided by the lidar grabber (false negative)
+319	Internal		Image Grabber.Partially erroneous image provided by the image grabber
+320	Internal		Image Grabber.Completely erroneous image provided by the image grabber
+321	Internal		Lane Detection.Incorrect lane detection (false positive)
+322	Internal		Lidar Grabber.Erroneous occupancy grid provided by the lidar grabber (false positive)
+323	Internal		Object Detection.Internal failure leading to wrong positioning of objects
+324	Internal		Image Grabber.Stuck-at failure of the image grabber (still image)
+325	Internal		Image Grabber.Image provided too late by the image grabber (old image)
+326	Internal		Object Detection.Incorrect object detection (false positive)
+327	Internal		Object Detection.Wrong classification of objects
+328	Internal		Lane Detection.Incorrect lane detection (false negative)
+329	Internal		Lane Detection.Internal failure leading to loss of lane detection
+330	Internal		Image Grabber.Internal failure leading to omission of image
+331	Internal		Lidar Grabber.Occupancy grid provided too late by the lidar grabber
+332	Internal		GPS Grabber.No position information provided by the GPS grabber
+333	Internal		CAN Bus.Loss of CAN messages
+334	Internal		Localization.Loss of localization
+335	Internal		Path Panner.Internal failure leading to omission of control commands
+336	Internal		Object Detection.Internal failure leading to loss of object detection
+337	Internal		Object Detection.Incorrect object detection (false negative)
+338	Internal		Controller.Omission of speed commands
+339	Internal		Controller.Delayed speed commands
+340	Internal		Object Detection.Delayed detection of objects
+341	Internal		Lane Detection.Delayed detection of lanes
+342	Internal		Path Panner.Internal failure leading to delayed control commands

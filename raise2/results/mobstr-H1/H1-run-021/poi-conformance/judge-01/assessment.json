@@ -1,0 +1,16 @@
+{
+  "run_id": "H1-run-021",
+  "concern_id": "H1",
+  "classification": "ALIGNED",
+  "rationale": "Evaluating prevention of omitted required braking directly requires characterising whether braking is needed and whether the vehicle initiates it. Braking-response behaviour is therefore the subject of the target, not merely a mechanism affecting its evaluation. The hazard's failure to stop in time and FR-7's collision-avoidance requirement establish timeliness as part of this phenomenon. P does not incorporate sensing, computation, communication, or unrelated control mechanisms.",
+  "determining_elements": [
+    "“Whether braking is required, initiated, or omitted” directly addresses the evaluation target and SG-1, with braking execution supported by FR-7.",
+    "“In time to avoid collision” concerns the braking response itself, supported by H-1's hazardous event and FR-7.1's braking-initiation requirement.",
+    "The scope covers collision-relevant encounters with road users or static obstacles, as described by H-1 and FR-7, and explicitly includes the supplied pedestrian-crossing scenario.",
+    "The phenomenon remains at the vehicle braking-response level rather than extending into obstacle-detection processes, failure monitoring, or internal control implementation."
+  ],
+  "sources": [
+    "hazard",
+    "requirements"
+  ]
+}

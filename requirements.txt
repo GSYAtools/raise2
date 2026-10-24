@@ -1,0 +1,4 @@
+jsonschema>=4.23,<5
+jsonschema>=4.23,<5
+openai>=2,<3
+python-dotenv>=1,<2

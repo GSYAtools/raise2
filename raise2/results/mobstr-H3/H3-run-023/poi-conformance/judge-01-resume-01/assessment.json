@@ -1,0 +1,15 @@
+{
+  "run_id": "H3-run-023",
+  "concern_id": "H3",
+  "classification": "ALIGNED",
+  "rationale": "P characterises the braking behaviour directly required to evaluate SG-3, with obstacle absence grounded in H-3's hazardous event. Its declared operational scope matches H-3. Braking behaviour is itself the subject of evaluation, rather than an ancillary control mechanism. P does not extend to sensing, computation, communication, failure mitigation, or mechanism timing requirements.",
+  "determining_elements": [
+    "\"Braking behaviour of the ego vehicle\" identifies the system behaviour addressed by the target \"Prevent unintended braking.\"",
+    "\"Whether braking occurs when no obstacle is present in front of the vehicle\" is supported by H-3's description of sudden stopping without an obstacle ahead.",
+    "The scope—straight-ahead driving on a less frequented urban road at 50 km/h in good weather, without visible obstacles or vehicles ahead—matches H-3's operational situation."
+  ],
+  "sources": [
+    "hazard",
+    "requirements"
+  ]
+}

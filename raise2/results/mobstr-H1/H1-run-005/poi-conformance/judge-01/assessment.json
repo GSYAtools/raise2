@@ -1,0 +1,16 @@
+{
+  "run_id": "H1-run-005",
+  "concern_id": "H1",
+  "classification": "ALIGNED",
+  "rationale": "T requires evaluating whether braking is performed when required. SG-1 and FR-7 establish collision-avoidance braking itself as the behaviour to characterise, while H-1 supplies the relevant vehicle–obstacle situation and failure outcome. P's inclusion of deciding and executing required braking therefore concerns the target behaviour, not merely mechanisms that influence its evaluation. Its declared scope remains within the hazard and braking functionality without adding sensing, communication, fault-handling, or mechanism-level timing behaviour.",
+  "determining_elements": [
+    "“Must decide and execute braking” identifies the functional braking response whose omission T seeks to prevent, rather than specifying internal decision algorithms or control mechanisms.",
+    "“Obstacles or other road users/obstacles relevant to collision avoidance” is supported by H-1's hazardous event and FR-7's braking requirement.",
+    "The scope includes situations where braking is required to avoid collision, linking the operational context directly to SG-1.",
+    "P does not incorporate sensor processing, component interactions, or their timing constraints into the phenomenon."
+  ],
+  "sources": [
+    "hazard (H-1)",
+    "requirements (SG-1, FR-7)"
+  ]
+}

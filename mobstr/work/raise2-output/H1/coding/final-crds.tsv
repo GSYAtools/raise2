@@ -1,0 +1,4 @@
+CRD_IDEvaluation_DimensionContrast_AContrast_BSourceRationale
+H1-CRD1Obstacle presenceCollision-relevant obstacle presentCollision-relevant obstacle absentH-1;FR-7;FR-7.2;FR-7.2.1Collapsing obstacle presence and absence removes information required to determine whether braking is required.
+H1-CRD2Object categoryVulnerable road userOther objectFR-7.2.2The visible source explicitly requires this category distinction within the obstacle information supporting the braking concern.
+H1-CRD3Obstacle distance relative to braking needDistance condition requires brakingDistance condition does not require brakingH-1;FR-7.1;FR-7.2.4Relative distance can change whether braking is required; no numerical threshold is introduced because the dangerous-zone boundary is tbd and the 20 m value is scenario-specific.

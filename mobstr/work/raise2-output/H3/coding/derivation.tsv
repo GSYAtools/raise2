@@ -1,0 +1,7 @@
+CRD_IDSource_IDPoIEvaluation_DimensionContrast_AContrast_BCollapse_TestRationaleDisposition
+H3-D1H-3;FR-7;FR-7.2;FR-7.2.1P_H3Obstacle presenceBraking-relevant obstacle condition presentBraking-relevant obstacle condition absentTO-ASSESS Candidate
+H3-D2FR-7.2.2P_H3Object categoryVulnerable road userOther objectTO-ASSESSCandidate
+H3-D3FR-7.2.3P_H3Fine-grained object taxonomyPedestrian/car/truck/bus/motorbike/bicycle/rider/traffic-light/traffic-sign categoriesOther enumerated categoriesTO-ASSESSCandidate
+H3-D4H-3;FR-7.1;FR-7.2.4P_H3Obstacle distance relative to braking justificationDistance condition justifies brakingDistance condition does not justify brakingTO-ASSESSCandidate
+H3-D5FR-7.1P_H3Braking-initiation timingBraking initiated within 50 msBraking initiated after 50 msTO-ASSESSCandidate
+H3-D6FR-7.2.5P_H3Object-detection timingObstacle detected within 350 msObstacle detected after 350 msTO-ASSESSCandidate

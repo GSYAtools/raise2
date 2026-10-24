@@ -1,0 +1,52 @@
+{
+  "run_id": "H3-run-029",
+  "concern_id": "H3",
+  "evaluation_target": {
+    "id": "T1",
+    "statement": "Prevent unintended braking",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The hazard defines the undesirable event as the vehicle suddenly stopping without an obstacle ahead, and SG-3 explicitly states that the system shall prevent unintended braking."
+  },
+  "phenomenon_of_interest": {
+    "id": "P1",
+    "statement": "Braking behavior of the ego vehicle in the stated operational situation, including whether braking occurs when no obstacle is present in front of the vehicle",
+    "scope": "Straight ahead drive on a less frequented urban road with 50 km/h, no visible obstacles or vehicles in front of the ego vehicle, and good weather conditions",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The concern is about an unintended stop during the specified driving situation. The phenomenon to be characterized is the vehicle's braking behavior under that operational situation."
+  },
+  "distinctions": [
+    {
+      "id": "D1",
+      "dimension": "Braking occurrence in the absence of a detected obstacle ahead",
+      "contrast_a": "Vehicle does not brake",
+      "contrast_b": "Vehicle brakes or stops unexpectedly although no obstacle is in front of the vehicle",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "Collapsing these cases would lose the core information needed to decide whether unintended braking has occurred, which is directly required to evaluate the safety goal."
+    }
+  ],
+  "orrs": [
+    {
+      "id": "O1",
+      "covers": [
+        "D1"
+      ],
+      "obligation": "An observable representation shall preserve whether the ego vehicle is braking or not braking in the declared no-obstacle driving situation, so that an unintended brake event remains distinguishable from normal non-braking behavior.",
+      "distinguishability_criterion": "The representation must distinguish braking/stopping from non-braking in the stated operational situation.",
+      "assumptions": []
+    }
+  ],
+  "rr5": {
+    "coverage": true,
+    "consistency": true,
+    "issues": []
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "run_id": "H1-run-030",
+  "concern_id": "H1",
+  "evaluation_target": {
+    "id": "T1",
+    "statement": "Prevent omission of required braking maneuvers in the hazardous driving situation.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The safety goal explicitly requires preventing omitted braking maneuvers, and the hazard describes the relevant braking-related failure to avoid in the stated operational situation."
+  },
+  "phenomenon_of_interest": {
+    "id": "P1",
+    "statement": "The vehicle’s braking-maneuver decision and execution state in response to obstacles that may require braking.",
+    "scope": "Operational situations in which the ego vehicle is driving and an obstacle or road user may require a braking maneuver to avoid collision, including obstacle detection, distance-to-obstacle information, and resulting braking command/state relevant to whether braking is omitted.",
+    "source": [
+      "hazard",
+      "requirements",
+      "architecture"
+    ],
+    "rationale": "Evaluating omission of braking requires characterising whether a braking maneuver should occur and whether the system produces it in the obstacle-response context described by the hazard and braking-related requirements."
+  },
+  "distinctions": [
+    {
+      "id": "D1",
+      "dimension": "Braking response vs. no braking response when braking is required",
+      "contrast_a": "A required braking maneuver is commanded/executed in response to the obstacle situation.",
+      "contrast_b": "No braking maneuver is commanded/executed despite the obstacle situation requiring braking.",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "Collapsing these states would remove the information needed to judge whether the system omitted a required braking maneuver."
+    },
+    {
+      "id": "D2",
+      "dimension": "Obstacle present in the relevant driving path vs. no such obstacle present",
+      "contrast_a": "An obstacle or road user is present on or close enough to the trajectory to make braking relevant.",
+      "contrast_b": "No obstacle or road user is present in the relevant driving path, so braking is not required on that basis.",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "Whether braking is required depends on the presence of an obstacle/road user in the relevant path; collapsing these would prevent evaluation of whether a missing brake is an omission or simply an unnecessary action."
+    },
+    {
+      "id": "D3",
+      "dimension": "Obstacle detected in time for braking vs. detected too late or not detected",
+      "contrast_a": "The obstacle is detected with enough time for braking to be started in the required manner.",
+      "contrast_b": "The obstacle is detected too late or not detected, so braking cannot be started in time.",
+      "source": [
+        "requirements"
+      ],
+      "rationale": "The timing requirement and obstacle-detection requirements imply that evaluability of omitted braking depends on distinguishing timely detection from late or absent detection."
+    }
+  ],
+  "orrs": [
+    {
+      "id": "ORR1",
+      "covers": [
+        "D1"
+      ],
+      "obligation": "An admissible Observable Representation shall preserve whether a required braking maneuver is present or absent in the evaluated situation.",
+      "distinguishability_criterion": "The representation must allow the evaluator to distinguish a state with braking command/execution from a state with no braking command/execution.",
+      "assumptions": []
+    },
+    {
+      "id": "ORR2",
+      "covers": [
+        "D2",
+        "D3"
+      ],
+      "obligation": "An admissible Observable Representation shall preserve whether the situation contains a relevant obstacle/road user that makes braking necessary and whether that obstacle was detected in time to support braking.",
+      "distinguishability_criterion": "The representation must distinguish obstacle-present situations from obstacle-absent situations, and within obstacle-present situations it must distinguish timely detection from late or absent detection.",
+      "assumptions": [
+        {
+          "id": "A1",
+          "statement": "Obstacle presence and detection timing are relevant indicators for determining whether braking was required and whether omission occurred in the evaluated hazard scenario.",
+          "source": [
+            "hazard",
+            "requirements"
+          ],
+          "revalidation_conditions": [
+            {
+              "id": "RC1",
+              "condition": "If the hazard definition changes to include different trigger conditions for required braking."
+            },
+            {
+              "id": "RC2",
+              "condition": "If braking evaluation is extended to situations where obstacle detection is not the basis for braking decision-making."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rr5": {
+    "coverage": true,
+    "consistency": true,
+    "issues": []
+  }
+}

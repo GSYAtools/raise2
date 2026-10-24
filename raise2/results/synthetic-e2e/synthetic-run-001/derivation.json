@@ -1,0 +1,50 @@
+{
+  "run_id": "synthetic-run-001",
+  "concern_id": "availability",
+  "evaluation_target": {
+    "id": "T1",
+    "statement": "Operational availability of the service to authorised users",
+    "source": [
+      "requirement"
+    ],
+    "rationale": "The requirement states that the service shall remain operationally available to authorised users, which is the property to be evaluated for this concern."
+  },
+  "phenomenon_of_interest": {
+    "id": "P1",
+    "statement": "The service's operational state with respect to serving requests from authorised users during normal operation",
+    "scope": "Situations during normal operation in which the service processes requests from authorised users, and in which the service may be operationally available or not available to those users.",
+    "source": [
+      "requirement",
+      "context"
+    ],
+    "rationale": "The context specifies that the service processes requests from authorised users during normal operation, and the requirement concerns being operationally available to those users. The phenomenon therefore concerns the service's state in that operating context."
+  },
+  "distinctions": [
+    {
+      "id": "D1",
+      "dimension": "Availability to authorised users",
+      "contrast_a": "The service is operationally available to authorised users",
+      "contrast_b": "The service is not operationally available to authorised users",
+      "source": [
+        "requirement"
+      ],
+      "rationale": "Whether the service is available or unavailable to authorised users directly changes the evaluation of the availability concern; collapsing these states would remove the information needed to assess the requirement."
+    }
+  ],
+  "orrs": [
+    {
+      "id": "ORR1",
+      "covers": [
+        "D1"
+      ],
+      "obligation": "An admissible Observable Representation must preserve whether the service is operationally available to authorised users or not.",
+      "distinguishability_criterion": "The representation must distinguish the available state from the unavailable state for authorised users.",
+      "assumptions": []
+    }
+  ],
+  "rr5": {
+    "coverage": true,
+    "consistency": true,
+    "issues": []
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "run_id": "H1-run-022",
+  "concern_id": "H1",
+  "classification": "ALIGNED",
+  "rationale": "P characterises whether required braking is performed or omitted, directly addressing T and SG-1. Braking response itself belongs to the phenomenon because FR-7 requires that maneuver to avoid collisions. Its timeliness is supported by H-1's explicit failure to stop in time, rather than inferred from timing constraints on supporting mechanisms. The declared driving scenario matches H-1, and P does not incorporate sensing, computation, communication, or internal control mechanisms.",
+  "determining_elements": [
+    "Whether the vehicle performs the braking maneuver required to avoid collision.",
+    "Inclusion of both performance and omission of the required braking response.",
+    "Initiation and execution of braking in time to avoid collision, consistent with H-1's hazardous event.",
+    "Scope restricted to H-1's straight-ahead, single-lane-road scenario at 50 km/h in good weather, with a pedestrian running across the street 20 m ahead."
+  ],
+  "sources": [
+    "hazard",
+    "requirements"
+  ]
+}

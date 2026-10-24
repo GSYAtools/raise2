@@ -1,0 +1,13 @@
+{
+  "run_id": "run-001",
+  "change_id": "delta-03",
+  "decision": "REVALIDATE",
+  "affected_orrs": [
+    "H1-ORR2"
+  ],
+  "return_point": null,
+  "triggered_conditions": [
+    "H1-RC2"
+  ],
+  "rationale": "The change revises the object-category scheme and explicitly states that the vulnerable-road-user vs other-object distinction must be reassessed. In the baseline, H1-ORR2 depends on FR-7.2.2 via H1-A2, with H1-RC2 defined to revalidate if FR-7.2.2 or the object-category scheme changes. The Evaluation Target and Phenomenon of Interest remain unchanged, so the appropriate lifecycle action is to revalidate only H1-ORR2."
+}

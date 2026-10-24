@@ -1,0 +1,102 @@
+{
+  "run_id": "H1-run-019",
+  "concern_id": "H1",
+  "evaluation_target": {
+    "id": "T1",
+    "statement": "Prevent omitting required braking maneuvers.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The safety goal SG-1 states that the system shall prevent omitting required braking maneuvers, and the hazard describes the harmful consequence of failing to brake in time."
+  },
+  "phenomenon_of_interest": {
+    "id": "P1",
+    "statement": "The vehicle braking behavior in situations where a braking maneuver is required to avoid a collision with an obstacle or road user.",
+    "scope": "Operational situations in which the ego vehicle is approaching or encountering an obstacle or road user such that braking is needed to avoid collision, including the stated straight-ahead driving scenario with a pedestrian crossing 20 m ahead.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The concern is about whether braking is performed when needed to avoid collision; the hazard and functional requirement FR-7 establish braking-for-avoidance as the relevant system-related phenomenon."
+  },
+  "distinctions": [
+    {
+      "id": "D1",
+      "dimension": "Braking maneuver execution when required",
+      "contrast_a": "A required braking maneuver is initiated and executed in time to avoid collision.",
+      "contrast_b": "A required braking maneuver is omitted or not initiated in time, leading to collision risk.",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "The evaluation target is specifically about omission of required braking maneuvers, so these states must remain distinguishable."
+    },
+    {
+      "id": "D2",
+      "dimension": "Obstacle detection state relevant to braking",
+      "contrast_a": "An obstacle is detected in time for braking to be started.",
+      "contrast_b": "An obstacle is not detected, or is detected too late to support timely braking.",
+      "source": [
+        "requirements"
+      ],
+      "rationale": "FR-7.1 and FR-7.2.5 indicate that timely obstacle detection is necessary for starting braking within the required time window."
+    },
+    {
+      "id": "D3",
+      "dimension": "Obstacle relevance for avoidance braking",
+      "contrast_a": "The detected object is an obstacle that requires avoidance braking.",
+      "contrast_b": "The detected object is not an obstacle requiring avoidance braking.",
+      "source": [
+        "requirements"
+      ],
+      "rationale": "FR-7 and FR-7.2.2-7.2.3 distinguish obstacles and vulnerable road users from other objects for collision avoidance decisions."
+    },
+    {
+      "id": "D4",
+      "dimension": "Obstacle proximity to vehicle trajectory",
+      "contrast_a": "The object is on or close to the vehicle trajectory and at a distance that makes braking relevant.",
+      "contrast_b": "The object is not on or close to the trajectory, or is sufficiently distant that braking is not presently required.",
+      "source": [
+        "requirements",
+        "hazard"
+      ],
+      "rationale": "FR-7.2.4 requires determining distance between the vehicle and objects on or close to the trajectory, which affects whether braking is required."
+    }
+  ],
+  "orrs": [
+    {
+      "id": "R1",
+      "covers": [
+        "D1"
+      ],
+      "obligation": "The observable representation shall preserve whether a required braking maneuver is executed in time versus omitted or not executed in time.",
+      "distinguishability_criterion": "The representation must allow the two braking outcomes to be distinguished as separate operational states: timely braking execution and omitted/late braking execution.",
+      "assumptions": []
+    },
+    {
+      "id": "R2",
+      "covers": [
+        "D2"
+      ],
+      "obligation": "The observable representation shall preserve whether obstacle detection occurs in time to support braking.",
+      "distinguishability_criterion": "The representation must distinguish timely obstacle detection from no detection or detection too late for braking initiation.",
+      "assumptions": []
+    },
+    {
+      "id": "R3",
+      "covers": [
+        "D3",
+        "D4"
+      ],
+      "obligation": "The observable representation shall preserve whether the perceived object is an obstacle or road user relevant to collision avoidance, and whether it is on or close to the trajectory at a distance relevant to braking.",
+      "distinguishability_criterion": "The representation must distinguish avoidance-relevant objects from non-relevant objects, and must preserve the relevant proximity relation to the vehicle trajectory.",
+      "assumptions": []
+    }
+  ],
+  "rr5": {
+    "coverage": true,
+    "consistency": true,
+    "issues": []
+  }
+}

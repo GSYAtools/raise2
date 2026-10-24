@@ -1,0 +1,6 @@
+CandidateFinal_CRDDecisionRationale
+H5-D1H5-CRD1KEEPTrajectory consistency is directly required and can differ before road-boundary violation occurs.
+H5-D2H5-CRD2KEEPRoad containment is the direct operational separation expressed by SG-5/H-5 and is not equivalent to trajectory consistency.
+H5-D3H5-CRD2MERGESpeed-profile differences matter for H5 when they alter road containment; the visible source does not require arbitrary speed-profile deviations to remain separately distinguishable.
+H5-D4H5-CRD1;H5-CRD2MERGEActual vehicle position supports both trajectory-consistency and road-boundary judgements; localization-estimate correctness is a representation issue rather than an independent PoI distinction.
+H5-D5H5-CRD1MERGESteering differences matter through their effect on trajectory-relative vehicle motion and do not impose an independent preservation obligation.

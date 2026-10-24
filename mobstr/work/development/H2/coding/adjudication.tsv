@@ -1,0 +1,7 @@
+CandidateFinal_CRDDecisionRationale
+H2-D1H2-CRD1KEEPAvoidance necessity is an evaluative judgement distinct from maneuver feasibility.
+H2-D2H2-CRD2KEEPSafe feasibility of the lane-change maneuver is explicitly required by FR-8.
+H2-D3H2-CRD2MERGEAdjacent-lane occupancy is an operational determinant of safe lane-change feasibility and imposes the same preservation obligation.
+H2-D4H2-CRD2MERGERoad/lane geometry is an operational determinant of safe lane-change feasibility and imposes the same preservation obligation.
+H2-D5H2-CRD3KEEPLane-change initiation has its own explicitly specified temporal event and 100 ms bound.
+H2-D6H2-CRD4KEEPSteering-command provision has a distinct temporal event and 50 ms bound.

@@ -1,0 +1,48 @@
+RAISE2 PoI Conformance Assessment Design
+
+Purpose
+Assess RR2 conformance independently of downstream reference evidence
+and independently of the CRDs and ORRs produced by each execution.
+
+Population
+60 MobSTr RAISE2 derivations:
+30 H1 runs and 30 H3 runs.
+
+Assessment
+Each derived Phenomenon of Interest is independently assessed three times.
+
+Judge model
+gpt-6-astra
+
+Reasoning effort
+high
+
+Inputs available to the judge
+- Evaluation Target
+- Phenomenon of Interest
+- Phenomenon scope
+- upstream engineering artefacts
+
+Inputs unavailable to the judge
+- Concern-Relevant Distinctions
+- Operational Representation Requirements
+- assumptions
+- revalidation conditions
+- downstream reference evidence
+- other executions
+
+Classification
+ALIGNED
+OVEREXTENDED
+UNDERDETERMINED
+
+Aggregation
+The final classification for each run is determined by majority vote
+across the three independent assessments.
+
+Agreement is recorded as:
+- unanimous: 3/3 assessments agree
+- majority: 2/3 assessments agree
+
+Failed assessments are not automatically retried.
+

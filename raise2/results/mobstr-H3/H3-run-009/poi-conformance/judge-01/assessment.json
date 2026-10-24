@@ -1,0 +1,16 @@
+{
+  "run_id": "H3-run-009",
+  "concern_id": "H3",
+  "classification": "ALIGNED",
+  "rationale": "Braking behavior is itself what must be characterised to evaluate prevention of unintended braking, as established by H-3 and SG-3. The operational context matches the hazard. Considering whether braking occurs in relation to obstacles or vehicles ahead is supported by the hazardous event and FR-7's collision-avoidance braking function. P does not extend into sensing, computation, communication, failure-mitigation mechanisms, or their timing constraints.",
+  "determining_elements": [
+    "Vehicle braking behavior, including whether braking occurs, directly addresses the evaluation target.",
+    "The scope retains H-3's straight-ahead urban driving situation at 50 km/h, in good weather, without visible obstacles or vehicles ahead.",
+    "Whether braking is triggered by obstacles or vehicles ahead, or occurs without such a trigger, characterises the braking–environment relationship rather than the mechanisms used to detect obstacles or control braking.",
+    "No monitoring, warning, redundancy, controller-failure mitigation, or mechanism-specific timing behavior is incorporated into P."
+  ],
+  "sources": [
+    "hazard",
+    "requirements"
+  ]
+}

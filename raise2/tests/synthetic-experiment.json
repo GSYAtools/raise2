@@ -1,0 +1,18 @@
+{
+  "experiment_id": "synthetic-e2e",
+  "concern_id": "availability",
+  "artefacts": [
+    {
+      "id": "requirement",
+      "type": "requirement",
+      "path": "raise2/tests/synthetic-input/requirement.txt",
+      "sha256": "75fe1d207591115b1ba51505d2ff8e48dbcf6ce168866a5a2a6d516a2ac9b06e"
+    },
+    {
+      "id": "context",
+      "type": "other",
+      "path": "raise2/tests/synthetic-input/context.txt",
+      "sha256": "78f66b42f283d8d31a7900691249e99682c4f7ad2d9f369a518b0a1d8de5e0bb"
+    }
+  ]
+}

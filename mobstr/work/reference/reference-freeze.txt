@@ -1,0 +1,23 @@
+RAISE2 MobSTr EQ1 Independent Reference Freeze
+
+The independently constructed H1 and H3 reference CRD sets are used as the
+frozen reference for EQ1. Their contents were produced before semantic
+matching against the frozen RAISE2 held-out derivations and have not been
+modified for the final comparison.
+
+H1
+File: work/reference/H1/coding/reference-crds-provisional.tsv
+SHA-256: c017dc77125a911a134c7fc81d55b8b6fbe792da5b214a4bf548804fb945837a
+Original modification time: 2026-10-07 06:27:36 +0200
+Reference distinctions: 2
+
+H3
+File: work/reference/H3/coding/reference-crds-provisional.tsv
+SHA-256: 4af72bbed52c30cef2116ae30edceae34dd5ade50ff39682c73f843506c8d58d
+Original modification time: 2026-10-07 06:28:41 +0200
+Reference distinctions: 2
+
+No reference distinction may be added, removed, merged, split, or reformulated
+after this freeze on the basis of the RAISE2-derived distinctions or subsequent
+matching results.
+

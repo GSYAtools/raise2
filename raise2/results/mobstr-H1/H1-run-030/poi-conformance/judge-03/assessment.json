@@ -1,0 +1,16 @@
+{
+  "run_id": "H1-run-030",
+  "concern_id": "H1",
+  "classification": "OVEREXTENDED",
+  "rationale": "The target, H-1, SG-1 and FR-7 establish required versus performed braking as what must be characterised, so including braking-response state is justified. However, the declared scope also incorporates obstacle detection and perception information into P. FR-7.2, FR-7.2.4 and the architecture establish supporting perception functions, but their contribution to braking decisions does not establish those functions themselves as part of the braking-omission phenomenon. FR-7.1's detection-based trigger likewise does not independently justify including detection behaviour.",
+  "determining_elements": [
+    "“Braking-maneuver decision and execution state” legitimately focuses on the system's required braking response; system behaviour alone is not grounds for overextension.",
+    "The scope explicitly includes “obstacle detection,” extending P to an observation function rather than treating obstacle presence and proximity as conditions under which braking is required.",
+    "“Distance-to-obstacle information,” grouped with detection, further brings supporting perception information into scope; physical obstacle distance can inform whether braking is required without making its determination part of P."
+  ],
+  "sources": [
+    "hazard",
+    "requirements",
+    "architecture"
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "run_id": "H1-run-012",
+  "concern_id": "H1",
+  "evaluation_target": {
+    "id": "T1",
+    "statement": "The system shall prevent omitting required braking maneuvers.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The safety goal explicitly requires preventing omission of required braking maneuvers, and the hazard/functional requirement pair indicates the concern is the failure to brake when needed to avoid a collision."
+  },
+  "phenomenon_of_interest": {
+    "id": "P1",
+    "statement": "The vehicle’s braking-relevant driving situation and response state, specifically whether braking is required to avoid collision and whether braking maneuver initiation occurs in time.",
+    "scope": "Operational situations in which the ego vehicle is driving and may encounter an obstacle or road user such that braking may be required to avoid collision; includes situations where the system detects obstacles and generates vehicle commands for braking, as well as situations where no braking is initiated despite a required braking maneuver.",
+    "source": [
+      "hazard",
+      "requirements",
+      "architecture"
+    ],
+    "rationale": "The hazard defines a collision-avoidance braking situation, and the functional and architectural artefacts show obstacle detection, path planning, controller output, and brake-command actuation are part of the evaluated concern."
+  },
+  "distinctions": [
+    {
+      "id": "D1",
+      "dimension": "braking requirement status in the current situation",
+      "contrast_a": "A braking maneuver is required to avoid collision in the present driving situation",
+      "contrast_b": "A braking maneuver is not required in the present driving situation",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "Whether braking is required is essential to evaluating omission: if the representation cannot distinguish required-from-not-required braking situations, it cannot assess whether omission has occurred."
+    },
+    {
+      "id": "D2",
+      "dimension": "braking maneuver initiation",
+      "contrast_a": "A braking maneuver is initiated",
+      "contrast_b": "No braking maneuver is initiated",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "The safety concern is omission of required braking; therefore the representation must preserve whether braking actually starts versus not starting."
+    },
+    {
+      "id": "D3",
+      "dimension": "timely initiation relative to obstacle detection",
+      "contrast_a": "Braking is initiated within the required response window after obstacle detection",
+      "contrast_b": "Braking is initiated outside the required response window or not in time",
+      "source": [
+        "requirements"
+      ],
+      "rationale": "FR-7.1 and FR-7.2.5 specify that braking/obstacle detection must occur within a bounded time; collapsing timely and untimely initiation would lose information needed to evaluate omission in time-critical situations."
+    }
+  ],
+  "orrs": [
+    {
+      "id": "R1",
+      "covers": [
+        "D1",
+        "D2"
+      ],
+      "obligation": "The observable representation shall preserve whether the current driving situation requires braking to avoid collision and whether a braking maneuver is initiated.",
+      "distinguishability_criterion": "Situations with a required braking maneuver must remain distinguishable from situations without such a requirement, and situations with braking initiation must remain distinguishable from situations without braking initiation.",
+      "assumptions": []
+    },
+    {
+      "id": "R2",
+      "covers": [
+        "D3"
+      ],
+      "obligation": "The observable representation shall preserve whether braking initiation occurs within the relevant response window after obstacle detection.",
+      "distinguishability_criterion": "The representation must distinguish timely braking initiation from late or absent braking initiation in relation to the obstacle-detection event.",
+      "assumptions": [
+        {
+          "id": "A1",
+          "statement": "The evaluated concern includes timing-relevant braking and obstacle-detection behavior.",
+          "source": [
+            "requirements",
+            "hazard"
+          ],
+          "revalidation_conditions": [
+            {
+              "id": "RC1",
+              "condition": "If the safety goal, braking requirement, or timing requirements are revised to remove or change the response-time obligation."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rr5": {
+    "coverage": true,
+    "consistency": true,
+    "issues": []
+  }
+}

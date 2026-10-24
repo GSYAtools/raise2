@@ -1,0 +1,23 @@
+{
+  "run_id": "run-008",
+  "change_id": "delta-05",
+  "started_at_utc": "2026-10-24T08:18:33.712198+00:00",
+  "requested_model": "gpt-5.4-mini-2026-03-17",
+  "baseline_sha256": "e7e53a8058e7da0a0d22bc43c6dd38e629e704897b701239597302e777cc9965",
+  "change_sha256": "60dac69a4ce3223986a68a9f81841b209241ddcdd942eda3b6f2b1d4a9bcf4d0",
+  "protocol_sha256": "7c00b86b8d8ead2bdb039df6ac2089d1b214c34471848595b94ef014abb275c3",
+  "schema_sha256": "6e105f918d36f8d67128bc3c277081d7105a15f86a361d782c5aff8c913c3552",
+  "response_id": "resp_0995e5a5575bfd1b006adc69d9f83487d29c750f170901d7ff",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "response_status": "completed",
+  "usage": {
+    "input_tokens": 2774,
+    "output_tokens": 148,
+    "total_tokens": 2922
+  },
+  "validation_passed": true,
+  "validation_errors": [],
+  "result_sha256": "83b6be38bf81725629e521d39f80a336555aff2a1663146d587b1fc54ce0d278",
+  "completed_at_utc": "2026-10-24T08:18:35.954800+00:00",
+  "status": "completed_valid"
+}

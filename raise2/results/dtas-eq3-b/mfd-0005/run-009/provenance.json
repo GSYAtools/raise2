@@ -1,0 +1,6 @@
+{
+  "condition_id": "mfd-0005",
+  "run_id": "run-009",
+  "source": "raise2/results/dtas-eq3-a/run-009/observations.csv",
+  "mode": "reused_from_eq3_a"
+}

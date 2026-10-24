@@ -1,0 +1,40 @@
+===== HAZARD =====
+ID=H-5
+Hazard=Unintended leaving of the road
+Operational Situation=Driving through a narrow road curve on the right-hand lane at 40 km/h in close proximity of a weekly market at good weather conditions
+Hazardous Event=While driving, the vehicle is  following a wrong trajectory and leaves the road and may hit an obstacle.
+Probable Causes=Sensor or actuator failures; misinterpretation of sensor signals; wrong localization; wrong classification of the road; erroneous trajactory planning; controller failure; wrong timing of steering command
+
+===== REQUIREMENTS =====
+ID	Source	Type	Time	Component	Description
+SG-5	native	Safety goal	None	None	The system shall prevent unintended leaving of the road.
+SR-5.1	native	Safety (failure identification)	None	Sensor Fusion	The system shall identify sensor failures.
+SR-5.1.1	native	Safety (monitoring)	None	Image Grabber	The system shall identify when the camera has failed.
+SR-5.2	native	Safety (failure mitigation)	None	Sensor Fusion	The system shall mitigate sensor failures.
+SR-5.2.1	native	Safety (redundancy)	None	Image Grabber	The system shall have more than one sensor used to identify the road lane.
+SR-5.2.2	native	Safety (warning)	None	Driver Warnings	The system shall inform the driver about sensor failures.
+SR-5.3.3	native	Safety (monitoring)	None	Path Planner	The system shall detect when the road lane cannot be identified unambiguously.
+SR-5.3	native	Safety (failure identification)	None	(all components)	The system shall identify controller failures.
+SR-5.3.1	native	Safety (monitoring)	None	Controller	The system shall detect when the steering commands are not on time (tbd).
+SR-5.3.2	native	Safety (monitoring)	None	Controller	The system shall detect when the steering commands will bring the vehicle outside of road boundaries.
+SR-5.4	native	Safety (failure mitigation)	None	(all components)	The system shall mitigate controller failures.
+SR-5.4.1	native	Safety (check)	None	Path Planner	The system shall do a sanity check on the calculated speed profile to avoid leaving the road unintentionally.
+SR-5.5	native	Safety (failure identification)	None	Controller	The system shall identify failures of the steering actuators.
+SR-5.6	native	Safety (failure mitigation)	None	Controller	The system shall mitigate failures of the steering actuators.
+SR-5.7	native	Safety (failure identification)	None	Controller	The system shall identify failures of the motor control.
+SR-5.8	native	Safety (failure mitigation)	None	Controller	The system shall mitigate failures of the motor control.
+SR-5.9	native	Safety (failure identification)	None	Controller	The system shall identify failures of the brake actuators.
+SR-5.10	native	Safety (failure mitigation)	None	Controller	The system shall mitigate failures of the brake actuators.
+FR-6	native	Functional	None	None	The system shall drive through a pre-determined set of way points.
+FR-6.1	native	Functional	None	Path Planner	The system shall define a trajectory through a set of way points.
+FR-6.2	native	Functional	None	Path Planner	The system shall update the trajectory whenever the way points change or the vehicle has left the trajectory.
+FR-6.3	native	Functional	None	Path Planner	The system shall follow the defined trajectory.
+FR-6.4	native	Functional	None	Path Planner	The system shall translate the trajectory into vehicle commands.
+FR-6.4.1	native	Timing	every 15 ms	(skipped at this point)	The system shall provide longitudinal control value updates every 15 ms (tbc).
+FR-6.4.2	native	Timing	every 5 ms	(skipped at this point)	The system shall provide lateral control value updates every 5 ms (tbc).
+FR-6.5	native	Functional	None	Path Planner	The system shall calculate the correct steering angle to follow the trajectory.
+FR-6.6	native	Functional	None	Path Planner	The system shall calculate a speed profile to follow the trajectory.
+FR-6.7	native	Functional	None	Controller	The system shall control the vehicle using the calculated vehicle commands.
+FR-6.8	native	Functional	None	Path Planner	The system shall follow the pre-defined speed profile when moving in the defined trajectory.
+FR-6.9	native	Functional	None	Path Planner	The system shall be aware of key vehicle information such as steer/wheel/brake/acceleration status at any point in time.
+FR-6.10	native	Functional	None	Localization	The system shall be aware of its current position at all times.

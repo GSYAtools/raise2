@@ -1,0 +1,17 @@
+{
+  "run_id": "H1-run-001",
+  "concern_id": "H1",
+  "classification": "ALIGNED",
+  "rationale": "The braking response itself must be characterised to evaluate whether required braking maneuvers are omitted. SG-1 and FR-7 establish this directly, while H-1 establishes the collision-avoidance context and FR-7.1 supports braking initiation following dangerous-zone obstacle detection. The scope refers to detection and control situations as contexts for that response; it does not incorporate sensor processing, controller internals, or their timing constraints as separate phenomena.",
+  "determining_elements": [
+    "“The vehicle’s braking-relevant response” identifies system behaviour directly required by the evaluation target, rather than merely a mechanism for observing another phenomenon.",
+    "“Whether to initiate a braking maneuver to avoid collision with an obstacle or road user” connects the response to required braking and the hazardous omission described in H-1.",
+    "“Including obstacle-detection and control situations” remains within the stated scope of braking-response situations and does not explicitly extend P to detection or control mechanisms."
+  ],
+  "sources": [
+    "hazard",
+    "requirements: SG-1",
+    "requirements: FR-7",
+    "requirements: FR-7.1"
+  ]
+}

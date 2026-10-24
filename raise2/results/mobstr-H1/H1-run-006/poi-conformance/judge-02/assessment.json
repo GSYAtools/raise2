@@ -1,0 +1,16 @@
+{
+  "run_id": "H1-run-006",
+  "concern_id": "H1",
+  "classification": "ALIGNED",
+  "rationale": "The target requires characterising whether required braking maneuvers are omitted, so braking initiation and performance are themselves the phenomenon being evaluated, not merely mechanisms affecting its evaluation. SG-1, FR-7, and H-1 directly support this response-focused phenomenon and its obstacle-related scope. P does not extend to sensing, computation, communication, failure mitigation, or their timing constraints.",
+  "determining_elements": [
+    "“Vehicle/system braking response” identifies the behaviour directly required by the target and by SG-1 and FR-7.",
+    "“Whether braking is initiated and performed” captures omission of required braking rather than introducing unrelated control behaviour.",
+    "The scope limits encounters to situations where an obstacle or road user may require braking to avoid collision, consistent with FR-7 and the H-1 hazardous event.",
+    "The pedestrian crossing 20 m ahead on a straight single-lane road in good weather at 50 km/h is explicitly supported by H-1."
+  ],
+  "sources": [
+    "hazard",
+    "requirements"
+  ]
+}

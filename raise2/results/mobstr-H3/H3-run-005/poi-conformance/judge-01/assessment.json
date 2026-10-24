@@ -1,0 +1,16 @@
+{
+  "run_id": "H3-run-005",
+  "concern_id": "H3",
+  "classification": "ALIGNED",
+  "rationale": "Braking behavior is itself what must be characterised to evaluate prevention of unintended braking. H-3 establishes the operational context and hazardous braking without an obstacle; SG-3 establishes the prevention goal. FR-7 supports normal obstacle-avoidance braking as the intended counterpart against which unintended braking is distinguished. P does not incorporate the sensing, computation, communication, failure-mitigation, or timing mechanisms that may influence braking.",
+  "determining_elements": [
+    "“Vehicle braking behavior” directly identifies the system behavior addressed by the evaluation target.",
+    "The straight-ahead urban-road situation at 50 km/h, in good weather with no visible obstacles or vehicles ahead, reproduces H-3's operational context.",
+    "“Unintended braking without an obstacle in front” captures the hazardous behavior described in H-3.",
+    "“Normal braking to avoid obstacles” is supported by FR-7 as the intended-braking counterpart, rather than an additional implementation mechanism."
+  ],
+  "sources": [
+    "hazard",
+    "requirements"
+  ]
+}

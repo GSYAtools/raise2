@@ -1,0 +1,94 @@
+RAISE2 PHENOMENON-OF-INTEREST CONFORMANCE PROTOCOL
+==================================================
+
+PURPOSE
+
+Assess whether a Phenomenon of Interest P derived by a RAISE2 execution is
+appropriately scoped with respect to its Evaluation Target T and the supplied
+engineering artefacts.
+
+This assessment evaluates RR2 conformance. It does not assess whether the
+wording of P matches a reference formulation and does not use downstream
+reference evidence.
+
+
+ASSESSMENT BASIS
+
+Use only:
+
+1. the Evaluation Target T produced by the execution;
+2. the Phenomenon of Interest P produced by the execution;
+3. the scope declared for P;
+4. the upstream engineering artefacts supplied to that execution.
+
+Do not use:
+
+- derived Concern-Relevant Distinctions;
+- derived ORRs;
+- downstream safety analyses;
+- reference CRDs;
+- results from other executions.
+
+
+CONFORMANCE RULES
+
+A Phenomenon of Interest is ALIGNED when:
+
+1. P identifies the system-related property, condition, behaviour, or
+   relationship that must be characterised to evaluate T;
+
+2. the states and events included within P are supported by the supplied
+   engineering artefacts as belonging to the phenomenon required by T;
+
+3. P does not incorporate observation, computation, communication, or control
+   mechanisms merely because those mechanisms may affect evaluation of T;
+
+4. system-response or control behaviour is included in P only when the
+   Evaluation Target and supplied engineering artefacts establish that behaviour
+   itself as part of what must be characterised;
+
+5. temporal behaviour is included in P only when the timed property belongs to
+   P and its temporal evolution is required by T. Timing constraints on
+   mechanisms used to observe, compute, communicate, or control P do not by
+   themselves make those mechanisms part of P.
+
+
+CLASSIFICATIONS
+
+Return ALIGNED when the supplied information establishes that P satisfies the
+conformance rules.
+
+Return OVEREXTENDED when P includes observation, computation, communication,
+control, response, or temporal behaviour that is not established by T and the
+supplied engineering artefacts as belonging to the phenomenon being evaluated.
+
+Return UNDERDETERMINED when the supplied information is insufficient to
+establish either ALIGNED or OVEREXTENDED without introducing assumptions.
+
+
+IMPORTANT DISTINCTIONS
+
+Do not classify P as OVEREXTENDED merely because it describes system behaviour.
+System behaviour may legitimately be the Phenomenon of Interest when the
+Evaluation Target requires that behaviour to be characterised.
+
+Do not classify P as ALIGNED merely because every element mentioned in P occurs
+somewhere in the engineering artefacts. Relevance to the system does not imply
+membership in P.
+
+Do not compare P with any preferred or reference wording.
+
+Do not evaluate the quality of Concern-Relevant Distinctions or ORRs.
+
+Do not infer information unavailable in the supplied upstream artefacts.
+
+
+OUTPUT
+
+Return:
+
+- classification: ALIGNED, OVEREXTENDED, or UNDERDETERMINED;
+- a concise rationale;
+- the specific elements of P that determine the classification;
+- the source identifiers supporting the assessment.
+

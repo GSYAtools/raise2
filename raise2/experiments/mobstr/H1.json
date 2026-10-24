@@ -1,0 +1,24 @@
+{
+  "experiment_id": "mobstr-H1",
+  "concern_id": "H1",
+  "artefacts": [
+    {
+      "id": "hazard",
+      "type": "hazard",
+      "path": "mobstr/work/test-visible/H1/hazard.txt",
+      "sha256": "7014165ff60292db2b9c8184d371b39bde399fb7662dbcd4320c55a570c119a6"
+    },
+    {
+      "id": "requirements",
+      "type": "requirement",
+      "path": "mobstr/work/test-visible/H1/requirements.tsv",
+      "sha256": "56ca887bf40b4dc59abcb57e37cc4571e9ade8103d38a213e1984fb360693688"
+    },
+    {
+      "id": "architecture",
+      "type": "architecture",
+      "path": "mobstr/work/executor-input/H1/architecture.json",
+      "sha256": "b3fa51f949dc73baab35651bba2dd8f210a1c2e069be7433e9da839de0774e80"
+    }
+  ]
+}

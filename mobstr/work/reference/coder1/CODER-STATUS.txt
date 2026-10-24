@@ -1,0 +1,15 @@
+Reference coder 1
+
+Concerns:
+H1 -- Omitted braking maneuver
+H3 -- Unintended braking
+
+Reference sources consulted:
+- held-out H1/H3 FTA
+- concern-filtered MobSTr FMEA evidence
+- relevant MobSTr Safety Case evidence
+
+Reference coding protocol:
+work/frozen-protocol/reference-coding.tsv
+
+RAISE2-derived/reference matching is not part of reference-set construction.

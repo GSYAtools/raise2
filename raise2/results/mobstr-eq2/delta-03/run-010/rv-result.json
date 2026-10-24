@@ -1,0 +1,13 @@
+{
+  "run_id": "run-010",
+  "change_id": "delta-03",
+  "decision": "REVALIDATE",
+  "affected_orrs": [
+    "H1-ORR2"
+  ],
+  "return_point": null,
+  "triggered_conditions": [
+    "H1-RC2"
+  ],
+  "rationale": "The change revises the object-category scheme and explicitly affects FR-7.2.2, which is the source and assumption basis for H1-ORR2. The Evaluation Target and Phenomenon of Interest remain unchanged, and the change does not affect the obstacle-presence or spatial-distance bases supporting H1-ORR1 or H1-ORR3. Therefore only H1-ORR2 must be revalidated."
+}

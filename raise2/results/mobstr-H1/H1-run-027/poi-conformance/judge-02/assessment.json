@@ -1,0 +1,16 @@
+{
+  "run_id": "H1-run-027",
+  "concern_id": "H1",
+  "classification": "ALIGNED",
+  "rationale": "Evaluating omission of required braking requires characterising whether braking is needed and whether the maneuver is initiated and performed. SG-1, FR-7, and H-1 establish braking behavior itself as the phenomenon, while FR-7.1 explicitly supports including braking initiation. The scope remains within collision-avoidance braking and does not incorporate supporting sensing, computation, communication, or failure-management mechanisms.",
+  "determining_elements": [
+    "“Whether braking is required … or omitted” directly addresses the evaluation target and SG-1.",
+    "“Started, performed” characterises the braking behavior required by FR-7 and FR-7.1, rather than merely supporting control mechanisms.",
+    "The obstacle-avoidance scope is supported by FR-7 and H-1, including road users and static obstacles; it is not limited to the single pedestrian scenario.",
+    "P does not import obstacle-detection latency, sensor-fusion behavior, or controller internals into the phenomenon."
+  ],
+  "sources": [
+    "hazard",
+    "requirements"
+  ]
+}

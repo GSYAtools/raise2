@@ -1,0 +1,100 @@
+{
+  "run_id": "H1-run-029",
+  "concern_id": "H1",
+  "evaluation_target": {
+    "id": "T1",
+    "statement": "Prevent omitting required braking maneuvers.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The safety goal SG-1 explicitly states the system shall prevent omitting required braking maneuvers, and FR-7 states the system shall perform a braking maneuver to avoid collisions with obstacles."
+  },
+  "phenomenon_of_interest": {
+    "id": "P1",
+    "statement": "The vehicle/system braking behavior in obstacle-encounter situations, including whether a braking maneuver is initiated when required to avoid collision.",
+    "scope": "Operational situations in which an obstacle or road user is present on or near the vehicle trajectory such that braking may be required to avoid collision, including the hazardous situation described in H-1 and the obstacle-detection situations referenced by FR-7 and FR-7.1.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "Evaluating omission of required braking requires characterizing the braking response in situations where braking is relevant to collision avoidance."
+  },
+  "distinctions": [
+    {
+      "id": "D1",
+      "dimension": "Braking maneuver initiation",
+      "contrast_a": "A braking maneuver is initiated when required by the obstacle/collision-avoidance situation.",
+      "contrast_b": "A required braking maneuver is omitted (no braking maneuver is initiated).",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "The concern is specifically about omission of braking; distinguishing initiated vs omitted braking is necessary to evaluate whether the safety goal is met."
+    },
+    {
+      "id": "D2",
+      "dimension": "Timely braking response after obstacle detection",
+      "contrast_a": "Braking starts within the required response window after obstacle detection.",
+      "contrast_b": "Braking starts too late after obstacle detection to support collision avoidance.",
+      "source": [
+        "requirements"
+      ],
+      "rationale": "FR-7.1 states braking shall start within 50 ms after obstacle detection within a dangerous zone, so timing relative to obstacle detection is relevant to evaluating whether the required braking maneuver is effectively performed."
+    }
+  ],
+  "orrs": [
+    {
+      "id": "ORR1",
+      "covers": [
+        "D1"
+      ],
+      "obligation": "An admissible Observable Representation shall preserve whether a required braking maneuver is initiated versus omitted in obstacle-encounter situations.",
+      "distinguishability_criterion": "The representation must make initiation of braking and omission of braking distinguishable as different states/events in the evaluated situation.",
+      "assumptions": [
+        {
+          "id": "A1",
+          "statement": "The evaluated situations include obstacle-encounter cases in which braking may be required to avoid collision.",
+          "source": [
+            "hazard",
+            "requirements"
+          ],
+          "revalidation_conditions": [
+            {
+              "id": "RV1",
+              "condition": "If the hazard definition, braking-related safety goal, or obstacle-avoidance requirements are revised to include different triggering situations."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ORR2",
+      "covers": [
+        "D2"
+      ],
+      "obligation": "An admissible Observable Representation shall preserve whether braking begins in time after obstacle detection to support the required collision-avoidance response.",
+      "distinguishability_criterion": "The representation must distinguish braking that begins within the required response interval from braking that begins outside that interval.",
+      "assumptions": [
+        {
+          "id": "A2",
+          "statement": "Obstacle detection and the start of braking are both available as identifiable operational events in the evaluated concern.",
+          "source": [
+            "requirements"
+          ],
+          "revalidation_conditions": [
+            {
+              "id": "RV2",
+              "condition": "If obstacle detection semantics or braking-trigger semantics change, or if the evaluation target is re-scoped away from post-detection response timing."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rr5": {
+    "coverage": true,
+    "consistency": true,
+    "issues": []
+  }
+}

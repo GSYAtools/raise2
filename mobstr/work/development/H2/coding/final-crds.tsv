@@ -1,0 +1,5 @@
+CRD_IDEvaluation_DimensionContrast_AContrast_BSourceRationale
+H2-CRD1Avoidance necessityAvoidance maneuver requiredAvoidance maneuver not requiredSG-2;H-2;FR-8Collapsing the two classes prevents determining whether collision avoidance by lane change is required.
+H2-CRD2Safe lane-change feasibilityRequired lane change safely feasibleRequired lane change not safely feasibleFR-8;FR-8.1;FR-8.2Road/lane geometry and adjacent-lane conditions determine whether the required lane-change maneuver can be performed safely.
+H2-CRD3Lane-change initiation timingLane change initiated within 100 msLane change initiated after 100 msFR-8.3The source explicitly distinguishes initiation relative to a 100 ms bound; the bound is marked tbc and dangerous-zone condition tbd.
+H2-CRD4Steering-command timingSteering commands provided within 50 msSteering commands provided after 50 msFR-8.4The source explicitly distinguishes steering-command provision relative to a 50 ms bound, marked tbc.

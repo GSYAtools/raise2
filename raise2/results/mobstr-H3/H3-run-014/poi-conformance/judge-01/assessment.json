@@ -1,0 +1,15 @@
+{
+  "run_id": "H3-run-014",
+  "concern_id": "H3",
+  "classification": "ALIGNED",
+  "rationale": "P identifies braking behavior itself as the phenomenon required to evaluate the prevention of unintended braking. H-3 establishes stopping without an obstacle as the hazardous event, SG-3 requires prevention of unintended braking, and FR-7 supports the relationship between intended braking and obstacle avoidance. The declared scope matches H-3. P does not extend to sensing, computation, communication, failure mitigation, or mechanism-specific timing.",
+  "determining_elements": [
+    "Whether braking occurs: directly concerns the behavior targeted by SG-3 and the hazardous event in H-3.",
+    "Whether braking is intended in response to a valid obstacle-related cause: supported by H-3's absence-of-obstacle condition and FR-7's collision-avoidance braking function.",
+    "Scope restricted to straight-ahead driving on a less frequented urban road at 50 km/h, in good weather, without visible obstacles or vehicles ahead: matches H-3's operational situation."
+  ],
+  "sources": [
+    "hazard",
+    "requirements"
+  ]
+}

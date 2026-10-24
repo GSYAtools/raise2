@@ -1,0 +1,29 @@
+MobSTr held-out test input selection protocol
+
+Test concerns:
+- H1: Omitted braking maneuver
+- H3: Unintended braking
+
+Visible artefacts:
+1. Hazard name, Operational Situation, and Hazardous Event.
+   The Probable Causes field is excluded.
+2. Safety Goal explicitly associated with the concern and its hierarchically
+   subordinate Safety Requirements.
+3. Explicit intra-requirement references are resolved without using lifecycle
+   trace models. Referenced requirements are retained with provenance.
+4. Functional Requirements whose own formulation directly corresponds to the
+   maneuver expressed by the concern:
+   - H1 -> FR-7.*
+   - H3 -> FR-7.*
+5. Complete MobSTr architecture, provided as the original UML model and its
+   published PDF rendering.
+
+Withheld during EQ1 derivation:
+- FMEA
+- FTA
+- safety case
+- lifecycle/downstream trace model
+- Probable Causes field from the hazard artefact
+- explicit assumptions artefact
+
+Selection does not use FMEA, FTA, safety-case, or trace-model relationships.

@@ -1,0 +1,16 @@
+{
+  "run_id": "H1-run-025",
+  "concern_id": "H1",
+  "classification": "ALIGNED",
+  "rationale": "Evaluating omission of required braking requires characterising whether braking is needed and whether the vehicle performs it. SG-1 and FR-7 establish braking behaviour itself as the subject of evaluation, while H-1 establishes the relevance of stopping in time to avoid collision. P remains focused on that behaviour and its operational context without incorporating sensing, computation, communication, or control mechanisms.",
+  "determining_elements": [
+    "The vehicle’s 'braking-behaviour state' directly addresses performance or omission of the manoeuvre required by T.",
+    "Situations requiring braking to avoid collision are supported by H-1 and FR-7; the scope is not restricted to the single pedestrian scenario because these artefacts also address road users and static obstacles generally.",
+    "Whether braking occurs 'in time to avoid collision' concerns the temporal adequacy of braking itself, supported by H-1 and FR-7.1, rather than the timing of an observation mechanism.",
+    "The scope references obstacle-detection situations as operational context, not detection mechanisms or their failures as constituent parts of P."
+  ],
+  "sources": [
+    "hazard",
+    "requirements"
+  ]
+}

@@ -1,0 +1,20 @@
+Held-out reference coding
+
+Concerns:
+- H1: Omitted braking maneuver
+- H3: Unintended braking
+
+Reference coding rules:
+work/frozen-protocol/reference-coding.tsv
+work/frozen-protocol/matching-rules.tsv
+work/frozen-protocol/unmatched-derived-rules.tsv
+
+The reference set is constructed before semantic matching against the
+RAISE2-derived CRDs.
+
+Downstream evidence is classified as:
+1. phenomenon-level distinction evidence;
+2. preservation/dependency threat;
+3. execution/control failure.
+
+Only class (1) contributes directly to D_C_ref.

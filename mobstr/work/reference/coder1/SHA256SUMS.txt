@@ -1,0 +1,3 @@
+6e8305cbe874aace63df4fbdb676b06c659fb480e162f8f14dc3257a414fff4c  work/reference/coder1/CODER-STATUS.txt
+c017dc77125a911a134c7fc81d55b8b6fbe792da5b214a4bf548804fb945837a  work/reference/coder1/H1/reference-crds.tsv
+4af72bbed52c30cef2116ae30edceae34dd5ade50ff39682c73f843506c8d58d  work/reference/coder1/H3/reference-crds.tsv

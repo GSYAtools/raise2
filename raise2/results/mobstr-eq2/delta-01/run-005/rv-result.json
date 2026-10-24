@@ -1,0 +1,9 @@
+{
+  "run_id": "run-005",
+  "change_id": "delta-01",
+  "decision": "NONE",
+  "affected_orrs": [],
+  "return_point": null,
+  "triggered_conditions": [],
+  "rationale": "The lifecycle change is limited to the driver-warning presentation component’s visual layout/notification presentation. The supplied change explicitly states that obstacle information, object category information, ego-object spatial information, the Phenomenon of Interest, and the Evaluation Target are unchanged. None of the baseline revalidation conditions H1-RC1, H1-RC2, or H1-RC3 are triggered, and the change does not alter any concern-relevant distinction or the representational basis of the ORRs."
+}

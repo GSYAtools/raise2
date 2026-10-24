@@ -1,0 +1,9 @@
+{
+  "run_id": "run-002",
+  "change_id": "delta-06",
+  "decision": "REDERIVE",
+  "affected_orrs": [],
+  "return_point": "RR1",
+  "triggered_conditions": [],
+  "rationale": "The change directly alters the Evaluation Target: it expands the required determination from braking only to braking or an evasive lane-change maneuver. Per the revalidation protocol, a change to the Evaluation Target requires REDERIVE and return to RR1. The existing ORRs are grounded in the original target and its associated phenomenon of interest for braking-specific collision avoidance, so they cannot be locally revalidated under the unchanged derivational basis."
+}

@@ -1,0 +1,52 @@
+{
+  "run_id": "H3-run-030",
+  "concern_id": "H3",
+  "evaluation_target": {
+    "id": "T1",
+    "statement": "Prevent unintended braking.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The hazard describes the undesired event as the vehicle suddenly stopping without an obstacle in front, and SG-3 explicitly states that the system shall prevent unintended braking."
+  },
+  "phenomenon_of_interest": {
+    "id": "P1",
+    "statement": "The vehicle braking behavior in the stated operational situation, including whether braking occurs without a valid external obstacle-related cause and whether braking is intended or unintended.",
+    "scope": "Straight ahead driving on a less frequented urban road at 50 km/h, in good weather, with no visible obstacles or vehicles in front of the ego vehicle.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The hazard fixes the operational situation and the hazardous event concerns a sudden stop with no obstacle in front; evaluating prevention of unintended braking requires characterizing braking behavior under that operating context."
+  },
+  "distinctions": [
+    {
+      "id": "D1",
+      "dimension": "Braking cause",
+      "contrast_a": "Braking occurs because an obstacle is present or detected in front of the ego vehicle.",
+      "contrast_b": "Braking occurs although no obstacle is present in front of the ego vehicle.",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "Collapsing these situations would lose the information needed to judge whether braking is unintended in the hazard scenario and therefore whether SG-3 is satisfied."
+    }
+  ],
+  "orrs": [
+    {
+      "id": "ORR1",
+      "covers": [
+        "D1"
+      ],
+      "obligation": "An admissible Observable Representation shall preserve whether braking is associated with the presence or detection of a relevant obstacle versus occurring when no obstacle is present in front of the ego vehicle.",
+      "distinguishability_criterion": "The representation must keep the two braking situations distinguishable: braking with a relevant obstacle present/detected and braking with no obstacle present in front of the vehicle.",
+      "assumptions": []
+    }
+  ],
+  "rr5": {
+    "coverage": true,
+    "consistency": true,
+    "issues": []
+  }
+}

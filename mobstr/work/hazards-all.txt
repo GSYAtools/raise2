@@ -1,0 +1,35 @@
+ID=H-1
+Hazard=Omitted braking maneuver
+Operational Situation=Straight ahead drive on a less frequented single-lane road with 50 km/h at good weather conditions with a pedestrian running across the street 20 m in front of the ego vehicle
+Hazardous Event=While driving, the vehicle is not able to stop in time to avoid a collision with a road user or a static obstacle and hits the road user or static obstacle.
+Probable Causes=Sensor failure in the detection of obstacles; controller failure; failure of the brake actuator
+Exposure=E3; Severity=S3; Controllability=C3; ASIL=C
+
+ID=H-2
+Hazard=Omitted avoidance maneuver
+Operational Situation=Straight ahead drive on a less frequented multi-lane road with 50 km/h at good weather conditions with a pedestrian running across the street 20 m in front of the ego vehicle
+Hazardous Event=While driving, the vehicle is not able to perform a required avoidance maneuver (i.e., a lane change) to avoid a collision with a road user or a static obstacle and hits the road user or static obstacle.
+Probable Causes=Sensor failure in the detection of obstacles; controller failure; failure of the motor control; failure of the steering or brake actuators
+Exposure=E3; Severity=S3; Controllability=C3; ASIL=C
+
+ID=H-3
+Hazard=Unintended braking
+Operational Situation=Straight ahead drive on a less frequented urban road with 50 km/h without visible obstacles or vehicles in front of the ego vehicle at good weather conditions
+Hazardous Event=While driving, the vehicle suddenly stops although no obstacle is in front of the vehicle; vehicles following directly behing might crash into the vehicle.
+Probable Causes=Sensor failure in the detection of obstacles; controller failure; failure of the brake actuator
+Exposure=E4; Severity=S2; Controllability=C2; ASIL=B
+
+ID=H-4
+Hazard=Unintended acceleration
+Operational Situation=Comfort braking with a residual speed of currently 10 km/h on the left-hand turn lane of an urban intersection to allow the oncoming traffic to pass the conflict area at good weather conditions
+Hazardous Event=While driving, the vehicle suddenly accelerates without any reason and can collide with an obstacle on or offside the road.
+Probable Causes=Sensor failure; erroneous calculation of speed profile; erroneous identification of the driving situation; wrong detection of traffic signs; failure of the motor control
+Exposure=E4; Severity=S3; Controllability=C1; ASIL=B
+
+ID=H-5
+Hazard=Unintended leaving of the road
+Operational Situation=Driving through a narrow road curve on the right-hand lane at 40 km/h in close proximity of a weekly market at good weather conditions
+Hazardous Event=While driving, the vehicle is  following a wrong trajectory and leaves the road and may hit an obstacle.
+Probable Causes=Sensor or actuator failures; misinterpretation of sensor signals; wrong localization; wrong classification of the road; erroneous trajactory planning; controller failure; wrong timing of steering command
+Exposure=E4; Severity=S3; Controllability=C3; ASIL=D
+

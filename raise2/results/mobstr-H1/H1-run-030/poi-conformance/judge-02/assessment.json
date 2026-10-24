@@ -1,0 +1,17 @@
+{
+  "run_id": "H1-run-030",
+  "concern_id": "H1",
+  "classification": "OVEREXTENDED",
+  "rationale": "The target, hazard, SG-1 and FR-7 establish whether required braking occurs or is omitted as the phenomenon to characterise. Braking response is therefore legitimately included. However, the declared scope also incorporates obstacle detection and distance-information production. The requirements and architecture establish these as supporting perception functions, but their influence on braking does not establish them as constituents of the phenomenon being evaluated.",
+  "determining_elements": [
+    "“Braking-maneuver decision and execution state” has a supported core insofar as it characterises whether required braking is produced or omitted.",
+    "The explicit inclusion of “obstacle detection” extends P into an observation function described by FR-7.2 and implemented by Object Detection.",
+    "“Distance-to-obstacle information,” insofar as it includes the information determined by Sensor Fusion under FR-7.2.4, incorporates a supporting perception output rather than merely the physical vehicle–obstacle relationship relevant to requiring braking.",
+    "The qualifier “relevant to whether braking is omitted” establishes relevance, but does not justify including the supporting perception functions within P."
+  ],
+  "sources": [
+    "hazard",
+    "requirements",
+    "architecture"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "run_id": "H1-run-002",
+  "concern_id": "H1",
+  "classification": "ALIGNED",
+  "rationale": "P characterises whether required braking occurs, which is directly necessary to evaluate prevention of omitted braking under SG-1. FR-7 establishes braking itself as the required system response, and H-1 supports the declared operational situation and collision context. P does not extend into sensing, planning algorithms, communication, or mechanism-specific timing merely because they influence braking.",
+  "determining_elements": [
+    "“Whether the vehicle executes a braking maneuver” identifies execution versus omission of the behaviour targeted by T.",
+    "“When braking is required to avoid a collision” ties that behaviour to the condition establishing its necessity.",
+    "The road, speed, weather, and pedestrian-crossing conditions match the operational situation declared in H-1; road users and static obstacles appear in its hazardous event.",
+    "The scope’s “decide and perform braking” remains a high-level description of the required braking response rather than adding internal decision-making mechanisms."
+  ],
+  "sources": [
+    "hazard",
+    "requirements"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "H3-run-014",
+  "concern_id": "H3",
+  "classification": "ALIGNED",
+  "rationale": "Braking behavior itself must be characterised to evaluate prevention of unintended braking under SG-3 and the H-3 hazardous event. Relating braking to a valid obstacle-related cause is supported by H-3’s stopping-without-an-obstacle event and FR-7’s collision-avoidance braking function. The declared scope matches the supplied operational situation. P does not expand into sensing, computation, communication, failure mitigation, or mechanism timing.",
+  "determining_elements": [
+    "“Braking behavior of the ego vehicle,” including whether braking occurs, directly identifies the behavior evaluated by T.",
+    "“Whether it is intended in response to a valid obstacle-related cause” captures the relationship supported by H-3 and FR-7 without incorporating obstacle-detection mechanisms.",
+    "The scope preserves H-3’s straight-ahead urban driving at 50 km/h, good weather, and absence of visible obstacles or vehicles ahead."
+  ],
+  "sources": [
+    "hazard",
+    "requirements"
+  ]
+}

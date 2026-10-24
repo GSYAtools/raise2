@@ -1,0 +1,16 @@
+{
+  "run_id": "H1-run-011",
+  "concern_id": "H1",
+  "classification": "OVEREXTENDED",
+  "rationale": "T, H-1, SG-1 and FR-7 establish required braking execution as the phenomenon to characterise; the collision outcome and FR-7.1 also support its timeliness. However, P's declared scope additionally incorporates associated perception/planning/control states based on their relevance to deciding and executing braking. The requirements and architecture establish supporting mechanisms, but do not establish that broad internal-state inclusion as part of the phenomenon required by T.",
+  "determining_elements": [
+    "The scope includes “the associated perception/planning/control state relevant to deciding and executing braking to avoid collision”; this is the determining overextension beyond braking necessity and execution.",
+    "“Whether braking maneuver execution is required and performed in time to avoid collision” is supported system behaviour and timing, not itself an overextension.",
+    "The specified road, speed, weather and pedestrian-crossing situation is directly supported by H-1."
+  ],
+  "sources": [
+    "hazard",
+    "requirements",
+    "architecture"
+  ]
+}

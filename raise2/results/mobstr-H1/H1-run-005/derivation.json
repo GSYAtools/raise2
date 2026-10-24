@@ -1,0 +1,67 @@
+{
+  "run_id": "H1-run-005",
+  "concern_id": "H1",
+  "evaluation_target": {
+    "id": "T1",
+    "statement": "Prevent omitting required braking maneuvers.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The safety goal SG-1 explicitly states that the system shall prevent omitting required braking maneuvers, and the hazard H-1 describes the hazardous event as failing to stop in time and colliding."
+  },
+  "phenomenon_of_interest": {
+    "id": "P1",
+    "statement": "The vehicle-control situation in which the system must decide and execute braking in response to obstacles or other road users/obstacles relevant to collision avoidance.",
+    "scope": "Operational situations covered by the hazard scenario and braking-avoidance functionality: driving on the road with obstacles/road users present, including cases where braking is required to avoid collision.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The concern is about whether braking is performed when required to avoid collision in the stated hazard situation, not about a particular sensor or component."
+  },
+  "distinctions": [
+    {
+      "id": "D1",
+      "dimension": "Braking decision outcome under a collision-avoidance situation",
+      "contrast_a": "A required braking maneuver is initiated and executed in time to avoid collision",
+      "contrast_b": "A required braking maneuver is omitted or not initiated in time, leading to inability to stop before collision",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "The hazard and FR-7/FR-7.1 distinguish safe braking response from omission of braking in a relevant driving situation; collapsing these would lose the information needed to evaluate whether braking is omitted."
+    }
+  ],
+  "orrs": [
+    {
+      "id": "ORR1",
+      "covers": [
+        "D1"
+      ],
+      "obligation": "An admissible observable representation must preserve whether, in a relevant collision-avoidance situation, braking was initiated and executed in time versus omitted or too late.",
+      "distinguishability_criterion": "The representation must allow the two braking outcomes to remain distinguishable as different operational states or event classes.",
+      "assumptions": [
+        {
+          "id": "A1",
+          "statement": "The hazard scenario and braking-avoidance requirements define the relevant evaluation context for the concern.",
+          "source": [
+            "hazard",
+            "requirements"
+          ],
+          "revalidation_conditions": [
+            {
+              "id": "RC1",
+              "condition": "The hazard definition or safety goal is revised to include different collision-avoidance situations or a different braking objective."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rr5": {
+    "coverage": true,
+    "consistency": true,
+    "issues": []
+  }
+}

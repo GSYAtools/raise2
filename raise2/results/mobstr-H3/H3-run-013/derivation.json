@@ -1,0 +1,87 @@
+{
+  "run_id": "H3-run-013",
+  "concern_id": "H3",
+  "evaluation_target": {
+    "id": "T1",
+    "statement": "Prevent unintended braking.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The hazard defines the unwanted event as the vehicle suddenly stopping with no obstacle in front, and SG-3 states that the system shall prevent unintended braking."
+  },
+  "phenomenon_of_interest": {
+    "id": "P1",
+    "statement": "Braking behavior of the ego vehicle in the stated operational situation, including whether braking occurs and whether it is intended or unintended.",
+    "scope": "Straight ahead drive on a less frequented urban road at 50 km/h, with no visible obstacles or vehicles in front of the ego vehicle, under good weather conditions.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The concern is about the vehicle’s braking behavior in the specific driving situation described by the hazard; the phenomenon must include the occurrence and character of braking so the safety goal can be evaluated."
+  },
+  "distinctions": [
+    {
+      "id": "D1",
+      "dimension": "Presence of braking event",
+      "contrast_a": "Vehicle does not brake.",
+      "contrast_b": "Vehicle brakes / stops.",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "Whether braking occurs is necessary to evaluate prevention of unintended braking; collapsing braking and non-braking would remove the information needed to determine whether the hazardous event has occurred."
+    },
+    {
+      "id": "D2",
+      "dimension": "Intentionality of braking",
+      "contrast_a": "Braking is intended as part of a valid braking maneuver to avoid a collision with an obstacle.",
+      "contrast_b": "Braking is unintended, i.e. the vehicle suddenly stops although no obstacle is in front of the vehicle.",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "The hazard and FR-7 distinguish braking to avoid collisions from unintended braking; collapsing intended and unintended braking would remove the information needed to judge whether the safety goal is violated."
+    }
+  ],
+  "orrs": [
+    {
+      "id": "O1",
+      "covers": [
+        "D1"
+      ],
+      "obligation": "An admissible Observable Representation shall preserve whether the ego vehicle is braking or not braking in the declared operational situation.",
+      "distinguishability_criterion": "The representation must distinguish the presence of a braking event from the absence of a braking event.",
+      "assumptions": []
+    },
+    {
+      "id": "O2",
+      "covers": [
+        "D2"
+      ],
+      "obligation": "An admissible Observable Representation shall preserve whether any braking event is intended as a collision-avoidance maneuver or is unintended.",
+      "distinguishability_criterion": "The representation must distinguish intended braking from unintended braking.",
+      "assumptions": [
+        {
+          "id": "A1",
+          "statement": "The operational representation can relate braking behavior to the presence or absence of obstacles in front of the ego vehicle.",
+          "source": [
+            "hazard",
+            "requirements"
+          ],
+          "revalidation_conditions": [
+            {
+              "id": "R1",
+              "condition": "If the operational situation or safety goal changes so that braking may be justified by factors other than obstacle avoidance."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "rr5": {
+    "coverage": true,
+    "consistency": true,
+    "issues": []
+  }
+}

@@ -1,0 +1,30 @@
+H5 post-reference lessons
+
+1. The H5 fault tree contains numerous observation, representation,
+communication, localization, computation, and control failures, but these do
+not automatically establish additional phenomenon-level distinctions.
+
+2. False positives, false negatives, missing, erroneous, stale, or delayed
+information are classified as preservation/dependency threats unless the
+downstream evidence establishes a distinct state of the declared Phenomenon
+of Interest.
+
+3. Omitted, erroneous, or delayed control/steering commands are execution or
+control failures. They may cause concern-relevant phenomenon states but are
+not themselves CRDs unless those command states belong to the declared PoI.
+
+4. Timing relevance does not imply a temporal CRD. A temporal contrast is
+admissible only when the timed property belongs to the declared PoI and its
+collapse removes information required to evaluate C.
+
+5. H5-CRD2 (within versus outside road boundaries) is directly aligned with
+the top-level hazardous outcome and is supported by multiple downstream
+causal branches.
+
+6. H5-CRD1 (trajectory-consistent versus trajectory-inconsistent motion)
+remains source-supported by the upstream functional requirements even when
+the fault tree does not express it as an independent downstream distinction.
+
+7. H5 does not provide evidence requiring decomposition of one evaluative
+intent into multiple Phenomena of Interest. The development issue identified
+in H2 is better addressed by enforcing PoI membership during CRD admissibility.

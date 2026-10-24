@@ -1,0 +1,16 @@
+{
+  "run_id": "H3-run-009",
+  "concern_id": "H3",
+  "classification": "ALIGNED",
+  "rationale": "The target and SG-3 require characterising braking behavior itself to evaluate prevention of unintended braking. H-3 establishes the operating context and braking without an obstacle ahead as the hazardous event; FR-7 supports the relationship between obstacle avoidance and intended braking. P remains focused on braking occurrence and its relationship to obstacles, without incorporating sensing, computation, communication, failure-mitigation mechanisms, or their timing constraints.",
+  "determining_elements": [
+    "Vehicle braking behavior is the phenomenon directly required by the target, rather than merely a mechanism affecting its evaluation.",
+    "The straight-ahead urban driving context at 50 km/h, in good weather and without visible obstacles or vehicles ahead, matches H-3.",
+    "The scope includes whether braking occurs and whether it is triggered by obstacles or vehicles ahead, supported by H-3 and FR-7.",
+    "The declared scope does not extend into obstacle-detection implementation, controller behavior, warnings, redundancy, or mechanism-specific timing."
+  ],
+  "sources": [
+    "hazard",
+    "requirements"
+  ]
+}

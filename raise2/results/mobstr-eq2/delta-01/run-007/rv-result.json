@@ -1,0 +1,9 @@
+{
+  "run_id": "run-007",
+  "change_id": "delta-01",
+  "decision": "NONE",
+  "affected_orrs": [],
+  "return_point": null,
+  "triggered_conditions": [],
+  "rationale": "The change is limited to the driver-warning presentation component (new visual layout and notification presentation). The supplied description explicitly states that obstacle information, object category information, ego-object spatial information, the Phenomenon of Interest, and the Evaluation Target are unchanged. No supported dependency from this architectural presentation change to H1-ORR1, H1-ORR2, or H1-ORR3 is established in the frozen baseline, so no revalidation or rederivation is required."
+}

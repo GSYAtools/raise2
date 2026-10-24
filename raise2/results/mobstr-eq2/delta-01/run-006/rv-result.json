@@ -1,0 +1,9 @@
+{
+  "run_id": "run-006",
+  "change_id": "delta-01",
+  "decision": "NONE",
+  "affected_orrs": [],
+  "return_point": null,
+  "triggered_conditions": [],
+  "rationale": "The change is limited to the driver-warning presentation component (new visual layout/notification presentation). Per the supplied change description, it does not modify obstacle information, object category information, ego-object spatial information, the declared Phenomenon of Interest, or the Evaluation Target. No baseline ORR depends on driver-warning presentation, so no revalidation or rederivation is required."
+}

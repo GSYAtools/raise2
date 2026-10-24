@@ -1,0 +1,15 @@
+{
+  "run_id": "H3-run-012",
+  "concern_id": "H3",
+  "classification": "ALIGNED",
+  "rationale": "The target and SG-3 require characterising whether unintended braking occurs. Vehicle braking behaviour is therefore itself part of the phenomenon, not merely a control mechanism affecting its evaluation. H-3 directly supports the stated operational context and unexpected braking without a forward obstacle. P does not extend to sensing, computation, communication, failure-mitigation mechanisms, or their timing constraints.",
+  "determining_elements": [
+    "Vehicle braking behaviour as the property to be characterised.",
+    "Straight-ahead driving on a less frequented urban road at 50 km/h, with no visible obstacles or vehicles ahead and good weather, as specified in H-3.",
+    "The scope explicitly includes whether braking occurs unexpectedly in the absence of a relevant forward obstacle."
+  ],
+  "sources": [
+    "hazard",
+    "requirements"
+  ]
+}

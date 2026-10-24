@@ -1,0 +1,16 @@
+{
+  "run_id": "H1-run-011",
+  "concern_id": "H1",
+  "classification": "OVEREXTENDED",
+  "rationale": "Required braking execution and its timeliness legitimately belong to P: T and SG-1 address omitted braking, while H-1, FR-7 and FR-7.1 establish collision-avoidance braking and timely initiation. However, the declared scope additionally incorporates associated perception/planning/control state merely through its relevance to deciding and executing braking. The requirements and architecture establish supporting mechanisms, but do not establish their internal states generally as part of the phenomenon T requires characterising.",
+  "determining_elements": [
+    "The scope phrase “the associated perception/planning/control state relevant to deciding and executing braking” extends P to supporting observation, computation and control mechanisms without establishing their membership in the phenomenon.",
+    "“Whether braking maneuver execution is required and performed” is supported by T, SG-1 and FR-7; braking behaviour itself is not the overextension.",
+    "“In time to avoid collision” is supported by H-1 and FR-7.1. This legitimate temporal aspect of braking does not justify including the broader perception/planning/control state."
+  ],
+  "sources": [
+    "hazard",
+    "requirements",
+    "architecture"
+  ]
+}

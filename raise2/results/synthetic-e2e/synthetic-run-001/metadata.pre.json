@@ -1,0 +1,25 @@
+{
+  "run_id": "synthetic-run-001",
+  "experiment_id": "synthetic-e2e",
+  "concern_id": "availability",
+  "started_at_utc": "2026-10-24T04:48:05.248171+00:00",
+  "requested_model": "gpt-5.4-mini-2026-03-17",
+  "manifest_sha256": "0c604fec987e50f12784e108b767d5ea9abdf80c8c67cecfbe3835df17f3c833",
+  "experiment_schema_sha256": "93a2088e99f065c1a5ca3114f06b6614d3986ec1710702b1cdcf441537a1ce1c",
+  "derivation_schema_sha256": "82c976968517ef181cf5d7fe9236973484a66227c979e56478e1ba7cc8f7f0f8",
+  "protocol_sha256": "2b84d05ab135a5c318ccabb951dc9f95387e3db71b1719fb48dec7dafb418b42",
+  "input_artefacts": [
+    {
+      "id": "requirement",
+      "type": "requirement",
+      "source_path": "raise2/tests/synthetic-input/requirement.txt",
+      "sha256": "75fe1d207591115b1ba51505d2ff8e48dbcf6ce168866a5a2a6d516a2ac9b06e"
+    },
+    {
+      "id": "context",
+      "type": "other",
+      "source_path": "raise2/tests/synthetic-input/context.txt",
+      "sha256": "78f66b42f283d8d31a7900691249e99682c4f7ad2d9f369a518b0a1d8de5e0bb"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "run_id": "run-003",
+  "change_id": "delta-01",
+  "decision": "NONE",
+  "affected_orrs": [],
+  "return_point": null,
+  "triggered_conditions": [],
+  "rationale": "The change is limited to the driver-warning presentation component and explicitly does not modify obstacle information, object category information, ego-object spatial information, the Phenomenon of Interest, or the Evaluation Target. None of the baseline ORRs depend on the warning presentation layer; they depend on obstacle presence, object category, or spatial relation information and their associated revalidation conditions. Therefore the change has no representational impact on the frozen RAISE2 specification."
+}

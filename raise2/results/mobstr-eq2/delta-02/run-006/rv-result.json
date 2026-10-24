@@ -1,0 +1,13 @@
+{
+  "run_id": "run-006",
+  "change_id": "delta-02",
+  "decision": "REVALIDATE",
+  "affected_orrs": [
+    "H1-ORR1"
+  ],
+  "return_point": null,
+  "triggered_conditions": [
+    "H1-RC1"
+  ],
+  "rationale": "The change alters the interface supplying obstacle information, specifically the representation path for obstacle presence. In the frozen baseline, H1-ORR1 depends on assumption H1-A1 and revalidation condition H1-RC1, which are triggered when the obstacle-detection requirements, architectural responsibility for obstacle information, or the information supplied for representing obstacle presence changes. The evaluation target and phenomenon of interest remain applicable, and the change does not indicate a scope change requiring redirection to RR1/RR2/RR3. Only H1-ORR1 is affected because the change concerns obstacle presence representation, not the object-category distinction (H1-ORR2) or braking-relevant distance relation (H1-ORR3)."
+}

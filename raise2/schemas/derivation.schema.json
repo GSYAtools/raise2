@@ -1,0 +1,294 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raise2.org/schemas/derivation.schema.json",
+  "title": "RAISE2 Representation Requirements Derivation",
+  "type": "object",
+  "additionalProperties": false,
+
+  "required": [
+    "run_id",
+    "concern_id",
+    "evaluation_target",
+    "phenomenon_of_interest",
+    "distinctions",
+    "orrs",
+    "rr5"
+  ],
+
+  "properties": {
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+
+    "concern_id": {
+      "type": "string",
+      "minLength": 1
+    },
+
+    "evaluation_target": {
+      "$ref": "#/$defs/evaluationTarget"
+    },
+
+    "phenomenon_of_interest": {
+      "$ref": "#/$defs/phenomenon"
+    },
+
+    "distinctions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/distinction"
+      }
+    },
+
+    "orrs": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/orr"
+      }
+    },
+
+    "rr5": {
+      "$ref": "#/$defs/rr5"
+    }
+  },
+
+  "$defs": {
+    "traceableElement": {
+      "type": "object",
+      "additionalProperties":false,
+      "required": ["source", "rationale"],
+      "properties": {
+        "source": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+
+    "evaluationTarget": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "statement", "source", "rationale"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "statement": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+
+    "phenomenon": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "statement", "scope", "source", "rationale"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "statement": {
+          "type": "string",
+          "minLength": 1
+        },
+        "scope": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+
+    "distinction": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "dimension",
+        "contrast_a",
+        "contrast_b",
+        "source",
+        "rationale"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "dimension": {
+          "type": "string",
+          "minLength": 1
+        },
+        "contrast_a": {
+          "type": "string",
+          "minLength": 1
+        },
+        "contrast_b": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+
+    "revalidationCondition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "condition"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "condition": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+
+    "assumption": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "statement",
+        "source",
+        "revalidation_conditions"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "statement": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "revalidation_conditions": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/revalidationCondition"
+          }
+        }
+      }
+    },
+
+    "orr": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "covers",
+        "obligation",
+        "distinguishability_criterion",
+        "assumptions"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "covers": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "obligation": {
+          "type": "string",
+          "minLength": 1
+        },
+        "distinguishability_criterion": {
+          "type": "string",
+          "minLength": 1
+        },
+        "assumptions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/assumption"
+          }
+        }
+      }
+    },
+
+    "rr5": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["coverage", "consistency", "issues"],
+      "properties": {
+        "coverage": {
+          "type": "boolean"
+        },
+        "consistency": {
+          "type": "boolean"
+        },
+        "issues": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

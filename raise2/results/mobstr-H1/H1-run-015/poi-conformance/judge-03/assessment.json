@@ -1,0 +1,16 @@
+{
+  "run_id": "H1-run-015",
+  "concern_id": "H1",
+  "classification": "ALIGNED",
+  "rationale": "P identifies the operational conditions and braking behaviour needed to evaluate prevention of omitted required braking. Braking initiation belongs to the target itself, while H-1 establishes stopping in time to avoid collision as part of the relevant phenomenon. P does not expand into the mechanisms used to sense, compute, communicate, or control that behaviour.",
+  "determining_elements": [
+    "“Braking-relevant operational state in obstacle/collision-avoidance situations” identifies the conditions in which braking is required, supported by H-1 and FR-7.",
+    "“Whether a required braking maneuver is initiated” directly addresses the omission prohibited by SG-1; FR-7 and FR-7.1 further support including braking initiation.",
+    "“Whether the vehicle can stop in time to avoid collision” reflects H-1's hazardous event. This timing concerns the vehicle's collision-avoiding behaviour, not merely an observation or computation deadline.",
+    "The declared straight-ahead road-context scope is grounded in H-1, whose hazardous event includes both road users and static obstacles."
+  ],
+  "sources": [
+    "hazard",
+    "requirements"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "run_id": "H1-run-003",
+  "concern_id": "H1",
+  "classification": "ALIGNED",
+  "rationale": "P concerns the vehicle state in collision-avoidance situations requiring braking, with its scope linking braking necessity to timely execution. SG-1 and FR-7 establish required braking and its omission as the subject of evaluation. H-1's failure-to-stop-in-time event and FR-7.1 establish that braking-response timing belongs to that subject. The scope does not incorporate sensing, computation, communication, or monitoring mechanisms merely because they influence braking.",
+  "determining_elements": [
+    "“Braking-relevant operational state” is restricted to situations where braking is required to avoid collision, directly connecting P to the evaluation target.",
+    "The inclusion of road users and static obstacles is supported by H-1's hazardous event and FR-7.",
+    "“Decide whether braking is required and execute it in time” connects the operational situation to the required braking response without specifying internal decision-making mechanisms.",
+    "Timely braking is supported by the hazardous event and FR-7.1, rather than inferred solely from obstacle-detection or other supporting-mechanism deadlines."
+  ],
+  "sources": [
+    "hazard",
+    "requirements"
+  ]
+}

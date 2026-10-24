@@ -1,0 +1,5 @@
+condition_id	min_failure_delta	runs	cycles	orr_violations	cycle_violation_rate	runs_with_violation	run_incidence	missed_violations	false_violations	real_violated_cycles	missed_violation_rate	false_violation_rate
+mfd-0005	0.005	10	200	13	0.065	10	1.0	13	0	13	1.0	0.0
+mfd-0010	0.01	10	200	24	0.12	9	0.9	24	0	24	1.0	0.0
+mfd-0020	0.02	10	200	25	0.125	9	0.9	25	0	25	1.0	0.0
+mfd-0040	0.04	10	200	31	0.155	10	1.0	31	0	31	1.0	0.0

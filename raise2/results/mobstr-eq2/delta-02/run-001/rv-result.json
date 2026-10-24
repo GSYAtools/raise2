@@ -1,0 +1,13 @@
+{
+  "run_id": "run-001",
+  "change_id": "delta-02",
+  "decision": "REVALIDATE",
+  "affected_orrs": [
+    "H1-ORR1"
+  ],
+  "return_point": null,
+  "triggered_conditions": [
+    "H1-RC1"
+  ],
+  "rationale": "The change alters the interface supplying obstacle information to the operational representation, specifically the source of obstacle presence. In the baseline, H1-ORR1 depends on H1-A1 and H1-RC1, which require that the obstacle-information basis continues to support distinguishing collision-relevant obstacle presence from absence. The evaluation target, phenomenon of interest, and other concern-relevant distinctions remain unchanged, so only the obstacle-presence ORR must be revalidated."
+}

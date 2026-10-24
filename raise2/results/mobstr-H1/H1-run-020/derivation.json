@@ -1,0 +1,52 @@
+{
+  "run_id": "H1-run-020",
+  "concern_id": "H1",
+  "evaluation_target": {
+    "id": "T1",
+    "statement": "Prevent omitting required braking maneuvers.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "The safety goal explicitly states that the system shall prevent omitting required braking maneuvers, and the functional requirement states the system shall perform a braking maneuver to avoid collisions with obstacles."
+  },
+  "phenomenon_of_interest": {
+    "id": "P1",
+    "statement": "The vehicle's braking-maneuver execution state in obstacle-related driving situations.",
+    "scope": "Situations in which the ego vehicle is driving and encounters obstacles or road users such that a braking maneuver may be required to avoid collision, including the hazardous operational situation described and the related obstacle-detection/braking scenarios in the requirements.",
+    "source": [
+      "hazard",
+      "requirements"
+    ],
+    "rationale": "Evaluation of whether a required braking maneuver is omitted depends on the state of braking execution when obstacle-related collision avoidance is needed."
+  },
+  "distinctions": [
+    {
+      "id": "D1",
+      "dimension": "Braking maneuver occurrence when required",
+      "contrast_a": "A required braking maneuver is executed",
+      "contrast_b": "A required braking maneuver is omitted",
+      "source": [
+        "hazard",
+        "requirements"
+      ],
+      "rationale": "The safety goal and braking functional requirement require preservation of whether braking occurs when needed; collapsing execution and omission would remove the information needed to evaluate whether the concern is satisfied."
+    }
+  ],
+  "orrs": [
+    {
+      "id": "ORR1",
+      "covers": [
+        "D1"
+      ],
+      "obligation": "An admissible Observable Representation shall preserve whether a required braking maneuver is executed or omitted in the evaluated obstacle-related driving situation.",
+      "distinguishability_criterion": "The representation must distinguish states in which braking is performed from states in which braking is not performed when braking is required.",
+      "assumptions": []
+    }
+  ],
+  "rr5": {
+    "coverage": true,
+    "consistency": true,
+    "issues": []
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "baseline_id": "mobstr-H1-revalidation-baseline-v1",
+  "baseline_sha256": "e7e53a8058e7da0a0d22bc43c6dd38e629e704897b701239597302e777cc9965",
+  "change_id": "delta-05",
+  "title": "Phenomenon-of-Interest scope extension",
+  "change_type": "phenomenon_scope",
+  "description": "The scope of the Phenomenon of Interest is extended beyond the collision-relevant spatial situation. The revised evaluation must also characterise road-surface condition as part of the phenomenon because road-surface state is now considered part of determining whether braking is required. The Evaluation Target itself remains unchanged.",
+  "changed_elements": [
+    "P_H1",
+    "phenomenon scope",
+    "road-surface condition"
+  ]
+}

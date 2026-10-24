@@ -1,0 +1,15 @@
+{
+  "run_id": "H3-run-029",
+  "concern_id": "H3",
+  "classification": "ALIGNED",
+  "rationale": "P identifies the vehicle braking behavior that must be characterized to evaluate prevention of unintended braking. H-3 explicitly concerns a sudden stop without an obstacle ahead, and SG-3 establishes unintended braking itself as the behavior to prevent. The declared scope matches H-3's operational situation. P does not expand into sensing, computation, communication, failure mitigation, or mechanism-specific timing requirements.",
+  "determining_elements": [
+    "“Braking behavior of the ego vehicle” identifies the system behavior directly required by the Evaluation Target.",
+    "“Whether braking occurs when no obstacle is present in front of the vehicle” is supported by H-3's hazardous event.",
+    "The scope retains H-3's straight-ahead urban driving situation at 50 km/h, with no visible obstacles or vehicles ahead and good weather."
+  ],
+  "sources": [
+    "hazard",
+    "requirements"
+  ]
+}

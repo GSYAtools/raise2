@@ -1,0 +1,15 @@
+Development hypothesis after H2 and H5 RR1--RR2:
+
+A requirement associated with an evaluative concern does not automatically
+define a Concern-Relevant Distinction.
+
+A candidate distinction is admissible only if:
+1. both contrasted situations belong to the declared Phenomenon of Interest;
+2. collapsing them removes information required to evaluate the concern.
+
+Requirements constraining observation, computation, communication, or control
+mechanisms may instead establish dependencies, assumptions, revalidation
+conditions, or preservation threats.
+
+This hypothesis remains provisional until H5 RR3--RR5 and held-reference
+analysis are completed.

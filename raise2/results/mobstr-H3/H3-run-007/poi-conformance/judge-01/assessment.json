@@ -1,0 +1,16 @@
+{
+  "run_id": "H3-run-007",
+  "concern_id": "H3",
+  "classification": "ALIGNED",
+  "rationale": "H-3 identifies sudden stopping without a front obstacle as the hazardous event, and SG-3 requires prevention of unintended braking. Vehicle braking behavior is therefore itself what must be characterised, not merely a mechanism affecting evaluation. P retains the documented operational situation and includes braking and non-braking states without extending into sensing, computation, communication, failure mitigation, or mechanism timing.",
+  "determining_elements": [
+    "“The vehicle's braking behavior” directly addresses the behavior required to evaluate prevention of unintended braking.",
+    "“Whether braking occurs without a front obstacle” is grounded in H-3's hazardous event.",
+    "The scope preserves H-3's straight-ahead, less-frequented urban-road situation at 50 km/h, in good weather, without visible obstacles or vehicles ahead.",
+    "Including normal non-braking operation and any braking in that situation characterises relevant states of the same phenomenon rather than adding supporting mechanisms."
+  ],
+  "sources": [
+    "hazard",
+    "requirements"
+  ]
+}

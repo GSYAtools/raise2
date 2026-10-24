@@ -1,0 +1,16 @@
+{
+  "run_id": "H1-run-029",
+  "concern_id": "H1",
+  "classification": "ALIGNED",
+  "rationale": "T requires characterizing whether required braking is omitted, making braking behavior itself part of the phenomenon rather than merely an enabling control mechanism. SG-1, FR-7 and H-1 directly support this focus. The declared scope stays within collision-relevant obstacle encounters and does not incorporate detection processing, communication, controller internals or their timing constraints.",
+  "determining_elements": [
+    "“Vehicle/system braking behavior” directly addresses the required maneuver in SG-1 and FR-7 and the omitted-braking hazard H-1.",
+    "“Whether a braking maneuver is initiated when required to avoid collision” identifies the occurrence or omission of the behavior targeted by T; FR-7.1 also explicitly addresses braking initiation.",
+    "The scope’s obstacles or road users “on or near the vehicle trajectory” are supported by H-1 and FR-7.2.4, with inclusion limited to situations where collision avoidance may require braking.",
+    "The reference to obstacle-detection situations supplies encounter context without making detection mechanisms or detection latency part of P."
+  ],
+  "sources": [
+    "hazard",
+    "requirements"
+  ]
+}
