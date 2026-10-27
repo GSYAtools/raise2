@@ -444,9 +444,10 @@ execution and evaluation procedures.
 
 ---
 
-# 10. EQ1 — Concern-relative derivation
+# 10. EQ1 — Concern-relative derivation and reproducibility
 
-EQ1 evaluates repeated concern-relative derivation using the MobSTr exemplar.
+EQ1 evaluates controlled expert derivation and reproducibility under repeated
+automated execution using the MobSTr exemplar.
 
 The experiment uses two evaluation concerns:
 
@@ -505,7 +506,65 @@ part of these test-visible inputs.
 
 ---
 
-## 10.2 Derivation execution
+## 10.2 Frozen expert derivation
+
+Before repeated automated execution, RAISE² was applied to H1 and H3 using only
+the frozen test-visible evidence and the previously frozen coding protocol.
+Both expert derivations were frozen before held-out downstream evidence was
+used to construct the independent reference distinctions.
+
+The preserved freeze sequence is:
+
+    coding protocol             2026-10-06T10:47:55Z
+    H1 expert derivation        2026-10-06T13:09:30Z
+    H3 expert derivation        2026-10-06T15:56:31Z
+    independent reference set   2026-10-07T04:43:34Z
+
+The provenance records for both expert derivations explicitly state that
+held-out artefacts must not be consulted during RR1--RR5.
+
+The frozen expert specifications are preserved under:
+
+    mobstr/work/raise2-output/H1/coding/
+    mobstr/work/raise2-output/H3/coding/
+
+Their final Concern-Relevant Distinctions are:
+
+    H1-CRD1  obstacle presence
+    H1-CRD2  object category
+    H1-CRD3  obstacle distance relative to braking need
+
+    H3-CRD1  obstacle presence
+    H3-CRD2  obstacle distance relative to braking justification
+
+The independent reference coding was subsequently constructed from held-out
+FTA, FMEA, and Safety Case evidence. Reference-set construction did not use
+RAISE²-derived/reference matching.
+
+Comparison with the frozen expert derivations gives:
+
+    H1-REF1  obstacle presence
+      recovered by H1-CRD1
+
+    H1-REF2  braking-relevant spatial relation
+      recovered by H1-CRD3
+
+    H3-REF1  obstacle presence
+      recovered by H3-CRD1
+
+    H3-REF2  braking-relevant spatial relation
+      recovered by H3-CRD2
+
+Thus, the frozen expert application recovered all four independently
+established reference distinctions (4/4).
+
+H1-CRD2 is an additional object-category distinction supported directly by
+the upstream requirements and is not represented as a downstream reference
+distinction.
+
+---
+
+## 10.3 Automated derivation execution
 
 EQ1 contains:
 
@@ -560,7 +619,7 @@ than being silently replaced.
 
 ---
 
-## 10.3 EQ1 derivation audit
+## 10.4 EQ1 derivation audit
 
 The 60 preserved derivations can be audited with:
 
@@ -638,7 +697,7 @@ The audit is deterministic and does not require an OpenAI API call.
 
 ---
 
-## 10.4 PoI-conformance assessment
+## 10.5 PoI-conformance assessment
 
 The derived Phenomenon of Interest is assessed independently from reference
 recovery.
@@ -685,7 +744,7 @@ The runner does not automatically retry API failures.
 
 ---
 
-## 10.5 PoI API-failure recovery
+## 10.6 PoI API-failure recovery
 
 During the frozen PoI-conformance campaign, 22 of the original 180 assessment
 attempts terminated with:
@@ -746,7 +805,7 @@ records.
 
 ---
 
-## 10.6 Aggregate PoI classification
+## 10.7 Aggregate PoI classification
 
 After valid PoI assessments are available, aggregate them with:
 
@@ -787,7 +846,7 @@ produced.
 
 ---
 
-## 10.7 Extract the derived CRD catalogue
+## 10.8 Extract the derived CRD catalogue
 
 Extract all derived CRDs from the 60 frozen derivations with:
 
@@ -806,7 +865,7 @@ This step is deterministic.
 
 ---
 
-## 10.8 Reference distinctions
+## 10.9 Reference distinctions
 
 The independently prepared reference distinctions are:
 
@@ -827,7 +886,7 @@ raise2/experiments/mobstr/EQ1-REFERENCE-MATCHING.txt
 
 ---
 
-## 10.9 Deterministic reference matching
+## 10.10 Deterministic reference matching
 
 Generate reference-match candidates with:
 
@@ -856,7 +915,7 @@ reference distinction.
 
 ---
 
-## 10.10 Adjudication-template construction
+## 10.11 Adjudication-template construction
 
 Construct the adjudication table with:
 
@@ -911,7 +970,7 @@ This audit is distinct from the 18 lexical-review adjudications.
 
 ---
 
-## 10.11 Applying the human adjudications
+## 10.12 Applying the human adjudications
 
 The 18 human decisions and their rationales are preserved explicitly in:
 
@@ -948,7 +1007,7 @@ machine-inspectable.
 
 ---
 
-## 10.12 Final EQ1 evaluation
+## 10.13 Final EQ1 evaluation
 
 Once PoI classification, deterministic matching, and adjudication are
 available, compute the final EQ1 metrics with:
@@ -970,7 +1029,7 @@ The final evaluator is deterministic and does not make an OpenAI API call.
 
 ---
 
-## 10.13 EQ1 reproduction paths
+## 10.14 EQ1 reproduction paths
 
 There are three useful levels of EQ1 reproduction.
 
@@ -982,10 +1041,22 @@ No API call is required:
 python -m raise2.validation.validate_results
 ```
 
+The frozen expert derivation can also be inspected directly without an API
+call. The relevant artefacts are:
+
+    mobstr/work/raise2-output/H1/coding/final-crds.tsv
+    mobstr/work/raise2-output/H3/coding/final-crds.tsv
+    mobstr/work/reference/coder1/H1/reference-crds.tsv
+    mobstr/work/reference/coder1/H3/reference-crds.tsv
+
+These artefacts preserve the expert derivations and independently constructed
+reference distinctions supporting the 4/4 expert recovery reported in
+`RESULTS.md`.
+
 ### B. Recompute deterministic EQ1 artefacts
 
-Starting from preserved derivations and preserved valid PoI assessments, the
-deterministic stages are:
+Starting from preserved automated derivations and preserved valid PoI
+assessments, the deterministic stages are:
 
 ```bash
 python -m raise2.evaluator.audit_eq1

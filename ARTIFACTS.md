@@ -361,10 +361,10 @@ The final machine-readable EQ1 results are indexed in `RESULTS.md`.
 
 ---
 
-# 10. Frozen RAISE² representation specifications
+# 10. Frozen expert RAISE² representation specifications
 
-The representation specifications used as the basis for lifecycle
-revalidation are preserved under:
+The expert representation specifications derived for the EQ1 evaluation
+concerns are preserved under:
 
 ```text
 mobstr/work/raise2-output/H1/coding/
@@ -375,7 +375,11 @@ Each directory contains the derivation context, CRD derivation record, final
 CRDs, Observable Representation Requirements, adjudication information,
 provenance information, and a local SHA-256 manifest.
 
-The H1 specification is the basis of the EQ2 revalidation experiment.
+Their provenance records document the frozen protocol and test-visible evidence
+used during derivation.
+
+The H1 specification is subsequently used as the basis of the EQ2 revalidation
+experiment.
 
 ---
 

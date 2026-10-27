@@ -16,19 +16,20 @@ the experimental evidence independently inspectable and reproducible.
 
 The evaluation comprises three complementary evaluation questions.
 
-### EQ1 — Concern-relative derivation
+### EQ1 — Concern-relative derivation and reproducibility
 
 EQ1 studies the derivation of concern-relevant distinctions and representation
-requirements from engineering artefacts.
+requirements from engineering artefacts, together with the reproducibility of
+that derivation under automated execution.
 
 The evaluation uses the MobSTr exemplar and separates development concerns
-(H2 and H5) from evaluation concerns (H1 and H3). The evaluation includes
-repeated independent derivations, Phenomenon-of-Interest (PoI) conformance
-assessment, and comparison against independently prepared reference
-distinctions.
+(H2 and H5) from evaluation concerns (H1 and H3). Frozen expert derivations are
+first compared against independently prepared held-out reference distinctions.
+The same derivation procedure is then executed repeatedly to assess PoI
+conformance and automated reference recovery.
 
-EQ1 exposes the extent to which initial representation-requirement derivation
-depends on semantic engineering judgement.
+EQ1 therefore distinguishes method derivability from the sensitivity of
+autonomous execution to semantic engineering judgement.
 
 ### EQ2 — Lifecycle revalidation
 
@@ -227,8 +228,9 @@ representation-requirement derivation.
 
 Instead, the combined evidence distinguishes three stages:
 
-1. initial concern-relative derivation is sensitive to semantic engineering
-   judgement;
+1. controlled expert derivation can identify independently supported
+   concern-relevant distinctions, while autonomous execution remains sensitive
+   to semantic engineering judgement;
 2. once a representation specification is established, lifecycle
    revalidation is substantially more reproducible; and
 3. operationalised representation requirements can identify runtime loss of

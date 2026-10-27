@@ -27,24 +27,94 @@ property of RAISE².
 
 ---
 
-# 2. EQ1 — Concern-relative derivation
+# 2. EQ1 — Concern-relative derivation and reproducibility
 
-EQ1 evaluates repeated derivations for two MobSTr evaluation concerns:
+EQ1 evaluates two complementary properties of RAISE² derivation:
+
+1. whether a controlled engineering application of the method can derive
+   concern-relevant distinctions from upstream evidence that are subsequently
+   supported by independent held-out evidence; and
+2. how reproducibly the same derivation procedure can be executed autonomously.
+
+The evaluation uses two held-out MobSTr concerns:
 
 - `H1`
 - `H3`
 
-Thirty independent derivations were executed for each concern.
+Development concerns H2 and H5 were used exclusively during protocol
+development.
+
+## 2.1 Frozen expert derivation and independent support
+
+Before the repeated automated executions, RAISE² was applied to H1 and H3 using
+only the frozen test-visible hazard, requirements, and architecture evidence.
+Both expert derivations were frozen before the held-out downstream evidence
+was used to construct the independent reference distinctions.
+
+The frozen H1 derivation contains:
+
+| CRD | Evaluation dimension |
+|---|---|
+| H1-CRD1 | Obstacle presence |
+| H1-CRD2 | Object category |
+| H1-CRD3 | Obstacle distance relative to braking need |
+
+The frozen H3 derivation contains:
+
+| CRD | Evaluation dimension |
+|---|---|
+| H3-CRD1 | Obstacle presence |
+| H3-CRD2 | Obstacle distance relative to braking justification |
+
+Independent downstream evidence establishes two reference distinctions for each
+concern. Comparison with the frozen expert derivations gives:
+
+| Reference | Frozen expert CRD | Recovery |
+|---|---|---:|
+| H1-REF1 — Obstacle presence | H1-CRD1 | Recovered |
+| H1-REF2 — Braking-relevant spatial relation | H1-CRD3 | Recovered |
+| H3-REF1 — Obstacle presence | H3-CRD1 | Recovered |
+| H3-REF2 — Braking-relevant spatial relation | H3-CRD2 | Recovered |
+
+Thus, the controlled expert application recovered all four independently
+established reference distinctions (`4/4`). H1-CRD2 additionally preserves an
+object-category distinction supported directly by the upstream requirements but
+not represented as a downstream reference distinction.
+
+The frozen expert specifications are preserved under:
+
+```text
+mobstr/work/raise2-output/H1/coding/
+mobstr/work/raise2-output/H3/coding/
+```
+
+and the independent reference distinctions under:
+
+```text
+mobstr/work/reference/coder1/H1/reference-crds.tsv
+mobstr/work/reference/coder1/H3/reference-crds.tsv
+```
+
+## 2.2 Reproducibility under automated execution
+
+After establishing the frozen expert derivations, the derivation protocol was
+executed autonomously 30 times for each held-out concern:
+
+```text
+30 H1 derivations
+30 H3 derivations
+60 derivations total
+```
 
 The resulting CRDs were evaluated in two complementary ways:
 
 1. conformance of the derived Phenomenon of Interest (PoI); and
-2. recovery of independently prepared reference distinctions.
+2. recovery of the independently prepared reference distinctions.
 
-## 2.1 PoI conformance
+### PoI conformance
 
-The final PoI-conformance aggregation classified the 60 derivations as
-follows.
+The final PoI-conformance aggregation classified the 60 automated derivations
+as follows.
 
 | Concern | ALIGNED | OVEREXTENDED | UNDERDETERMINED |
 |---|---:|---:|---:|
@@ -52,12 +122,8 @@ follows.
 | H3 | 30/30 | 0/30 | 0/30 |
 
 H3 therefore produced a PoI aligned with the intended evaluation scope in all
-30 runs.
-
-H1 showed a different pattern: 22 derivations were aligned and 8 were
-overextended.
-
-No derivation was classified as underdetermined.
+30 runs. H1 produced 22 aligned and 8 overextended PoIs. No derivation was
+classified as underdetermined.
 
 Machine-readable artefact:
 
@@ -65,12 +131,9 @@ Machine-readable artefact:
 raise2/results/mobstr-eq1-poi-conformance.json
 ```
 
-## 2.2 Reference recovery
+### Reference recovery
 
-Reference recovery was evaluated against two independently prepared reference
-distinctions for each concern.
-
-### Individual reference recovery
+Reference recovery varied across the repeated automated derivations.
 
 | Reference | All runs | PoI-aligned runs |
 |---|---:|---:|
@@ -79,10 +142,8 @@ distinctions for each concern.
 | H3-REF1 | 23/30 (76.7%) | 23/30 (76.7%) |
 | H3-REF2 | 0/30 (0.0%) | 0/30 (0.0%) |
 
-### Complete reference recovery
-
-Complete recovery requires all reference distinctions for the concern to be
-recovered within the same derivation.
+Complete recovery requires both reference distinctions for a concern to be
+recovered within the same automated derivation.
 
 | Concern | All runs | PoI-aligned runs |
 |---|---:|---:|
@@ -98,22 +159,23 @@ raise2/results/mobstr-eq1-final-results.tsv
 
 ## 2.3 EQ1 interpretation
 
-EQ1 does not support a claim that concern-relative derivation is a fully
-mechanical or completely reproducible operation.
+The two stages distinguish method derivability from autonomous execution
+reproducibility. The frozen expert application recovered all four reference
+distinctions subsequently supported by independent downstream evidence, while
+the repeated automated executions did not reproduce those distinctions
+uniformly.
 
-The results instead expose a semantic engineering boundary.
+The automated results expose a semantic engineering boundary. PoI definition
+can be stable for a comparatively explicit concern, as observed for H3, while
+becoming sensitive to scope interpretation for a more complex concern, as
+observed for H1. Distinction elicitation is more judgement-sensitive, with
+reference recovery varying substantially across distinctions.
 
-PoI definition can be stable for a comparatively explicit concern, as observed
-for H3, while becoming sensitive to scope interpretation for a more complex
-concern, as observed for H1.
-
-Reference recovery also varies substantially by distinction. In particular,
-H3-REF1 was recovered in 23 of 30 derivations whereas H3-REF2 was not
-recovered in any derivation.
-
-The evaluation therefore treats semantic judgement during initial derivation
-as an empirical limitation of end-to-end automation rather than removing this
-limitation through post-hoc adjustment.
+EQ1 therefore does not support replacing engineering judgement with end-to-end
+autonomous derivation. It shows instead that RAISE² can structure a derivation
+whose representational decisions are independently assessable, while autonomous
+execution of that procedure remains sensitive to semantic engineering
+judgement.
 
 ---
 
